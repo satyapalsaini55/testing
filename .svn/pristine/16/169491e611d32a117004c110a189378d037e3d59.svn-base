@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Wales_Work_Order_suite" >
+
+
+
+
+<test name=" [BS-01]  ModBrack_WRAS_Approved">
+<parameter name="className" value="ModBrack_WRAS_Approved"/>
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.ModBrack_WRAS_Approved" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-02]  ModBrack_WRAS_Rejected">
+<parameter name="className" value="ModBrack_WRAS_Rejected"/>
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.ModBrack_WRAS_Rejected" ></class> 
+    </classes>
+</test>
+
+
+<test name=" [BS-03]  ModBrack_WRAS_CancelledByClient">
+<parameter name="className" value="ModBrack_WRAS_CancelledByClient"/>
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.ModBrack_WRAS_CancelledByClient" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-04]  ModBrack_TMV_Certified">
+<parameter name="className" value="ModBrack_TMV_Certified"/>
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.ModBrack_TMV_Certified" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-05]  ModBrack_BS6920_Certified">
+<parameter name="className" value="ModBrack_BS6920_Certified"/>
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.ModBrack_BS6920_Certified" ></class> 
+    </classes>
+</test>
+
+<test name=" [BS-06]  ModBrack_Reg4_Certified">
+<parameter name="className" value="ModBrack_Reg4_Certified"  />
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.ModBrack_Reg4_Certified" ></class> 
+    </classes>
+</test>
+
+<test name=" [BS-07]  Resolution_WRAS_Approved">
+<parameter name="className" value="Resolution_WRAS_Approved"  />
+    <classes>
+        <class name="nsf.ecap.Wales_Work_Order_suite.Resolution_WRAS_Approved" ></class> 
+    </classes>
+</test>
+
+</suite>
+

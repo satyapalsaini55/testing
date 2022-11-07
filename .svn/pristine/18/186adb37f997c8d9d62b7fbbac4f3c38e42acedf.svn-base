@@ -1,0 +1,278 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="IssueMgt_Suite">
+
+<test name="[BS-01]  Create Issue PRQ">
+
+<parameter name="className" value="CreateIssue_PRQ"/>
+	<classes>
+             <class name="nsf.ecap.IssueMgt_Suite.CreateIssue_PRQ"></class> 
+    </classes>
+   
+</test>
+
+
+<test name="[BS-02]  Create Escalation PRQ">
+
+<parameter name="className" value="CreateEscalation_PRQ"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_PRQ"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+
+<test name="[BS-03]  Create Escalation Charges Verify">
+
+<parameter name="className" value="CreateEscalation_ChargesVerify"/>
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_ChargesVerify"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+<test name="[BS-04]  Create Escalation PRQ Four Issues">
+
+<parameter name="className" value="Escalation_FourIssues"/>
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_FourIssues"></class> 
+    </classes>
+   
+</test>
+
+
+<test name="[BS-05]  Create Escalation PRQ 8 Issues Scenario1">
+
+<parameter name="className" value="Escalation_PRQ_8Issues_Scenario1"/>
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_PRQ_8Issues_Scenario1"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-06]  Create Escalation PRQ 8 Issues Scenario2">
+
+<parameter name="className" value="Escalation_PRQ_8Issues_Scenario2"/>
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_PRQ_8Issues_Scenario2"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-07]  Create Issue NC">
+
+<parameter name="className" value="CreateIssue_NC"/>
+	<classes>
+             <class name="nsf.ecap.IssueMgt_Suite.CreateIssue_NC"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-08]  Create Escalation NC">
+
+<parameter name="className" value="CreateEscalation_NC"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_NC"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+<test name="[BS-09]  Create Escalation NC 8 Issues Scenario">
+
+<parameter name="className" value="Escalation_NC_8Issues_Scenario1"/>
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_NC_8Issues_Scenario1"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+<test name="[BS-10]  Create Issue FBY">
+
+<parameter name="className" value="CreateIssue_FBY"/>
+	<classes>
+             <class name="nsf.ecap.IssueMgt_Suite.CreateIssue_FBY"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+
+
+<test name="[BS-11]  Create Escalation FBY">
+
+<parameter name="className" value="CreateEscalation_FBY"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_FBY"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+ 
+ 
+ <test name="[BS-12]  Create Escalation FBY 8 Issues Scenario">
+
+<parameter name="className" value="Escalation_FBY_8Issues_Scenario1"/>
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_FBY_8Issues_Scenario1"></class> 
+    </classes>
+   
+</test>
+
+
+<test name="[BS-13]  Create Escalation AFP">
+
+<parameter name="className" value="CreateEscalation_AFP"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+
+
+<test name="[BS-14]  Create Escalation AFP Diff Issues">
+
+<parameter name="className" value="CreateEscalation_AFP_Diff_Issues"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP_Diff_Issues"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+
+
+
+<test name="[BS-15]  Create Escalation DIS">
+
+<parameter name="className" value="CreateEscalation_DIS"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateEscalation_DIS"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+
+
+
+<test name="[BS-16]  Close Escalation Messages">
+
+<parameter name="className" value="CloseEscalation_Messages"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+
+
+
+<test name="[BS-17]  Escalation PRQ Delete Issue">
+
+<parameter name="className" value="Escalation_PRQ_DeleteIssue"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_PRQ_DeleteIssue"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+
+<test name="[BS-18] Create Issue From NSF-Online">
+
+<parameter name="className" value="CreateIssue_From_NsfOnline"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.CreateIssue_From_NsfOnline"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+
+<test name="[BS-19] Create Escalation PRQ Without Alerts Verify">
+
+<parameter name="className" value="Escalation_PRQ_WithOutAlerts"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.Escalation_PRQ_WithOutAlerts"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+<test name="[BS-20] Check for desired options Duplicates in Issue Type DD">
+
+<parameter name="className" value="DesiredOptions_Duplicates_Check"/>
+
+
+	<classes>
+          <class name="nsf.ecap.IssueMgt_Suite.DesiredOptions_Duplicates_Check"></class> 
+          
+    </classes>
+    
+   
+</test>
+
+</suite>

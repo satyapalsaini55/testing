@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="End of Suites">
+<listeners>
+    <listener class-name="nsf.ecap.listener.TestsListenerAdapter" />
+  <!--    <listener class-name="nsf.ecap.listener.ExtentReporterNG" /> -->
+
+  <!--   <listener class-name="nsf.ecap.listener.CustomListener" /> -->
+
+</listeners>
+  <suite-files>
+  		  	
+  		  <!-- This Quartz job is only present in STAGE, not in TEST  --> 	
+		<!-- <suite-file path="./Quartz_Jobs_suite.xml" />  -->
+		  <!--  ****************      -->
+		
+       <suite-file path="./Proposals_suite.xml" /> 
+       <suite-file path="./Work_Order_suite.xml" /> 
+        <!-- <suite-file path="./Wales_Work_Order_suite.xml" />  -->
+       <suite-file path="./Non_Food_Compounds_suite.xml" />    
+        <suite-file path="./Dietary_Supplement_suite.xml" /> 
+        <suite-file path="./ISR_suite.xml" />       
+        <suite-file path="./SCFS_suite.xml" /> 
+  	   <suite-file path="./Health_Science_suite.xml" />
+  	    <suite-file path="./Agriculture_suite.xml" />
+  	    <suite-file path="./Audit_SAM_SPA_suite.xml" /> 
+  	     <suite-file path="./Test_Plan_suite.xml" /> 
+  	     <suite-file path="./Generic_suite.xml" />     	
+  	     <suite-file path="./Invoice_Function_suite.xml" />        	   
+  	 <!--   <suite-file path="./EPSF_suite.xml" /> -->
+  	 <!--   <suite-file path="./Direct_NSFOnline_suite.xml" />  -->
+
+  	    
+
+  	    
+  	    
+  	    
+  	    
+  	   <suite-file path="./Sus_suite.xml" />
+  	   <suite-file path="./IssueMgt_Suite.xml" />
+       <suite-file path="./Client_Suite.xml" /> 
+  	   <suite-file path="./New_NSFOnline_Suite.xml" />
+		<suite-file path="./MonitorPlan_Suite.xml" />
+
+
+
+
+
+  	   <!--  <suite-file path="./Audit_Functional_suite.xml" /> -->
+  	    <!--   <suite-file path="./SearchAudits_Suite.xml" /> -->
+  	   <!-- <suite-file path="./Automotive_Suite.xml" /> --> 	
+      <!--  <suite-file path="./NSFOnline_Suite.xml" /> 
+       <suite-file path="./MonitorPlan_Suite.xml" />
+  	   <suite-file path="./TraQtion_suite.xml" />
+  	   <suite-file path="./Grip_Suite.xml" /> 	     
+  	   <suite-file path="./New_NSFOnline_Suite.xml" />
+  	   <suite-file path="./Alerts_iPulse_Suite.xml" />
+  	   <suite-file path="./Listings_Suite.xml" /> -->
+  	   
+  </suite-files>
+  
+
+</suite>
+

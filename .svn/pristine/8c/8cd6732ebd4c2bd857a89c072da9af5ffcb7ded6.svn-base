@@ -1,0 +1,3596 @@
+
+#Avoid using ~ in pflist,
+#Avoid using ~ in  table xpath (which uses this function fnpFindRow,fnpFetchFromTable,fnpFetchFromTable_NOR,fnpFetchFromTable_NOR_TraversingFromVariousNodes)
+
+
+#- XPATHS, IDS, linkstext of my app
+#    id
+ #   name
+#    linkText
+ #   partialLinkText
+#    tagName
+ #   className
+#    cssSelector (Cascaded Spread Sheets)
+ #   xpath (XML path)
+
+
+
+
+
+#************XPATHS for Login Screen *************************************************************************************
+#UserName=xpath~//*[@id\='nsfloginform\:userName']
+Login_As=id~nsfloginform:loginas
+UserName=id~nsfloginform:userName
+UserName_id=id~nsfloginform:userName
+
+
+#password=xpath~.//*[@id\='nsfloginform\:pass']
+password=id~nsfloginform:pass
+password_id=id~nsfloginform\:pass
+
+#Login=xpath~.//*[@id\='nsfloginform\:login']
+Login=id~nsfloginform:login
+Login_id=id~nsfloginform\:login
+
+#logOutBtn=xpath~.//*[@id\='headerForm\:logout']
+logOutBtn=id~headerForm:logout
+logOutBtn_id=id~headerForm\:logout
+
+#logOutBtn2=xpath~.//a/div[text()\='LOG OUT']
+logOutBtn2=linkText~LOG OUT
+logOutBtn2_linkText=linkText~LOG OUT
+
+#errorMessage=xpath~.//*[@id\='nsfloginform\:messages']
+errorMessage=id~nsfloginform:messages
+errorMessage_id=id~nsfloginform\:messages
+# *************************************************************************************************************************
+
+
+
+
+
+
+
+
+#FirstRefrenceLinkJustBelowToMenu=Search Resource
+FirstRefrenceLinkJustBelowToMenu=Search Client
+
+
+
+#pradeep=Search Process
+#**************Main Links-****************************************************************************************************
+Home_topLink=.//*[@id='headerForm:home']
+Home_topLink_id=id~headerForm:home
+
+
+#FooterElement=.//label[contains(text(),'All Rights Reserved')]
+FooterElement=.//*[@id='textfooter']
+FooterElement_id=id~textfooter
+
+SpecificUser_label=.//label[contains(text(),'Specific User')]
+#SelectUserTxtBox=.//*[@id='mainForm:alertempAuto_input']
+SelectUserTxtBox=.//*[contains(@id,':alertempAuto_input')]
+
+#SearchUserLKPBtn=.//*[@id='mainForm:alert_emp_lookup']
+SearchUserLKPBtn=.//*[contains(@id,':alert_emp_lookup')]
+#ShowAlertsBtn=.//*[@id='mainForm:showAlerts']
+ShowAlertsBtn=.//*[contains(@id,':showAlerts')]
+AlertTabLink=.//a[contains(@href,'alertTab')]
+#*********************************************************************************************************************************
+
+#xpath~.//*[@id\='headerForm\:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())\='Work Order']
+SearchedRowCorpClient=xpath~.//tbody[@id='mainForm:stdSearchC_data']/tr/td[1]/a[@class='ui-commandlink ui-widget']
+CorporateParentLink=id~mainForm:PlusMinusAcc:custviewlnk
+NoInClientInfoTab=id~mainForm:tabView:custcodelb
+CorporateParentLinkDetail=id~mainForm:tabView:custviewlnk
+SnapshotTab=xpath~.//a[contains(@href,'mainForm:tabView:snapshottab')]
+ClientInfoTab=xpath~.//a[contains(@href,'mainForm:tabView:clientinfotab')]
+FacilitiesTab=xpath~.//a[contains(@href,'mainForm:tabView:facilitiestab')]
+
+OpenWOTab=id~mainForm:tabView:openworkorders
+CusOpenWOTable=xpath~.//tbody[@id='mainForm:tabView:cusSnapWO_data']/tr
+WOLinkInOpenWOTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapWO_data']/tr/td[1]
+GetWOInOpenWOTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapWO_data']/tr/td[1]/a
+OpenedWO=id~mainForm:TopApplDetails:wocode
+
+AuditTab=id~mainForm:tabView:audits
+CusSnapAuditWOTable=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr
+AuditLinkInAuditTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr/td[1]
+GetAuditLInkInAuditTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr/td[1]/a
+OpendAuditHeader =xpath~.//div[@class='ui-outputpanel ui-widget greenheading']
+
+CusSnapAuditWOTable=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr
+AuditLinkInAuditTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr/td[1]
+GetVisitLinkInAuditTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr/td[2]/a
+
+AlertTabOnViewClient=id~mainForm:tabView:alertClLbl
+BackButtonEditWO=id~mainForm:backButton
+GetWOLinkInAuditTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapAudit_data']/tr/td[3]/a
+
+OpenInvoiceTab=id~mainForm:tabView:openinvoices
+CusSnapInvoiceTable=xpath~.//tbody[@id='mainForm:tabView:cusSnapInv_data']/tr
+InvoicesLinkInInvoicetTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapInv_data']/tr/td[2]
+WOLinkInvoicetTab=xpath~.//tbody[@id='mainForm:tabView:cusSnapInv_data']/tr/td[3]/a
+
+FacilitiesTable=xpath~.//tbody[@id='mainForm:tabView:facilitiesDT_data']/tr
+CodeLinkInFacilitiesTab=xpath~.//tbody[@id='mainForm:tabView:facilitiesDT_data']/tr/td[3]/a
+
+ClientNoHeader=id~mainForm:PlusMinusAcc:clientValueNo
+
+
+AlertLink=xpath~.//a[text()='Alert']
+TasksLink=xpath~.//span[text()='Tasks']
+ClientsLink=xpath~.//span[text()='Clients']
+EPSFLink=xpath~.//span[text()='EPSF']
+AutomotiveLink=xpath~.//span[text()='Automotive']
+ACTION_ITEM_ASSIGNED_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Action item(s) assigned')]
+AI_ITEM_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED_data']/tr
+AI_ITEM_LINK_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED_data']/tr/td/a
+
+WO_LINK_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED_data']/tr/td[3]/a
+Task_LINK_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED_data']/tr/td[6]/a
+OpenedTask_Header=id~mainForm:veclntout
+
+TaskTab_ScopeValidation_BackBtn=.//*[@id='mainForm:jobbackButton']
+
+FINOPS_AI_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Finops Action item(s) in Inprocess Status')]
+ROW_AI_FINOPS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_FINOPS_INPROCESS_data']/tr
+AI_LINK_OF_FINOPS=xpath~.//tbody[@id='mainForm:alertTab:AI_FINOPS_INPROCESS_data']/tr/td/a
+	
+FINOPS_WO_LINK_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_FINOPS_INPROCESS_data']/tr/td[3]/a
+FINOPS_PL_LINK_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_FINOPS_INPROCESS_data']/tr/td[10]/a
+OpenedPLHeader=id~mainForm:PlusMinusAcc:clientValueNo
+
+openedGeneralLink=xpath~.//span[@class='ui-fieldset-toggler ui-icon ui-icon-minusthick']
+	
+TECHNICAL_REVIEW_AI_ASSIGNED_CREATED_STATUS_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Technical Review Action item(s) assigned  in Created Status')]
+ROW_TECH_REVIEW_AI_ASSIGNED_CREATED_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_ASSIGNED_data']/tr
+AI_LINK_OF_TECH_REVIEW_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_ASSIGNED_data']/tr/td/a
+WO_LINK_OF_TECH_REVIEW_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_ASSIGNED_data']/tr/td[3]/a
+Task_LINK_OF_TECH_REVIEW_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_ASSIGNED_data']/tr/td[5]/a
+PL_LINK_OF_TECH_REVIEW_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_ASSIGNED_data']/tr/td[10]/a
+
+
+TECHNICAL_REVIEW_AI_INPROCESS_STATUS_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Technical Review Action item(s) in Inprocess Status')]
+ROW_TECH_REVIEW_AI_INPROCESS_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_PROCESS_data']/tr
+AI_LINK_OF_TECH_REVIEW_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_PROCESS_data']/tr/td/a
+Wo_LINK_OF_TECH_REVIEW_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_PROCESS_data']/tr/td[3]/a
+Task_LINK_OF_TECH_REVIEW_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_PROCESS_data']/tr/td[5]/a
+PL_LINK_OF_TECH_REVIEW_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_TECH_REVIEW_PROCESS_data']/tr/td[10]/a	
+OpenedTaskHeader=xpath~.//form[@id='mainForm']/table/tbody/tr/td/div
+
+	
+CERT_DESCISION_AI_INPROCESS_STATUS_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Cert Decision Action item(s) in Inprocess Status')]
+ROW_CERT_DESCISION_AI_INPROCESS_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_DECISION_PROCESS_data']/tr
+AI_LINK_OF_CERT_DESCISION_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_DECISION_PROCESS_data']/tr/td/a
+Wo_LINK_OF_CERT_DESCISION_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_DECISION_PROCESS_data']/tr/td[3]/a
+Task_LINK_OF_CERT_DESCISION_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_DECISION_PROCESS_data']/tr/td[5]/a
+PL_LINK_OF_CERT_DESCISION_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_DECISION_PROCESS_data']/tr/td[10]/a	
+openedAIHeader=id~mainForm:crtprpsled
+
+AI_ASSSIGNED_CLIENT_SUPPLIER_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Action item(s) assigned to client or supplier')]
+ROW_AI_ASSSIGNED_CLIENT_SUPPLIER_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND_data']/tr
+AI_LINK_OF_ASSSIGNED_CLIENT_SUPPLIER_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND_data']/tr/td/a
+Wo_LINK_OF_ASSSIGNED_CLIENT_SUPPLIER_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND_data']/tr/td[3]/a
+Task_LINK_OF_ASSSIGNED_CLIENT_SUPPLIER_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND_data']/tr/td[6]/a
+
+CERT_ISSUE_AI_INPROCESS_STATUS_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Cert issue Action item(s) in Inprocess Status')]
+ROW_CERT_ISSUE_AI_INPROCESS_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_ISSUE_PROCESS_data']/tr
+AI_LINK_CERT_ISSUE_AI_INPROCESS_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_ISSUE_PROCESS_data']/tr/td/a
+Wo_LINK_OF_CERT_ISSUE_AI_INPROCESS_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_ISSUE_PROCESS_data']/tr/td[3]/a
+Task_LINK_OF_CERT_ISSUE_AI_INPROCESS_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_ISSUE_PROCESS_data']/tr/td[5]/a
+PL_LINK_OF_CERT_ISSUE_AI_INPROCESS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AI_CERT_ISSUE_PROCESS_data']/tr/td[10]/a
+
+ANNUAL_AI_ASSIGNED_LINK_ALERT_TAB=xpath~.//legend[contains(text(),'Annual Action Item(s) Assigned')]
+ROW_ANNUAL_AI_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:ANNUAL_AI_ITEMS_ASSIGNED_data']/tr
+AI_LINK_ANNUAL_AI_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:ANNUAL_AI_ITEMS_ASSIGNED_data']/tr/td/a
+WO_LINK_ANNUAL_AI_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:ANNUAL_AI_ITEMS_ASSIGNED_data']/tr/td[3]/a
+TASK_LINK_ANNUAL_AI_ASSIGNED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:ANNUAL_AI_ITEMS_ASSIGNED_data']/tr/td[6]/a
+OpenedTaskHeader_AnnualAIAssignedLink=id~mainForm:editskhdr
+
+TASK_READY_TO_PERFORM_N_ASSIGNED_LINK_TASKS_TAB=xpath~.//legend[contains(text(),'Task(s) ready to perform and assigned but not yet started after')]
+ROW_TASK_READY_TO_PERFORM_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_READY_TO_PERFORM_NOT_YET_STARTED_data']/tr
+TASKS_LINK_TASK_READY_TO_PERFORM_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_READY_TO_PERFORM_NOT_YET_STARTED_data']/tr/td/a
+WO_LINK_TASK_READY_TO_PERFORM_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_READY_TO_PERFORM_NOT_YET_STARTED_data']/tr/td[4]/a
+CC_LINK_TASK_READY_TO_PERFORM_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_READY_TO_PERFORM_NOT_YET_STARTED_data']/tr/td[6]/a
+
+TASK_PHYSICAL_EVALUATION_REVIEWED_LINK_TASKS_TAB=xpath~.//legend[contains(text(),'Physical evaluation(s) to be reviewed')]
+ROW_NEED_TO_BE_REVIEWD_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD_data']/tr
+TASK_LINK_NEED_TO_BE_REVIEWD_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD_data']/tr/td/a
+WO_LINK_NEED_TO_BE_REVIEWD_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD_data']/tr/td[4]/a
+CC_LINK_NEED_TO_BE_REVIEWD_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD_data']/tr/td[6]/a
+
+PerformTask_Header=id~mainForm:prfmtskhdr
+TaskTab_BackToView=id~mainForm:jobbackToViewBtn
+
+TASK_WITH_NO_OPEN_AI_LINK_TASKS_TAB=xpath~.//legend[contains(text(),'Task(s) with no open Action Items')]
+ROW_TASK_NO_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NO_OPEN_AI_data']/tr
+TASKS_LINK_TASK_NO_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NO_OPEN_AI_data']/tr/td/a
+WO_LINK_TASK_NO_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NO_OPEN_AI_data']/tr/td[4]/a
+CC_LINK_TASK_NO_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_NO_OPEN_AI_data']/tr/td[6]/a
+
+TASK_WITH_OPEN_AI_LINK_TASKS_TAB=xpath~.//legend[contains(text(),'Task(s) with open action items')]
+ROW_TASK_WITH_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS_data']/tr
+TASKS_LINK_TASK_WITH_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS_data']/tr/td/a
+WO_LINK_TASK_WITH_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS_data']/tr/td[4]/a
+CC_LINK_TASK_WITH_OPEN_AI_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS_data']/tr/td[6]/a
+
+SUPPLIER_FORM_TASK_COMPLETE_LINK_TASKS_TAB=xpath~.//legend[contains(text(),'Supplier Form(s) tasks to complete - no forms needed')]
+ROW_SUPPLIER_FORM_TASK_COMPLETE_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_SUP_FORMS_TO_COMPLETE_data']/tr
+TASKS_LINK_SUPPLIER_FORM_TASK_COMPLETE_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_SUP_FORMS_TO_COMPLETE_data']/tr/td/a
+WO_LINK_SUPPLIER_FORM_TASK_COMPLETE_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_SUP_FORMS_TO_COMPLETE_data']/tr/td[4]/a
+CC_LINK_SUPPLIER_FORM_TASK_COMPLETE_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_SUP_FORMS_TO_COMPLETE_data']/tr/td[6]/a
+
+CLIENT_CREATED_WO_NOT_CREATED_LINK_CLIENT_TAB=xpath~.//legend[contains(text(),'Client Created, but no Work Order Created')]
+ROW_CL_CREATED_WO_NOT_CREATED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:ISR_CL_WITHOUT_WO_data']/tr
+COSTOMER_CODE_CL_CREATED_WO_NOT_CREATED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:ISR_CL_WITHOUT_WO_data']/tr/td/a
+
+ANNUAL_EPSF_DRAFT_STATUS_LINK_EPSF_TAB=xpath~.//legend[contains(text(),'Annual EPSF(s) in DRAFT status')]
+ROW_ANNUAL_EPSF_DRAFT_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EP_ANL_IN_DRAFT_data']/tr
+EPSF_ANNUAL_EPSF_DRAFT_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EP_ANL_IN_DRAFT_data']/tr/td/a
+TASK_ANNUAL_EPSF_DRAFT_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EP_ANL_IN_DRAFT_data']/tr/td[2]/a
+FCODE_ANNUAL_EPSF_DRAFT_STATUS_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EP_ANL_IN_DRAFT_data']/tr/td[5]/a
+
+OPEND_EPSFNO=xpath~.//tr/td/label[contains(text(),'EPSF No')]/../following-sibling::td/span[contains(text(),'J-')]
+
+EPSF_CURRENTLY_TEST_LINK_EPSF_TAB=xpath~.//legend[contains(text(),'EPSF(s) Currently on Test')]
+ROW_EPSF_CURRENT_TEST_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EPSF_CURRENT_ON_TEST_data']/tr
+EPSFID_EPSF_CURRENT_TEST_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EPSF_CURRENT_ON_TEST_data']/tr/td/a
+CCODE_EPSF_CURRENT_TEST_TABLE=xpath~.//tbody[@id='mainForm:alertTab:EPSF_CURRENT_ON_TEST_data']/tr/td[2]/a
+
+
+SUBMISSION_CERT_DECISION_NEEDED_STATUS_LINK_AUTOMOTIVE_TAB=xpath~.//legend[contains(text(),'Submission in Cert Decision Needed status')]
+ROW_SUB_CERT_DEC_STATUS_GROUP_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_CERT_DEC_STATUS_GROUP_data']/tr
+SUBMISSIONID_SUB_CERT_DEC_STATUS_GROUP_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_CERT_DEC_STATUS_GROUP_data']/tr/td/a
+FCODE_SUB_CERT_DEC_STATUS_GROUP_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_CERT_DEC_STATUS_GROUP_data']/tr/td[3]/a
+SUBMISSION_ID_AUTOMOTIVE_TAB=id~mainForm:TopApplDetails:requestId
+
+SUBMISSION_READY_LISTING_LINK_AUTOMOTIVE_TAB=xpath~.//legend[contains(text(),'Submission(s) ready for listing')]
+ROW_SUB_COMPLETE_CERT_CERTIFIED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_COMPLETE_CERT_CERTIFIED_data']/tr
+SUBMISSION_ID_SUB_COMPLETE_CERT_CERTIFIED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_COMPLETE_CERT_CERTIFIED_data']/tr/td/a
+FCODE_SUB_COMPLETE_CERT_CERTIFIED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_COMPLETE_CERT_CERTIFIED_data']/tr/td[3]/a
+#.............................................................................................................
+
+
+	
+JOB_SUMMARY_DATA_TABLE=xpath~.//tbody[@id='mainForm:viewtsk:jobSummaryDt_data']/tr/td[2]
+	
+	
+SUPPLIER_FORM_TASK_COMPLETE_LINK=xpath~.//legend[contains(text(),'Supplier Form(s) tasks to complete - no forms needed')]
+ROW_SUPPLIER_FORM_TASK_COMPLETE_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_SUP_FORMS_TO_COMPLETE_data']/tr
+AI_LINK_SUPPLIER_FORM_TASK_COMPLETE_TABLE=xpath~.//tbody[@id='mainForm:alertTab:TA_SUP_FORMS_TO_COMPLETE_data']/tr/td/a
+	
+
+	
+SUBMISSION_CERT_DECISION_NEEDED_STATUS_LINK=xpath~.//legend[contains(text(),'Submission in Cert Decision Needed status')]
+ROW_SUB_CERT_DEC_STATUS_GROUP_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_CERT_DEC_STATUS_GROUP_data']/tr
+	
+SUBMISSION_UNAPPROVED_DEVIATION_LINK=xpath~.//legend[contains(text(),'Submission with Unapproved Deviation')]
+ROW_SUB_UNAPPROVED_DEV_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_UNAPPROVED_DEV_data']/tr
+
+SUBMISSION_READY_LISTING_LINK=xpath~.//legend[contains(text(),'Submission(s) ready for listing')]
+ROW_SUB_COMPLETE_CERT_CERTIFIED_TABLE=xpath~.//tbody[@id='mainForm:alertTab:AU_SUB_COMPLETE_CERT_CERTIFIED_data']/tr
+
+	
+
+																  				
+
+
+
+Opened_AI_ViewActionitem_Page=xpath~.//td/label[contains(text(),'Action Item #')]/../following-sibling::td/label
+
+# *******************XPATHS for Reusable Objects --*************************************************************************************
+#MainSearchButton=.//*[@id='mainForm:find']
+MainSearchButton=id~mainForm:find
+MainSearchButton_id=id~mainForm:find
+
+
+MainClearLink=.//*[@id='mainForm:clrBt']
+MainClearLink_id=id~mainForm:clrBt
+
+
+MenuOld=.//*[@id='headerForm:headmenu']/ul/li[1]/a/span[1]
+Menu=MENU
+MenuXpath=.//a[@class\='ui-menuitem-link ui-submenu-link ui-corner-all ui-state-hover']
+
+LookupFirstTextBox=.//input[@id='mainForm:newfdt:0:newcriInpNm']
+#LookupFirstTextBox=.//*[contains(@id,'mainForm:newfdt:0:')]
+LookupFirstTextBox_id=id~mainForm:newfdt:0:newcriInpNm
+
+LookkupSecondTextBox=.//*[@id='mainForm:newfdt:1:newcriInpNm']
+#LookkupSecondTextBox=.//*[contains(@id,'mainForm:newfdt:1:')]
+LookkupSecondTextBox_id=id~mainForm:newfdt:1:newcriInpNm
+
+LookupTable=.//*[@id='mainForm:lookuptableid_data']
+LookupRowsForCountPurpose=.//*[@id='mainForm:lookuptableid_data']/tr[contains(@class,'ui-widget-content ui-datatable')]
+
+FirstCheckBoxInLkpBFSch=.//*[@id='mainForm:lookuptableid_data']/tr[1]/td[1]/div/div[2]
+FirstCheckBoxInLkpAFSch=.//*[@id='mainForm:lookuptableid_data']/tr/td[1]/div/div[2]
+
+FirstRadioBtnInLkpBFSch=.//*[@id='mainForm:lookuptableid_data']/tr[1]/td[1]/div/div[2]
+FirstRadioBtnInLkpAFSch=.//*[@id='mainForm:lookuptableid_data']/tr/td[1]/div/div[2]
+RowsInLkpAFSch=.//*[@id='mainForm:lookuptableid_data']/tr/td
+
+
+FirstSelectConditionInLookup=.//*[@id='mainForm:newfdt:0:slLk2_label']
+SecondSelectConditionInLookup=.//*[@id='mainForm:newfdt:1:slLk2_label']
+
+
+# For Search Fields
+SearchFieldsInLookup_firstPart=.//*[@id='mainForm:newfdt:
+SearchFieldsInLookup_secondPart=:slLk1_label']
+
+# For Condtions Select list
+SelectConditionInLookup_firstPart=.//*[@id='mainForm:newfdt:
+SelectConditionInLookup_secondPart=:slLk2_label']
+
+# For Value Fields
+ValueFieldsInLookup_firstPart=.//input[@id='mainForm:newfdt:
+ValueFieldsInLookup_secondPart=:newcriInpNm']
+
+
+lookupDialogTitle=.//*[@id='mainForm:lkpDialog_title']
+lookupDialogTitle_id=id~mainForm:lkpDialog_title
+
+ResultsHeadingInLkp=.//table[@id='mainForm:resultFldSet']/tbody/tr/td/div[normalize-space(text())='Results']
+
+
+
+LookupSearchBtn=.//*[@id='mainForm:lkpfndDg']
+LookupSearchBtn_id=id~mainForm:lkpfndDg
+
+ClearLinkInLKP=.//*[@id='mainForm:lkpClearDg']
+ClearLinkInLKP_id=id~mainForm:lkpClearDg
+
+SelectAndReturnBtn=.//*[@id='mainForm:lkpSltRecright']
+SelectAndReturnBtn_id=id~mainForm:lkpSltRecright
+
+
+#TopMessage=.//*[@id=mainForm:message]/../span[@class=ui-messages-info-summary]
+#---Below is working fine till 29-07-15-----------------------------------------------------------------
+TopMessage3=.//div[contains(@id,'mainForm\:')]/div/ul/li/span[@class\='ui-messages-info-summary']
+#TopMessage3_classname=ui-messages-info-summary
+TopMessage3_classname=className~ui-messages-info-summary
+
+#---------Both is working fine ---------------------------------------------------------------
+#TopMessage3=.//div[contains(@id,'message_content')]/div[contains(@id,'mainForm:')]/div/ul/li/span[@class='ui-messages-info-summary']
+#-TopMessage4=.//div[contains(@id,'message_content')]/.*/ul/li/span[@class='ui-messages-info-summary']
+#-TopMessage5=.//div[contains(@id,'message_content')][1]//ul/li/span[@class='ui-messages-info-summary']
+#-TopMessage55=.//[div[contains(@id,'message_content')]//ul/li/span[@class='ui-messages-info-summary']][1]
+#-TopMessage6=.//div[contains(@id,'message_content')]/./ul/li/span[@class='ui-messages-info-summary']
+#-TopMessage7=.//div[contains(@id,'message_content')]/./*ul/li/span[@class='ui-messages-info-summary']
+#----------------------------------------------------------------------------------------------------------------
+#TopMessage2=.//*[@id='mainForm:message']/div/div/div/ul/li/span
+
+
+
+
+
+ErrorMessage=.//span[@class='ui-messages-error-summary']
+ErrorMessage_classname=className~ui-messages-error-summary
+
+
+ErrorMessage3=.//ul/li/span[@class='ui-messages-error-summary']
+ErrorMessage4=.//div[contains(@id,'mainForm\:')]/div/ul/li/span[@class\='ui-messages-error-summary']
+#TopMessage3=.//div[contains(@id,'mainForm\:')]/div/ul/li/span[@class\='ui-messages-info-summary']
+
+Error_PageIniPulse=.//div[@id='mainForm:searchIssuMgtOutlbl'][normalize-space(text())='Error Page']
+Content_Of_Error_PageIniPulse=.//div[@id='mainForm:errormain_content']
+
+
+
+BlockedUIScreen=.//div[@class='blockUI blockMsg blockPage']
+
+
+ForLoading=.//div[@class='blockUI blockOverlay']
+ProgressImageIcon=.//img[@class='progressimage']
+
+
+
+
+
+# Below are working xpath for inside loading in Dialog (not sure for lookup)
+LoadingImageInInsideDialogBox=.//div[@class='ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow']/label/img
+LookupBlockedUI2=.//div[@class='ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow']
+LookupLoadingImg=.//img[contains(@src,'loading')]
+LoadingImg=.//img[contains(@src,'loading')]
+LoadingImageInInsideDialogBox2=.//img[contains(@src,'loading.gif?pfdrid_c\=true')]
+#LoadingImageInInsideDialogBox3=.//img[contains(@src,'loading')]
+
+# Above are working xpath for inside loading in Dialog (not sure for lookup)
+
+
+
+
+LKPcheckBoxFirstpart=//td[contains(text(),'
+LKPcheckBoxSecondpart=')]/preceding-sibling::td/div/div[contains(@class,'ui-chkbox-box')]
+
+LKPRadioBtnFirstpart=(//td[text()='
+LKPRadioBtnSecondpart=']/preceding-sibling::td/div/div[contains(@class,'ui-radiobutton-box')])[1]
+
+StandardSearchTable=.//*[@id='mainForm:stdSearchC_data']
+StandardSearchTableHeader=.//*[@id='mainForm:stdSearchC_head']
+
+
+BrowseCancelUploadBtn=//button[contains(@class,'ui-fileupload-cancel ui-button')]
+
+# ******************************************************************************************************************************
+
+
+
+
+
+
+
+
+# *******************XPATHS for Issue Management **********************************************************************************
+#IssueMgmt=.//*[@id\='headerForm\:headmenu']/ul/li[1]/ul/li[1]/a
+#SearchIssue=.//*[@id\='headerForm\:headmenu']/ul/li[1]/ul/li[1]/ul/li[2]/a
+IssueMgmt=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())='Issue Mgmt']
+#SearchIssue=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Search Issue']
+CreateIssue=Create Issue
+IssueIdTextBox=.//*[@id='mainForm:srissTextIssueId']
+SiteNameTextBox=.//*[@id='mainForm:srissTextSiteName']
+ClientLKPButton=.//*[@id='mainForm:srIsslkpcl']
+
+ClientTextBox=.//*[@id='mainForm:srIssClient']
+SiteNumberTxtBox=.//*[@id='mainForm:srissTextSiteNumber']
+
+IssueTypeList=.//*[@id='mainForm:srIssSelIssueType_label']
+ParentStatusList=.//*[@id='mainForm:srIssSelParStatus_label']
+ParentStatusListOptions=.//*[@id='mainForm:srIssSelParStatus_panel']
+
+DateOfIssueFromTxtBox=.//*[@id='mainForm:srIssDtCalIssFrm_input']
+DateOfIssueToTxtBox=.//*[@id='mainForm:srIssCalDtIssTo_input']
+
+DateReportedFromTxtBox=.//*[@id='mainForm:srIssCalDtRepFrm_input']
+DateReportedToTxtBox=.//*[@id='mainForm:srIssCalDtRepTo_input']
+
+
+# *****************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+#********************XPATHS for Work Order ********************************************************************************************
+WorkOrderTopLink=xpath~.//*[@id\='headerForm\:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())\='Work Order']
+
+#CreateWorkOrderLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Create Work Order']
+CreateWorkOrderLink=linkText~Create Work Order
+
+#SearchWorkOrderLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Search Work Order']
+SearchWorkOrderLink=linkText~Search Work Order
+SearchClientLink=linkText~Search Client
+ClientLkpBtnOnSearchClient=xpath~.//*[@id\='mainForm\:custNoLkp']
+ClientLkpBtnOnSearchClient_id=id~mainForm\:custNoLkp
+
+
+
+
+WOStartDateField=xpath~.//*[@id\='mainForm\:wostrtdtfrm_input']
+WorkOrderNoField=xpath~.//*[@id='mainForm:wonoappsrhtxt']
+EditWOBtn=xpath~.//*[@id='mainForm:editbutton']
+#EditWOBtnTaskInside=.//button[text()='Edit']
+#EditWOBtnTaskInside=//span[@class='ui-button-text ui-c'][normalize-space()='Edit']
+EditWOBtnTaskInside=xpath~.//*[@id\='mainForm\:edittasks']
+
+
+ActionItem_dialog_headerTitle_xpath=xpath~.//*[@id\='mainForm\:tabView\:editAIDlg_title']
+#EditWO_SaveBtn=.//*[@id='mainForm:saveButton']
+EditWO_SaveBtn=xpath~.//*[@id='mainForm:tabView:saveButton']
+WO_BackToViewBtn=xpath~.//*[@id\='mainForm\:backButton']
+WO_BackBtn=xpath~.//*[@id\='mainForm\:backButton']
+
+WO_Main_BackToViewBtn=xpath~.//*[@id\='mainForm\:backToViewBtn']
+
+
+ClientLKPBtn=xpath~.//*[@id\='mainForm\:cuslkupappcrt']
+ClientLKPBtn_id=id~mainForm\:cuslkupappcrt
+
+
+ClientTxtBox=xpath~.//*[@id\='mainForm\:corpName']
+
+
+ClientTxtBox_id=id~mainForm:corpName
+
+#In Search Client, Corp Facility text box
+CorpFacilityTxtBx=id~mainForm:itcustno
+
+ViewClientPageheading=.//*[@id='mainForm:viewclient']
+
+StandardLkpBtn=xpath~.//*[@id\='mainForm\:stdlkupappcrtl']
+
+ISR_ORGUnitList=xpath~.//*[@id='mainForm:orgunitdd_label']
+ISR_ORGUnitListOptions=.//*[@id='mainForm:orgunitdd_panel']
+
+WOTypeList=xpath~.//*[@id\='mainForm\:woType_label']
+WOTypeListOptions=.//*[@id='mainForm:woType_panel']
+
+NextBtn=xpath~.//*[@id\='mainForm\:nextBtn']
+NextBtn_id=id~mainForm\:nextBtn
+
+#NextBtn=button[id*=nextBtn]  ---working fine for css selector
+#NextBtn=[#mainForm:nextBtn]
+
+
+AccountManagerLkpBtn=xpath~.//*[@id\='mainForm\:actmgrlkupappcrt']
+AccountManagerLkpBtn_id=id~mainForm\:actmgrlkupappcrt
+
+AccountManagerTxtBox=xpath~.//*[@id\='mainForm\:appCreateAutoMngr_input']
+AccountManagerTxtBox_id=id~mainForm\:appCreateAutoMngr_input
+
+BDMLkpBtn=xpath~.//*[@id\='mainForm\:bdmlkupappcrt']
+BDMLkpBtn_id=id~mainForm\:bdmlkupappcrt
+
+BDMTxtBox=xpath~.//*[@id\='mainForm\:appCreateAutoBdm_input']
+BDMTxtBox_id=id~mainForm\:appCreateAutoBdm_input
+
+TechsOpsMgrList=xpath~.//*[@id\='mainForm\:tomddappcrt_label']
+TechsOpsMgrListOptions=.//*[@id='mainForm:tomddappcrt_panel']
+
+BusUnitMgrList=xpath~.//*[@id\='mainForm\:bumddappcrt_label']
+BusUnitMgrListOptions=.//*[@id='mainForm:bumddappcrt_panel']
+
+WoPrimContactList=.//*[@id='mainForm:crtprimconappinfdd_label']
+WoPrimContactListOptions=.//*[@id='mainForm:crtprimconappinfdd_panel']
+
+
+WorkOrdertoassociatewith_part1=.//div[@id='mainForm:workOrderToAssociateWith']//ul/li[contains(text(),'
+WorkOrdertoassociatewith_part2=')]
+
+
+WOSummaryTxtBox=xpath~.//*[@id\='mainForm\:woSumm']
+WOSummaryTxtBox_id=id~mainForm\:woSumm
+
+WOScopeTxtBox=xpath~.//*[@id\='mainForm\:woDesc']
+WOScopeTxtBox_id=id~mainForm\:woDesc
+
+
+CreateWOProductType=xpath~.//*[@id\='mainForm\:crprodwodd_input']
+CreateWO_ProductTypeOptions=.//*[@id='mainForm:crprodwodd_panel']/ul/li
+CreateWO_ProductTypeOptionsList=.//*[@id='mainForm:crprodwodd_panel']/ul/li
+
+InvoiceBillToPFList=.//*[@id='mainForm:crSelemnuinbillto_label']
+InvoiceBillToPFListOptions=.//*[@id='mainForm:crSelemnuinbillto_panel']
+
+RevenueProgramList=.//*[@id='mainForm:rvnprgmddappcrt_label']
+RevenueProgramListOptions=.//*[@id='mainForm:rvnprgmddappcrt_panel']
+
+
+ListingFRSUpdateLabel=.//*[@id='mainForm:listingfrslbl']
+ListingFRSUpdateValuePart1=.//*[@id='mainForm:listingfrs']/tbody/tr/td/label[normalize-space(text())=
+
+LinkedWOList=.//*[@id='mainForm:linkwoddappcrt1_label']
+LinkedWOListOptions=.//*[@id='mainForm:linkwoddappcrt1_panel']
+
+LinkedWOReasonTxtBox=xpath~.//*[@id\='mainForm\:likedworsgnappinfotxt']
+
+AddLinkWOLinkText=xpath~.//*[@id\='mainForm\:addLinkedWOs']
+#Below work in IE,chrome but not in firefox
+#AddLinkWOFristCheckBox=.//div[contains(@id,':addExtWOToLinkDetTbl:0:') and @class='ui-chkbox ui-widget'] 
+#AddLinkWOFristCheckBox=.//table[contains(@id,':autocrascodiv')]//div[contains(@class,'ui-chkbox-box ui-widget')]
+#AddLinkWOFristCheckBox=.//div[contains(@id,':addExtWOToLinkDetTbl:0:')/div[2]
+AddLinkWOFristCheckBox=xpath~.//div[contains(@id,'\:addExtWOToLinkDetTbl\:0\:')]//div[contains(@class,'ui-chkbox-box ui-widget')]
+AddLinkWOSaveBtn=xpath~.//*[@id\='mainForm\:addExternalWOSavebtn']
+
+CreateWOBtn=xpath~.//*[@id\='mainForm\:createButton']
+CreateWOBtn_id=id~mainForm\:createButton
+
+NewlyCrWOTopBannerInfo=xpath~.//*[contains(@id,'\:cusmotlblcusheader')]
+TopBannerWOStatus=xpath~.//*[contains(@id,'\:wostsapptxt')]
+NewlyCreatedWorkOrderNo=xpath~.//span[contains(@id,'\:wocode')]
+
+StandardVersionTxt=xpath~.//*[@id\='mainForm\:tabView\:aistdvrsndd_input']
+StandardVersionOptionsXpath=.//*[contains(@id,':aistdvrsndd_panel')]/ul/li
+StandardVersionOptions=.//*[contains(@id,':aistdvrsndd_panel')]/ul/li
+
+#---Snapshot tab
+
+#SnapshotTabLink=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'snpshtapptab')]
+SnapshotTabLink=xpath~.//a[contains(@href,'snpshtapptab')]
+
+#SnapshotTab_AlertsHeading=.//*[@id='mainForm:tabView:alertDocOutLbl']
+SnapshotTab_AlertsHeading=xpath~.//*[contains(@id,'\:tabView\:alertDocOutLbl')]
+
+#some time not working due to this  OR.getProperty(TableDataXpathName) + "/tr  in ---int sampleSelectionrowNo = fnpFindRow("Snapshot_TasksSummaryTable", SnapShot_taskDesc_SampleSelection, TaskDescColIndex);
+#Snapshot_TasksSummaryTable=xpath~.//*[@id\='mainForm\:tabView\:tasksList_data']
+#Snapshot_TasksSummary_HeaderRow=xpath~.//*[@id\='mainForm\:tabView\:tasksList_head']
+
+Snapshot_TasksSummaryTable=.//*[@id='mainForm:tabView:tasksList_data']
+Snapshot_TasksSummary_HeaderRow=.//*[@id='mainForm:tabView:tasksList_head']
+
+#---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#----Facility Tab
+#EditFacilityTabLink=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'fcltapptab')]
+EditFacilityTabLink=.//a[contains(@href,'fcltapptab')]
+#EditFacilityTabLink=.//*[@id='mainForm:tabView']/ul/li/a[@href='#mainForm:tabView:fcltapptab')]
+AssociateNewFacilityStandardBtn=.//*[@id='mainForm:tabView:associatenewfacilitybutton']
+#FacilityCodeLkpBtn=.//*[@id='mainForm:tabView:faccdlokup']
+FacilityCodeLkpBtn=.//*[contains(@id,':faccdlokup')]
+#SearchAndAddBtn=.//*[@id='mainForm:tabView:fsrchadd']
+SearchAndAddBtn=.//*[contains(@id,':fsrchadd')]
+#SaveNCloseBtn=.//*[@id='mainForm:tabView:savenclosebutton']
+SaveNCloseBtn=.//*[contains(@id,':savenclosebutton')]
+#FirstRecordInFacilityTable=.//*[@id='mainForm:tabView:faclistappfacdt_data']/tr/td[1]
+FirstRecordInFacilityTable=.//*[@id='mainForm:tabView:faclistappfacdt_data']/tr
+
+
+FacilityTab_ConfirmationDialogBox=.//*[@id='mainForm:tabView:stdexistdlg']
+FacilityTab_ConfirmationBox_YesBtn=.//*[@id='mainForm:tabView:addallfacstd']
+#----Facility Tab
+
+
+#----Task Tab
+#EditTaskTabLink=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'tskapptab')]
+EditTaskTabLink=.//ul/li/a[contains(@href,'tskapptab')]
+
+
+
+#ApplyTaskTemplateBtn=.//span[@class='ui-button-text ui-c']
+#ApplyTaskTemplateBtn=//span[@class='ui-button-text ui-c'][normalize-space()='Apply Task Template']
+ApplyTaskTemplateBtn=.//*[@id='mainForm:tabView:tsktmpltbtn']
+
+
+#FACUDChkBox=//td[contains(text(),'FACAUD')]/preceding-sibling::td/div/div[contains(@class,'ui-chkbox-box')]
+#ContinueBtnInTaskTab=//span[@class='ui-button-text ui-c'][normalize-space()='Continue']
+#ContinueBtnInTaskTab=//button/span[@class='ui-button-text ui-c'][normalize-space()='Continue']
+#ContinueBtnInTaskTab=//span[@class='ui-button-text ui-c'][normalize-space()='Continue']/parent::
+#ContinueBtnInTaskTab=//span[@class='ui-button-text ui-c'][normalize-space()='Continue']/..
+
+
+ContinueBtnInTaskTab=.//*[contains(@id,'cntinuebtn')]
+
+Task_ShowAllLink=.//*[@id='mainForm:tabView:showLink']
+
+#DeadLineDate=.//td[contains(text(),'Deadline Date')]/following-sibling::td/span/input[contains(@class,'hasDatepicker')] ----Working fine
+DeadLineDate=.//input[contains(@id,'deadlinedate_input')]
+
+
+Task_BillingCode_SaveAllBtn=//*[contains(@id,'savealltaskwo')]
+#Task_BillingCode_txtBoxes=//input[contains(@id,':jobExpence:0:biilCode')] ---Working fine
+# Customize specially for Custom bill codes having Certification Services have 2 bill codes
+Task_BillingCode_txtBoxes=//input[contains(@id,'\:biilCode')]        
+
+Task_BillCodePriceChangeConfirmationDialogTxtBx=.//*[@id='mainForm:tabView:updtAllcmnts']
+Task_BillCodePriceChangeConfirmationDialogSaveBtn=.//*[@id='mainForm:tabView:updtfaccnfrmallbtn']
+
+TasksTable_EditWO=.//*[@id='mainForm:tabView:dataTable_data']
+TaskTable_HeaderRow=.//*[@id='mainForm:tabView:dataTable_head']
+
+
+#TaskTab_ScopeValidation_AssignTaskIcon=.//a[normalize-space(text())='Assign Task']
+#TaskTab_ScopeValidation_AssignTaskIcon=.//a[normalize-space(text())='???assignTask???']
+TaskTab_ScopeValidation_AssignTaskIcon=.//*[contains(@id,':cmdlikasstask')]
+TaskTab_CertDeci_AssignTaskIcon=.//*[contains(@id,'AssTaskIcCert')]
+TaskTab_ScopeValidation_AssignTaskToUserTextBox=.//*[@id='mainForm:viewtsk:jobSearchAuto_input']
+TaskTab_ScopeValidation_AssignTaskToUserLKPBtn=.//*[@id='mainForm:viewtsk:emplookup']
+
+#TaskTab_ScopeValidation_EstHours=.//td[contains(text(),'Estimate of hours to complete')]/following-sibling::td/input[contains(@type,'text')]    ----It was working fine , now we have id so usign below one
+TaskTab_ScopeValidation_EstHours=.//*[@id='mainForm:viewtsk:estHrit']
+TaskTab_ScopeValidation_AssignTask_SaveBtn=.//*[@id='mainForm:viewtsk:saveassgnduserbtn']
+#TaskTab_ScopeValidation_PerformTaskIcon=.//a[normalize-space(text())='???performtask???']
+TaskTab_ScopeValidation_PerformTaskIcon=.//*[contains(@id,':cmdlikpertask')]
+TaskTab_CertDeci_PerformTaskIcon=.//*[contains(@id,'perTaskIcCert')]
+#TaskTab_PerformAuditIcon=.//a[normalize-space(text())='???perfomAudit???']
+TaskTab_PerformAuditIcon=.//a[contains(text(),'perfomAudit')]
+
+
+
+#TaskTab_ScopeValidation_CompleteTaskIcon=.//a[normalize-space(text())='Complete Task']
+TaskTab_ScopeValidation_CompleteTaskIcon=.//*[contains(@id,':cmdlikcomtask')]
+
+
+GenerateQuoteBtn_AtRevisionQuoteTask=.//*[@id='mainForm:viewtsk:jobgeneratequotebtn']
+SaveBtnInPopupAfterClickingGenerateQuoteBtn=.//*[@id='mainForm:viewtsk:createRevQuoteFrm:saverqbutton']
+
+
+TaskTab_ScopeValidation_CompleteTaskActualHrTextBox=.//*[@id='mainForm:viewtsk:actualHours']
+PhyEval_CompleteTaskActualHrTextBox=.//*[@id='mainForm:viewtsk:actlhrs']
+PhyEval_CompleteTaskActualHrTextBox2ndTime=.//*[@id='mainForm:viewtsk:actualHrs']
+
+TaskTab_ScopeValidation_CompleteTaskSaveBtn=.//*[@id='mainForm:viewtsk:compltjobbtn']
+#PhyEval_CompleteTaskSaveBtn=.//*[@id='mainForm:viewtsk:cmpltjobbtn']
+PhyEval_CompleteTaskSaveBtn=.//*[@id='mainForm:viewtsk:phyevalcmpltauditbtn']
+PhyEval_CompleteTaskSaveBtn2=.//*[@id='mainForm:viewtsk:cmpltjobbtn']
+
+
+TaskTab_ScopeValidation_TaskSummaryTable=.//*[@id='mainForm:viewtsk:jobSummaryDt_data']
+TaskTab_ScopeValidation_BackToViewBtn=.//*[@id='mainForm:jobbackToViewBtn']
+
+
+#having 'All Forms Received' option
+TaskTab_SupplierForms_TaskDetailsTable=.//*[@id='mainForm:viewtsk:rvwdcsn']
+
+
+
+SampleSelectionChangeAssigne_ConfirmationDialogBox=.//*[@id='mainForm:viewtsk:confrmdlg1']
+SampleSelectionChangeAssigne_ConfirmationBox_YesBtn=.//*[@id='mainForm:viewtsk:confrmuserchngbtn']
+
+
+SampleSelectionFacilityPFList=.//div/label[contains(@id,':facilityList_label')]
+SampleSelectionFacilityPFListOptions=.//*[contains(@id,'facilityList_panel')]
+#SampleSelectionCreateBtn=//span[@class='ui-button-text ui-c'][normalize-space()='Create']
+SampleSelectionCreateBtn=.//*[contains(@id,'createepsfbtn')]
+
+#SampleSelection_CrAI_AssignedToAccMgRadioBtn=.//td/label[text()='Account Manager']
+#SampleSelection_CrAI_AssignedToAccMgRadioBtn=.//td/label[normalize-space(text())='Account Manager']
+SampleSelection_CrAI_AssignedToAccMgRadioBtn=.//td/label[contains(text(),' Account Manager')]
+#CrAI_AssignedToClientRadioBtn=.//td/input[contains(@id,':asgnto:')]/../label[contains(text(),' Client')]
+#IPM-7890 
+CrAI_AssignedToClientRadioBtn=.//td/input[contains(@id,':createFrm:accdJobepsf:')]/../label[contains(text(),'Client')]
+
+
+#RefreshDataBtn=//span[@class='ui-button-text ui-c'][normalize-space()='Refresh Data']
+RefreshDataBtn=.//*[@id='mainForm:viewtsk:smplslctnrefreshbtn']
+
+
+EPSFNoCellXpath=.//*[@id='mainForm:viewtsk:epsfdt_data']/tr/td[1]
+
+
+TaskDetailTableInSampleSelectionTask_Table=.//*[@id='mainForm:viewtsk:epsfSdt_data']
+TaskDetailTableInSampleSelectionTask_HeaderRow=.//*[@id='mainForm:viewtsk:epsfSdt_head']
+
+
+RequestLiteratureFromClientBtn=.//*[@id='mainForm:viewtsk:openactionitem']
+
+
+OrgUnit_PFList=.//*[contains(@id,':prprogcode_label')]
+OrgUnit_PFListOptions=.//*[contains(@id,':prprogcode_panel')]
+
+ItemType_PFList=.//*[contains(@id,':itemType_label')]
+ItemType_PFListOptions=.//*[contains(@id,':itemType_panel')]
+
+AddNoteTxtbox=.//*[contains(@id,':noteit')]
+
+#AddNoteEditor=.//*[@id='cke_1_contents']
+#AddNoteTextArea=.//*[@id='cke_1_contents']/textarea
+#EditorSourceBtn=.//*[@id='cke_13_label']
+
+
+AddNoteEditorTextArea=.//div[@class='jqte_editor'] [@contenteditable='true']
+
+
+ClientAddress_City=.//*[@id='mainForm:itpcity']
+
+Country_PFList=.//*[@id='mainForm:itpcnty_label']
+Country_PFListOptions=.//*[contains(@id,':itpcnty_panel')]
+
+State_PFList=.//*[@id='mainForm:csstate_label']
+State_PFListOptions=.//*[contains(@id,':csstate_panel')]
+
+PostalCodeTxtBx=.//*[@id='mainForm:pcode']/input
+
+#iAg_PostalCodeTxtBx=.//td/div[@id='mainForm:postalpl']/../following-sibling::td/input[@type='text']
+iAg_PostalCodeTxtBx=.//td/div[@id='mainForm:postalpl']/../following-sibling::input[@type='text']
+
+TimeZone_PFList=.//*[@id='mainForm:itptmzne_label']
+TimeZone_PFListOptions=.//*[contains(@id,':itptmzne_panel')]
+
+
+CreatActionItemScreenSaveBtn=.//*[@id='mainForm:viewtsk:createFrm:savebutton']
+LiteratureReviewText=.//*[@id='mainForm:viewtsk:litrvw']
+
+BackToViewBtn_sampleSelection=.//*[@id='mainForm:jobbackToViewBtn']
+BackBtn_sampleSelection=.//*[@id='mainForm:jobbackButton']
+
+
+
+#LitEvalRefreshDataBtn=//span[@class='ui-button-text ui-c'][normalize-space()='Refresh Data']
+LitEvalRefreshDataBtn=.//*[@id='mainForm:viewtsk:litevalrefreshbtn']
+
+LiteEval_EvaluationInfoTable=.//*[@id='mainForm:viewtsk:litevalinfodt_data']
+
+LiteEval_EvaluationInfoTable_header=.//*[@id='mainForm:viewtsk:litevalinfodt_head']
+#FindingsTable_AssignFindingIcon=.//a[normalize-space(text())='Assign Finding']
+
+#--- working fine but list elements are not in serially order in LitEval but using this same in Physical as only 2 findings are there
+FindingsTable_AssignFindingIcon=.//a[contains(@id,'assgnfindingbtn')] 
+
+FindingsTable_AssignFindingIconFirstPart=.//*[@id='mainForm:viewtsk:litevalcardt:
+FindingsTable_AssignFindingIconSecondPart=:assgnfindingbtn']
+
+FindingsTable_AssignFindingIconPHYEVALFirstPart=.//*[@id='mainForm:viewtsk:corrActionDt:
+FindingsTable_AssignFindingIconPHYEVALSecondPart=:assgnfindingbtn']
+
+
+LiteEval_FindingsTable=.//*[@id='mainForm:viewtsk:litevalcardt_data']
+LiteEval_FindingsTable_header=.//*[@id='mainForm:viewtsk:litevalcardt_head']
+
+AssignFinding_empLookup_btn=.//*[@id='mainForm:viewtsk:findingemplookup']
+AssignFinding_saveBtn=.//*[@id='mainForm:viewtsk:saveassgndcaruserbtn']
+
+
+#FindingEdit_SaveBtn=.//*[@id='mainForm:viewtsk:savecardetailsbtn']
+
+
+
+#--- working fine but list elements are not in serially order in LitEval but using this same in Physical as only 2 findings are there
+Finding_editIcon=.//a[contains(@id,'editfindingbtn')]
+Finding_editIconFirstPart=.//*[@id='mainForm:viewtsk:litevalcardt:
+Finding_editIconSecondPart=:editfindingbtn']
+
+Finding_editIconPHYEVALFirstPart=.//*[@id='mainForm:viewtsk:corrActionDt:
+Finding_editIconPHYEVALSecondPart=:editfindingbtn']
+
+
+FindingEdit_ChangeStatusPFList=.//*[@id='mainForm:viewtsk:newcastatus_label']
+FindingEdit_ChangeStatusPFListOptions=.//*[@id='mainForm:viewtsk:newcastatus_panel']
+FindingEdit_ActualHoursSpent=.//*[@id='mainForm:viewtsk:actualhrs']
+FindingEdit_ReviewNotestxtbox=.//*[@id='mainForm:viewtsk:rvwcommentsit']
+FindingEdit_SaveBtn=.//*[@id='mainForm:viewtsk:savecardetailsbtn']
+FindingEdit_CloseLink=.//*[@id='mainForm:viewtsk:closebtn']
+
+
+
+
+LiteEval_TaskSummaryTable=.//*[@id='mainForm:viewtsk:jobSummaryDt_data']
+LiteEval_TaskSummaryTable_header=.//*[@id='mainForm:viewtsk:jobSummaryDt_head']
+
+#LiteEvalTask_ActionItemsTab=.//a[contains(@href,':tskaitab')]
+LiteEvalTask_ActionItemsTab=.//a[contains(text(),'Action Items')]
+LiteEval_ActionItemsTab_ActionItemTable=.//*[@id='mainForm:viewtsk:actionitemdt_data']
+LiteEval_ActionItemsTab_ActionItemTable_header=.//*[@id='mainForm:viewtsk:actionitemdt_head']
+
+
+
+PhyEvalRefreshDataBtn=.//*[@id='mainForm:viewtsk:physevalrfrshbtn']
+PhyEval_EvaluationInfoTable=.//*[@id='mainForm:viewtsk:phyevalinfodt_data']
+PhyEval_EvaluationInfoTable_header=.//*[@id='mainForm:viewtsk:phyevalinfodt_head']
+
+
+
+PhyEval_CheckIcon=.//a[contains(@id,':cpmltaudit')]
+
+PhyEval_ReviewInfoTable_SaveBtn=.//a[contains(@id,':savephyevalbtn')]
+
+PhyEval_ReviewInfoTable_CompletePhyEvalBtn=.//a[contains(@id,':cmpphyevalbtn')]
+
+
+PhyEval_FindingsTable=.//*[@id='mainForm:viewtsk:corrActionDt_data']
+PhyEval_FindingsTable_header=.//*[@id='mainForm:viewtsk:corrActionDt_head']
+#
+
+
+
+
+
+#Facility Audit xpaths
+FacilityAudit_AuditInfoTable=.//*[@id='mainForm:viewtsk:auditInfoDt_data']
+FacilityAudit_AuditInfoTable_header=.//*[@id='mainForm:viewtsk:auditInfoDt_head']
+FacilityAudit_CARTable=.//*[@id='mainForm:viewtsk:corractiondt_data']
+FacilityAudit_CARTable_header=.//*[@id='mainForm:viewtsk:corractiondt_head']
+
+
+#CertDecision Task
+TaskTab_CertDeci_AssignTaskToUserLKPBtn=.//*[@id='mainForm:viewtsk:emplkup']
+CertDeci_DecisionPFList=.//*[@id='mainForm:viewtsk:bussmgrappinfdd_label']
+CertDeci_DecisionPFListOptions=.//*[@id='mainForm:viewtsk:bussmgrappinfdd_panel']
+
+CertDeci_TaskDetails_SaveBtn=.//*[@id='mainForm:viewtsk:savecertdcsnbtn']
+
+
+
+ListingUpdate_AssignLKPBtn=.//*[contains(@id,':empLookUp')]
+
+
+
+
+LinkTasksBtn=.//*[@id='mainForm:tabView:linktasksbtn']
+
+LinkTextBox=.//*[@id='mainForm:tabView:linkedwoit']
+
+
+LinkGoBtn=.//*[@id='mainForm:tabView:gobtn']
+
+TechnicalTaskLinkCheckbox=.//tbody[@id='mainForm:tabView:table3_data']/tr[2]/td/div/div[contains(@class,'ui-chkbox-box')]
+LinkTaskSaveBtn=.//*[@id='mainForm:tabView:savelinktasks']
+
+
+
+
+#----Task Tab
+
+
+
+
+
+
+#----Product Tab
+
+#EditProductTabLink=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'prdctapptab')]
+EditProductTabLink=.//ul/li/a[contains(@href,'prdctapptab')]
+ProductTab_ProductInformationHeading=.//*[@id='mainForm:tabView:prodHeadInfo']
+ProductType=.//*[@id='mainForm:tabView:prodwodd_input']
+ProductTab_ProductTypeOptions=.//*[@id='mainForm:tabView:prodwodd_panel']/ul/li
+ProductTab_ProductTypeOptionsList=.//*[@id='mainForm:tabView:prodwodd_panel']/ul/li
+ProAddDocument=.//*[@id='mainForm:tabView:addwoproddocs']
+#First option
+ProAddDocumentOptions=.//*[@id='mainForm:tabView:prodwodd_panel']/ul/li[1]
+#/ul/li[contains(@data-item-label,'" + value + "')]
+ProAddDocToWOFileNameTxt=.//*[@id='mainForm:tabView:attchnameprodwo']
+ProAddDocToWOBrowseBtn=.//*[@id='mainForm:tabView:crAccFileUplProd_input']
+
+ProAddDocSaveNCloseBtn=.//*[@id='mainForm:tabView:savedocsprodwo']
+ProAddDocSaveBtn=.//*[@id='mainForm:savebutton']
+#This below is general, as at info tab, it is in iAg but in normal wo this save btn is different as in "EditWO_SaveBtn"
+#WO_Save_btn=.//*[@id='mainForm:savebutton']
+WO_Save_btn=.//*[contains(@id,':savebutton')]
+
+#New upload functinality on product tab
+#ProAddDocumentBtn=.//*[@id='mainForm:tabView:addwoproddocsfileuplbtn_input']
+ProAddDocumentBtn=.//*[@id='mainForm:tabView:addwoproddocsbtn']
+ProAddDocumentSelectFilesBtn=.//*[@id='mainForm:tabView:addwoproddocsfileuplbtn_input']
+
+
+ProAddDocTypePFList=.//*[@id\='mainForm\:tabView\:productDocsDt\:0\:doctypprodwo_label']
+ProAddDocTypePFListOptions=.//*[@id\='mainForm\:tabView\:productDocsDt\:0\:doctypprodwo_panel']
+ProAddDocAccessPFList=.//*[@id\='mainForm\:tabView\:productDocsDt\:0\:docacsprodwo_label']
+ProAddDocAccessPFListOptions=.//*[@id\='mainForm\:tabView\:productDocsDt\:0\:docacsprodwo_panel']
+
+
+
+
+ProAddDocTypePFList_part1=.//*[@id='mainForm:tabView:productDocsDt:
+ProAddDocTypePFList_part2=:doctypprodwo_label']
+
+ProAddDocTypePFListOptions_part1=.//*[@id='mainForm:tabView:productDocsDt:
+ProAddDocTypePFListOptions_part2=:doctypprodwo_panel']
+
+ProAddDoc_AccessPFList_part1=.//*[@id='mainForm:tabView:productDocsDt:
+ProAddDoc_AccessPFList_part2=:docacsprodwo_label']
+
+ProAddDoc_AccessPFListOptions_part1=.//*[@id='mainForm:tabView:productDocsDt:
+ProAddDoc_AccessPFListOptions_part2=:docacsprodwo_panel']
+
+
+
+Prop_DocTab_AddWODoc_SaveNCloseBtn=.//*[@id='mainForm:tabView:savecloseproposaldocs']
+
+
+
+
+
+
+
+#ProductTab_RequestFollowUpBtn=//span[@class='ui-button-text ui-c'][normalize-space()='Request Follow-up on Form']
+ProductTab_RequestFollowUpBtn=.//*[@id='mainForm:tabView:reqfllwbtn']
+RequestFollowUpBtn=.//*[contains(@id,':reqfllwbtn')]
+#----Product Tab
+
+
+
+
+#----Document Tab
+
+#EditDocumentTabLink=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'dcmntsapptab')]
+EditDocumentTabLink=.//ul/li/a[contains(@href,'dcmntsapptab')]
+WOAddDocAddBtn=.//*[@id='mainForm:tabView:addappdocbtn']
+DocTab_AddWODoc_BrowseBtn=.//*[@id='mainForm:tabView:crAccFileUpl_input']
+DocTab_AddWODoc_TypePFList=.//*[@id='mainForm:tabView:doctypdocapp_label']
+DocTab_AddWODoc_TypePFListOptions=.//*[@id='mainForm:tabView:doctypdocapp_panel']
+DocTab_AddWODoc_AccessPFList=.//*[@id='mainForm:tabView:docacssdocapp_label']
+DocTab_AddWODoc_AccessPFListOptions=.//*[@id='mainForm:tabView:docacssdocapp_panel']
+DocTab_AddWODoc_SaveNCloseBtn=.//*[@id='mainForm:tabView:saveclosewodoctab']
+
+#----Document Tab
+
+
+#----Financials Tab
+#FinancialTab_EditWO=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'fnclsapptab')]
+FinancialTab_EditWO=.//ul/li/a[contains(@href,'fnclsapptab')]
+FinancialTab_EditWO_InvoiceBillToPFList=.//*[@id='mainForm:tabView:selemnuinbillto_label']
+FinancialTab_EditWO_InvoiceBillToPFListOptions=.//*[@id='mainForm:tabView:selemnuinbillto_panel']
+
+
+
+FinancialTab_InvoiceBillToLabel=.//*[@id='mainForm:tabView:fmibt']
+
+FinancialTab_InvoiceCategoryLink=.//*[@id='mainForm:tabView:iccl']
+FinancialInfo_InvoiceCategoryTable_UnitQuotedAmount=.//*[contains(@id,':ticqa')]
+FinancialInfo_InvoiceCategoryTable_InvoicedAmount=.//*[contains(@id,':ftici')]
+
+
+FinancialTab_TaskLink=.//*[@id='mainForm:tabView:gbcml']
+FinancialInfo_TaskTable_QuotedAmount=.//*[contains(@id,':ttqa')]
+FinancialInfo_TaskTable_InvoicedAmount=.//*[contains(@id,':tainva')]
+
+
+FinancialInfo_GenerateQuoteBtn=.//*[@id='mainForm:tabView:afcb']
+
+
+Financial_AI_ItemNameTxtBx=.//*[contains(@id,':itmnm')]
+
+Financial_AI_TaskPFList=.//*[contains(@id,':tasklist_label')]
+Financial_AI_TaskPFListOptions=.//*[contains(@id,':tasklist_panel')]
+
+#Financial_AI_TaskPFList=.//*[contains(@id,':tasklist_label_label')]
+#Financial_AI_TaskPFListOptions=.//*[contains(@id,':tasklist_label_panel')]
+
+
+
+Financial_AI_SaveBtn=.//*[@id='mainForm:tabView:createFrm:savebutton']
+
+OKContinueButton=.//button/span[text()='OK - Continue']
+
+OKContinueButtonForAdditionalQuoteAI=.//button[contains(@id,':createRevQuoteFrm:')]/span[text()='OK - Continue']
+
+#----Financials Tab
+
+
+
+
+#----Action Item Tab
+ActionItemTab_EditWO=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'actionItemTab')]
+ActionItemTable_EditWO=.//*[@id='mainForm:tabView:actnitmdt_data']
+ActionItemTable_HeaderRow=.//*[@id='mainForm:tabView:actnitmdt_head']
+ActionItemsTopLabel=.//*[@id='mainForm:tabView:acitemLbl']
+
+
+ActionItemTab_EditBtnInPendingAI=.//*[@id='mainForm:edit']
+ActionItemTab_ChangeStatusPFList=.//*[contains(@id,':statuslist_label')]
+ActionItemTab_ChangeStatusPFListOptions=.//*[contains(@id,':statuslist_panel')]
+
+#ActionItemTab_ChangeStatusPFList=.//*[contains(@id,':statuslist')][contains(@id,'_label')]
+#ActionItemTab_ChangeStatusPFListOptions=.//*[contains(@id,':statuslist')][contains(@id,'_panel')]
+
+
+ActionItemTab_ActualHrsSpentTxtBox=.//*[contains(@id,'acthrsit')]
+
+
+ActionItemDialogCloseSign=.//*[@id='mainForm:tabView:editAIDlg']/div/a/span[@class='ui-icon ui-icon-closethick']
+CompleteTaskDialogCloseSign=.//*[@id='mainForm:viewtsk:cmptaskdlg']/div/a/span[@class='ui-icon ui-icon-closethick']
+
+# For failure resolution
+AddExtWOToLinkDialogCloseSign=.//*[@id='mainForm:addExtWOToLink']/div/a/span[@class='ui-icon ui-icon-closethick']
+
+Oracle_Project_requiring_resolutionTextBox=.//input[@id='mainForm:linkedoracleproreqrestxt']
+
+
+
+
+
+DocTypeInAI_PFList=.//*[contains(@id,':wocaieppdddct1_label')]
+DocTypeInAI_PFListOptions=.//*[contains(@id,':wocaieppdddct1_panel')]
+DocDescriptionInAiTxtArea=.//textarea[contains(@id,'wocaippeitde1')]
+
+DocUploadBrowseBtn=.//*[contains(@id,':crAccFileUpld1_input')]
+
+#new multiple upload functionality
+FailureResoutionAIAddDocBtn=.//*[contains(@id,':addactionitemdocsfileuplbtn_input')]
+
+FailResoAddDocsType_PFList_part1=.//*[contains(@id,':actionitemdocsdt:
+FailResoAddDocsType_PFList_part2=:wocaieppdddct_label')]
+
+
+FailResoAddDocsDesc_part1=.//*[contains(@id,':actionitemdocsdt:
+FailResoAddDocsDesc_part2=:wocaippeitde')]
+
+
+#YesRadioBtnInFailureResolutinAIInModBrack=.//td/label[text()='Yes']
+YesRadioBtnInFailureResolutinAIInModBrack=.//*[@id='mainForm:tabView:yesnodcsn']/tbody/tr/td/label[text()='Yes']
+SaveBtn_inAIInModBrack=.//*[@id='mainForm:tabView:savefailrnotifictnbtn']
+#----Action Item Tab
+
+
+#----Info Tab
+#InfoTab_EditWO=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'infappedittab')]
+InfoTab_EditWO=.//ul/li/a[contains(@href,'infappedittab')]
+InfoTab_WOStatusPFList=.//*[@id='mainForm:tabView:appstatusdd_label']
+InfoTab_WOStatusPFListOptions=.//*[@id='mainForm:tabView:appstatusdd_panel']
+
+InfoTab_WOStatusLabel=.//*[@id='mainForm:tabView:wostsappinflbl']
+
+
+InfoTab_TechReviLKPBtn=.//*[@id='mainForm:tabView:tcrevwrlookup']
+InfoTab_TechReviTxtBox=.//*[@id='mainForm:tabView:appInfoTechReviewer_input']
+
+
+InfoTab_LiteEvalLKPBtn=.//*[@id='mainForm:tabView:litrvwrlookup']
+InfoTab_LiteEvalTxtBox=.//*[@id='mainForm:tabView:appInfolitrvw_input']
+
+
+InfoTab_PhyEvalLKPBtn=.//*[@id='mainForm:tabView:phyrevwlookup']
+InfoTab_PhyEvalTxtBox=.//*[@id='mainForm:tabView:appInfoPhyRvwr_input']
+
+
+InfoTab_CTDeciMakerLKPBtn=.//*[@id='mainForm:tabView:crtdcsnlookup']
+InfoTab_CTDeciMakerTxtBox=.//*[@id='mainForm:tabView:appInfoCertDMaker_input']
+
+
+
+
+InfoTab_CertDeciderPFList=.//*[@id='mainForm:tabView:certdeciderappinfdd_label']
+InfoTab_CertDeciderPFListOptions=.//*[@id='mainForm:tabView:certdeciderappinfdd_panel']
+
+
+
+#----Info Tab
+
+
+#---Create Action Item Screen/Dialog
+CreateActionItemBtn=.//*[@id='mainForm:crtactappbtn']
+CreateActionItem_AINameTxt=.//*[contains(@id,':itemNametxtbox')]
+
+CreateActionItem_AssignTo2=.//table[contains(@id,':cusSelect')]/tbody//tbody/tr/td/label[normalize-space(text())=
+CreateActionItem_AssignTo=.//table[contains(@id,':cusSelect')]/tbody/tr/td/table/tbody/tr/td/label[normalize-space(text())=
+
+CreateActionItem_AddNoteTxt=.//textarea[contains(@id,':addnotetxt')]
+
+CreateActionItem_SaveBtn=.//*[@id='mainForm:ai_savebutton']
+
+
+#**************************************************************************************************************************************************************************
+
+
+
+
+#************INSIGHT Application *********************************** **********************************************************************************************
+
+#Insight_CollectionTypeList=.//*[@id='_id94']
+#Insight_CollectionTypeList=.//td/label[contains(text(),'Collection Type')]/following-sibling::td/select
+#Insight_CollectionTypeList=.//tr/td[contains(text(),'Collection Type')]/following-sibling::td/select
+#Insight_CollectionTypeList=.//*[contains(text(),'Collection Type')]/following-sibling::td/select
+
+#Insight_CollectionTypeList=.//select/preceding-sibling::td[contains(text(),'Collection Type')]
+#Insight_CollectionTypeList=.//td/select/preceding-sibling::td[contains(text(),'Collection Type')]
+#Insight_CollectionTypeList=.//td/select/preceding-sibling::td/label[contains(text(),'Collection Type')]
+#Insight_CollectionTypeList=.//td/select/preceding-sibling::td/label[normalize-space()='Collection Type']
+#Insight_CollectionTypeList=.//td/select/preceding-sibling::td[normalize-space()='Collection Type']
+#Insight_CollectionTypeList=.//*/td/select/preceding-sibling::td/label[normalize-space()='Collection Type']
+
+#Insight_CollectionTypeList=.//td/select/option[contains(text(),'5 Year Retest (5R)')] working fine
+#Insight_CollectionTypeList=.//td/select/option[contains(text(),'5 Year Retest (5R)')]/preceding-sibling::td[normalize-space()='Collection Type']
+
+#Insight_CollectionTypeList=.//td/select/option[contains(text(),'5 Year Retest (5R)')]/preceding::td[normalize-space()='Collection Type']
+
+
+#Insight_CollectionTypeList=.//select/preceding::label[contains(text(),'Collection Type')]
+#Insight_CollectionTypeList=.//select/preceding::td/label[contains(text(),'Collection Type')]
+#Insight_CollectionTypeList=//label[contains(text(),'Collection Type')]/parent::td/following-sibling::td/div/input 
+#Insight_CollectionTypeList_FirstPart=.//td/select/option[contains(text(),'
+#Insight_CollectionTypeList_SecondPart=')]/preceding-sibling::td[normalize-space()='Collection Type']
+
+Insight_CollectionTypeList=//label[contains(text(),'Collection Type')]/../../td/select
+
+EPSF_CollectionTypeList=.//*[@id='mainForm:colTypMen_label']
+EPSF_CollectionTypeListOptions=.//*[@id='mainForm:colTypMen_panel']
+
+EPSF_FinancialProgramList=.//*[@id='mainForm:paprgIdTxt_label']
+EPSF_FinancialProgramListOptions=.//*[@id='mainForm:paprgIdTxt_panel']
+
+
+
+
+
+
+TestCategoryList=//label[contains(text(),'Test Category')]/../../td/select
+
+EPSF_TestCategoryList=.//*[@id='mainForm:TestCatTxt_label']
+EPSF_TestCategoryListOptions=.//*[@id='mainForm:TestCatTxt_panel']
+
+
+StandardList=//label[contains(text(),'Standard')]/../../td/select
+EPSF_StandardList=.//*[@id='mainForm:stHdMen_label']
+EPSF_StandardListOptions=.//*[@id='mainForm:stHdMen_panel']
+
+
+
+TestLocationList=//label[contains(text(),'Test Location')]/../../td/select
+EPSF_TestLocationList=.//*[@id='mainForm:testLocMen_label']
+EPSF_TestLocationListOptions=.//*[@id='mainForm:testLocMen_panel']
+
+
+ShipToLocationList=//label[contains(text(),'Ship To Location')]/../../td/select
+EPSF_ShipToLocationList=.//*[@id='mainForm:shpLocId_label']
+EPSF_ShipToLocationListOptions=.//*[@id='mainForm:shpLocId_panel']
+
+EPSF_RetestOfEPSF=.//*[@id='mainForm:retestId']
+
+Insight_NextBtn=//button[text()\='Next']
+EPSF_CreateNextBtn=.//*[@id='mainForm:creisswizard_next']
+
+TestDescriptionTxtBox=//div[contains(text(),'Test Description')]/../../../../../../td/table/tbody/tr/td/input
+EPSF_TestDescriptionTxtBox=.//*[@id='mainForm:epsfdt_data']/tr/td/span[contains(text(),'Test Description')]/../following-sibling::td/input[@type='text']
+EPSF_ProductNameModalNoTxtBox=.//*[@id='mainForm:epsfdt_data']/tr/td/span[contains(text(),'Product Name / Model Number')]/../following-sibling::td/input[@type='text']
+EPSF_PerformanceStandardYearTxtBox=.//*[@id='mainForm:epsfdt_data']/tr/td/span[contains(text(),'Performance Standard Year')]/../following-sibling::td/input[@type='text']
+
+
+EPSF_INFO_highlightedTab=.//*[@id='mainForm:creisswizard']/ul/li[contains(@class,'ui-state-highlight')][text()='EPSF Info']
+
+
+ProductNameModelNoTxtBox=//div[contains(text(),'Product Name / Model Number')]/../../../../../../td/table/tbody/tr/td/input
+CreateEPSFBtn=//button[text()='Create EPSF']
+
+EPSF_CreateEPSFBtn=.//*[@id='mainForm:createEpsfFld2']
+EPSF_SaveBtn=.//*[@id='mainForm:save']
+
+
+
+
+
+
+#************ *********************************** **********************************************************************************************
+
+
+
+
+# ************Oasis Application************************************ **********************************************************************************************
+
+Oasis_error_message_xpath=.//font[@color='#FF0000']
+#below is also comes sometime having ff in small in Oasis.
+Oasis_error_message_xpath2=.//font[@color='#ff0000']
+Oasis_error_inDiv=.//div[@id='divError']
+
+CompleteAuditFom=//input[@value='Complete Audit Form']
+
+#----Literature Eval------
+AuditBtn=//img[@title='Audit List']
+#LiteratureEvalNo=//img[@title='Audit List']/../../tr/td[contains(@title,'WS Literature Evaluation for Standard 60-A (General Requirements)')]/a
+LiteratureEvalNo=//td[contains(@title,'WS Literature Evaluation for Standard 60-A (General Requirements)')]/a
+QuestionNotesTxtBox=.//*[@id='questionNotes0']
+SectionNotesTxtBox=.//textarea[@title='Section Note']
+Oasis_SaveBtn=.//input[@class='button' and @name='btnSave']
+Oasis_SaveNNextBtn=.//input[@class='button' and @name='btnSaveNext']
+Oasis_SubmitBtn=.//input[@name='btnSubmit']
+Oasis_NoFindingRadioBtn=//input[contains(@value,'No Finding')]
+Oasis_SaveNCloseBtn=.//input[@class='button' and @name='btnClose']
+
+Oasis_VisitStartTimeHour=.//*[@id='startHour']
+Oasis_VisitStartMinute=.//*[@id='startMinutes']
+
+Oasis_VisitEndTimeHour=.//*[@id='endHour']
+Oasis_VisitEndMinute=.//*[@id='endMinutes']
+Oasis_UpdateVisitTime_SaveBtn=.//input[@name='Save']
+
+Oasis_VisitSuccessfullySubmittedMsg=.//td[@class='success' and text()='Visit Successfully Submitted.']
+Oasis_ExitBtn=.//input[@title='Exit']
+#--------------------------
+
+#----Physical Eval---------
+#PhysicalEvalNo=//td[contains(@title,'Physical Evaluation Form for 002')]/a
+PhysicalEvalNo=//td[contains(@title,'Physical Evaluation ')]/a[contains(@href,'auditForm.do')]
+
+PhysicalEvalNo_Oasis_part1=//td[contains(@title,'Physical Evaluation ')]/a[@name='
+PhysicalEvalNo_Oasis_part2=']
+
+INFO1_answerTxtBox=.//*[@id='answer0']
+PhyEval_SectionNotesTxtBox=.//textarea[@title='Section Note']
+
+Oasis_FindingRadioBtn=//input[contains(@value,'@Finding')]
+
+Oasis_NotApplicableRadioBtn=//input[contains(@value,'@Not Applicable')]
+
+
+
+
+
+
+
+
+
+#-------------------------------
+
+
+
+
+#---------Facility Audit---------
+Oasis_LoginIDTxtBox=.//input[@name='userid']
+Oasis_PasswordTxtBox=.//input[@name='passwd']
+Oasis_EnterBtn=.//input[@title='Enter']
+
+Oasis_Audits_menu=.//img[@alt='Audits']
+
+#Oasis_Audits_SearchSubmenu=.//a[text()='Search' and @class='menus']
+#Oasis_Audits_SearchSubmenu=.//a[@class='menus']/font[text()='Search']
+#Oasis_Audits_SearchSubmenu=.//a[@class='menus']/span/font[text()='Search']
+#Oasis_Audits_SearchSubmenu=.//a[@class='menus' and text()='Search']
+#Oasis_Audits_SearchSubmenu1=.//a[contains(@href,'searchAudit.do') and text()='Search']
+#Oasis_Audits_SearchSubmenu2=.//a[text()='Search']
+#Oasis_Audits_SearchSubmenu3=.//a[@class='menus']/font[text()='Search']
+#Oasis_Audits_SearchSubmenu4=.//td[text()='Search']
+#Oasis_Audits_SearchSubmenu5=.//tr/td/a/font[text()='Search']
+#Oasis_Audits_SearchSubmenu6=.//a[contains(@href,'searchAudit.do')]/font[text()='Search']
+#Oasis_Audits_SearchSubmenu7=.//tr/td/a[contains(@href,'searchAudit.do')]/*[text()='Search']
+Oasis_Audits_SearchSubmenu=.//a[contains(@href,'searchAudit.do')]/*[text()='Search']
+
+
+
+Oasis_Audits_AuditNoTxtBox=.//textarea[@id='auditCode']
+Oasis_Audits_SearchBtn=.//input[@title='Search']
+
+Oasis_Audits_EditVisit=.//a[contains(@href,'javascript:editVisit')]
+Oasis_Audits_ModifyBtn=.//input[@name='btnModify']
+Oasis_Audits_AuditorCodeTxtBox=.//input[@name='auditorCode']
+Oasis_Audits_scheduleDateFromTxtBox=.//input[@id='scheduleDateFrom']
+Oasis_Audits_scheduleDateFromImg=.//img[@title='Select From Date']
+
+Oasis_Audits_SaveBtn=.//input[@name='btnSaveClose']
+Oasis_Audits_VisitSavedSuccessfullyMsg=.//span[@class='success']
+
+
+Oasis_Home_menu=.//img[@alt='Home']
+Oasis_Home_MyCalendarSubmenu=.//a[contains(@href,'calendarDay.do')]/*[text()='My Calendar']
+
+SwitchCalendarBtnPresentAtPerformAuditPage=.//input[@name='btnSwitch'][@value='Switch Calendar']
+
+Oasis_Calendar_PerformAuditBtn=.//input[@title='Perform Audit']
+Oasis_Calendar_PerformAuditBtn2=.//input[@title='Perform Audit'
+Oasis_CompleteAuditFormBtn=.//input[@name='complete']
+Oasis_AuditNo_leftside=//a[contains(@href,'auditForm.do?visitNo=')]
+
+Oasis_GoToSectionList=.//select[@name='sectionId']
+
+
+Oasis_Audits_NotesTxtBox=.//textarea[@name='questionNotes']
+Oasis_Audits_SectionNotesTxtBox=.//textarea[@name='noteText']
+#Oasis_Audits_AcceptNonacceptRadioBtns=.//input[@name='answerText0']
+Oasis_Audits_NonacceptRadioBtn=//input[contains(@value,'Not Acceptable')]
+Oasis_AuditSubmitBtn=.//input[@name='btnSubmit']
+
+Oasis_NACheckBoxes=.//*[@id='applicableFlag']
+
+Oasis_Search_Topmenu=.//img[@alt='Search']
+#Oasis_Search_CorrectiveActionsSubmenu=.//a[contains(@href,'searchCorrectiveAction.do')]/*[text()='Corrective Actions']
+#Oasis_Search_CorrectiveActionsSubmenu=.//*[@id='mydiv2']/table/tbody/tr/a[contains(@href,'searchCorrectiveAction.do')]/font[text()='Corrective Actions']
+#Oasis_Search_CorrectiveActionsSubmenu=.//*[@id='mydiv2']/table/tbody/tr/td/a/font[text()='Corrective Actions']
+Oasis_Search_CorrectiveActionsSubmenu=.//*[@id='mydiv2']/table/tbody/tr[3]/td/a/font
+
+
+
+Oasis_CA_AuditNoTxtBox=.//*[@id='s_auditNo']/input
+Oasis_CA_SearchBtn=.//input[@name='Search']
+Oasis_CA_ViewCARImage=.//img[@title='View']
+Oasis_CA_EditCARReport=.//input[@title='Edit']
+Oasis_ChangeCARStatusToList=.//select[@name='allCarStatus']
+Oasis_CARReportEdit_SaveBtn=.//input[@name='save']
+
+
+Oasis_Admin_menu=.//img[@alt='Admin']
+Oasis_Admin_SupportSubmenu=.//a[contains(@href,'support.do')]/*[text()='Support']
+Oasis_ManuallyRunReportSchedulerLink=.//a[text()='Manually Run Report Scheduler']
+Oasis_RunIQAULN_btn=.//input[@type='button'][@title='Run IQAULN Job']
+
+Oasis_RunAULN_btn=.//input[@type='button'][@title='Run AULN Job']
+#-------------------------------
+#***************** **************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+#***********************Alerts at home page*****************************************************************************
+DraftStausAlert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_IN_DRAFT_STATUS_ASGN_TOME:j_id1:filter']
+DraftStatusAlertTable=.//*[@id='mainForm:alertTab:WO_IN_DRAFT_STATUS_ASGN_TOME_data']
+DraftStatusAlertTable_header=.//*[@id='mainForm:alertTab:WO_IN_DRAFT_STATUS_ASGN_TOME_head']
+
+TaskSetupIncompleteAlert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_IN_DRAFT_STATUS_ASGN_TOME_TASK_COMPLE:j_id1:filter']
+TaskSetupIncompleteAlertTable=.//*[@id='mainForm:alertTab:WO_IN_DRAFT_STATUS_ASGN_TOME_TASK_COMPLE_data']
+TaskSetupIncompleteAlertTable_header=.//*[@id='mainForm:alertTab:WO_IN_DRAFT_STATUS_ASGN_TOME_TASK_COMPLE_head']
+
+InReviewStatusAlert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_IN_REVIEW_STATUS:j_id1:filter']
+InReviewStatusAlertTable=.//*[@id='mainForm:alertTab:WO_IN_REVIEW_STATUS_data']
+InReviewStatusAlertTable_header=.//*[@id='mainForm:alertTab:WO_IN_REVIEW_STATUS_head']
+
+WO_WITH_OPEN_ACTION_ITEMS_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_WITH_OPEN_ACTION_ITEMS:j_id1:filter']
+WO_WITH_OPEN_ACTION_ITEMS_AlertTable=.//*[@id='mainForm:alertTab:WO_WITH_OPEN_ACTION_ITEMS_data']
+WO_WITH_OPEN_ACTION_ITEMS_AlertTable_header=.//*[@id='mainForm:alertTab:WO_WITH_OPEN_ACTION_ITEMS_head']
+
+
+
+WO_InProcess_Status_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_INPROCESS_STATUS:j_id1:filter']
+WO_InProcess_Status_AlertTable=.//*[@id='mainForm:alertTab:WO_INPROCESS_STATUS_data']
+WO_InProcess_Status_AlertTable_header=.//*[@id='mainForm:alertTab:WO_INPROCESS_STATUS_head']
+
+TA_TASK_OPEN_ITEMS_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS:j_id4:filter']
+TA_TASK_OPEN_ITEMS_AlertTable=.//*[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS_data']
+TA_TASK_OPEN_ITEMS_AlertTable_header=.//*[@id='mainForm:alertTab:TA_TASK_OPEN_ITEMS_head']
+
+
+AI_ITEMS_ASSIGNED_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED:j_id3:filter']
+AI_ITEMS_ASSIGNED_AlertTable=.//*[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED_data']
+AI_ITEMS_ASSIGNED_AlertTable_header=.//*[@id='mainForm:alertTab:AI_ITEMS_ASSIGNED_head']
+
+
+AI_ASSIGNED_CLIENT_IND_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND:j_id3:filter']
+AI_ASSIGNED_CLIENT_IND_AlertTable=.//*[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND_data']
+AI_ASSIGNED_CLIENT_IND_AlertTable_header=.//*[@id='mainForm:alertTab:AI_ASSIGNED_CLIENT_IND_head']
+
+Task_ready_to_be_assigned_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:AS_TA_READY_TO_BE_ASSIGNED:j_id3:filter']
+Task_ready_to_be_assigned_AlertTable=.//*[@id='mainForm:alertTab:AS_TA_READY_TO_BE_ASSIGNED_data']
+Task_ready_to_be_assigned_AlertTable_header=.//*[@id='mainForm:alertTab:AS_TA_READY_TO_BE_ASSIGNED_head']
+
+
+
+Work_order_with_unassigned_action_items_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_WITH_UNASSIGNED_ACTION_ITEMS:j_id1:filter']
+Work_order_with_unassigned_action_items_AlertTable=.//*[@id='mainForm:alertTab:WO_WITH_UNASSIGNED_ACTION_ITEMS_data']
+Work_order_with_unassigned_action_items_AlertTable_header=.//*[@id='mainForm:alertTab:WO_WITH_UNASSIGNED_ACTION_ITEMS_head']
+
+
+
+Work_order_with_no_tasks_ready_to_perform_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_NO_TASK_READY_TO_PERFORM:j_id1:filter']
+Work_order_with_no_tasks_ready_to_perform_AlertTable=.//*[@id='mainForm:alertTab:WO_NO_TASK_READY_TO_PERFORM_data']
+Work_order_with_no_tasks_ready_to_perform_AlertTable_header=.//*[@id='mainForm:alertTab:WO_NO_TASK_READY_TO_PERFORM_head']
+
+
+
+
+
+Task_with_unassigned_Action_Items_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:TA_WITH_UNASSIGNED_ACTION_ITEMS:j_id4:filter']
+Task_with_unassigned_Action_Items_AlertTable=.//*[@id='mainForm:alertTab:TA_WITH_UNASSIGNED_ACTION_ITEMS_data']
+Task_with_unassigned_Action_Items_AlertTable_header=.//*[@id='mainForm:alertTab:TA_WITH_UNASSIGNED_ACTION_ITEMS_head']
+
+
+
+
+Physical_evaluation_to_be_reviewed_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD:j_id4:filter']
+Physical_evaluation_to_be_reviewed_AlertTable=.//*[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD_data']
+Physical_evaluation_to_be_reviewed_AlertTable_header=.//*[@id='mainForm:alertTab:TA_NEED_TO_BE_REVIEWD_head']
+
+
+
+
+Custom_Resolution_Work_Orders_with_completed_tasks_not_yet_invoiced_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_WITH_PENDING_INV_ITEMS:j_id1:filter']
+Custom_Resolution_Work_Orders_with_completed_tasks_not_yet_invoiced_AlertTable=.//*[@id='mainForm:alertTab:WO_WITH_PENDING_INV_ITEMS_data']
+Custom_Resolution_Work_Orders_with_completed_tasks_not_yet_invoiced_AlertTable_header=.//*[@id='mainForm:alertTab:WO_WITH_PENDING_INV_ITEMS_head']
+
+
+Task_with_no_open_Action_Items_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:TA_NO_OPEN_AI:j_id4:filter']
+Task_with_no_open_Action_Items_AlertTable=.//*[@id='mainForm:alertTab:TA_NO_OPEN_AI_data']
+Task_with_no_open_Action_Items_AlertTable_header=.//*[@id='mainForm:alertTab:TA_NO_OPEN_AI_head']
+
+
+Quote_accepted_by_clients_in_the_past_5_days_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:WO_QUOTES_ACCEPTED_BY_CLIENTS:j_id1:filter']
+Quote_accepted_by_clients_in_the_past_5_days_AlertTable=.//*[@id='mainForm:alertTab:WO_QUOTES_ACCEPTED_BY_CLIENTS_data']
+Quote_accepted_by_clients_in_the_past_5_days_AlertTable_header=.//*[@id='mainForm:alertTab:WO_QUOTES_ACCEPTED_BY_CLIENTS_head']
+
+#*************************************************************************************************************************
+
+
+
+
+
+#**************************Type Annual *********************************************
+
+Facility_IncludeExistingFacilityStandardBTn=.//*[@id='mainForm:tabView:facstdincl']
+Facility_DataTable=.//*[contains(@id,':faclistappfacdt_data')]
+
+Facility_InvoiceCompleteTaskBtn=.//*[@id='mainForm:invcomtkpan']
+Facility_InvoiceCompleteTask_YesBtn=.//*[@id='mainForm:tabView:finappyes']
+#**************************Type Annual *********************************************
+
+
+
+
+#**************************Type Custom *********************************************
+
+#Financial_AcceptQuoteRadioBtn=.//td/label[text()='Accept']/preceding-sibling::td/div/div[contains(@class,'ui-radiobutton-box')])[1]
+
+Financial_AcceptQuoteRadioBtn=.//td/label[text()='Accept']
+
+
+TaskTab_CertificationServices_AddSingleBtn=.//button[contains(@id,'mainForm:tabView:dataTable:3:')]/span[normalize-space(text())='Add Single']
+TaskTab_CertificationServices_QTY2ndRow5thCol=//tbody[contains(@id,'mainForm:tabView:dataTable:3:jobExpence_data')]/tr[2]/td[5]/input[@type='text']
+TaskTab_CertificationServices_UAmount1stRow7thCol=//tbody[contains(@id,'mainForm:tabView:dataTable:3:jobExpence_data')]/tr[1]/td[7]/input[@type='text']
+
+
+#TaskTab_TechnicalReview_AddSingleBtn=.//button[contains(@id,'mainForm:tabView:dataTable:1:')]/span[normalize-space(text())='Add Single']----Working fine
+TaskTab_TechnicalReview_AddSingleBtn=.//*[@id='mainForm:tabView:dataTable:1:appTaskAddSingleBtn']
+
+#TaskTab_TechnicalReview_QTY2ndRow5thCol=//tbody[contains(@id,'mainForm:tabView:dataTable:1:jobExpence_data')]/tr[2]/td[5]/input[@type='text'] ---Working fine
+TaskTab_TechnicalReview_QTY2ndRow5thCol=.//*[@id='mainForm:tabView:dataTable:1:jobExpence:1:appTaskQty']
+
+TaskTab_TechnicalReview_FirstRowEditIcon=.//*[@id='mainForm:tabView:dataTable:1:jobExpence:0:editIcon']
+
+#TaskTab_TechnicalReview_UAmount1stRow7thCol=//tbody[contains(@id,'mainForm:tabView:dataTable:1:jobExpence_data')]/tr[1]/td[7]/input[@type='text'] --Working fine
+TaskTab_TechnicalReview_UAmount1stRow7thCol=.//*[@id='mainForm:tabView:dataTable:1:jobExpence:0:appTaskUnitActAmt']
+
+
+
+
+
+AnnualUpdateRequiredChkBxLabel_part1=.//table[@id='mainForm:viewtsk:jobAttrdd']/tbody/tr/td[2]/label[contains(text(),'
+AnnualUpdateRequiredChkBxLabel_part2=')]
+
+
+#--using in DocumentFinal AI
+documentCheckRadioBtn_part1=.//td/label[contains(@for,':yesnodcsndf:')][text()='
+documentCheckRadioBtn_part2=']
+
+
+
+#*********************************************************************************************
+
+#*************Quartz Jobs *************************************
+
+QuartzJobsTopMenuLink=Quartz Job
+
+JobNameFilterBox=.//*[@id='mainForm:jobDt:jbName:filter']
+
+
+JobTable=.//*[@id='mainForm:jobDt_data']
+JobTableHeader=.//*[@id='mainForm:jobDt_head']
+
+FirstRunButtonInJobsTable=.//button[contains(@id,'mainForm:jobDt:0:')]/span[normalize-space(text())='Run now']
+
+
+#CurrentlyExecutingJob_linkXpath=.//*[@id='mainForm:jobUpdatePn']/legend/span[text()='Currently Executing Job']
+#CurrentlyExecutingJob_linkXpath=.//*[@id='mainForm:jobUpdatePn']/legend[text()='Currently Executing Job']
+CurrentlyExecutingJob_linkXpath=.//*[@id='mainForm:jobUpdatePn']/legend
+
+CurrentlyExecutingJobTable=.//*[@id='mainForm:cexecJ_data']
+CurrentlyExecutingJobTableHeader=.//*[@id='mainForm:cexecJ_head']
+
+
+#*************************************************************************
+
+
+
+
+#*************Bulk Assignment *************************************
+AssignmentTopLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())='Assignment']
+
+#BulkAssignmentLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Bulk Assignment']
+BulkAssignmentLink=Bulk Assignment
+
+Clear_link=.//*[@id='mainForm:clearLink']
+
+
+WorkLoadPlannerList=.//*[@id='mainForm:currentUser_label']
+WorkLoadPlannerListOptions=.//*[@id='mainForm:currentUser_panel']
+
+BulkAssing_SearchBtn=.//*[@id='mainForm:searchBtn']
+ItemAssignedTo_lookup=.//*[@id='mainForm:assignedEmpLook']
+
+BulkAssignment_TaskTable=.//*[@id='mainForm:taskTable_data']
+BulkAssignment_TaskTableHeader=.//*[@id='mainForm:taskTable_head']
+
+
+
+BulkAssignment_ActionItemResultsTable=.//*[@id='mainForm:actionItemTable_data']
+BulkAssignment_ActionItemResultsTableHeader=.//*[@id='mainForm:actionItemTable_head']
+
+
+BulkAssignment_FindingResultsTable=.//*[@id='mainForm:findingTable_data']
+BulkAssignment_FindingResultsTableHeader=.//*[@id='mainForm:findingTable_head']
+
+
+
+BulkAssing_Assign_All_checked_items_to=.//*[@id='mainForm:assignTOEmpLookup']
+BulkAssing_SaveAssignmentBtn=.//*[@id='mainForm:saveBtn']
+
+
+
+
+#*************Memory StackTrace*************************************
+Admin=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())='Admin']
+AdminFunctionsLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Admin Functions']
+#Application_Memory_Stack_TraceLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Application Memory Stack Trace']
+Application_Memory_Stack_TraceLink=Application Memory Stack Trace
+
+Application_Memory_Stack_Trace_TopPageHeading=.//div[@class='ui-outputpanel ui-widget greenheading'][contains(text(),'This is only for IT Admin to view the Memory Status.')]
+
+#*********************************************************************************************
+
+
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+#*********     PROPOSAL       ************************************************************************************
+
+
+ProposalTopLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())='Proposal']
+#CreateProposalLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Create Proposal']
+CreateProposalLink=Create Proposal
+
+#SearchProposalLink=.//*[@id='headerForm:headmenu']/ul/li[1]/ul/li/ul/li/a/span[normalize-space(text())='Search Proposal']
+SearchProposalLink=Search Proposal
+
+#Proposal_ClientFromIPulseLabel=.//td/div[@id='mainForm:opt1']
+Proposal_ClientFromIPulseLabel=.//*[@id='mainForm:opt1']/div[2]
+#Proposal_ClientFromIPulseRadioBtn=.//td/div/label[text()=' Client from i Pulse']
+Prop_ClFromIPulseLkpBtn=.//*[@id='mainForm:cuslkupappcrt']
+
+ProspectFromSalesForceLabel=.//label[@for='mainForm:opt2']
+ProspectFromSalesForceRadioBtn=.//*[@id='mainForm:opt2']/div[2]
+
+#ProspectFromSalesForceTxtBx=.//*[@id='mainForm:opt2']/../following-sibling::td/input
+ProspectFromSalesForceLkpBtn=.//*[@id='mainForm:slxlookup']
+ProspectFromSalesForceTxtBx=.//*[@id='mainForm:slxText_input']
+ProspectFromSalesForceTxtBx2=.//*[@id='mainForm:slxText_hinput']
+
+Prop_WorkOrderTypeList=.//*[@id='mainForm:wotypedrpdwn_label']
+Prop_WorkOrderTypeListOptions=.//*[@id='mainForm:wotypedrpdwn_panel']
+
+Prop_OrgUnitList=.//*[@id='mainForm:orgddl_label']
+Prop_OrgUnitOptions=.//*[@id='mainForm:orgddl_panel']
+
+
+
+Prop_OrgUnit=.//*[@id='mainForm:orgunit']
+Prop_FinancialProgramList=.//*[@id='mainForm:finpgm_label']
+Prop_FinancialProgramListOptions=.//*[@id='mainForm:finpgm_panel']
+
+
+
+Prop_ProductTypeList=.//*[@id='mainForm:prodctddl_label']
+Prop_ProductTypeListOptions=.//*[@id='mainForm:prodctddl_panel']
+
+
+Prop_ProductTypeSuggestionBox=.//*[@id='mainForm:prodctddl_input']
+Prop_ProductTypeSuggestionBoxeOptions=.//*[@id='mainForm:prodctddl_panel']/ul/li[1]
+Prop_ProductTypeSuggestionBoxeOptionsList=.//*[@id='mainForm:prodctddl_panel']/ul/li
+
+
+Prop_NextBtn=.//*[@id='mainForm:nxt']
+
+
+
+#Prop_ClientInfoTab=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,':proposalClientInfo')]
+Prop_ClientInfoTab=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,':proposalClientInfo')]
+Prop_BUManagerLookupBtn=.//*[@id='mainForm:tabView:assignedEmpLook1']
+#Prop_ProposalNo=.//table[@id='mainForm:tabView:clinfpg']/tbody/tr/td[contains(text(),'Proposal')]/td
+
+
+
+#Prop_ProposalNo=.//table[@id='mainForm:tabView:clinfpg']/tbody/tr/td[contains(text(),'Proposal')]/following-sibling::td  ---working fine
+Prop_ProposalNo=.//*[@id='mainForm:tabView:prNoEdit']
+
+#Prop_ProposalNo=.//table[@id='mainForm:tabView:clinfpg']/tbody/tr/td[contains(text(),'Proposal')]/following-sibling::td/span
+Prop_BillingSchedule_PFList=.//*[@id='mainForm:tabView:billsch_label']
+Prop_BillingSchedule_PFListOptions=.//*[@id='mainForm:tabView:billsch_panel']
+
+
+Prop_WOPrimaryContact_PFList=.//*[@id='mainForm:tabView:primconprinfdd_label']
+Prop_WOPrimaryContact_PFListOptions=.//*[@id='mainForm:tabView:primconprinfdd_panel']
+
+
+Prop_StandardVersionTxt=.//*[@id='mainForm:tabView:praistdvrsndd_input']
+Prop_StandardVersionOptionsXpath=.//*[contains(@id,':praistdvrsndd_panel')]/ul/li
+Prop_StandardVersionOptions=.//*[contains(@id,':praistdvrsndd_panel')]/ul/li
+
+#Prop_ProposalNoFromTop=.//label[contains(@id,':propid')]/../../td[3] --working fine
+Prop_ProposalNoFromTop=.//*[contains(@id,':prNoTop')]
+
+
+
+Proposal_StatusListAtClientInfoTab=.//*[@id='mainForm:tabView:propStatus_label']
+Proposal_StatusListAtClientInfoTabOptions=.//*[@id='mainForm:tabView:propStatus_panel']
+
+
+
+#Prop_ProposalTextTab=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'proposaltxttab')]
+Prop_ProposalTextTab=.//*[@id='mainForm:tabView']//ul/li/a[contains(@href,'proposaltxttab')]
+Prop_ScopeTxtBx=.//*[@id='mainForm:tabView:itpcmt']
+Prop_TATTimeTxtBx=.//*[@id='mainForm:tabView:propTime']
+
+Prop_SaveBtn=.//*[@id='mainForm:save']
+Prop_EditBtn=.//*[@id='mainForm:editProposal']
+
+#Prop_ProposalDetailsTab=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,'proposaldetailstab')]
+Prop_ProposalDetailsTab=.//*[@id='mainForm:tabView']//ul/li/a[contains(@href,'proposaldetailstab')]
+#Prop_PDetails_QuestionnaireEditLink=.//*[@id='mainForm:tabView:quesDt:0:issLinkQues']
+Prop_PDetails_QuestionnaireEditLink=.//a[@id='mainForm:tabView:quesDt:0:issLinkQues']
+Prop_PDetails_QuestionnaireSection1Link=.//a[contains(text(),'1 : Section 1')]
+
+
+#Prop_QuestionnaireSaveBtn=.//*[@id='mainForm:tabView:btnprevtabQues']
+#Prop_QuestionnaireCloseBtn=.//*[@id='mainForm:tabView:btnClosePanel']
+#Prop_Questionnaire_SaveNCloseBtn=.//*[@id='mainForm:tabView:btnClosePanel']
+#Prop_Questionnaire_SaveNNextBtn=.//*[@id='mainForm:tabView:qsavebexr']
+
+
+Prop_QuestionnaireSaveBtn=.//*[contains(@id,':btnprevtabQues')]
+Prop_QuestionnaireCloseBtn=.//*[contains(@id,':btnClosePanel')]
+
+Prop_Questionnaire_SaveNCloseBtn=.//*[contains(@id,':btnClosePanel')]
+Prop_Questionnaire_SaveNNextBtn=.//*[contains(@id,':qsavebexr')]
+
+QuestionnaireDetailsTable=.//*[@id='mainForm:tabView:quesDt_data']
+QuestionnaireDetailsTable_header=.//*[@id='mainForm:tabView:quesDt_head']
+#Prop_PreviewQuoteLink=.//*[@id='mainForm:tabView:quesDt:0:btnprequot']
+Prop_PreviewQuoteLink=.//a[@id='mainForm:tabView:quesDt:0:btnprequot']
+Prop_ActiveQuoteDetails_EmailLink=.//*[@id='mainForm:tabView:actQtDt:0:addcorres']
+Prop_EmailTemplate_PFList=.//*[@id='mainForm:tabView:prtempdwn_label']
+Prop_EmailTemplate_PFListOptions=.//*[@id='mainForm:tabView:prtempdwn_panel']
+Prop_EmailTemplateContinueBtn=.//*[@id='mainForm:tabView:continuePrCorres']
+
+Prop_EmailToTxt=.//*[@id='mainForm:tabView:newPrCorresHisTo']
+Prop_EmailFromTxt=.//*[@id='mainForm:tabView:newPrCorrAppFrm']
+
+
+Prop_CorresEmailSendBtn=.//*[@id='mainForm:tabView:crIssPrCorrspndncbtn']
+
+Prop_StatusChangeReason=.//*[@id='mainForm:tabView:statusChngRsn']
+
+
+
+
+Prop_TotalTaskCost=.//*[@id='mainForm:tabView:totaltaskcost']
+Prop_Discount_AmountTxt=.//*[@id='mainForm:tabView:pqAudCou2']
+Prop_Discount_PercentTxt=.//*[@id='mainForm:tabView:discPct']
+Prop_Discount_ReasonTxt=.//*[@id='mainForm:tabView:pqitpcmt1']
+
+Prop_AnnualCost_txt=.//*[@id='mainForm:tabView:pqAnncst']
+
+Prop_RushFees_txt=.//*[@id='mainForm:tabView:pqAudCou']
+Prop_DiscountCalculated=.//*[@id='mainForm:tabView:discount']
+Prop_RushFeesCalculated=.//*[@id='mainForm:tabView:rushfee']
+Prop_TotalQuoteAmountCalculated=.//*[@id='mainForm:tabView:totalQuoteAmt']
+Prop_QuoteGenerationConfirYesBtn=.//*[@id='mainForm:tabView:discountConfirmYES']
+
+Prop_GenerateQuoteBtn=.//*[@id='mainForm:tabView:btngenquote']
+GeneratingQuoteText=.//div[contains(@class,'ui-blockui-content')]/label[normalize-space(text())='Generating Quote']
+GeneratingQuoteText2=.//label[normalize-space(text())='Generating Quote']
+GeneratingQuoteText3=.//label[contains(text(),'Generating Quote')]
+GeneratingQuoteText4=.//label[text()='Generating Quote']
+GeneratingQuoteText5=.//label[contains(text(),'Generating')]
+
+Prop_StatusList=.//*[@id='mainForm:tabView:proposalsrhdd_label']
+Prop_StatusListOptions=.//*[@id='mainForm:tabView:proposalsrhdd_panel']
+
+Prop_InactiveQuoteNo=.//a[contains(@id,':0:inactquoteno')]
+Prop_ActiveQuoteNo=.//a[contains(@id,':actQtDt:0:actquoteno')]
+
+
+Prop_DocumentsTab=.//*[@id='mainForm:tabView']//ul/li/a[contains(@href,'proposaldetaildoc')]
+#Prop_PropDoc_AddBtn=.//*[@id\='mainForm\:tabView\:addappdocsfileuplbtn_input']
+Prop_PropDoc_AddBtn=.//*[@id='mainForm:tabView:addappdocsbtn']
+Prop_PropDoc_SelectFilesBtn=.//*[@id='mainForm:tabView:addappdocsfileuplbtn_input']
+Prop_PropDoc_BrowseBtn=.//input[@id='mainForm:tabView:crAccFileUpl_input']
+
+
+Prop_DocTab_AddWODoc_TypePFList=.//*[@id='mainForm:tabView:proposalDocsDt:0:doctypdocproposal_label']
+Prop_DocTab_AddWODoc_TypePFListOptions=.//*[@id='mainForm:tabView:proposalDocsDt:0:doctypdocproposal_panel']
+Prop_DocTab_AddWODoc_AccessPFList=.//*[@id='mainForm:tabView:proposalDocsDt:0:docacssdocproposal_label']
+Prop_DocTab_AddWODoc_AccessPFListOptions=.//*[@id='mainForm:tabView:proposalDocsDt:0:docacssdocproposal_panel']
+
+
+Prop_DocTab_AddWODoc_TypePFList_part1=.//*[@id='mainForm:tabView:proposalDocsDt:
+Prop_DocTab_AddWODoc_TypePFList_part2=:doctypdocproposal_label']
+
+Prop_DocTab_AddWODoc_TypePFListOptions_part1=.//*[@id='mainForm:tabView:proposalDocsDt:
+Prop_DocTab_AddWODoc_TypePFListOptions_part2=:doctypdocproposal_panel']
+
+Prop_DocTab_AddWODoc_AccessPFList_part1=.//*[@id='mainForm:tabView:proposalDocsDt:
+Prop_DocTab_AddWODoc_AccessPFList_part2=:docacssdocproposal_label']
+
+Prop_DocTab_AddWODoc_AccessPFListOptions_part1=.//*[@id='mainForm:tabView:proposalDocsDt:
+Prop_DocTab_AddWODoc_AccessPFListOptions_part2=:docacssdocproposal_panel']
+
+
+Prop_ProposalDocumentTable_Heading=.//*[@id='mainForm:tabView:appDocsDt_head']
+Prop_ProposalDocumentTable=.//*[@id='mainForm:tabView:appDocsDt_data']
+
+
+
+Prop_CorrespondenceTab=.//*[@id='mainForm:tabView']//ul/li/a[contains(@href,'proposalcorrtab')]
+Prop_ProposalCorrespondence_Heading=.//*[@id='mainForm:tabView:correspondencehistory']
+Prop_Corresondence_table=.//*[@id='mainForm:tabView:correspondenceDT_data']
+Prop_Corres_MessageIcon=.//*[@id='mainForm:tabView:correspondenceDT:0:frdcmdlnk']
+
+
+
+#---Search Proposal
+ProposalNoSearchTxt=.//*[@id='mainForm:proposalIdtxt']
+
+
+#*********************************************************************************************
+
+
+#-------Dynamic ids-------
+#Prop_Questionnaire_SaveNNextBtn
+
+
+TestBrowseAutoIT=.//*[@id\='photo']
+
+
+
+#************************************************************************************************************************************
+#************************************************************************************************************************************
+#************************************************************************************************************************************
+#************************************************************************************************************************************
+#************************************************************************************************************************************
+#************************************   Health Science Objects      ************************************************************************************************
+
+loginAs=.//*[@id='nsfloginform:loginas']
+
+
+Resource_Search=Resource Search
+Search_Resource=Search Resource
+Create_Client=Create Client
+ClientNameTxtBx=.//input[@id='mainForm:cnm']
+
+Type_PFList=.//*[contains(@id,':somcustype_label')]
+Type_PFListOptions=.//*[contains(@id,':somcustype_panel')]
+
+
+#AutoCreatePLsameasCO_ChkBox=.//table[contains(@id,':autocrascodiv')]//div[contains(@class,'ui-chkbox-box ui-widget')]
+AutoCreatePLsameasCO_ChkBox=.//table[contains(@id,':autocrascodiv')]/tbody/tr/td/div/div[contains(@class,'ui-chkbox-box ui-widget')]
+Address_Line1_TxtBx=.//*[@id='mainForm:itpad1']
+Address_Line1_TxtBx_id=id~mainForm:itpad1
+
+Salutation_PFList=.//*[contains(@id,':itpsaltn_label')]
+Salutation_PFListOptions=.//*[contains(@id,':itpsaltn_panel')]
+
+First_NameTxtBx=.//*[@id='mainForm:itpfnm']
+Last_Name_TxtBx=.//*[@id='mainForm:itplnm']
+Email_TxtBx=.//*[@id='mainForm:itppemil']
+
+PrimaryContactDetails_Phone=.//*[@id='mainForm:pph']
+
+BillToOffice_PFList=.//*[contains(@id,':itppbt_label')]
+BillToOffice_PFListOptions=.//*[contains(@id,':itppbt_panel')]
+
+iAg_BillToOffice_PFList=.//*[contains(@id,':itppbt1_label')]
+iAg_BillToOffice_PFListOptions=.//*[contains(@id,':itppbt1_panel')]
+
+Contact_Email=.//*[@id='mainForm:itpceml']
+
+Create_Btn=.//*[@id='mainForm:createBt']
+EditClientBtn=.//*[@id='mainForm:editButton']
+ClientNo=.//*[@id='mainForm:PlusMinusAcc:clientValueNo']
+ActivateBtn=.//*[@id='mainForm:activateBtn']
+ActivateConfirmationYesBtn=.//*[@id='mainForm:activationyesbtn']
+ClientTopStatusTxt=.//table[contains(@id,':PlusMinusAcc:')]/tbody/tr/td/label[contains(text(),'Status')]/../following-sibling::td[2]
+#ClientTopStatusTxt=.//table[contains(@id,':PlusMinusAcc:')]/tbody/tr/td[12]
+
+SearchClient_LinkName=Search Client
+Corp_FacilityTxtBx=.//*[@id='mainForm:itcustno']
+
+
+CreateLeadBtn=.//*[@id='mainForm:crtLeadBtn']
+
+
+
+ProjectDivision_PFList=.//*[contains(@id,':inqProjDivs_label')]
+ProjectDivision_PFListOptions=.//*[contains(@id,':inqProjDivs_panel')]
+
+
+LeadType_PFList=.//*[contains(@id,':crLeadType_label')]
+LeadType_PFListOptions=.//*[contains(@id,':crLeadType_panel')]
+
+
+CreateLeadFormBtn=.//*[@id='mainForm:crsLeadCreate']
+EditLeadButton=.//*[@id='mainForm:editLead']
+ConvertToProposalBtn=.//*[@id='mainForm:inqcnvrttoproplbl']
+
+ProjectDivisonOnCreateProposal_PFList=.//*[contains(@id,':projDivsHS_label')]
+ProjectDivisonOnCreateProposal_PFListOptions=.//*[contains(@id,':projDivsHS_panel')]
+
+
+ProjectTypeOnCreateProposal_PFList=.//*[contains(@id,':projTypeslHS_label')]
+ProjectTypeOnCreateProposal_PFListOptions=.//*[contains(@id,':projTypeslHS_panel')]
+
+
+CreateBtnAtCreateProposalPage=.//*[@id='mainForm:nxtHS']
+
+ProjectNameAtEditProjectScreen=.//*[@id='mainForm:hstabView:prjctHSscopeei']
+
+
+PrimaryProjectContact_PFList=.//*[contains(@id,':prjctHSprimcontactei_label')]
+PrimaryProjectContact_PFListOptions=.//*[contains(@id,':prjctHSprimcontactei_panel')]
+
+
+#-Facility Tab
+Prop_FacilityTabLink=.//a[contains(@href,':proposalfactab')]
+
+
+
+Proposal_ResourcesTabLink=.//a[contains(@href,':proposaldetailresource')]
+
+AddResourceBtn=.//*[@id='mainForm:tabView:proposaladdres']
+
+ResourceLkpBtn=.//*[@id='mainForm:tabView:resvar:0:propResourlkpbtn']
+
+
+#RatePerHourTxtBx=.//*[@id='mainForm:tabView:resvar:0:rateperhour']
+RatePerHourTxtBx=.//*[@id='mainForm:tabView:resvar:0:rateperhour_input']
+
+#CostPerHourTxtBx=.//*[@id='mainForm:tabView:resvar:0:costperhour']
+CostPerHourTxtBx=.//*[@id='mainForm:tabView:resvar:0:costperhour_input']
+
+
+SaveFloppyIcon=.//*[contains(@id,'mainForm:tabView:resvar:0:')]/span[@class='ui-icon ui-icon-check']
+ConverToProjectBtn=.//*[@id='mainForm:cnvrtToprjtbtn']
+CreateProjectLabel=.//*[@id='mainForm:projectCreateLblHS']
+
+
+EditButtonAtViewProjectScreen=.//*[@id='mainForm:hseditbutton']
+
+
+AssociateNewFacilityStandardBtnAtProjectPage=.//*[@id='mainForm:hstabView:associatenewfacilitybutton']
+
+
+Project_TaskTabLink=.//a[contains(@href,':hstabView:tskapphstab')]
+
+Project_AddTaskBtn=.//*[@id='mainForm:hstabView:projectaddatsk']
+
+SaveBtnInAddTaskScreenInEditProject=.//*[@id='mainForm:hstabView:saveNewTask']
+
+EditProjectTasksTable_data_=.//*[contains(@id,':hstabView:taskDataTable_data')]
+EditProjectTasksTable_HeaderRow=.//*[contains(@id,'hstabView:taskDataTable_head')]
+ShowAllLinksHS=.//*[@id='mainForm:hstabView:showLinkhs']
+Task_BillingCodeHS_txtBoxes=//input[contains(@id,'\:resBillCodeFinalRv')] 
+
+ScheduleStartDate=.//*[@id='mainForm:hstabView:taskDataTable:0:schStartDtCal_input']
+ScheduleEndDate=.//*[@id='mainForm:hstabView:taskDataTable:0:schEndDtCal_input']
+
+
+
+AssignedResource_PFList=.//*[contains(@id,':0:projectauditasinedres_label')]
+AssignedResource_PFListOptions=.//*[contains(@id,':0:projectauditasinedres_panel')]
+
+
+AssignedResource_PFListConsult=.//*[contains(@id,':projectconsultasinedres_label')]
+AssignedResource_PFListOptionsConsult=.//*[contains(@id,':projectconsultasinedres_panel')]
+
+
+AssignedResource_PFListFinal=.//*[contains(@id,':projectfinrevasinedres_label')]
+AssignedResource_PFListOptionsFinal=.//*[contains(@id,':projectfinrevasinedres_panel')]
+
+SaveBtnInOpendTaskinProject=.//*[contains(@id,':updateTask')]
+SaveBtnForTaskAudit=.//*[@id='mainForm:hstabView:taskDataTable:0:updateTaskBtn']
+SaveBtnForTaskConsult=.//*[@id='mainForm:hstabView:taskDataTable:1:updateTaskConsultBtn']
+SaveBtnForTaskFinal=.//*[@id='mainForm:hstabView:taskDataTable:2:updateTaskFinalRvBtn']
+
+
+
+ProjectNo=.//*[contains(@id,':projectnolbl')]
+Project_InfoTabLink=.//a[contains(@href,':hstabView:hsinfappedittab')]
+
+ProjectStatus_xpath=.//*[contains(@id,':projectstatuslbl')]
+
+StatusHS_PFList=.//*[contains(@id,':prjctHSstatusei_label')]
+StatusHS_PFListOptions=.//*[contains(@id,':prjctHSstatusei_panel')]
+
+HSSaveBtn=.//*[@id='mainForm:hssavebutton']
+
+TimesheetTopLink=Timesheet
+LogNewTimeBtn=.//*[@id='mainForm:lognewtimebtn']
+
+#TimeTrackedToLKPBtn=.//*[@id='mainForm:timesheetconsltvar:0:timetracktolkp']
+TimeTrackedToLKPBtn=.//*[@id='mainForm:timesheetmngrvar:0:timetracktolkp']
+
+
+#TimesheetTable=.//*[@id='mainForm:timesheetconsltvar_data']
+#TimesheetTableHeader=.//*[@id='mainForm:timesheetconsltvar_head']
+
+TimesheetTable=.//*[@id='mainForm:timesheetmngrvar_data']
+TimesheetTableHeader=.//*[@id='mainForm:timesheetmngrvar_head']
+
+
+#LoggedHoursTxtbox=.//*[@id='mainForm:loggedHours']
+LoggedHoursTxtbox=.//input[@id='mainForm:loggedHours_input']
+LoginSaveNCloseBtn=.//*[@id='mainForm:logtimesave']
+
+
+#TimesheetStatus=.//label[text()='Status:']/following-sibling::label
+TimesheetStatus=.//*[@id='mainForm:timesheetstatuslbl']
+
+SubmitTimesheetBtn=.//*[@id='mainForm:submittimesheetbtn']
+
+YesBtnOnSubmitTimesheet=.//*[@id='mainForm:sbmtYesbtn']
+
+
+TimesheetUserLkpBtn=.//*[@id='mainForm:tsAutoUserlkp']
+
+MgrTimesheetTable=.//*[@id='mainForm:timesheetmngrvar_data']
+MgrTimesheetTableHeader=.//*[@id='mainForm:timesheetmngrvar_head']
+
+#Timesheet_ChkBox=.//tbody[contains(@id,':timesheetmngrvar_data')]//div[contains(@class,'ui-chkbox-box ui-widget')]
+
+#Timesheet_floppySaveIcon=.//tbody[contains(@id,':timesheetmngrvar_data')]//div/span[@class='ui-icon ui-icon-check']
+Timesheet_floppySaveIcon=.//*[contains(@id,'mainForm:timesheetmngrvar:0:')]/span[@class='ui-icon ui-icon-check']
+
+
+#Timesheet_ChkBoxOnApproverLogin=.//*[@id='mainForm:timesheetmngrvar_data']/tr/td[1]/div/div[2]
+Timesheet_ChkBoxOnApproverLogin=.//*[@id='mainForm:timesheetmngrvar_data']//div[contains(@class,'ui-chkbox-box ui-widget')]
+
+TimesheetApproveBtn=.//*[@id='mainForm:apprvBtn']
+
+#Alert Section
+Timesheets_submitted_waiting_for_Approval_AlertTable=.//*[@id='mainForm:alertTab:HS_TIMESHEET_WAIT_APPROVE_data']
+Timesheets_submitted_waiting_for_Approval_AlertTable_header=.//*[@id='mainForm:alertTab:HS_TIMESHEET_WAIT_APPROVE_head']
+Timesheets_submitted_waiting_for_Approval_Alert_ConsultantCode_filterTxtBox=.//*[@id='mainForm:alertTab:HS_TIMESHEET_WAIT_APPROVE:j_id1:filter']
+
+
+
+Audit_awaiting_Technical_Review_Assigned_to_me_AlertTable=.//*[@id='mainForm:alertTab:AUDIT_AWAITING_TECH_REVW_data']
+Audit_awaiting_Technical_Review_Assigned_to_me_AlertTable_header=.//*[@id='mainForm:alertTab:AUDIT_AWAITING_TECH_REVW_head']
+Audit_awaiting_Technical_Review_Assigned_to_me_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:AUDIT_AWAITING_TECH_REVW:j_id8:filter']
+
+
+Certification_Requests_Unassigned_AlertTable=.//*[@id='mainForm:alertTab:MBSHP_CERT_REQUEST_data']
+Certification_Requests_Unassigned_AlertTable_header=.//*[@id='mainForm:alertTab:MBSHP_CERT_REQUEST_head']
+Certification_Requests_Unassigned_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:MBSHP_CERT_REQUEST:j_id8:filter']
+
+
+
+Certification_Requests_Assigned_to_me_AlertTable=.//*[@id='mainForm:alertTab:MBSHP_CERT_REQUEST_ASSGND_data']
+Certification_Requests_Assigned_to_me_AlertTable_header=.//*[@id='mainForm:alertTab:MBSHP_CERT_REQUEST_ASSGND_head']
+Certification_Requests_Assigned_to_me_Alert_WO_filterTxtBox=.//*[@id='mainForm:alertTab:MBSHP_CERT_REQUEST_ASSGND:j_id8:filter']
+
+
+
+
+
+ApproveConfirmationYesBtn=.//*[@id='mainForm:apprvYesbtn']
+
+
+SearchProjectTopLink=Search Project
+ProjectNoTxtBox_id=id~mainForm:prjnumtxt
+
+
+HSFinancialTabLink=.//ul/li/a[contains(@href,':hstabView:fnclsapptabHS')]
+HSFinancialTab_AddDraftInvoiceBtn=.//*[@id='mainForm:hstabView:appfindrinccmd']
+HSFinancialTab_AddDraftInvoiceBtn_id=id~mainForm:hstabView:appfindrinccmd
+
+
+HS_InvoiceBillTO_PFList=.//*[@id='mainForm:hstabView:appfinbysom_label']
+HS_InvoiceBillTO_PFListOptions=.//*[contains(@id,':hstabView:appfinbysom_panel')]
+HS_SaveBtn=.//*[@id='mainForm:hssavebutton']
+
+ProfessionalServiceHoursTable=.//*[@id='mainForm:hstabView:proSerHoursDT_data']
+ProfessionalServiceHoursTableHeader=.//*[@id='mainForm:hstabView:proSerHoursDT_head']
+
+#############################################################################################################################
+
+
+
+
+######################  EPSF ###############################
+
+
+CreateEPSF=Create EPSF
+SearchEPSF=Search EPSF
+
+EPSFReferenceNoTxtBx=.//*[@id='mainForm:rfNot']
+EPSFFacilityNoLkp=.//*[@id='mainForm:LOVEPSFCUSTOMERSLKP']
+EPSFFacilityNoTxtBx=.//*[@id='mainForm:facTxt']
+
+CreateEPSFFirstBtn=.//*[@id='mainForm:cresteepsfIdcd']
+
+EPSF_Status=.//*[contains(@id,':epsfDySts')]
+
+#EPSF_No=.//*[@id='mainForm:colTypMen_panel']/div/ul/li[5]
+EPSF_No=.//*[contains(@id,':epsfIdInfo')]
+
+EPSFDraftStausAlert_EPSFID_filterTxtBox=.//*[@id='mainForm:alertTab:EPSF_DRAFT:j_id1:filter']
+EPSFDraftStatusAlertTable=.//*[@id='mainForm:alertTab:EPSF_DRAFT_data']
+EPSFDraftStatusAlertTable_header=.//*[@id='mainForm:alertTab:EPSF_DRAFT_head']
+
+
+EPSFEditBtn=.//*[@id='mainForm:editEPSFbtn']
+
+
+RetestAfterEPSFTxt=.//*[@id='mainForm:tabView:retestEpsfEd']
+
+
+#EPSFStatusPFList=.//div/label[contains(@id,':epsfStId23_label')]
+EPSFStatusPFList=.//*[contains(@id,':epsfStId23_label')]
+EPSFStatusPFListOptions=.//*[contains(@id,':epsfStId23_panel')]
+
+EPSFAuditorCollectedPFList=.//*[contains(@id,':audiCollectFlgepsf_label')]
+EPSFAuditorCollectedPFListOptions=.//*[contains(@id,':audiCollectFlgepsf_panel')]
+
+#EPSF_DynamicTxtBox_Part1=.//tbody[@id='mainForm:tabView:epsfdt_data']/tr/td/span[contains(text(),'
+#EPSF_DynamicTxtBox_Part2=')]/../following-sibling::td/input[@type='text']
+EPSF_DynamicTxtBox_Part1=.//tbody[contains(@id,':epsfdt_data')]/tr/td/span[text()='
+EPSF_DynamicTxtBox_Part2=']/../following-sibling::td/input[@type='text']
+
+
+
+EPSF_IssuesTab=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,':issuesTab')]
+
+SampleReviewRequiredLabel=.//*[contains(@id,':samplRevREq')]
+SampleReviewRequiredPFList=.//*[contains(@id,':epsfSamplRevreq_label')]
+
+SampleReviewRequiredPFListOptions=.//*[contains(@id,':epsfSamplRevreq_panel')]
+
+
+EPSF_InfoTab=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,':epsfInfoTab')]
+EPSF_CrJobBtn=.//*[@id='mainForm:crtJobBtn']
+EPSF_AutoLoginToBeakerBtn=.//*[@id='mainForm:logintobeakerbtn']
+
+EPSF_AddIssueBtn=.//*[@id='mainForm:tabView:addIssuebtn']
+EPSFIssueTypePFList=.//*[contains(@id,':rsnCodeDD_label')]
+EPSFIssueTypePFListOptions=.//*[contains(@id,':rsnCodeDD_panel')]
+EPSF_IssuesDescTxtBx_xpath=.//*[@id='mainForm:tabView:issuTextAr']
+EPSF_SaveNCloseDialogBtn=.//*[@id='mainForm:tabView:savecloseAddIssueDlg']
+
+
+EPSF_IssuesTable=.//*[@id='mainForm:tabView:issueDt_data']
+EPSF_IssuesTable_header=.//*[@id='mainForm:tabView:issueDt_head']
+
+#EPSF_ClearingCommentsFirstRowTxtArea_xpath=.//textarea[contains(@id,':issueDt:0:')]
+EPSF_ClearingCommentsFirstRowTxtArea_xpath=.//*[@id='mainForm:tabView:issueDt:0:clrcCommentsIss']
+#EPSF_ClearingCommentsSecondRowTxtArea_xpath=.//textarea[contains(@id,':issueDt:1:')]
+EPSF_ClearingCommentsSecondRowTxtArea_xpath=.//*[@id='mainForm:tabView:issueDt:1:clrcCommentsIss']
+
+
+#EPSFFirstIssueClearBtn=.//button[contains(@id,'mainForm:tabView:issueDt:0:')]
+EPSFFirstIssueClearBtn=.//*[@id='mainForm:tabView:issueDt:0:clrIssu']
+#EPSFSecondIssueClearBtn=.//button[contains(@id,'mainForm:tabView:issueDt:1:')]
+EPSFSecondIssueClearBtn=.//*[@id='mainForm:tabView:issueDt:1:clrIssu']
+
+EPSFAddSampleBtn=.//*[@id='mainForm:addSampleId']
+
+EPSFAddSampleBtnInTaskTab=.//*[@id='mainForm:tabView:addSamplTskEpsf']
+EPSFSampleNameTxtBx=.//*[@id='mainForm:smpNmDlgId1']
+EPSFSampleDescriptionTxtBx=.//*[@id='mainForm:desDlgId']
+EPSFAddSampleBtnInDialog=.//*[@id='mainForm:addSampldlgId1']
+
+EPSFAddTaskByTemplateBtn=.//*[@id='mainForm:sampleDt:0:addTskTmpId']
+EPSFAddTaskByTemplateBtnInTaskTab=.//*[@id='mainForm:tabView:sampleDt:0:addTskId1']
+EPSFAddTaskByTestCodeBtn=.//*[@id='mainForm:sampleDt:0:disTestCdBtnId']
+EPSFAddTaskByTestCodeBtnInTaskTab=.//*[@id='mainForm:tabView:sampleDt:0:addTestCdId']
+FirstRadioBtnInSampleAdded=.//*[@id='mainForm:tempDt_data']/tr/td[1]/div/div[2]
+FirstChkBxInSampleAdded=.//*[@id='mainForm:testCodeDt_data']/tr/td[1]/div/div[2]
+EPSFSearchAndReturnBtn=.//*[@id='mainForm:selRetId']
+
+EPSFSearchAndReturnBtn2InSearchByTestCode=.//*[@id='mainForm:slretTestCr']
+
+EPSFDeleteTaskBtn=.//*[@id='mainForm:sampleDt:0:samplDtId:0:delSampCrEpsf']
+EPSFConfirmDelBtn=.//*[@id='mainForm:taskConfrmDeleteBtn']
+
+EPSFSearchEPSFTxtBx=.//*[@id='mainForm:epsfid']
+EPSFTaskTabLink=.//*[@id='mainForm:tabView']/ul/li/a[contains(@href,':billTaskTab')]
+
+SearchResourceLink=Search Resource
+#######################################################################
+
+
+
+
+
+############################   Direct NSF Online   ###########################################
+DirectNSFOnlineUsernameTxt=.//td/label[text()='Username']/../following-sibling::td/input
+DirectNSFOnlinePasswordTxt=.//td/label[text()='Password']/../following-sibling::td/input
+
+#DirectNSFOnlineUsernameTxt=.//*[@id='_id133']
+#DirectNSFOnlinePasswordTxt=.//*[@id='_id137']
+
+DirectNSFOnlineLoginBtn=.//*[@id='loginClient']
+DirectNSFOnlineLogout=.//a[text()='Logout']
+
+DirectNSFOnlineErrorMessage=.//*[@id='messages' and @title='Validations']
+NsfOnline_Version=.//*[@id='form1']/table/tbody/tr[1]/td/table[1]/tbody/tr/td[1]/a
+NsfOnline_Version_BuildInfo_Element=//pre
+Footer=.//*[@id='form1']/div[1]
+
+NSFOnline_CustomerTopMenu=.//*[@id\='Customer_']
+
+NSFOnline_DocumentsSubMenu=.//a[text()='Documents']
+NSFOnline_ExpandSearchCriteriaLink=.//a[text()='Expand search criteria']
+NSFOnline_DocumentNoTxtBox=.//label[text()='Document No ']/../following-sibling::td/input
+SearchBtn=.//button[text()\='Search']
+ResestBtn=.//button[text()='Reset']
+NSFOnline_LoadingImg=//*[@id='progressLayer']
+#NSFOnline_LoadingImg=//*[@id='progressImgId']
+NSFOnline_ErrorMsg=//*[@class='validationMessages']
+#NSFOnline_ViewDocuments_DocumentsSearchResult_Table=.//*[@class='x7a']
+NSFOnline_ViewDocuments_DocumentsSearchResult_Table=.//h1[text()='Document Search Results']/following-sibling::div/table[2]
+RecordsInSearchDocsTable_xpath=.//h1[text()='Document Search Results']/following-sibling::div/table[2]/tbody/tr
+
+NSFOnline_Documents_SearchResult_TableHeader=.//*[@class='x7a']
+NSFOnline_Documents_SearchResult_TableHeader_1stRow=.//*[@class='x7a']/tbody/tr[1]
+NSFOnline_Documents_SearchResult_Pagination_Next=//*[@class='xaq']
+
+
+############## Suppliers################
+NSFOnline_Customer_Suppliers=//*[contains(text(), 'Suppliers')]
+NSFOnline_MySuppliers_CustomerSearchCriteria_CustomerText=.//label[text()='Customer #']/../following-sibling::td/input
+NSFOnline_SupplierSearchResults_Table=.//h1[text()='Supplier Search Results']/following-sibling::div/table[2]
+RecordsInSupplierSearchResults_Table_xpath=.//h1[text()='Supplier Search Results']/following-sibling::div/table[2]/tbody/tr
+NSFOnline_ViewSuppliers_Documents=(//a[contains(text(), 'Documents')])[2]
+NSFOnline_ViewSuppliers_Documents_Table=//table[@class='x7a']/tbody/tr[2]
+NSFOBackBtn=.//button[text()='Back']
+
+############CARS##########
+
+
+NSFOnline_HomeMenu=//*[contains(text(), 'Home')]
+NSFOnline_CarSummary_Tab=.//*[@id='snapshot_kpi:snapshot-tab-carSummary']
+NsfOnline_Home_AllRound_DD=//select[@class\='x2f']/option[text()\='All Rounds']/..
+NsfOnline_Go_Bttn=//*[@id='golink']
+
+
+
+NsfOnline_CARSummary_FirstGraph_DivXpath=(//*[@class='xdi'])[1]
+NsfOnline_CARSummary_SecondGraph_DivXpath=(//*[@class='xdi'])[2]
+NsfOnline_CARSummary_Graph_TipMsgDiv_Xpath=//*[@id='overDiv']
+NsfOnline_CorrectiveActionSearchResults_PaginationDD=.//select[@class='x6']
+NsfOnline_Home_AccountSummary_TableHeader=//*[@class='xf4']
+
+
+NsfOnline_Top10NonCompliance_Tab=.//*[@id='snapshot_kpi:snapshot-tab-carTop10LeastCompliant']
+NSFOnline_Top10NonCompliance_Result_TableHeader=.//*[@class='x7a']
+NSFOnline_Top10NonCompliance_Result_TableHeader_1stRow=.//*[@class='x7a']/tbody/tr[1]
+
+NSFOnline_AuditInfo_Top10_Tab=.//*[@id='snapshot_kpi:snapshot-tab-auditTop10']
+NSFOnline_AuditInfo_Top10_Result_1stRow_3rdCell=(//*[@class='x7a'])[2]/tbody/tr[2]/td[3]
+NSFOnline_AuditInfo_Top10_Go_Bttn=.//*[@id='snapshot_kpi:auditTop10Go']
+
+NSFOnline_AuditInfo_MostImproved_Tab=.//*[@id='snapshot_kpi:snapshot-tab-auditMostImproved']
+NSFOnline_AuditInfo_MostImproved_TableHeader=(//*[@class='x7a'])[2]
+#NSFOnline_AuditInfo_MostImproved_TableHeader=//*[@class='x7a']
+NSFOnline_AuditInfo_MostImproved_Go_Bttn=.//*[@id='snapshot_kpi:mostImprovedGo']
+
+
+NSFOnline_AuditInfo_Bottom10_Tab=.//*[@id='snapshot_kpi:snapshot-tab-auditBottom10']
+NSFOnline_AuditInfo_Bottom10_Result_1stRow_3rdCell=(//*[@class='x7a'])[2]/tbody/tr[2]/td[3]
+NSFOnline_AuditInfo_Bottom10_Go_Bttn=.//*[@id='snapshot_kpi:auditBottom10']
+
+
+
+NSFOnline_AuditsTopMenu=//*[contains(text(), 'Audits')]
+NSFOnline_CompletedAuditsSubMenu=.//a[text()='Completed Audits']
+NSFOnline_Customer_Ajax_Link=//a[text()='Customer']
+NSFOnline_Standards_Ajax_Link=//a[text()='Standards']
+NSFOnline_AuditNoTxtBox=.//label[text()='Audit No']/../following-sibling::td/input
+NSFOnline_CompletedAuditSearchResult=//*[@id='auditResult']
+NSFOnline_CompletedAuditSearchResult_Table_2ndRow=.//h1[text()\='Audit Search Results']/following-sibling\:\:div/table[2]/tbody/tr[2]
+NSFOnline_CompletedAuditSearchResult_Table_moseover=.//*[@id='auditResult']/table[2]/tbody/tr
+#NSFOnline_CompletedAuditSearch_Bttn=.//button[text()\='Search Audits']
+#NSFOnline_CompletedAuditSearch_Bttn=(//*[@class='x7i'])[2]
+NSFOnline_CompletedAuditSearch_Bttn=//button[text()= 'Search']
+NSFOnline_CompletedAuditSearchResult_Table=.//h1[text()='Audit Search Results']/following-sibling::div/table[2]
+NSFOnline_CompletedAuditSearchResult_Table_trXpath=.//h1[text()='Audit Search Results']/following-sibling::div/table[2]/tbody/tr
+NSFOnline_CompletedAuditSearchResult_Table_bodyXpath=.//h1[text()='Audit Search Results']/following-sibling::div/table[2]/tbody
+
+NSFOnline_AuditSearchBttn_DivXpath=//*[@class='xec']
+NSFOnline_AuditSearchBttn=//button[contains(text(), 'SEARCH')]
+
+NSFOnline_ScheduledUpcomingSubMenu=.//a[text()='Scheduled & Upcoming']
+#NSFOnline_ScheduledUpcomingSubMenu=.//*[@id\='qm0']/div[3]/a[3]
+NSFOnline_AttemptedCancelledSubMenu=.//a[text()='Attempted / Cancelled']
+NSFOnline_ScheduledAuditsSearchResult=.//*[@id='tabId']
+NSFOnline_ScheduledAuditsSearchResult_Table=.//*[@id='tabId']/table[2]/tbody
+NSFOnline_ScheduledAuditsSearchResult_Table_mouseover=.//*[@id='tabId']/table[2]/tbody/tr
+#NSFOnline_ScheduledAuditSearch_Bttn=.//button[text()\='Search']
+NSFOnline_ScheduledAuditSearch_Bttn=(//*[@class='x7i'])[1]
+
+
+#################################################################    CSA IM #######################################################################################
+NSFOnline_Escalation_EscalationID_Input=(//input[@class='x25'])[1]
+NSFOnline_Issue_IssueID_Input=(//input[@class='x25'])[1]
+NSFOnline_IssueSearchCriteriaLink=.//a[text()='Issue Search Criteria']
+NSFOnline_Audit_SearchResult_TableHeader=//table[@class='x7a']
+#NSFOnline_Audit_SearchResult_Table=//div[@id='auditResult']/table[2]
+NSFOnline_Standards_SearchResult_NEXT_Link=//*[contains(text(), 'Next')]
+NSFOnline_Standards_SearchResult_NEXT_Link_NotDisable=//a[contains(text(), 'Next')]
+
+
+
+NsfOnline_ViewIssue_HeaderInfo=//*[@class='xf0']
+
+
+
+
+
+#************************************************** Create Issue **************************************
+NSFOnline_Calander_Month_DD=//*[@id='month']
+NSFOnline_Calander_Year_DD=//*[@id='year']
+Footer_NSFOnline=.//*[@id='form1']/div[1]
+NSFOnline_Issues_TopMenu_Ajax_Link=(//a[text()='Issues'])[1]
+NSFOnline_Issues_Ajax_Link=(//a[text()='Issues'])[2]
+NSFOnline_CreatIssue_Bttn=//button[text()='Create Issue']
+NSFOnline_CreatIssue_SiteInfo_Confirmyoursite_LK=//*[@src='/cusweb/adf/images/lvib.gif']
+NSFOnline_CreatIssue_SiteInfo_Confirmyoursite_LK_SiteNo_Text=.//*[@id='_id30']
+NSFOnline_CreatIssue_SiteInfo_Confirmyoursite_LK_Search_Bttn=//button[@id='Search']
+NSFOnline_CreatIssue_SiteInfo_Confirmyoursite_LK_SelectRadio_Bttn=//input[@title='Select']
+NSFOnline_CreatIssue_SiteInfo_Confirmyoursite_LK_SelectReturn_Bttn=//button[text()='Select & Return']
+NSFOnline_CreatIssue_SiteInfo_IssueType_DD_Click=//*[@id='issueType']
+NSFOnline_CreatIssue_SiteInfo_IssueSubType_DD_Click=//*[@id='issueSubType']
+NSFOnline_CreatIssue_SiteInfo_CreateIssue_Bttn=//table[@class='af_panelButtonBar']/tbody/tr[1]/td[2]/button
+NSFOnline_CreatIssue_SiteInfo_Next_Bttn=//button[text()='Next']
+NSFOnline_CreatIssue_SummaryInfo_IssueTitleReasonforIssue_Text=(//input[@class='x25'])[1]
+NSFOnline_CreatIssue_SummaryInfo_DateIncidentOccurred_calander_Bttn=//*[@class='inpbgcolor x1q p_AFRequired']/td[2]/a
+NSFOnline_CreatIssue_SummaryInfo_TimeIncidentOccurred_Text=(//input[@class='x25'])[2]
+NSFOnline_CreatIssue_SummaryInfo_YourName_Text=(//input[@class='x25'])[4]
+NSFOnline_CreatIssue_SummaryInfo_SaveNext_Bttn=//button[text()='Save & Next']
+NSFOnline_CreatIssue_DetailsInfo_SaveNext_Bttn=//button[text()='Save & Next']
+NSFOnline_CreatIssue_ProductInfo_SelectProductCode_LK=(//*[@src='/cusweb/adf/images/lvib.gif'])[1]
+NSFOnline_CreatIssue_ProductInfo_SelectProductCode_LK_Text=(//input[@class='x25'])[1]
+NSFOnline_CreatIssue_ProductInfo_SelectProductCode_LK_Search_Bttn=//button[@id='Search']
+NSFOnline_CreatIssue_ProductInfo_SelectProductCode_LK_SelectRadio_Bttn=//input[@title='Select']
+NSFOnline_CreatIssue_ProductInfo_SelectProductCode_LK_SelectReturn_Bttn=//button[text()='Select & Return']
+NSFOnline_CreatIssue_ProductInfo_Quantity_Text=//*[@id='prodQuantity']
+NSFOnline_CreatIssue_ProductInfo_ProductUnit_DD_Click=//*[@id='productUnit']
+NSFOnline_CreatIssue_ProductInfo_YES_Radio_Bttn=//*[@id='crIssVarProduct:_0']
+NSFOnline_CreatIssue_ProductInfo_FreeTextBox=//*[@onchange='return _checkLength(this,1000,event)']
+NSFOnline_CreatIssue_ProductInfo_SaveNext_Bttn=//button[text()='Save & Next']
+NSFOnline_CreatIssue_DocumentInfo_ConfirmIssue_Bttn=//button[text()='Confirm Issue']
+NSFOnline_IssueEscalation_SearchID_Input=(//input[@class='x25'])[1]
+NSFOnline_IssueEscalation_Search_Bttn=//button[text()='Search']
+#NSFOnline_IssueEscalation_SearchResultTable_bodyXpath=//table[@class='x7a']/tbody
+NSFOnline_IssueEscalation_SearchResultTable_bodyXpath=//div[@id='issueSearchTable']/table[2]/tbody
+NSFOnline_IssueEscalation_SearchResultTable2=//div[@id='issueSearchTable']/table[2]
+NSFOnline_IssueEscalation_SearchResultTable=//table[@class='x7a']/tbody/tr[2]
+NSFOnline_IssueEscalation_SearchResultTable_RowsXpath=//table[@class='x7a']/tbody/tr
+NSFOnline_Issue_Edit_Button=//button[text()='Edit']
+NSFOnline_Issue_TAB_DataTable=//table[@class='xex']
+NSFOnline_Issue_Site_TAB=//a[@id='siteTab']
+NSFOnline_Issue_Summary_TAB=//a[@id='summaryTab']
+NSFOnline_Issue_Detail_TAB=//a[@id='detailTab']
+NSFOnline_Issue_Product_TAB=//a[@id='productTab']
+NSFOnline_Issue_Document_TAB=//a[@id='documentTab']
+NSFOnline_Issue_Response_TAB=//a[@id='responseTab']
+NSFOnline_EditIssue_SummaryTAB_SummaryInfo_Header=//h1[text()='Summary Info']
+NSFOnline_EditIssue_DetailTAB_DetailInfo_Header=//h1[text()='Detail Info']
+NSFOnline_EditIssue_ProductTAB_ProductInfo_Header=//h1[text()='Product Info']
+NSFOnline_EditIssue_DocumentTAB_DocumentInfo_Header=//h1[text()='Document Info']
+NSFOnline_EditIssue_ResponseTAB_ResponseInfo_Header=//h1[text()='Response History Info']
+NSFOnline_EditIssue_SummaryTAB_SaveReturnToView=//button[text()='Save & Return to View']
+NSFOnline_EditIssue_SummaryTAB_DateIncidentOccurred_Text=//input[@class='x2b']
+
+
+
+#---------------------------Search Audit Functional Test Case ------------------------------
+
+Search_Audit_LinkName=Search Audit
+AuditNo_Txtbx=.//*[@id='mainForm:inptxtauditno']
+DetailViewAditPageheadingContainsId=.//*[@id='mainForm:j_idt4159']
+
+SearchAudit_SnapshotTabLink=.//a[contains(@href,'\:auditOasis\:audiSnap')]
+
+
+SearchAudit_InfoTabLink=.//a[contains(@href,':auditOasis:audiInfo')]
+visitLinkInInfoTab=.//*[@id='mainForm:auditOasis:visitlink']
+viewFinalReportBtnAtViewAuditScreen=.//*[@id='mainForm:preRep1']
+viewFinalReportLink_AtViewAuditScreen=.//*[@id='mainForm:auditOasis:finalauditreportcmd']
+ViewAudit_InfoTabLink=.//a[contains(@href,':auditOasis:audiInfo')]
+
+SearchAudit_CorrectiveActionTabLink=.//a[contains(@href,':audiCorrAcn')]
+SearchAudit_CorrectiveActionTab_showAllLink=.//*[@id='mainForm:auditOasis:shoAlllnk']
+
+SearchAudit_DocumentsTabLink=.//a[contains(@href,':audiDoc')]
+
+
+SearchAudit_CorrespondenceTabLink=.//a[contains(@href,':audiCorres')]
+SearchAudit_CorrespondenceTab_EmailCorrespondenceLabel=.//*[@id='mainForm:auditOasis:correspondencehistory']
+
+SearchAudit_HistoryTabLink=.//a[contains(@href,':audiHist')]
+
+
+
+SearchAudit_FacilityProfileTabLink=.//a[contains(@href,':audiFacInfo')]
+
+
+
+#--------------------------------WO ISR
+
+#SearchWoScreen
+SearchCorpFacilityTxtBx=.//*[@id='mainForm:cofacappsrhtxt']
+SearchStandardTxtBx=.//*[@id='mainForm:stdappsrhtxt']
+SearchStandardTxtBx_id=id~mainForm:stdappsrhtxt
+StandardLkpBtnInSearchCriteria=.//*[@id='mainForm:stdlkupappsrch']
+
+
+
+WorkOrderTypeMultipleSelectDropDown=.//div[@id='mainForm:wotypsrhdd']
+
+
+ISRInfoTab_EditWO=.//ul/li/a[contains(@href,':isrAppInfoTab')]
+
+ISRInfoTab_WOStatusPFList=.//*[@id='mainForm:tabView:appstatusddEdit_label']
+ISRInfoTab_WOStatusPFListOptions=.//*[@id='mainForm:tabView:appstatusddEdit_panel']
+
+
+TechnicalSpecialistLkpBtn=.//*[@id='mainForm:tabView:technicalSpecialistLookup']
+TechnicalReviewerLkpBtn=.//*[@id='mainForm:tabView:technicalReviewerLookup']
+
+
+
+ISRCertTargetDateCalBtn=.//*[@id='mainForm:tabView:certTargetDt']/button
+#currentDateSelection=.//div[@id='ui-datepicker-div']//td[contains(@class,'ui-datepicker-current-day')]/a[contains(@class,'ui-state-default ui-state-highlight ui-state-active')]
+currentDateSelection=.//div[@id='ui-datepicker-div']//td[contains(@class,'ui-datepicker-today')]/a
+StandardCodefilterTxtBxInLkp=.//*[@id='mainForm:lookuptableid:resHdr2:filter']
+
+
+#IsThisTransferToNSFRadioBtn=.//*[@id='mainForm:isThisATransferIntoNSF']/tbody/tr/td/label[text()='No']
+#IsThisTransferToNSFRadioBtn=.//td/label[contains(@for,':isThisATransferIntoNSF:')][text()='No']
+IsThisTransferToNSFRadioBtn_part1=.//td/label[contains(@for,':isThisATransferIntoNSF:')][text()='
+IsThisTransferToNSFRadioBtn_part2=']
+
+#IsthisforaspecifyingClientRadioBtn=.//td/label[contains(@for,':isThisForASpecifyingClient:')][text()='No']
+IsthisforaspecifyingClientRadioBtn_part1=.//td/label[contains(@for,':isThisForASpecifyingClient:')][text()='
+IsthisforaspecifyingClientRadioBtn_part2=']
+
+
+ChooseClientLkpBtn=//button[@id\='mainForm\:specifyingClientLkp']
+
+
+
+
+QuoteReceiveDateBtn=.//*[@id='mainForm:quoteDt']/button
+
+QuoteReceiveTodayDate=.//div[@id='ui-datepicker-div']//td[contains(@class,'ui-datepicker-today')]/a
+#QuoteReceiveYesterdayDate=//td[contains(@class,'ui-datepicker-today')]/a/../preceding-sibling::td/a
+#QuoteReceiveYesterdayDate=.//div[@id='ui-datepicker-div']//td[contains(@class,'ui-datepicker-today')]/a/preceding-sibling::td/a
+QuoteReceiveYesterdayDate=.//div[@id='ui-datepicker-div']//td[contains(@class,'ui-datepicker-today')]/preceding-sibling::td/a
+QuoteReceiveDateTxtBx=.//*[@id='mainForm:quoteDt_input']
+
+
+#RushRadioBtn=.//td/label[contains(@for,':worushRadioEdit:')][text()='No']
+RushRadioBtn_part1=.//td/label[contains(@for,':worushRadioEdit:')][text()='
+RushRadioBtn_part2=']
+
+CertTargateDateBtn=.//*[@id='mainForm:certTargetDt']/button
+
+
+CertTargateTxtBx=.//*[@id='mainForm:certTargetDt_input']
+
+PreassessmentRadioBtn_part1=.//td/label[contains(@for,':wopreassesmentRadioEdit:')][text()='
+PreassessmentRadioBtn_part2=']
+
+SurveillanceCyclePFList=.//*[@id='mainForm:surveillanceCycleDD_label']
+SurveillanceCyclePFListOptions=.//*[@id='mainForm:surveillanceCycleDD_panel']
+
+pagingNextBtn=.//div[@id='mainForm:stdSearchC_paginator_bottom']//span[@class='ui-paginator-next ui-state-default ui-corner-all']/span[@class='ui-icon ui-icon-seek-next']
+
+paginationPagesOfMainStandardSearchPage=.//div[@id='mainForm:stdSearchC_paginator_bottom']//span[@class='ui-paginator-pages']/span
+
+
+
+StandardNFacilityTabLink=.//a[contains(@href,':irsstdFacs')]
+
+StandardLevelPFList=.//*[@id='mainForm:tabView:stdLvlDropDown_label']
+StandardLevelPFListOptions=.//*[@id='mainForm:tabView:stdLvlDropDown_panel']
+
+
+ScopeofthefacilityTxtBx=.//*[@id='mainForm:tabView:textArscopeW']
+
+Exclusion_of_the_facilityTxtBx=.//*[@id='mainForm:tabView:textArexcl']
+ScopeTxtBx=.//*[@id='mainForm:tabView:scLang1isw']
+	
+IndustryCodeProductTable=.//*[@id='mainForm:tabView:dtcusindprd_data']
+IndustryCodeProductTableHeader=.//*[@id\='mainForm\:tabView\:dtcusindprd_head']\t
+
+	
+	
+#IndustryCode&ProductDetail_AddBtn=.//*[@id='mainForm:tabView:j_idt6541']
+#below is working fine
+IndustryCodeProductDetail_AddBtn=.//*[@id\='mainForm\:tabView\:isrIndPdFac_std_inff']
+
+IndustryCodePFList=.//*[@id='mainForm:iqIndCodeLs_label']
+IndustryCodePFListOptions=.//*[@id='mainForm:iqIndCodeLs_panel']
+
+#ProductsTxtBx=.//*[@id='mainForm:tabView:prds']
+ProductsTxtBx=.//*[@id='mainForm:prds']
+
+
+#AddIndustryCodeSave&Return=.//*[@id='mainForm:tabView:j_idt6719']
+#AddIndustryCodeSave&Return=.//*[@id='mainForm:tabView:svrtPM23']
+AddIndustryCodeSave&Return=.//*[@id='mainForm:svrtPM23']
+#AddIndustryCodeSave&Return=.//*[contains(@id,'mainForm:tabView:svrtPM')]
+
+SizeUnitPFList=.//*[@id='mainForm:tabView:facSzMp23_label']
+SizeUnitPFListOptions=.//*[@id='mainForm:tabView:facSzMp23_panel']
+FacilitySizeAddBtn=.//*[@id='mainForm:tabView:adCusfacSiz']
+
+
+FacilitySizeTable=.//*[@id='mainForm:tabView:facSizeDT_data']
+FacilitySizeTableHeader=.//*[@id='mainForm:tabView:facSizeDT_head']
+
+
+
+FacilitySizeTypePFListPart1=.//*[@id='mainForm:tabView:facSizeDT:
+FacilitySizeTypePFListPart2=:facTydrpSt_label']
+
+FacilitySizeAmountPart1=.//*[@id='mainForm:tabView:facSizeDT:
+FacilitySizeAmountPart2=:facSizeIn']
+
+
+FacilitySizeSaveFloppyIconPart1=.//*[@id='mainForm:tabView:facSizeDT:
+FacilitySizeSaveFloppyIconPart2=:facSizeEdit']/span[@class='ui-icon ui-icon-check']
+
+
+FacilityTotalAmountxpath_part1=.//div[@id='mainForm:tabView:facSizecountPnl_content']/table/tbody/tr/td[
+FacilityTotalAmountxpath_part2=]
+
+
+FacilityEmployeeCount_AddBtn=.//*[@id='mainForm:tabView:facEmpCntBtId']
+
+
+FacilityEmployeeCountTable=.//*[@id='mainForm:tabView:empCountDtFcInfo_data']
+FacilityEmployeeCountTableHeader=.//*[@id='mainForm:tabView:empCountDtFcInfo_head']
+
+
+FacilityEmployeeCountShiftPart1=.//*[@id='mainForm:tabView:empCountDtFcInfo:
+FacilityEmployeeCountShiftPart2=:shNEmpCtFacInf23']
+
+
+FacilityEmployeeCountPart1=.//*[@id='mainForm:tabView:empCountDtFcInfo:
+FacilityEmployeeCountPart2=:empCtEFac']
+
+
+FacilityEmployeeStartPart1=.//*[@id='mainForm:tabView:empCountDtFcInfo:
+FacilityEmployeeStartPart2=:empcthrEstFac_input']
+
+FacilityEmployeeEndPart1=.//*[@id='mainForm:tabView:empCountDtFcInfo:
+FacilityEmployeeEndPart2=:empcthrEenFac_input']
+
+FacilityEmpCountSaveFloppyIconPart1=.//*[@id='mainForm:tabView:empCountDtFcInfo:
+FacilityEmpCountSaveFloppyIconPart2=:facInfDtRW']/span[@class='ui-icon ui-icon-check']
+
+FacilityStandardContactsAddBtn=.//*[@id='mainForm:tabView:isrFcStdCont98']
+
+
+
+FacilityStandardContactsTable=.//*[@id='mainForm:tabView:dtCusStdContXrefId_data']
+FacilityStandardContactsTableHeader=.//*[@id='mainForm:tabView:dtCusStdContXrefId_head']
+
+FacilityDesignResponsiblePFList=.//*[contains(@id,':r7c2reg:selectOne_label')]
+FacilityDesignResponsiblePFListOptions=.//*[contains(@id,':r7c2reg:selectOne_panel')]
+
+
+
+#ContactFromPLandCOPFList=.//*[@id='mainForm:tabView:fcDrpDw_label']
+#ContactFromPLandCOPFListOptions=.//*[@id='mainForm:tabView:fcDrpDw_panel']
+ContactFromPLandCOPFList=.//*[@id='mainForm:fcDrpDw_label']
+ContactFromPLandCOPFListOptions=.//*[@id='mainForm:fcDrpDw_panel']
+
+
+
+#IndustryProDetailAvailablePortionChkBx_part1=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[2]/ul/li[contains(@data-item-value,'
+#IndustryProDetailAvailablePortionChkBx_part1=.//*[@id='mainForm:prdPckList']/tbody/tr/td[2]/ul/li[contains(@data-item-value,'
+IndustryProDetailAvailablePortionChkBx_part1=.//*[@id='mainForm:prdPckList']/div[2]/ul/li[contains(@data-item-value,'
+IndustryProDetailAvailablePortionChkBx_part2=')]/table/tbody/tr/td[1]/div/div
+
+#IndustryProDetailAvailablePortionLabel_part1=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[2]/ul/li[contains(@data-item-value,'
+#IndustryProDetailAvailablePortionLabel_part1=.//*[@id='mainForm:prdPckList']/tbody/tr/td[2]/ul/li[contains(@data-item-value,'
+IndustryProDetailAvailablePortionLabel_part1=.//*[@id='mainForm:prdPckList']/div[2]/ul/li[contains(@data-item-value,'
+IndustryProDetailAvailablePortionLabel_part2=')]/table/tbody/tr/td[2]/span
+
+
+
+#IndustryProDetailRightTransferIcon_Xpath=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[3]/button[1]
+#IndustryProDetailRightTransferIcon_Xpath=.//*[@id='mainForm:prdPckList']/tbody/tr/td[3]/button[1]
+IndustryProDetailRightTransferIcon_Xpath=.//*[@id='mainForm:prdPckList']/div[3]/div/button[@title='Add']
+
+#IndustryProDetailLeftTransferIcon_Xpath=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[3]/button[3]
+#IndustryProDetailLeftTransferIcon_Xpath=.//*[@id='mainForm:prdPckList']/tbody/tr/td[3]/button[3]
+IndustryProDetailLeftTransferIcon_Xpath=.//*[@id='mainForm:prdPckList']/div[3]/div/button[@title='Remove']
+									
+#IndustryProDetailChosenPortionChkBx_UsingDataItem_part1=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[4]/ul/li[contains(@data-item-value,'
+IndustryProDetailChosenPortionChkBx_UsingDataItem_part1=.//*[@id='mainForm:prdPckList']/tbody/tr/td[4]/ul/li[contains(@data-item-value,'
+IndustryProDetailChosenPortionChkBx_UsingDataItem_part2=')]/table/tbody/tr/td[1]/div/div
+
+#IndustryProDetailChosenPortionChkBx_UsingLiNo_part1=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[4]/ul/li[
+IndustryProDetailChosenPortionChkBx_UsingLiNo_part1=.//*[@id='mainForm:prdPckList']/tbody/tr/td[4]/ul/li[
+IndustryProDetailChosenPortionChkBx_UsingLiNo_part2=]/table/tbody/tr/td[1]/div/div
+
+
+#IndustryProDetailAvailableCountRow_xpath=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[2]/ul/li
+#IndustryProDetailAvailableCountRow_xpath=.//*[@id='mainForm:prdPckList']/tbody/tr/td[2]/ul/li
+IndustryProDetailAvailableCountRow_xpath=.//*[@id='mainForm:prdPckList']/div[2]/ul/li
+
+
+
+
+#IndustryProDetailChosenCountRow_xpath=.//*[@id='mainForm:tabView:prdPckList']/tbody/tr/td[4]/ul/li
+#IndustryProDetailChosenCountRow_xpath=.//*[@id='mainForm:prdPckList']/tbody/tr/td[4]/ul/li
+IndustryProDetailChosenCountRow_xpath=.//*[@id='mainForm:prdPckList']/div[4]/ul/li
+
+#FacilityStandardContactsAddress_TypeChkBxLabel_part1=.//table[@id='mainForm:tabView:basic']/tbody/tr/td[2]/label[contains(text(),'
+#FacilityStandardContactsAddress_TypeChkBxLabel_part2=')]
+FacilityStandardContactsAddress_TypeChkBxLabel_part1=.//table[@id='mainForm:basic']/tbody/tr/td[2]/label[contains(text(),'
+FacilityStandardContactsAddress_TypeChkBxLabel_part2=')]
+
+
+
+AssociatedFacilitiesPFList=.//*[contains(@id,':tabView:facMapOpts_label')]
+AssociatedFacilitiesPFListOptions=.//*[contains(@id,':tabView:facMapOpts_panel')]
+
+
+
+#Save&ReturnBtnInFacilityStandContDialBx=.//*[@id='mainForm:tabView:svRtFacstdCM23']
+Save&ReturnBtnInFacilityStandContDialBx=.//*[@id='mainForm:svRtFacstdCM23']
+#AuditReportForLanguage=.//*[@id='mainForm:tabView:audRepDrm']/a/label
+AuditReportForLanguage=.//*[@id='mainForm:tabView:audRepDrm']/span[@class='ui-selectcheckboxmenu-label-container']/label
+#AuditReportForLanguageFilterChkBx=.//*[@id='mainForm:tabView:audRepDrm_panel']/div[1]/div[1]/div[@class='ui-chkbox-box ui-widget ui-corner-all ui-state-default']
+AuditReportForLanguageFilterChkBx=.//*[@id='mainForm:tabView:audRepDrm_panel']/div[1]/div[1]/div[contains(@class,'ui-chkbox-box ui-widget ui-corner-all ui-state-default')]
+AuditReportForLanguage_OKLink=.//*[@id\='mainForm\:tabView\:audRepDrm_panel']/div[1]/a/span                 
+
+
+DistinctManufacturingProcessesTxtBx=.//tr/td/label[text()='Distinct Manufacturing Processes']/../following-sibling::td/input
+#UniqueHACCPPlansTxtBx=.//tr/td/label[text()='Unique HACCP Plans']/../following-sibling::td/span/input
+#NoofProductionLinesTxtBx=.//tr/td/label[text()='No. of Production Lines']/../following-sibling::td/span/input
+
+#Changed on 16-01-2018
+UniqueHACCPPlansTxtBx=.//tr/td/label[text()='Unique HACCP Plans']/../following-sibling::td//input
+NoofProductionLinesTxtBx=.//tr/td/label[text()='No. of Production Lines']/../following-sibling::td//input
+
+
+SUSSFTabSaveBtn=.//*[@id='mainForm:savebutton']
+
+ISRFinancialTabLink=.//a[contains(@href,':irsfnclsapptab')]
+
+#UpchargePFList=.//*[@id='mainForm:tabView:accordionPanel:0:j_idt9463_label']
+#UpchargePFListOptions=.//*[@id='mainForm:tabView:accordionPanel:0:j_idt9463_panel']
+
+UpchargePFList=.//*[contains(@id,':upchargePercentValue_label')]
+UpchargePFListOptions=.//*[contains(@id,':upchargePercentValue_panel')]
+
+
+
+ISRBillToOfficePFList=.//*[@id='mainForm:tabView:accordionPanel:0:rqBTODD_label']
+ISRBillToOfficePFListOptions=.//*[@id='mainForm:tabView:accordionPanel:0:rqBTODD_panel']
+
+
+InvoiceCurrencyPFList=.//*[@id\='mainForm\:tabView\:accordionPanel\:0\:rsdiv_label']
+InvoiceCurrencyPFListOptions=.//*[@id\='mainForm\:tabView\:accordionPanel\:0\:rsdiv_panel']
+
+
+
+ISRMoveToInReviewBtn=.//*[@id='mainForm:move_inrvw']
+
+FinopsActionItemTable=.//*[@id='mainForm:tabView:accordionPanel:0:finOpsAiList_data']
+FinopsActionItemTable_HeaderRow=.//*[@id='mainForm:tabView:accordionPanel:0:finOpsAiList_head']
+
+
+
+ISRFinaceTabAddBtn=.//*[@id='mainForm:tabView:addFinDocBtn']
+ISRFinaceTabUploadSave&CloseBtn=.//*[@id='mainForm:tabView:saveFinDocTab']
+ISRFinaceTabUploadBrowseBtn=.//*[@id='mainForm:tabView:finFileUpload_input']
+
+ISRFinaceTabUploadDoc_TypePFList=.//*[@id='mainForm:tabView:doctypFin_label']
+ISRFinaceTabUploadDoc_TypePFListOptions=.//*[@id='mainForm:tabView:doctypFin_panel']
+ISRFinaceTabUploadDoc_AccessPFList=.//*[@id='mainForm:tabView:docacssFin_label']
+ISRFinaceTabUploadDoc_AccessPFListOptions=.//*[@id='mainForm:tabView:docacssFin_panel']
+
+
+
+AuditDurationTable=.//*[@id='mainForm:tabView:accordionPanel:0:adtDrFinOpsTable_data']
+AuditDurationTable_HeaderRow=.//*[@id='mainForm:tabView:accordionPanel:0:adtDrFinOpsTable_head']
+
+
+BillCodesTable=.//*[@id='mainForm:tabView:accordionPanel:0:billCodeFinOpsTable_data']
+BillCodesTable_HeaderRow=.//*[@id='mainForm:tabView:accordionPanel:0:billCodeFinOpsTable_head']
+								 
+
+WOISR_FinopActionItemTable=.//*[@id='mainForm:tabView:accordionPanel:0:finOpsAiList_data']
+WOISR_FinopActionItemTable_HeaderRow=.//*[@id='mainForm:tabView:accordionPanel:0:finOpsAiList_head']
+WOISR_FinopActionItemSaveNCloseBtn=.//*[@id='mainForm:savencloseButton']
+AISaveNCloseBtn=.//*[@id='mainForm:savencloseButton']
+
+#WOISR_AIConfirmationBtn=.//*[@id='mainForm:compAIYesBtn1']
+WOISR_AIConfirmationBtn=.//*[contains(@id,':compAIYesBtn')]
+
+
+
+WOISR_editBtnForEditingFinops=.//*[@id='mainForm:tabView:accordionPanel:0:editBtn']
+WOISR_EditingFinops_SaveNCloseBtn=.//*[@id='mainForm:tabView:saveAndClose']
+
+EditAuditDurationTable=.//*[@id='mainForm:tabView:editAuditDuration_data']
+EditAuditDurationTable_HeaderRow=.//*[@id='mainForm:tabView:editAuditDuration_head']
+
+
+
+
+AdjustedDurationInputBx_part1=.//*[@id='mainForm:tabView:editAuditDuration:
+AdjustedDurationInputBx_part2=:editAudDrAdjDr']
+
+AdjustmentReasonTxtBx=.//*[@id='mainForm:tabView:reasonTextarea']
+
+
+MoveToInProcessBtn=.//*[@id='mainForm:move_inprs']
+
+ISRTaskTab=.//ul/li/a[contains(@href,':isrAppTasksTab')]
+
+
+
+TaskTabTable=.//*[@id='mainForm:tabView:taskDT_data']
+TaskTabTable_HeaderRow=.//*[@id='mainForm:tabView:taskDT_head']
+
+
+#TaskTabISR_DeskAudit_OpenIcon=.//tbody[@id='mainForm:tabView:taskDT_data']/tr/td[contains(text(),'Desk')]/../td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+TaskTabISR_DeskAudit_OpenIcon=.//tbody[@id='mainForm:tabView:taskDT_data']/tr/td/label[contains(text(),'Desk')]/../../td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+TaskTabISR_DeskAudit_OpenIconPart1=.//tbody[@id='mainForm:tabView:taskDT_data']/tr/td/label[normalize-space(text())='
+TaskTabISR_DeskAudit_OpenIconPart2=']/../../td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+
+TaskTabISR_Task_OpenIconPart1=.//tbody[@id='mainForm:tabView:taskDT_data']/tr/td/label[normalize-space(text())='
+TaskTabISR_Task_OpenIconPart2=']/../../td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+
+
+TaskTabISR_Task_OpenIcon_BasedOnTaskNo_Part1=.//tbody[@id='mainForm:tabView:taskDT_data']/tr/td/a[normalize-space(text())='
+TaskTabISR_Task_OpenIcon_BasedOnTaskNo__Part2=']/../../td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+
+
+TaskTabISR_DeskAudit_OpenIconPart1_usingRowNo=.//*[@id='mainForm:tabView:taskDT_data']/tr[
+TaskTabISR_DeskAudit_OpenIconPart2_usingRowNo=]/td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+
+
+#ISRTaskInnerTableForBillingCodeTableHeader_part1=.//*[@id='mainForm:tabView:taskDT:
+#ISRTaskInnerTableForBillingCodeTableHeader_part2=:iqJobExpDT_head']
+
+ISRTaskInnerTableForBillingCodeTableHeader_part1=.//*[@id='mainForm:tabView:taskDT:
+ISRTaskInnerTableForBillingCodeTableHeader_part2=:iqJobFeeDT_head']
+
+
+
+#ISRTaskInnerTableForBillingCodeTableData_part1=.//*[@id='mainForm:tabView:taskDT:
+#ISRTaskInnerTableForBillingCodeTableData_part2=:iqJobExpDT_data']
+
+ISRTaskInnerTableForBillingCodeTableData_part1=.//*[@id='mainForm:tabView:taskDT:
+ISRTaskInnerTableForBillingCodeTableData_part2=:iqJobFeeDT_data']
+
+
+
+
+ISRTaskInnerTableForActionItemsTableHeader_part1=.//*[@id='mainForm:tabView:taskDT:
+ISRTaskInnerTableForActionItemsTableHeader_part2=:aiDT_head']
+
+ISRTaskInnerTableForActionItemsTableData_part1=.//*[@id='mainForm:tabView:taskDT:
+ISRTaskInnerTableForActionItemsTableData_part2=:aiDT_data']
+
+
+
+ISRTaskExpansionPanelGrid_part1=.//table[@id='mainForm:tabView:taskDT:
+ISRTaskExpansionPanelGrid_part2=:expansionPanelGrid']
+
+
+
+ReassignAITxtBx=.//*[contains(@id,'\:editActionItemAuto_input')]
+
+ReassignAILkpBtn=.//*[@id='mainForm:editAIAccordPanel:empLookUp']
+ReassignAILkpBtn_OnConsolidatedScreen=.//*[@id='mainForm:itemdetailaccor:empLookUp']
+
+
+#AssignedToLabelValue=.//*[@id='mainForm:editAIAccordPanel:editPnlGd']//tr/td/label[normalize-space(text())='Assigned To')]/../following-sibling::td
+AssignedToLabelValue=.//*[@id='mainForm:editAIAccordPanel:editPnlGd']//tr/td/label[normalize-space(text())='Assigned To']/../following-sibling::td
+
+QuestionnaireOptionsLinkInTechReviewAI=.//*[contains(@id,'mainForm\:quesDt\:0\:issLinkQues')]
+Prop_QuestionnaireCloseBtnInISR=.//*[@id='mainForm:isrCloseBtn']
+
+
+QuestionnaireDetailsTableInWOISO=.//*[@id='mainForm:quesDt_data']
+QuestionnaireDetailsTableInWOISO_header=.//*[@id='mainForm:quesDt_head']
+
+ISR_AI_LeadAuditorRatingList=.//*[@id='mainForm:leadratingLst_label']
+ISR_AI_LeadAuditorRatingListOptions=.//*[@id='mainForm:leadratingLst_panel']
+
+ISR_AI_ReviewerRecommendationList=.//*[@id='mainForm:revDescLst_label']
+ISR_AI_ReviewerRecommendationListOptions=.//*[@id='mainForm:revDescLst_panel']
+
+
+SearchSchemeLink=Search Scheme
+SchemeCodeTxtBx=.//*[@id='mainForm:stdCodetxt']
+ConfigureSchemeBtn=.//*[@id='mainForm:configurescheme']
+
+
+SchemeMgtWorkOrderTasksTabLink=.//a[contains(@href,':schWorkOrderDtls')]
+
+
+
+
+#All xpath worked fine
+#WorkOrderSingleTaskTypeLinkInSchemeMgt1=.//div[@id='mainForm:tabView:schmwotabview:schmwottaccpnl']/h3/label[contains(text(),'Single')]
+#WorkOrderSingleTaskTypeLinkInSchemeMgt2=.//div[@id='mainForm:tabView:schmwotabview:schmwottaccpnl']/h3/label[normalize-space(text())='Single']
+#WorkOrderSingleTaskTypeLinkInSchemeMgt4=.//div[@id='mainForm:tabView:schmwotabview:schmwottaccpnl']/h3/label[normalize-space(text())='Work Order']/following-sibling::label[normalize-space(text())='Single']
+#WorkOrderSingleTaskTypeLinkInSchemeMgt5=.//div[@id='mainForm:tabView:schmwotabview:schmwottaccpnl']/h3/label[normalize-space(text())='Single']
+WorkOrderSingleTaskTypeLinkInSchemeMgt=.//div[@id='mainForm:tabView:schmwotabview:schmwottaccpnl']/h3/label[normalize-space(text())='Work Order']/following-sibling::label[normalize-space(text())='Single']
+
+
+WorkOrderTaskTypeLinkInSchemeMgt_lastLabel=.//div[@id='mainForm:tabView:schmwotabview:schmwottaccpnl']/h3/label[3]
+
+CertTargetDateInputBxInfoTab=.//*[@id='mainForm:tabView:certTargetDt_input']
+
+
+AuditNoAtTaskTab_part1=.//*[@id='mainForm:tabView:taskDT:
+AuditNoAtTaskTab_part2=:auditlink']
+
+EditCarButtonOnViewAuditScreen=.//*[@id='mainForm:editcarbtn']
+
+
+ViewAuditCorrectiveActions__table_header=.//*[@id='mainForm:auditOasis:actionDt_head']
+ViewAuditCorrectiveActions_table_data=.//*[@id='mainForm:auditOasis:actionDt_data']
+FirstCarExpandIcon_xpath=.//*[@id='mainForm:auditOasis:actionDt_data']/tr/td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+CarExpandIcon_xpath_FirstPart=.//*[@id='mainForm:auditOasis:actionDt_data']/tr[
+CarExpandIcon_xpath_SecondPart=]/td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+CAR_Status_PFList=.//*[@id='mainForm:auditOasis:actionDt:0:austat_label']
+CAR_Status_PFList_part1=.//*[@id='mainForm:auditOasis:actionDt:
+CAR_Status_PFList_part2=:austat_label']
+
+
+CAR_Status_PFListOptions=.//*[@id='mainForm:auditOasis:actionDt:0:austat_panel']
+CAR_Status_PFListOptions_part1=.//*[@id='mainForm:auditOasis:actionDt:
+CAR_Status_PFListOptions_part2=:austat_panel']
+
+CARStatusSaveBtn=.//*[@id='mainForm:auditOasis:actionDt:0:saveAttach']
+CARStatusSaveBtn_part1=.//*[@id='mainForm:auditOasis:actionDt:
+CARStatusSaveBtn_part2=:saveAttach']
+
+#ReloadCurrentlyExecutionJob=.//button/span[text()='Reload currently Executing Job']
+ReloadCurrentlyExecutionJob=.//*[@id='mainForm:reloadCurrentlyExcecutingJobData']
+
+EditBtnOnViewAuditPage=.//*[@id='mainForm:editbtn']
+Audit_InfoTabLink=.//a[contains(@href,':auditOasis:audiInfo')]
+
+DurationAtInfoTabOfViewAudit=.//tr/td/label[normalize-space(text())='Duration']/../following-sibling::td
+DoNotScheduleBeforeAtInfoTabOfViewAudit=.//tr/td/label[normalize-space(text())='Do not Schedule Before']/../following-sibling::td/label
+DeadLineDateAtInfoTabOfViewAudit=.//tr/td/label[normalize-space(text())='Deadline']/../following-sibling::td/label
+
+
+
+ISRBackToViewBtn=.//*[@id='mainForm:backToViewButton']
+ISRBackBtn=.//*[@id='mainForm:backbtn']
+
+VisitNoAtTaskTab_part1=.//*[@id='mainForm:tabView:taskDT:
+VisitNoAtTaskTab_part2=:visitCmdLink']
+EditBtnOnViewVisitPage=.//*[@id='mainForm:btEdit']
+
+AuditorLkpBtnAtVisitPage=.//*[@id='mainForm:auditVisit:standardlookup']
+AuditorTxtBx=.//*[@id='mainForm:auditVisit:visitauditor']
+
+
+#SAM_button=.//*[@id='mainForm:samSPA']
+SAM_button=id~mainForm:samSPA
+SAM_buttonForTESTING=id~mainForm:samSPA999
+AuditorNameTxtBxInSAM=.//input[@name='auditorName']
+
+SearchBtnInSAM=.//button[text()='Search']
+
+AuditorLinkInSearchResultInSAM=.//div[@class='auditor-info']/div[text()='TestScriptUser TestScriptUser']
+
+AssignVist_JustifyReason=id~jreason
+AssignVisitInSAM=.//button[text()='Assign Visit']
+
+TestScriptUserLinkInCardInSAM=.//div/label[text()='Lead Auditor']/../a[text()='TestScriptUser TestScriptUser']
+Schedule_StartOnTxtBx=.//*[@id='startsOn']
+Schedule_EndsOnTxtBx=.//*[@id='endsOn']
+SaveBtnInSAM=.//button[text()='Save']
+OKBtnInSAM=.//button[text()='Ok']
+
+SAM_loadingtxtXpath1=.//span[@class='k-loading-text']
+SAM_loadingtxtXpath2=.//span[@class='k-loading-text'][text()='Loading...']
+SAM_loadingImageXpath=.//div[@class='k-loading-color']
+
+SAM_errorMessage=.//div[@class='error center'][@style='color:red;']
+
+SAM_errorImage=.//img[contains(@src,'error')]
+#SAM_errorMessage2=.//*[@ng-if='modalMessage']
+SAM_errorMessage2=.//img[contains(@src,'error')]/following-sibling::*[@ng-if='modalMessage']
+
+Loading_Progressing_In_SAM=.//span[@class='k-loading-text'] && .//span[@class='k-loading-text'][text()='Loading...'] && .//div[@class='k-loading-color']
+
+
+
+BundleAuditBtn=.//button/span[text()='Bundle Audit']
+
+AuditorLkpEmployeeNamefilterTxtBx2InLkp=.//*[@id='mainForm:lookuptableid:resHdr2:filter']
+
+
+
+TaskTabISR_CertAudit_OpenIconPart1=.//tbody[@id='mainForm:tabView:taskDT_data']/tr/td/label[normalize-space(text())='
+TaskTabISR_CertAudit_OpenIconPart2=']/../../td[1]/div[@class='ui-row-toggler ui-icon ui-icon-circle-triangle-e']
+
+
+
+ScheduleStartDateAtViewVisitPage=.//*[@id='mainForm:auditVisit:scheduledstrtdt_input']
+ScheduleEndDateAtViewVisitPage=.//*[@id='mainForm:auditVisit:scheduledendtdt_input']
+
+
+
+ScheduleStartDateCalBtn_xpath=.//*[@id='mainForm:auditVisit:scheduledstrtdt']/button
+calendarDatePickerSelectYear_xpath=.//select[@class='ui-datepicker-year']
+calendarDatePickerSelectMonth_xpath=.//select[@class='ui-datepicker-month']
+
+
+ScheduleEndDateCalBtn_xpath=.//*[@id='mainForm:auditVisit:scheduledendtdt']/button
+
+
+
+SaveBtnAtViewVisitPage=.//button/span[text()='Save']
+
+
+DocumentsTabLink_viewVistPage=.//a[contains(@href,'auditVisit:visitDocTab')]
+FRSOpenBtn_DocumentsTab=.//*[@id='mainForm:auditVisit:cbopen']
+FRSOpenBtn_DocumentsTab_id=id~mainForm:auditVisit:cbopen
+
+CreateFRSReportBtn_DocumentsTab=.//*[@id='mainForm:auditVisit:newFRS']
+CreateFRSReportBtn_DocumentsTab_id=id~mainForm:auditVisit:newFRS
+
+EditBtnForEditTaskAtTaskTab_part1=.//*[@id='mainForm:tabView:taskDT:
+EditBtnForEditTaskAtTaskTab_part2=:edittaskbtn']
+
+
+EditFeesBtnForEditTaskAtTaskTab_part1=.//*[@id='mainForm:tabView:taskDT:
+EditFeesBtnForEditTaskAtTaskTab_part2=:edittaskbtn1']
+
+
+
+ExpenseAllocationBtn_TaskAtTaskTab_part1=.//*[@id='mainForm:tabView:taskDT:
+ExpenseAllocationBtn_TaskAtTaskTab_part2=:expCmdBtn']
+
+
+
+BoundaryStartDateEditTxtBxAtEditTaskDialog=.//*[@id='mainForm:tabView:schdBfrDate_input']
+BoundaryEndDateEditTxtBxAtEditTaskDialog=.//*[@id='mainForm:tabView:schdAftrDate_input']
+
+
+BoundaryStartDateBtnAtEditTaskDialog=.//*[@id='mainForm:tabView:schdBfrDate']/button
+BoundaryEndDateBtnAtEditTaskDialog=.//*[@id='mainForm:tabView:schdAftrDate']/button
+
+
+CalendarHeaderMonth_xpath=.//*[@id='ui-datepicker-div']//div[@class='ui-datepicker-title']/span[@class='ui-datepicker-month']
+CalendarHeaderYear_xpath=.//*[@id='ui-datepicker-div']//div[@class='ui-datepicker-title']/span[@class='ui-datepicker-year']
+
+CalendarNextIcon=.//*[@id='ui-datepicker-div']/div/a[@title='Next']/span[@class='ui-icon ui-icon-circle-triangle-e']
+#CalendarPrevIcon=.//*[@id='ui-datepicker-div']/div/a[@title='Prev']/span[@class='ui-icon ui-icon-circle-triangle-w']
+#CalendarPrevIcon=.//*[@id='ui-datepicker-div']/div/a[@title='Previous']/span[@class='ui-icon ui-icon-circle-triangle-w']
+CalendarPrevIcon=.//*[@id='ui-datepicker-div']/div/a[contains(@title,'Prev')]/span[@class='ui-icon ui-icon-circle-triangle-w']
+
+
+CalendarAllDatesLink=.//div[@id='ui-datepicker-div']//td/a
+
+SaveBtnAtEditTask=.//*[@id='mainForm:tabView:edittasksave']
+
+
+
+TaskTableAtSnapshotTab=.//*[@id='mainForm:tabView:jobDT_data']
+TaskTableAtSnapshotTab_HeaderRow=.//*[@id='mainForm:tabView:jobDT_head']
+
+
+
+
+EmailCertBtn=.//*[@id='mainForm:certAddCorrspnd']
+EmailCertBtn_id=id~mainForm:certAddCorrspnd
+
+ISR_EmailTemplate_PFList=.//*[@id='mainForm:emailtempltdrpdwn_label']
+ISR_EmailTemplate_PFListOptions=.//*[@id='mainForm:emailtempltdrpdwn_panel']
+ISR_EmailTemplateContinueBtn=.//*[@id='mainForm:continueCorrspnd']
+
+ISR_EmailToTxt=.//*[@id='mainForm:newCorresHisTo']
+ISR_EmailFromTxt=.//*[@id='mainForm:newCorrAppFrmTxt']
+ISR_CorresEmailSendBtn=.//*[@id='mainForm:crIssCorrspndncbtn']
+WorkOrderNoInViewActionItem=.//*[@id='mainForm:wocml']
+WorkOrderNoInViewActionItem_id=id~mainForm:wocml
+
+ISR_CorrespondenceTab=.//ul/li/a[contains(@href,':isrCorrspndTab')]
+
+
+ISR_Corresondence_table_data=.//*[@id='mainForm:tabView:corrspndDataTable_data']
+ISR_Corresondence_table_header=.//*[@id='mainForm:tabView:corrspndDataTable_head']
+ISR_Corres_MessageIcon=.//*[@id='mainForm:tabView:corrspndDataTable:0:fwdLink']
+ISR_Corres_MessageIcon_id=id~mainForm:tabView:corrspndDataTable:0:fwdLink
+
+ISR_Correspondence_AddBtn=.//*[@id='mainForm:tabView:addCorrspnd']
+ISR_Correspondence_AddBtn_id=id~mainForm:tabView:addCorrspnd
+
+ISR_CorresTab_EmailTemplate_PFList=.//*[@id='mainForm:tabView:emailtempltdrpdwn_label']
+ISR_CorresTab_EmailTemplate_PFListOptions=.//*[@id='mainForm:tabView:emailtempltdrpdwn_panel']
+ISR_CorresTab_EmailTemplateContinueBtn=.//*[@id='mainForm:tabView:continueCorrspnd']
+
+ISR_CorresTab_EmailToTxt=.//*[@id='mainForm:tabView:newCorresHisTo']
+ISR_CorresTab_EmailFromTxt=.//*[@id='mainForm:tabView:newCorrAppFrmTxt']
+ISR_CorresTab_CorresEmailSendBtn=.//*[@id='mainForm:tabView:crIssCorrspndncbtn']
+
+
+FRSBtnOnViewClient=.//*[@id='mainForm:trauditreportcl']
+FRSBtnOnViewClient_id=id~mainForm:trauditreportcl
+#------------------Oasis-----------------------------
+
+OasisUserNameTxt=.//input[@name='userid']
+OasisPasswordTxt=.//input[@name='passwd']
+OasisLoginBtn=.//input[@type\='submit'][@value\='Enter'] 
+
+
+OasisMenuHeader=.//div[@id='menuheader']
+
+OasislogOut_xpath=.//a[normalize-space(text())='Logout']
+
+
+Oasis_Audits_topmenu=.//div[@id='menuheader']//td/img[@alt='Audits']
+#Oasis_Audits_searchAuditlink=.//div[@id='menu']//a[contains(@href,'searchAudit.do')]
+#Oasis_Audits_searchAuditlink=.//a[text()\='Search']
+Oasis_Audits_searchAuditlink=.//a[contains(@href,'searchAudit.do')]/font[text()\='Search']
+
+
+
+
+#----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+#BundleAuditBtn=.//button/span[text()='Bundle Audit']
+#SaveBtnAtViewVisitPage=.//button/span[text()='Save']
+
+
+Complete_Perform_Audit_AI_button=.//*[@id='mainForm:completePerformAuditAI']
+AssignedToLabelValue_OnConsolidatedScreen=.//table[contains(@id,':itemdetailaccor:')]/tbody/tr/td/label[normalize-space(text())='Assigned To']/../following-sibling::td
+ReassignAITxtBx_OnConsolidatedScreen=.//*[contains(@id,':editActionItemAuto_input')]
+
+QuestionnaireOptionsLinkInTechReviewAI_OnConsolidatedScreen=.//*[contains(@id,'mainForm:quesDt:0:issLinkQues')]
+
+SaveButton__OnConsolidatedScreen=.//*[@id='mainForm:compAIbtn']
+#WOISR_AIConfirmationBtn_OnConsolidatedScreen=.//*[@id='mainForm:compAIYesBtn']
+#WOISR_AIConfirmationBtn_OnConsolidatedScreen=.//*[contains(@id,':compAIYesBtn')] //  Now we will use confirmation button for all consolidated or non consolidated
+WO_BackBtnOnViewOnlyScreenOnCompletedAI=.//*[@id='mainForm:vvbackButton']
+
+
+
+WOISR_ProcessWorkFlowBtn=.//*[@id='mainForm:processWorkflow']
+
+WOISR_AIEditBtn_OnConsolidatedScreen=.//*[@id='mainForm:editcdaicmd']
+
+#ReassignToCertDecisionAI=.//*[@id='mainForm:j_idt4748']
+ReassignToCertDecisionAI_LKPBtn=.//*[@id='mainForm:aireassigneelkup']
+
+SaveBtnOnCertDecisionAIConsolidatedScreen=.//*[@id='mainForm:savecdaicmd']
+PerformAIBtn=.//*[@id='mainForm:performaicml']
+MakeDecisionBtn=.//*[@id='mainForm:makedecisioncml']
+
+
+
+#CertDecisionCheckListRadioYesBtn_Firstpart=//td/label[text()='
+#CertDecisionCheckListRadioYesBtn_Secondpart=']/../preceding-sibling::td/div/div[contains(@class,'ui-radiobutton-box')]/span
+
+CertDecisionCheckListRadioYesBtn_Firstpart=//td/label[text()='
+CertDecisionCheckListRadioYesBtn_Secondpart=']/../preceding-sibling::td/div/div[contains(@class,'ui-radiobutton-box')]
+
+
+#DecisionOnCertDecisionAIList=.//*[@id='mainForm:j_idt4613_label']
+#DecisionOnCertDecisionAIListOptions=.//*[@id='mainForm:j_idt4613_panel']
+
+DecisionOnCertDecisionAIList=.//*[@id='mainForm:certdecisiondd_label']
+DecisionOnCertDecisionAIListOptions=.//*[@id='mainForm:certdecisiondd_panel']
+
+
+
+PerformDecisionAI_ChangeStatusPFList=.//*[contains(@id,':statuslistdd_label')]
+PerformDecisionAI_ChangeStatusPFListOptions=.//*[contains(@id,':statuslistdd_panel')]
+
+SaveBtnOnPerformCertDecisionAI=.//*[@id='mainForm:savebuttoncmd']
+WorkOrderNoOnPerformCertDecisionAI=.//*[@id='mainForm:applicationcml']
+
+workOrderNoLinkAtPerformCertDecisionActionItem=.//*[@id='mainForm:applicationcml']
+
+totalRecordsInFooterOfLookup_xpath=.//*[@id='mainForm:lookuptableid_paginator_bottom']/span[@class='ui-paginator-current']
+
+AuditorLkpEmployeeNamefilterTxtBx2InLkp_s=.//*[@id='mainForm:txtaudtrname']
+
+BrowseFile_Progress=.//*[@class='ui-fileupload-progress']
+BrowseFile_ErrorMsg=.//*[@class='ui-messages-error-summary']
+
+WO_SnapshotsTAB_Audit_Table_Header=//thead[@id='mainForm:tabView:auditDT_head']
+WO_SnapshotsTAB_Audit_Table_Data=//tbody[@id='mainForm:tabView:auditDT_data']
+
+
+
+CertLanguagePFList=.//*[contains(@id,':ciLangLst_label')]
+CertLanguagePFListOptions=.//*[contains(@id,':ciLangLst_panel')]
+
+CertTemplatePFList=.//*[contains(@id,'ciTempltLst_label')]
+CertTemplatePFListOptions=.//*[contains(@id,'ciTempltLst_panel')]
+
+IssueCertBtn=.//*[@id='mainForm:issruCrtButton']
+CertificateNameTable_HeaderRow=.//*[@id='mainForm:iqCertificatesLst_head']
+CertificateNameTable=.//*[@id='mainForm:iqCertificatesLst_data']
+
+
+CorporateWOLinkInFacilityRelationshipTableOfAssociateWO_part1=.//a[contains(@id,'tabView:facRelationList:')][text()='
+CorporateWOLinkInFacilityRelationshipTableOfAssociateWO_part2=']
+
+CorporateWOLinkInFacilityRelationshipTableOfAssociateWO_part11=.//a[contains(@id,'tabView:facRelationList:
+CorporateWOLinkInFacilityRelationshipTableOfAssociateWO_part22=:')][text()='
+CorporateWOLinkInFacilityRelationshipTableOfAssociateWO_part33=']
+
+AssociateFacilityTable_Header=//thead[@id='mainForm:tabView:facMp_head']
+AssociateFacilityTable_Data=//tbody[@id='mainForm:tabView:facMp_data']
+
+EditDetailsLinkInAssociateFacilityTable_part1=.//*[@id='mainForm:tabView:facMp:
+EditDetailsLinkInAssociateFacilityTable_part2=:facMpEdDt']
+
+
+AssociateWOLinkInAssociateFacilityTable_part1=.//*[@id='mainForm:tabView:facMp_data']/tr[
+AssociateWOLinkInAssociateFacilityTable_part2=]/td[
+AssociateWOLinkInAssociateFacilityTable_part3=]
+
+
+
+AddFacilityBtn=.//*[@id='mainForm:tabView:addFc']
+FacilityFilterBoxInAddFacilityPopup=.//*[@id='mainForm:dtWOCA:dtWocaisFacNo:filter']
+
+
+FirstFacilityRadioBtnInAddFacilityPopup_Firstpart=.//*[@id='mainForm:dtWOCA_data']/tr/td[text()='
+#FirstFacilityRadioBtnInAddFacilityPopup_Secondpart=']/../td/div[@class='ui-radiobutton ui-widget']/div[contains(@class,'ui-radiobutton-box')]/span
+FirstFacilityRadioBtnInAddFacilityPopup_Secondpart=']/../td/div[@class='ui-radiobutton ui-widget']/div[contains(@class,'ui-radiobutton-box')]
+
+FirstFacilityRadioBtnInAddFacilityPopup=.//*[@id='mainForm:dtWOCA_data']/tr/td[1]/div/div[2]
+AddFacilityPopup_ContinueBtn=.//*[@id='mainForm:savwoca']
+AddFacilityPopup_ContinueBtn_id=id~mainForm:savwoca
+
+ScopeOfFacility_inAddFacilityOnCampusWO_popUp=.//*[@id='mainForm:textArscopeWPP']
+Save&ReturnBtnInAddFacilityOnCampusWO=.//*[@id='mainForm:savwowow']
+
+AddFacilityTableInPopupForCampus_Header=//thead[@id='mainForm:dtWOCA_head']
+AddFacilityTableInPopupForCampus_Data=//tbody[@id='mainForm:dtWOCA_data']
+
+AddFacilityTableInPopup_Header=//thead[@id='mainForm:tabView:dtWOWO_head']
+AddFacilityTableInPopup_Data=//tbody[@id='mainForm:tabView:dtWOWO_data']
+
+AddFacilityTableInPopupNotInTabView_Header=//thead[@id='mainForm:dtWOWO_head']
+AddFacilityTableInPopupNotInTabView_Data=//tbody[@id='mainForm:dtWOWO_data']
+
+
+
+CheckBoxXpathOfAddFacilityTableInPopup_part1=.//*[@id='mainForm:tabView:dtWOWO_data']/tr[
+CheckBoxXpathOfAddFacilityTableInPopup_part2=]/td[1]/div/div[2]
+
+CheckBoxXpathOfAddFacilityTableInPopupNotInTabView_part1=.//*[@id='mainForm:dtWOWO_data']/tr[
+CheckBoxXpathOfAddFacilityTableInPopupNotInTabView_part2=]/td[1]/div/div[2]
+
+SelectAndReturnBtn_inAddFacilityPopUp=.//*[@id='mainForm:tabView:savwowowP']
+
+
+SelectAndReturnBtn_inAddFacilityPopUpNotInTabView=.//*[@id='mainForm:savwowowP']
+
+
+
+FacilityRelationshipTable_Header=//thead[@id='mainForm:tabView:facRelationList_head']
+FacilityRelationshipTable_Data=//tbody[@id='mainForm:tabView:facRelationList_data']
+
+SingleWOFinopsExpandingLinkInCampusWO_part1=.//*[@id\='mainForm\:tabView\:accordionPanel']/h3[contains(text(),'Supporting Facility - 
+SingleWOFinopsExpandingLinkInCampusWO_part2=')]
+
+CampusFinopsExpandingLinkInCampusWO_part1=.//*[@id\='mainForm\:tabView\:accordionPanel']/h3[contains(text(),'Primary Facility - 
+CampusFinopsExpandingLinkInCampusWO_part2=')]
+
+
+
+
+DropReasonPFList=.//*[@id='mainForm:tabView:woDropReason_label']
+DropReasonPFListOptions=.//*[@id='mainForm:tabView:woDropReason_panel']
+
+
+DropWOYesConfirmationBtn=.//*[@id='mainForm:aiyesbtn']
+
+
+
+
+
+
+
+
+
+#************************************iAG********************************
+FirstRefrenceLinkJustBelowToMenu_foriAG=linkText~Search Membership
+CreateMembershipLink=linkText~Create Membership
+
+SearchMembershipLink=linkText~Search Membership
+
+
+#ClientLKPBtn=.//*[@id='mainForm:cuslkupappcrt']
+
+CreateMembershipWO=.//*[@id='mainForm:createschm'][text()='Create Membership/WO']
+CreateMembershipWOLabel_heading=.//*[@id='mainForm:createschm']
+Ag_ClientTxtBox=.//*[@id='mainForm:clientName']
+
+Select_Scheme_Provider_PFList=.//*[@id='mainForm:schemeProvider_label']
+Select_Scheme_Provider_PFListOptions=.//*[@id='mainForm:schemeProvider_panel']
+
+
+Select_Scheme_PFList=.//*[@id='mainForm:scheme_label']
+Select_Scheme_PFListOptions=.//*[@id='mainForm:scheme_panel']
+
+
+Member_Type_PFList=.//*[@id='mainForm:memberType_label']
+Member_Type_PFListOptions=.//*[@id='mainForm:memberType_panel']
+
+
+
+Transferring_Membership_PFList=.//*[@id='mainForm:transferringMembership_label']
+Transferring_Membership_PFListOptions=.//*[@id='mainForm:transferringMembership_panel']
+
+
+Create_Membership_btn=.//*[@id='mainForm:createMembership']
+
+iAg_InfoTab=xpath~.//ul/li/a[contains(@href,':woinfotab')]
+#iAg_InfoTab=id~#mainForm:tabView:woinfotab
+
+iAg_SnapshotTabLink=xpath~.//a[contains(@href,'wosnpshottab')]
+
+iAg_ecapSPATaskHeader=.//*[@id='mainHeaderLabel']
+iAg_ecapSPATask_CurrentCertStatus=.//*[@id='kvpDetailsSpanKey']/b[text()='Current Cert Status']/../span[@id='kvpDetailsSpanValue']
+iAg_ecapSPATask_AuditStatus=.//*[@id='kvpDetailsSpanKey']/b[text()='Status']/../span
+iAg_ViewProductsBtn=.//*[@id='kvpActionButton'][text()='View Products']
+iAg_ProductNameAtSPA=.//*[@id='viewProdGrid']/div[2]/table/tbody/tr[1]/td[1]/span
+
+iAgSnapshotTab_InnerTableForActionItemsTableData_part1=.//*[@id='mainForm:tabView:taskDT:
+iAgSnapshotTab_InnerTableForActionItemsTableData_part2=:actionItemDT_data']
+
+iAgSnapshotTab_InnerTableForActionItemsTableData_contains=:actionItemDT_data
+
+iAgSnapshotTab_InnerTableForActionItemsTableHeader_part1=.//*[@id='mainForm:tabView:taskDT:
+iAgSnapshotTab_InnerTableForActionItemsTableHeader_part2=:actionItemDT_head']
+
+
+AssignToMeAndMoveInProgress_btn=.//*[@id='mainForm:memshpAiAccordPanel:assignedToMeAndMoveToPrgsId']
+
+memshpAiStatus_PFList=.//*[@id='mainForm:memshpAiAccordPanel:statuslist_label']
+memshpAiStatus_PFListOptions=.//*[@id='mainForm:memshpAiAccordPanel:statuslist_panel']
+
+iAg_AI_SaveBtn=.//*[@id='mainForm:saveButton']
+iAg_AI_AssignLkp=.//*[@id='mainForm:memshpAiAccordPanel:empLookUp']
+iAg_AI_TxtBx=.//*[@id='mainForm:memshpAiAccordPanel:editActionItemAuto_input']
+
+
+ContractReviewActionItemDialogCloseLink =.//*[@id='mainForm:ai_cancel']
+
+
+Membership_WO_Status_PFList=.//*[@id='mainForm:tabView:appStst_label']
+Membership_WO_Status_PFListOptions=.//*[@id='mainForm:tabView:appStst_panel']
+
+ReasonForChangeTxtBx=id~mainForm:tabView:membership_wo_statuchng
+
+
+AddNewBtn=id~mainForm:tabView:addNewSiteBtn
+
+Name_onCreateNewOperationUnit=id~mainForm:tabView:name
+
+UnitType_PFList=.//*[@id='mainForm:tabView:opunittype_label']
+UnitType_PFListOptions=.//*[@id='mainForm:tabView:opunittype_panel']
+
+
+AddressLine1=id~mainForm:tabView:addressLine1
+
+TownCity=id~mainForm:tabView:city
+Country_CNOU_PFList=.//*[@id='mainForm:tabView:memshipcountry_label']
+Country_CNOU_PFListOptions=.//*[@id='mainForm:tabView:memshipcountry_panel']
+
+State_CNOU_PFList=.//*[@id='mainForm:tabView:memshipstate_label']
+State_CNOU_PFListOptions=.//*[@id='mainForm:tabView:memshipstate_panel']
+
+
+PostalCode_CNOU=id~mainForm:tabView:postalCode
+
+
+Longitude_CNOU=id~mainForm:tabView:longitude_input
+
+Latitude_CNOU=id~mainForm:tabView:latitude_input
+
+
+
+Salutation_CNOU_PFList=.//*[@id='mainForm:tabView:salutationType_label']
+Salutation_CNOU_PFListOptions=.//*[@id='mainForm:tabView:salutationType_panel']
+
+
+
+FirstName_CNOU=id~mainForm:tabView:firstname
+LastName_CNOU=id~mainForm:tabView:lastname
+JobTitle_CNOU=id~mainForm:tabView:jobTitle
+Phone_CNOU=id~mainForm:tabView:primPh
+Email_CNOU=id~mainForm:tabView:emailAddress
+Fax_CNOU=id~mainForm:tabView:fax
+Mobile_CNOU=id~mainForm:tabView:mobile
+
+
+ContPref_CNOU_PFList=.//*[@id='mainForm:tabView:contprf_label']
+ContPref_CNOU_PFListOptions=.//*[@id='mainForm:tabView:contprf_panel']
+
+SaveBtn_CNOU=id~mainForm:tabView:saveBtn
+
+OperationalUnitsTable_EditWO=.//*[@id='mainForm:tabView:customerses_data']
+OperationalUnitsTable_HeaderRow=.//*[@id='mainForm:tabView:customerses_head']
+
+
+
+iAg_ContactsTab=xpath~.//a[contains(@href,'memshpcontacttab')]
+iAg_ContactsTab_ADD_btn=id~mainForm:tabView:schemeaddcont
+iAg_ContactsTab_Add_New_btn=id~mainForm:tabView:schemecontadd
+
+
+
+PC_Salutation_PFList=.//*[@id='mainForm:tabView:saltypslmC_label']
+PC_Salutation_PFListOptions=.//*[@id='mainForm:tabView:saltypslmC_panel']
+
+
+PC_FirstName=id~mainForm:tabView:frstnam
+PC_LastName=id~mainForm:tabView:lastnameC
+
+
+PC_BillToOffice_PFList=.//*[@id='mainForm:tabView:cbiltypmen1_label']
+PC_BillToOffice_PFListOptions=.//*[@id='mainForm:tabView:cbiltypmen1_panel']
+
+PC_JobTitle=id~mainForm:tabView:jobtitle
+
+
+SameAddresscheckBoxFirstpart=//td[contains(text(),'
+SameAddresscheckBoxSecondpart=')]/following-sibling::td/div/div[contains(@class,'ui-chkbox')]
+
+#SameAddresscheckBox=.//td/label[contains(text(),'Same Address')]/../following-sibling::td/div/div/span[contains(@class,'ui-chkbox')]
+SameAddresscheckBox=.//div[@id='mainForm:tabView:addflgchck']/div/span[contains(@class,'ui-chkbox')]
+
+PC_Save_CloseBtn=id~mainForm:tabView:ccontsave
+
+
+
+ProducerContactsTable_EditWO=.//*[@id='mainForm:tabView:schConts_data']
+ProducerContactsTable_HeaderRow=.//*[@id='mainForm:tabView:schConts_head']
+
+
+
+iAg_ProductsCoverageTab=xpath~.//a[contains(@href,':memshpprdandcovtab')]
+iAg_ProductsCoverageTab_whenComingFromAlerts=xpath~.//a[contains(@href,':memwoprdandcovtab')]
+
+
+iAg_RegisteredProducts_AddBtn=id~mainForm:tabView:membershipProductTabView:addMemProductBtn
+
+
+
+AddProduct_Site_PFList=.//*[@id='mainForm:tabView:membershipProductTabView:memSiteName_label']
+AddProduct_Site_PFListOptions=.//*[@id='mainForm:tabView:membershipProductTabView:memSiteName_panel']
+
+AddProduct_Product_PFList=.//*[@id='mainForm:tabView:membershipProductTabView:product_label']
+AddProduct_Product_PFListOptions=.//*[@id='mainForm:tabView:membershipProductTabView:product_panel']
+
+#Category_covered_chkbox_label=.//*[@id='mainForm:tabView:membershipProductTabView:coveredCategory']/../label[normalize-space(text())=' Covered']
+Category_covered_chkbox=.//*[@id='mainForm:tabView:membershipProductTabView:coveredCategory']/div/span[contains(@class,'ui-chkbox-icon ui-icon')]
+
+
+Category_Uncovered_chkbox=.//*[@id='mainForm:tabView:membershipProductTabView:uncoveredCategory']/div/span[contains(@class,'ui-chkbox-icon ui-icon')]
+
+
+Covered_FirstHarvest=id~mainForm:tabView:membershipProductTabView:coveredFirst
+Covered_FurtherHarvest=id~mainForm:tabView:membershipProductTabView:coveredFurther
+Covered_Total=id~mainForm:tabView:membershipProductTabView:coveredTotal
+
+
+
+HarvestExcluded_chkbox_label_Yes=.//label[contains(@for,':membershipProductTabView:harvestExcluded')] [text()='Yes']
+
+DestinationCountries_AddBtn=id~mainForm:tabView:membershipProductTabView:countriesVOLkp
+Destination_Countries_Table_data=.//*[@id='mainForm:tabView:membershipProductTabView:countriesVOTable_data']
+Destination_Countries_Table_HeaderRow=.//*[@id='mainForm:tabView:membershipProductTabView:countriesVOTable_head']
+
+
+
+
+PackHouses_AddBtn=id~mainForm:tabView:membershipProductTabView:phuLkp
+
+PackHouses_Table_data=.//*[@id='mainForm:tabView:membershipProductTabView:phuTable_data']
+PackHouses_Table_HeaderRow=.//*[@id='mainForm:tabView:membershipProductTabView:phuTable_head']
+
+
+
+
+#ParallelOwnership_radioBtn_label_NO=.//tr/td/label[text()='Parallel Ownership']/../following-sibling::td/table//label[contains(@for,':tabView:membershipProductTabView:')] [text()='No']
+#ParallelProduction_radioBtn_label_NO=.//tr/td/label[text()='Parallel Production']/../following-sibling::td/table//label[contains(@for,':tabView:membershipProductTabView:')] [text()='No']
+
+ParallelOwnership_radioBtn_label_NO=.//tr/td/label[text()='Parallel Ownership']/../following-sibling::td/table/tbody/tr/td/label[contains(@for,':tabView:membershipProductTabView:')] [text()='No']
+ParallelProduction_radioBtn_label_NO=.//tr/td/label[text()='Parallel Production']/../following-sibling::td/table/tbody/tr/td/label[contains(@for,':tabView:membershipProductTabView:')] [text()='No']
+
+
+AddProduct_SaveBtn=id~mainForm:tabView:membershipProductTabView:memProdSave
+
+
+RegisteredProducts_Table_data=.//*[@id='mainForm:tabView:membershipProductTabView:memProductHeaderTable_data']
+RegisteredProducts_Table_HeaderRow=.//*[@id='mainForm:tabView:membershipProductTabView:memProductHeaderTable_head']
+
+
+
+iAg_ServicesTab=xpath~.//a[contains(@href,':memshpservtab')]
+
+ServicesTab_AddBtn=id~mainForm:tabView:addServiceBtn
+
+
+Service_PFList=.//*[@id='mainForm:tabView:memService_label']
+Service_PFListOptions=.//*[@id='mainForm:tabView:memService_panel']
+
+
+EquipmentTab_cancelLinkInPopup=.//*[@id='mainForm:tabView:memEqCancel']
+
+
+
+Service_Name=id~mainForm:tabView:memServiceName
+
+Service_Address=id~mainForm:tabView:memServiceLocation
+
+Service_DistanceFromFarm=id~mainForm:tabView:memServiceDistance
+
+Service_SaveBtn=id~mainForm:tabView:memServSave
+
+
+ServicesTable_EditWO=.//*[@id='mainForm:tabView:memServExtraTable_data']
+ServicesTable_HeaderRow=.//*[@id='mainForm:tabView:memServExtraTable_head']
+
+
+
+iAg_EquipmentTab=xpath~.//a[contains(@href,':memshpequipmentstab')]
+EquipmentTab_AddBtn=id~mainForm:tabView:addEqBtn
+
+
+Equipment_PFList=.//*[@id='mainForm:tabView:memEq_label']
+Equipment_PFListOptions=.//*[@id='mainForm:tabView:memEq_panel']
+
+
+Equipment_PersonName=id~mainForm:tabView:memEqName
+
+Equipment_Address=id~mainForm:tabView:memEqLocation
+
+Equipment_DistanceFromFarm=id~mainForm:tabView:memEqDistance
+
+Equipment_SaveBtn=id~mainForm:tabView:memEqSave
+
+EquipmentTable_EditWO=.//*[@id='mainForm:tabView:memEqExtraTable_data']
+EquipmentTable_HeaderRow=.//*[@id='mainForm:tabView:memEqExtraTable_head']
+
+
+iAg_AdditionalInfoTab=xpath~.//a[contains(@href,':memshpaddinfotab')]
+
+
+
+#ParallelOwnership_CC_radioBtn_label_NO=.//tr/td/label[contains(text(),'Parallel Ownership (CC))]/../following-sibling::td/table/tbody/tr/td/label[text()='No']
+#ParallelProduction_CC_radioBtn_label_NO=.//tr/td/label[contains(text(),'Parallel Production (CC))']/../following-sibling::td/table/tbody/tr/td/label[text()='No']
+
+ParallelOwnership_CC_radioBtn_label_NO=.//tr/td/label[contains(normalize-space(text()),'Parallel Ownership (CC)')]/../following-sibling::td/table/tbody/tr/td/label[text()='No']
+ParallelProduction_CC_radioBtn_label_NO=.//tr/td/label[contains(normalize-space(text()),'Parallel Production (CC)')]/../following-sibling::td/table/tbody/tr/td/label[text()='No']
+
+
+
+
+Membership_SubmitBtn=id~mainForm:submitbutton
+
+Membership_WO_No=id~mainForm:TopApplDetails:membershipIdtxt
+
+
+iAg_ecapSPA_ProductPopUpCloseLink=.//*[@id='viewProdCancel']/img
+
+iAg_ecapSPA_JumpToOasisBtn=.//*[@id='btnJumpOasis']
+
+iAg_ecapSPA_DecisionTaskTab=.//*[@id='mainDecTaskbtn']
+
+
+iAg_ecapSPA_DecisionTaskTab_ProductTable_FirstProduct=.//*[@id='decViewProdGrid']/div[2]/table/tbody/tr/td[1]
+
+iAg_ecapSPA_DecisionActionDropDown=.//*[@id='decUIView']/form/div/div[2]/fieldset/div[1]/div[2]/select
+
+iAg_ecapSPA_NoteToCertifierAuditor=.//*[@id='decUIView']/form/div/div[2]/fieldset/div[2]/div[2]/textarea
+
+iAg_ecapSPA_confirmBtn=.//*[@id='confirmBtn']
+
+
+iAg_ecapSPA_changeStatusOfSelectedProductDropDown=.//*[@id='decViewgridApplyDropdown']
+
+iAg_ecapSPA_ProductApplyBtn=.//*[@id='decViewgridApplyBtn']
+
+iAg_ecapSPA_DecisionActionDropDown_InCertDecisionTask=.//*[@id='decUIView']/form/div[2]/div[2]/fieldset[1]/div[1]/div[1]/div[2]/select
+									
+iAg_ecapSPA_DecisionReason=.//*[@id='decUIView']/form/div[2]/div[2]/fieldset[1]/div[1]/div[2]/div[2]/input
+
+iAg_ecapSPA_ScoreAuditorDropDown=.//*[@id='decUIView']/form/div[2]/div[2]/fieldset[1]/div[2]/div[2]/div[2]/select
+
+
+
+
+
+
+
+#********************XPATHS for Audit_SAM_SPA********************************************************************************************
+#SearchAuditTopLink=xpath~.//*[@id\='headerForm\:headmenu']/ul/li[1]/ul/li/a/span[normalize-space(text())\='Search Audit]
+
+SearchAuditTopLink=linkText~Search Audit
+
+Advanced_Filter_Options_ExpandBtn=.//*[@id='AdvancedSearch']/div[1]/button[@class='crossrotate click-up']
+Advanced_Filter_Options_CloseBtn=.//*[@id='AdvancedSearch']/div[1]/button[@class='crossrotate click-down']
+
+SAMSearchTable=.//*[@id='visitGrid']/table/tbody
+SAMSearchTable_header=.//*[@id='visitGrid']/table/thead
+
+
+AuditorTypeTxtBxSAM=.//div/label[text()='Audit Type']/../following-sibling::div/div//input
+AuditorTypeLblSAM=.//div/label[text()='Audit Type']
+
+
+FilterBtnSAM=.//button[text()='Filter']
+
+NextBtnSAM=.//a[@class='k-link k-pager-nav k-pager-next']
+TopPagination_xpath=.//*[@id='pager']/div/ul/li[1]/span
+
+PreviousBtnSAM=.//a[@class='k-link k-pager-nav k-pager-prev']
+
+
+VisitNoAtVisitDetailPage_xpath=.//div/label[text()='Visit Number']/following-sibling::label
+FacilityCodeAtVisitDetailPage_xpath=.//div/label[text()='Facility Code']/following-sibling::label
+AuditTypeDropDownValueAtVisitDetailPage_xpath=.//select[@name='auditTypes']/option
+
+MonthlyAssignTabLink=.//ul[@class='nav nav-tabs']/li/a[text()='Monthly Assign']
+
+
+
+AuditorTableRowsXpath=.//*[@id='monthlyAuditorGrid']//table/tbody/tr
+
+AllAuditorAtMonthlyAuditorGridXpath=.//*[@id='monthlyAuditorGrid']//table/tbody/tr/td//div[@class='auditor-info']/div
+MonthlyAuditorGrid=.//*[@id='monthlyAuditorGrid']
+
+DailyScheduleTabLink=.//ul[@class='nav nav-tabs']/li/a[text()='Daily Schedule']
+DailySchedulerGrid=.//*[@id='dailyAuditorGrid']
+
+AllAuditorAtDailyAuditorGridXpath=.//*[@id='dailyAuditorGrid']//table/tbody/tr/td//div[@class='auditor-info']/div
+
+#FirstOfferLinkNextToAuditor=.//*[@id='dailyAuditorGrid']//table/tbody/tr[1]/td[1]/div/a[2]/div[normalize-space(text())='Offer']
+#FirstOfferLinkNextToAuditor=.//*[@id='dailyAuditorGrid']//table/tbody/tr[1]/td[1]/div/a[2]/div[normalize-space(text())='Offer']
+#FirstOfferLinkNextToAuditor2=.//*[@id='dailyAuditorGrid']//table/tbody/tr[1]/td[1]/div/a[2]
+
+#FirstOfferLinkNextToAuditor=.//*[@id='dailyAuditorGrid']/div[2]/table/tbody/tr[1]/td[1]/div/a[2]/div[normalize-space(text())='Offer']
+FirstOfferLinkNextToAuditor=.//*[@id='dailyAuditorGrid']/div[2]/table/tbody/tr[1]/td[1]/div/a[2]/div
+OffersLinkNextToAuditor1=.//*[@id='dailyAuditorGrid']/div[2]/table/tbody/tr/td[1]/div/a[2]/div
+OffersLinkNextToAuditor2=.//*[@id='dailyAuditorGrid']/div[2]/table/tbody/tr/td[1]/div/a[2]/div[contains(@ng-click,'auditorsOffer')]
+
+FacilityCodeAtOfferPopup_xpath=.//div/label[text()='Facility Code']/following-sibling::label
+AuditTypeDropDownValueAtOfferPopup_xpath=.//div/label[text()='Audit Type(s)']/following-sibling::label
+OfferCloseLink=.//*[@id='auditorsOffer']//div/button[text()='close']
+
+
+
+AssignInMapTabLink=.//ul[@class='nav nav-tabs']/li/a[text()='Assign in Map']
+A_blurb_image_at_AssignInMap_Tab=.//div[@class='gmnoprint']/img[contains(@src,'/map-icon2.png')]
+
+BackButtonSAM=.//a[text()='Back']
+
+#---------#******************** Modified ****************************
+
+
+
+
+
+

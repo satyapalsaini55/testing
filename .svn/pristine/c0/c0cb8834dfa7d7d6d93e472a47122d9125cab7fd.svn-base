@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Audit_SAM_SPA_suite" >
+
+
+
+
+<test name=" [BS-01]  SAM assuring all screens load">
+<parameter name="className" value="SAM_assuring_all_screens_load"/>
+
+    <classes>
+        <class name="nsf.ecap.Audit_SAM_SPA_suite.SAM_assuring_all_screens_load" ></class> 
+    </classes>
+</test>
+
+
+
+
+</suite>
+

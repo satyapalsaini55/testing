@@ -1,0 +1,15 @@
+******************Batch Started -->15-06-22  05:52:10 PM**********************************************
+Suite name ---->Client_Suite
+Test case name ---->SearchClient
+Test case code ---->Client_BS-02
+Browser name ---->chrome
+Start Time ---->05:52:40 PM
+End Time ---->05:52:47 PM
+This execution tooks 7076ms 
+0 hours, 0 minutes, 7 seconds.
+
+Result ---->FAIL
+****************************************************************
+
+
+

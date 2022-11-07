@@ -1,0 +1,616 @@
+
+TraQtion_Main_Menu_Ajax_Link=//ul[@id='menu']/li
+#TraQtion_VersionLogoImage=//table[@id='headerForm:headerPnGrd']/tbody/tr/td/img[contains(@src, 'logo')]
+TraQtion_VersionLogoImage=//label[@id='headerForm:hdClntLogo']
+IPulse_Footer=//*[@id='footer']
+#IPulse_Loading=//*[@class='progressimage']
+IPulse_Loading=//*[@class='blockUI blockMsg blockPage']
+IPulse_Loading2=//img[@class='progressimage']
+IPulse_Loading3=//img[contains(@src, 'loading.gif')]
+
+
+NSFOnline_ErrorMsg=//*[@class='validationMessages']
+
+#################################### TraQtion Survey Objects ########################################################################
+TraQtion_UserName=//*[@class='x25']
+TraQtion_Login_Bttn=//*[@id='Login']
+TraQtion_Footer=//*[@id='footer']
+TraQtionOnline_Footer=.//*[@id='form1']/div[1]
+
+IPulse_MainErrorMsg=.//span[@class='ui-messages-error-summary']
+
+TraQtion_SupplierList_Text=//*[contains(text(), 'Supplier List')]
+TraQtion_SupplierList_TableHeader=//*[@class='x7a']
+TraQtion_SupplierList_SectionCountXpapth=//*[@class='x6u']
+
+TraQtion_Questioner_Nolongerworkwiththissupplier_Bttn=//*[contains(text(), 'No longer work with this supplier')]
+TraQtion_Questioner_Submit_Bttn=//button[text()='Submit']
+TraQtion_Questioner_Save_Bttn=//*[contains(text(), 'Save')]
+TraQtion_Questioner_Cancel_Bttn=//*[contains(text(), 'Cancel')]
+TraQtion_Questioner_Section_TableHeader=(//*[@class='x7a'])[
+
+TraQtion_Questioner_Relationship_TableHeader=(//*[@class='x7a'])[3]/tbody
+TraQtion_Questioner_Validation_Msg=//*[@title='Validations']
+TraQtion_Questioner_Comments_TextBox=(//*[@class='x25'])[
+
+
+TraQtion_Questioner_SectionCountXpath=//*[@class='x6u']
+
+
+
+#################################### TraQtion Portal Objects ########################################################################
+
+
+#################################### i-Pulse Portal Objects ########################################################################
+IPulse_Menu=//*[contains(text(), 'MENU')]
+IPulse_Suppliers=//*[contains(text(), 'Suppliers')]
+IPulse_SearchScorecards=//*[contains(text(), 'Search Scorecards')]
+
+IPulse_AlertHeader_Div=//*[@id='mainForm:alertTab']
+IPulse_ValidationMessage_Div=//*[@id='mainForm:message']
+
+
+IPulse_SearchScorecards_Search_Bttn=.//*[@id='mainForm:find']
+
+IPulse_SearchScorecards_ShowYear_DD_Click=.//*[@id='mainForm:seasupsccddyear']/div[3]/span
+IPulse_SearchScorecards_ShowYear_DD_Value=.//*[@id='mainForm:seasupsccddyear_panel']/div/ul
+
+IPulse_SearchScorecards_SearchResult_Table_ColumnHeader=//*[@id='mainForm:stdSearchC_head']/tr[1]
+IPulse_SearchScorecards_SearchResult_TableHeader=.//*[@id='mainForm:stdSearchC_data']
+IPulse_SearchScorecards_SearchResult_Pagination=//*[@id='mainForm:stdSearchC_paginator_bottom']
+IPulse_SearchScorecards_SearchResult_SupplierNumber_SortIcon=.//*[@id='mainForm:stdSearchC:j_id1']/span[2]
+IPulse_SearchScorecards_SearchResult_SupplierName_SortIcon=.//*[@id='mainForm:stdSearchC:j_id2']/span[2]
+IPulse_SearchScorecards_SearchResult_Status_Filter=.//*[@id='mainForm:stdSearchC:j_id
+
+IPulse_ViewScorecards_Back_Bttn=.//*[@id='mainForm:sscCmdBack']
+IPulse_ViewScorecards_Save_Bttn=.//*[@id='mainForm:vwssscbtScCard']
+IPulse_ViewScorecards_ScorecardDetails_Score_Value=.//*[@id='mainForm:ssctabvw:viewssccLblScoreVal']
+IPulse_ViewScorecards_ScorecardDetails_Year_DD_Click=.//*[@id='mainForm:ssctabvw:viewsupsccddyear']/div[3]/span
+IPulse_ViewScorecards_ScorecardDetails_Year_DD_Value=.//*[@id='mainForm:ssctabvw:viewsupsccddyear_panel']/div/ul
+IPulse_ViewScorecards_ScorecardDetails_Status_DD_Click=.//*[@id='mainForm:ssctabvw:viewssccLblstatusVal']/div[3]/span
+IPulse_ViewScorecards_ScorecardDetails_Status_DD_Value=.//*[@id='mainForm:ssctabvw:viewssccLblstatusVal_panel']/div/ul
+IPulse_ViewScorecards_ScorecardDetails_StatusChangeDate=.//*[@id='mainForm:ssctabvw:viewssccLblstatusChDtVal']
+IPulse_ViewScorecards_ScorecardDetails_LastUpdatedByUser=.//*[@id='mainForm:ssctabvw:viewssccLblUpUserVal']
+IPulse_ViewScorecards_ScorecardDetails_LastUpdatedDate=.//*[@id='mainForm:ssctabvw:viewssccLblUpDateTimeVal']
+IPulse_ViewScorecards_ScorecardDetails_Edit_Bttn=//*[text()='Edit']
+IPulse_ViewScorecards_ScorecardDetails_Edit_YES_Bttn=.//*[@id='mainForm:ssctabvw:sscCnfrmYScore']
+#IPulse_ViewScorecards_ScorecardDetails_Edit_YES_Bttn=(//*[@class='ui-button-text ui-c'])[7]
+IPulse_ViewScorecards_ScorecardDetails_ReCalculate_Bttn=//*[contains(text(), 'ReCalculate')]
+IPulse_ViewScorecards_ScorecardDetails_ReCalculate_YES_Bttn=.//*[@id='mainForm:ssctabvw:sscCnfrmYCalc']
+#IPulse_ViewScorecards_ScorecardDetails_ReCalculate_YES_Bttn=(//*[@class='ui-button-text ui-c'])[9]
+IPulse_ViewScorecards_ScorecardDetails_View_Bttn=.//*[@id='mainForm:ssctabvw:vwssscbtview']
+IPulse_ViewScorecards_ScorecardDetails_ScoringMethod=.//*[@id='mainForm:ssctabvw:viewssccLblscrMethVal']
+IPulse_ViewScorecards_ScorecardDetails_SupplierReviewDate=.//*[@id='mainForm:ssctabvw:crSSCDateSupRvw_input']
+IPulse_ViewScorecards_ScorecardDetails_SupplierReviewDate_Calender_Bttn=.//*[@id='mainForm:ssctabvw:crSSCDateSupRvw']/button
+
+
+IPulse_ViewScorecards_SupplierScorecardSurveydetailPopup_TitleXpath=.//*[@id='mainForm:composeQuDialg_title']
+IPulse_ViewScorecards_SupplierScorecardSurveydetailPopup_CloseBttn=.//*[@id='mainForm:btnSSCCancel']
+IPulse_ViewScorecards_SupplierScorecardSurveydetailPopup_SaveBttn=.//*[@id='mainForm:btntabSSCSave']
+IPulse_ViewScorecards_SupplierScorecardSurveydetailPopup_FirstSec_InputBox1=.//*[@id='mainForm:dynaQueForm:r
+IPulse_ViewScorecards_SupplierScorecardSurveydetailPopup_FirstSec_InputBox2=c2reg:txtq_input']
+
+
+IPulse_ViewScorecards_Scorecard_TAB=.//*[@id='mainForm:ssctabvw']/ul/li[2]/a
+IPulse_ViewScorecards_ScorecardTAB_TableHeader=.//*[@id='mainForm:ssctabvw:sscScoreCardTabPnl']
+
+
+
+#******************************************************** Common Objects ******************************************************************
+IPulse_Search_Bttn=.//*[@id='mainForm:find']
+IPulse_SearchResult_Table_ColumnHeader=//*[@id='mainForm:stdSearchC_head']/tr[1]
+IPulse_SearchResult_TableHeader=.//*[@id='mainForm:stdSearchC_data']
+IPulse_SearchSite_Site_LK_Bttn=.//*[@id='mainForm:custNoLkp']
+IPulse_SearchSite_Site_LK_Text=.//*[@id='mainForm:newfdt:0:newcriInpNm']
+
+IPulse_Edit_Bttn=.//*[@id='mainForm:editButton']
+IPulse_Save_Bttn=.//*[@id='mainForm:saveButton']
+IPulse_BackToView_Bttn=.//*[@id='mainForm:backToViewBtn']
+IPulse_Back_Bttn=.//*[@id='mainForm:backButton']
+
+
+#******************************************************** Search Product ******************************************************************
+IPulse_SearchProducts_Ajax=//*[contains(text(), 'Search Products')]
+IPulse_SearchProducts_Product_LK_Bttn=.//*[@id='mainForm:prodLkp']
+IPulse_SearchProducts_Product_LK_Text=.//*[@id='mainForm:newfdt:0:newcriInpNm']
+
+IPulse_EditProducts_ClientProductCode_Text=.//*[@id='mainForm:tabView:clntPrdCdTxt']
+
+
+#******************************************************** Search Sites ******************************************************************
+IPulse_SearchSites_Ajax=//*[contains(text(), 'Search Sites')]
+IPulse_EditSites_InformationTAB_PostalCode_Text=.//*[@id='mainForm:tabView:pcode']
+IPulse_EditSites_PrintPKG_Bttn=.//*[@id='mainForm:printPkgBtn']
+
+
+#******************************************************** Search Suppliers ******************************************************************
+IPulse_SearchSuppliers_Ajax=//*[contains(text(), 'Search Suppliers')]
+IPulse_EditSuppliers_InformationTAB_PostalCode_Text=.//*[@id='mainForm:tabView:pcode']
+
+
+#******************************************************** Search Product Templates ******************************************************************
+IPulse_SearchProductTemplates_Ajax=//*[contains(text(), 'Search Product Templates')]
+IPulse_EditProductTemplates_InformationTAB_ClientTemplateID_Text=.//*[@id='mainForm:tabView:clntPrdCdTxt']
+
+
+
+
+
+
+
+
+
+
+#################################### TraQtion QH SAFETY PORTAL Objects ########################################################################
+TraQtionOnline_LoadingImg=//*[@id='progressLayer']
+Suppliers_Ajax_Link=//a[@id='Customer_']
+AllSuppliers_Ajax_Link=//a[text()='All Suppliers']
+Audits_Ajax_Link=//*[contains(text(), 'Audits')]
+CompletedAudits_Ajax_Link=.//a[text()='Completed Audits']
+ScheduledUpcoming_Ajax_Link=.//a[text()='Scheduled & Upcoming']
+Application_Ajax_Link=(//a[text()='Applications'])[1]
+Application_SubMenu_Ajax_Link=(//a[text()='Applications'])[2]
+CorrectiveActions_Ajax_Link=(//*[contains(text(), 'Corrective Actions')])[1]
+CorrectiveActions_SubMenu_Ajax_Link=(//*[contains(text(), 'Corrective Actions')])[2]
+
+#TraQtionOnline_Version=//*[@id='form1']/table/tbody/tr[1]/td/table[1]/tbody/tr/td[1]/a
+TraQtionOnline_Version=//*[contains(@onclick, 'viewVersion()')]
+
+TraQtionOnline_Home_Alerts=//*[@id='id_AlertID']
+TraQtionOnline_Home_Alerts_SelectARegion=//*[@id='snapshot_kpi:region']
+TraQtionOnline_Home_AlertsDiv=//*[@class='xf0']/div[1]
+TraQtionOnline_Home_Alerts_FirstAlert=//*[@class='xf0']/div[1]/div/ul/li[1]/a
+TraQtionOnline_Home_Alerts_SecondAlert=//*[@class='xf0']/div[1]/div/ul/li[2]/a
+
+#TraQtionOnline_Supplier_BackToHomePage=//button[text()='Back To Home Page']
+TraQtionOnline_Supplier_BackToHomePage=//button[contains(text(), 'Back To Home Page')]
+TraQtionOnline_Supplier_Pagination=//*[@title='Select record set']/option[1]
+TraQtionOnline_Supplier_PaginationHeader=//*[@title='Select record set']
+TraQtionOnline_Supplier_Search_Bttn=//button[contains(text(), 'Search')]
+TraQtionOnline_CompletedAudit_SearchAudits_Bttn=//button[contains(text(), 'Search Audits')]
+TraQtionOnline_CorrectiveActions_Search_Bttn=//button[contains(text(), 'Search Corrective Actions')]
+
+TraQtionOnline_ExpandSearchCriteria_Link=//a[text()='Expand search criteria']
+TraQtionOnline_SupplierFacility_Input=(//input[@class='x25'])[1]
+TraQtionOnline_SearchApplication_Application_Input=(//input[@class='x25'])[3]
+TraQtionOnline_SearchResult_TableRow=//table[@class='x7a']
+#TraQtionOnline_SearchResult_TableRow=//table[@class='x7a']/tbody/tr[2]
+
+#TraQtionOnline_ViewSupplier_BackToSuppliers=//*[text()='Back To Suppliers']
+TraQtionOnline_ViewSupplier_BackToSuppliers=//button[contains(text(), 'Back To Suppliers')]
+TraQtionOnline_ViewSupplier_Applications_ListedUpperLeft=//table[@cellspacing='5']/tbody/tr[1]/td[1]/table
+TraQtionOnline_ViewSupplier_Contacts_ListedRight=//table[@cellspacing='5']/tbody/tr[2]/td[2]/div
+TraQtionOnline_ViewSupplier_Contacts_ListedRight_Data=//table[@cellspacing='5']/tbody/tr[2]/td[2]/table
+TraQtionOnline_ViewSupplier_DocumentsTab=//*[text()='Documents']
+TraQtionOnline_ViewSupplier_ATFTab=//*[text()='ATF']
+TraQtionOnline_ViewSupplier_ApplicationsTab=//*[text()='Applications']
+
+TraQtionOnline_ViewApplication_ApplicationInfo_DivXpath=//*[@class='xex']
+
+
+
+#################################### TraQtion QH SAFETY PORTAL "Registration" ########################################################################
+TraQtionOnline_RegisterNewSupplierOrFacility_LinkBttn=//a[@class='supbutton']
+TraQtionRegistration_Login_FullName=//input[@id='VendorName']
+TraQtionRegistration_Login_EmailAddress=//input[@id='VendorEmail']
+TraQtionRegistration_Login_RegisterNewFacilityForExistingSupplier_Radio_Bttn=//input[@id='registerCoFac:_1']
+TraQtionRegistration_Login_ExistingSupplierName_Input=//input[@id='cmpnyname']
+TraQtionRegistration_Login_ExistingSupplierName_DD_Value=//li[contains(text(), 'CostcoAutomation')]
+TraQtionRegistration_Login_StartRegistration_Bttn=//button[text()='Start Registration']
+
+TraQtionRegistration_Registration_Agree_Bttn=//button[text()='Agree']
+
+TraQtionRegistration_Registration_Step1_CorporateInfo_CompanyName=(//label[contains(text(), 'Company Name')]/following::input[1])[1]
+TraQtionRegistration_Registration_Step1_CorporateInfo_AddressLine1=(//label[contains(text(), 'Address Line 1')]/following::input[1])[1]
+TraQtionRegistration_Registration_Step1_CorporateInfo_City=(//label[contains(text(), 'City')]/following::input[1])[1]
+TraQtionRegistration_Registration_Step1_CorporateInfo_Country_DD=(//select[@name='registrationagreementform:itpcnty'])[1]
+TraQtionRegistration_Registration_Step1_CorporateInfo_StateProvince_DD=(//select[@name='registrationagreementform:csstate'])[1]
+TraQtionRegistration_Registration_Step1_CorporateInfo_ZipPostalCode=(//label[contains(text(), 'Zip/Postal Code')]/following::input[1])[1]
+
+TraQtionRegistration_Registration_Step1_PrimaryContact_FirstName=(//label[contains(text(), 'First Name')]/following::input[1])[1]
+TraQtionRegistration_Registration_Step1_PrimaryContact_LastName=(//label[contains(text(), 'Last Name')]/following::input[1])[1]
+TraQtionRegistration_Registration_Step1_PrimaryContact_Email=(//label[contains(text(), 'Email')]/following::input[1])[1]
+TraQtionRegistration_Registration_Step1_PrimaryContact_Phone=(//label[contains(text(), 'Phone')]/following::input[1])[1]
+
+TraQtionRegistration_Registration_Step1_FacilityInfo_CopyCorporateInfo_CheckBox=//label[contains(text(), 'Copy Corporate Info')]/following::input[1]
+TraQtionRegistration_Registration_Step1_PrimaryFacility_CopyPrimaryInfo_CheckBox=//label[contains(text(), 'Copy Primary Contact Info')]/following::input[1]
+
+TraQtionRegistration_Registration_Step1_FacilityInfo_FacilityName=(//label[contains(text(), 'Company Name')]/following::input[1])[2]
+TraQtionRegistration_Registration_Step1_FacilityInfo_AddressLine1=(//label[contains(text(), 'Address Line 1')]/following::input[1])[2]
+TraQtionRegistration_Registration_Step1_FacilityInfo_City=(//label[contains(text(), 'City')]/following::input[1])[2]
+TraQtionRegistration_Registration_Step1_FacilityInfo_Country_DD_Click=(//select[@name='registrationagreementform:itpcnty'])[2]
+TraQtionRegistration_Registration_Step1_FacilityInfo_StateProvince_DD_Click=(//select[@name='registrationagreementform:csstate'])[2]
+TraQtionRegistration_Registration_Step1_FacilityInfo_ZipPostalCode=(//label[contains(text(), 'Zip/Postal Code')]/following::input[1])[2]
+
+TraQtionRegistration_Registration_Step1_PrimaryFacilityContact_FirstName=(//label[contains(text(), 'First Name')]/following::input[1])[2]
+TraQtionRegistration_Registration_Step1_PrimaryFacilityContact_LastName=(//label[contains(text(), 'Last Name')]/following::input[1])[2]
+TraQtionRegistration_Registration_Step1_PrimaryFacilityContact_Email=(//label[contains(text(), 'Email')]/following::input[1])[2]
+TraQtionRegistration_Registration_Step1_PrimaryFacilityContact_Phone=(//label[contains(text(), 'Phone')]/following::input[1])[2]
+
+TraQtionRegistration_Registration_Step1_PrimaryFacilityContact_Authorization_checkBox=//label[contains(text(), 'I am authorized to register this facility as a supplier to Hooters Of America')]/following::input[1]
+TraQtionRegistration_Registration_Step1_PrimaryFacilityContact_Authorization_Name=//label[contains(text(), 'I am authorized to register this facility as a supplier to Hooters Of America')]/following::input[2]
+
+TraQtionRegistration_Registration_Step1_SaveAndNext_Bttn=//button[text()='SAVE AND NEXT']
+
+
+
+TraQtionRegistration_Registration_Step2_ProductInformation_YES_Radio_Bttn=//input[@id='kirkland:_0']
+TraQtionRegistration_Registration_Step2_ProductInformation_HasCompletedAny3PartyAudit_Radio_Bttn=//input[@id='third_party_audit:_1']
+TraQtionRegistration_Registration_Step2_ProductInformation_DoesMoreThan25Employees_Radio_Bttn=//input[@id='more_employees_flg:_1']
+TraQtionRegistration_Registration_Step2_ClickHereToAddProduct_Link=//a[@id='addRegions']
+TraQtionRegistration_Registration_Step2_ClickHereToAddProduct_Table_1Row=//div[@class='prodetails']/table[2]/tbody/tr[2]
+TraQtionRegistration_Registration_Step2_ClickHereToAddProduct_Table_1Row_RecordEdit=//img[@title='edit']
+TraQtionRegistration_Registration_Step2_AddEditProduct_Popup_SelectCountry_DD=.//*[@id='ficountry']
+TraQtionRegistration_Registration_Step2_AddEditProduct_Popup_Department_CheckBox=.//*[@id='dataTable1:0:prdckbox']
+TraQtionRegistration_Registration_Step2_AddEditProduct_Popup_DescribeProduct=//div[@id='dataTable1']/table[2]/tbody/tr[2]/td[2]/input
+TraQtionRegistration_Registration_Step2_AddEditProduct_Popup_Save_Bttn=//button[text()='Save']
+TraQtionRegistration_Registration_Step2_IamAuthorizedToRegister_CheckBox=//input[@id='agreement_authorized']
+TraQtionRegistration_Registration_Step2_Name=//input[@id='fname_authorized']
+TraQtionRegistration_Registration_Step2_SaveAndNext_Bttn=//button[text()='Save and Next']
+
+
+
+TraQtionRegistration_Registration_Step3_CardHolderName=(//input[@class='x25'])[2]
+TraQtionRegistration_Registration_Step3_ZipCode=(//input[@class='x25'])[3]
+TraQtionRegistration_Registration_Step3_CreditCardType_DD=(//select[@class='x2f'])[1]
+TraQtionRegistration_Registration_Step3_CreditCardNumber=(//input[@class='x25'])[4]
+TraQtionRegistration_Registration_Step3_SecurityCodeCVV=(//input[@class='x25'])[5]
+TraQtionRegistration_Registration_Step3_ExpirationMonth=(//select[@class='x2f'])[2]
+TraQtionRegistration_Registration_Step3_ExpirationYear=(//select[@class='x2f'])[3]
+TraQtionRegistration_Registration_Step3_PayNow_Bttn=//button[text()='Pay Now']
+TraQtionRegistration_Registration_Step3_ProceedWithRegistration_Bttn=//button[text()='Proceed with Registration']
+
+
+
+Step_CorporateInfo_Section=//legend[contains(text(), 'Corporate Info')]/following::div[1]
+Step_PrimaryFacilityContact_Section=//legend[contains(text(), 'Primary Facility Contact')]/following::div[1]
+Step_PaymentDetails_Section=(//table[@class='boxpayment'])[8]
+TraQtionRegistration_Registration_Step_Submit_Bttn=//button[text()='SUBMIT']
+TraQtionRegistration_Registration_Step_SubmitForApproval_Bttn=//button[text()='Submit For Approval']
+
+TraQtionRegistration_Registration_Step_NextPage_Message_Div=//div[@class='ui-grid-solo ui-responsive mobileStylingVendor cancelRegiStyling justified-text']
+
+
+
+
+
+
+
+
+
+
+#/////////////////////////////// NEW ######################################################################################
+TraQtionPortal_LoginAs=//input[@id='loginasuser']
+TraQtionPortal_UserName=//input[@id='username']
+TraQtionPortal_password=//input[@id='password']
+TraQtionPortal_Login=//button[contains(text(), 'Submit')]
+TraQtionPortal_logOutBtn=//button[@title='Logout']
+TraQtionPortal_Acknowledge_bttn=//button/span[text()='Acknowledge']
+TraQtionPortal_LoginErroMsg=//div[@class='errormessage']
+TraQtionPortal_IFrameXpath=//iframe[@id='loginframe']
+TraQtionPortal_TraQtion_Button=//img[@src='/traqtionportal/javax.faces.resource/appcategory1.png.jsf?ln=images']
+
+TraQtionPortal_Footer=//div[@class='footbottom margin-topFooter']/a[text()='Privacy Policy']
+TraQtionPortal_VendorRegistration_link=//a[text()='Vendor Registration?']
+TraQtionSoftwareSupplierRegistration_Login_FullName=//label[text()='Full Name']/following::input[1]
+TraQtionSoftwareSupplierRegistration_Login_EmailAddress=//label[text()='Email Address']/following::input[1]
+TraQtionSoftwareSupplierRegistration_Login_ClientKey=//label[text()='Client Key']/following::input[1]
+TraQtionSoftwareSupplierRegistration_Login_Captch_CheckBox=//div[@class='recaptcha-checkbox-checkmark']
+TraQtionSoftwareSupplierRegistration_Login_Validae_bttn=//button[@id='secureKeyLogin:registrationKeyLoginForm:btnvalregkey']
+TraQtionSoftwareSupplierRegistration_Login_Error=//div[@id='secureKeyLogin:registrationKeyLoginForm:dlgerrmsg']
+
+Vendor_FullName=//input[@id='registrationform:rfullname_input']
+Vendor_EmailAddress=//input[@id='registrationform:remailaddress_input']
+Vendor_StartRegistration_bttn=//button[text()='START REGISTRATION']
+Vendor_Message=div[@id\='dlgerrmsg']
+Vendor_Error_Message=div[@id='dlgerrmsg']
+Vendor_Loading=//img[@class='progressimage'] && //h1[@class='justfontface']
+
+Vendor_Registration_Agree_bttn=//button[text()='AGREE']
+
+
+
+TraQtion_TAB_View_div=//div[@id='mainForm:tabView']/div/ul
+TraQtion_TAB_View_div2=//div[@id='mainForm:ssctabvw']/div/ul
+TraQtion_Main_Menu_Div=//ul[@id='menu']/li/div
+LookUp_first_Radio_Bttn=//span[contains(@class, 'ui-radiobutton-icon ui-icon ui-icon-blank')]
+LookUp_Text=//input[@id='mainForm:newfdt:0:newcriInpNm']
+
+
+TraQtion_Search_Bttn=//button[@id='mainForm:find']
+TraQtion_Search_Result_Table=//tbody[@id='mainForm:stdSearchC_data']
+TraQtion_Search_FirstRow_FirstColumn_Link=//tbody[@id='mainForm:stdSearchC_data']/tr/td/a
+TraQtion_Search_FirstRow_SecondColumn_Link=//tbody[@id='mainForm:stdSearchC_data']/tr/td[2]/a
+TraQtion_Search_ProductTemplateStatus_DRAFT_Status=//li[text()='DRAFT']
+TraQtion_Search_CorrectiveActions_CarStatus_Pending=//div[@id='mainForm:carstatuslist']/div[2]/ul/li[text()='PENDING']
+TraQtion_Search_CorrectiveActions_CarStatus_SUBMITTED=//div[@id='mainForm:carstatuslist']/div[2]/ul/li[text()='SUBMITTED']
+TraQtion_Search_CorrectiveActions_CarStatus_REJECTED=//div[@id='mainForm:carstatuslist']/div[2]/ul/li[text()='REJECTED']
+
+TraQtion_Edit_Bttn=//button[@id='mainForm:editButton']
+TraQtion_Save_Bttn=//button[@id='mainForm:saveButton']
+TraQtion_BackToView_Bttn=.//*[@id='mainForm:backToViewBtn']
+TraQtion_Back_Bttn=.//*[@id='mainForm:backButton']
+TraQtion_Message_Div=//div[@id='mainForm:message']
+
+
+TraQtion_EditProduct_Nutritional_Tab=//a[@href='#mainForm:tabView:nutritiontab']
+TraQtion_EditProduct_Nutritional_Expand_Icon=//div[@id\='mainForm\:tabView\:nutritionTypeDT\:0\:confrmdilog']/following\:\:div[1]
+TraQtion_EditProduct_Nutritional_Data_Table=//tbody[contains(@id, 'mainForm:tabView:nutritionTypeDT:0:nutritionsDT_data')]
+TraQtion_EditProduct_Nutritional_Edit_PencilButton=//span[@class='ui-icon ui-icon-pencil']
+TraQtion_EditProduct_Nutritional_ServingSize=//textarea[@id='mainForm:tabView:nutritionTypeDT:0:servSize']
+TraQtion_EditProduct_Nutritional_ServingPerContainer=//textarea[@id='mainForm:tabView:nutritionTypeDT:0:servPerContainer']
+TraQtion_EditProduct_Nutritional_NutritionNotes=//textarea[@id='mainForm:tabView:nutritionTypeDT:0:nutrTypeNotes']
+TraQtion_EditProduct_Nutritional_Client=//textarea[@id='mainForm:tabView:nutritionTypeDT:0:nutrclname']
+
+
+
+
+
+
+
+
+TraQtion_EditProduct_ProductName=//input[@id='mainForm:tabView:pdNmtxt']
+TraQtion_EditSite_SiteName=//input[@id='mainForm:tabView:sitenameitxt']
+TraQtion_EditSupplier_AddressLine2=//input[@id='mainForm:tabView:itpad2']
+TraQtion_ViewProductTemplate_EditConfirmationBox_YES_bttn=//button[@id='mainForm:cnfUnlockProduct']/span[text()='Yes']
+TraQtion_EditProductTemplate_ProductTemplateName=//input[@id='mainForm:tabView:pdNmtxt']
+TraQtion_EditCorrectiveAction_ContainmentPlan=(//textarea[contains(@class, 'ui-inputfield ui-inputtextarea ui-widget ui-state-default ui-corner-')])[1]
+TraQtion_ViewDocument_Popup=//div[@id='mainForm:dlgCusDocPopUp']
+TraQtion_ViewDocument_Popup_Close_link=//div[@id='mainForm:dlgCusDocPopUp']/div/a/span
+
+
+TraQtion_EditSupplier_InformationTAB=//a[@href='#mainForm:tabView:supinfotab']
+
+
+TraQtion_CreateSER_Ajax=//a[text()='Create SER']
+TraQtion_CreateSER_NewIngredient_CheckBox=//label[@for='mainForm:woTypeSec:0' and text()='New Ingredient']
+TraQtion_CreateSER_SER_Name=//input[@id='mainForm:serTypeName']
+TraQtion_CreateSER_Franchisee=//input[@id='mainForm:franchisee']
+TraQtion_CreateSER_Requested_By=//input[@id='mainForm:reqBy']
+TraQtion_CreateSER_Requester_Email=//input[@id='mainForm:reqEmail']
+TraQtion_CreateSER_ReasonforRequestChangeAddition=//textarea[@id='mainForm:reqTypeReplDesc']
+TraQtion_CreateSER_=//input[@id='mainForm:serTypeName']
+TraQtion_CreateSER_Region_DD_Click=//label[@id='mainForm:regiondd_label']
+TraQtion_CreateSER_Region_DD_List=//div[@id='mainForm:regiondd_panel']/div/ul
+TraQtion_CreateSER_AssociatedCategory_DD_Click=//label[@id='mainForm:assocCategory_label']
+TraQtion_CreateSER_AssociatedCategory_DD_List=//div[@id='mainForm:assocCategory_panel']/div/ul
+TraQtion_CreateSER_Market_LK_Bttn=//input[@id='mainForm:region']/following-sibling::button
+TraQtion_CreateSER_Market_LK_Text=//input[@id='mainForm:newfdt:1:newcriInpNm']
+TraQtion_CreateSER_Continue_Bttn=//button[@id='mainForm:continueBtn']
+
+
+TraQtion_SearchSER_Ajax=//a[text()='Search SER']
+TraQtion_SearchSER_SER_No=//input[@id='mainForm:wonotxt']
+TraQtion_SearchSER_CreateSER_bttn=//button/span[text()='Create SER']
+
+TraQtion_EditSER_InfoTab_SER_Name=//input[@id='mainForm:tabView:inptxtappname']
+
+TraQtion_EditSER_Details_TAB=//a[@href='#mainForm:tabView:detailsapptab']
+
+TraQtion_EditSER_DetailsTAB_Ingredient_Add_Bttn=//button[@id='mainForm:tabView:addnewIngBtn']
+TraQtion_EditSER_DetailsTAB_Ingredient_IngredientName=(//input[contains(@id, 'mainForm:tabView:ingdt:0:')])[1]
+TraQtion_EditSER_DetailsTAB_Ingredient_TypeofRequest_DD_Click=//label[@id='mainForm:tabView:ingdt:0:ingrqsttype_label']
+TraQtion_EditSER_DetailsTAB_Ingredient_TypeofRequest_DD_List=//div[@id='mainForm:tabView:ingdt:0:ingrqsttype_panel']/div/ul
+TraQtion_EditSER_DetailsTAB_Ingredient_CurrentProduct_NO_RadioBttn=(//label[contains(@for, 'mainForm:tabView:ingdt:0:') and text()='No'])[1]
+TraQtion_EditSER_DetailsTAB_Ingredient_CurrentSupplierforPJ_NO_RadioBttn=(//label[contains(@for, 'mainForm:tabView:ingdt:0:') and text()='No'])[2]
+TraQtion_EditSER_DetailsTAB_Ingredient_CoreNonCore_DD_Click=//label[@id='mainForm:tabView:ingdt:0:newIngCore_label']
+TraQtion_EditSER_DetailsTAB_Ingredient_CoreNonCore_DD_List=//div[@id='mainForm:tabView:ingdt:0:newIngCore_panel']/div/ul
+
+
+TraQtion_EditSER_DetailsTAB_NewMenuItem_CheckBox=//span[text()='New Menu Item']
+TraQtion_EditSER_DetailsTAB_NewMenuItem_Add_Bttn=//button[@id='mainForm:tabView:addNewMenuItemBtn']
+TraQtion_EditSER_DetailsTAB_NewMenuItem_MenuItemName=(//input[contains(@id, 'mainForm:tabView:midt:0:')])[1]
+TraQtion_EditSER_DetailsTAB_NewMenuItem_TypeofRequest_DD_Click=//label[@id='mainForm:tabView:midt:0:rqsttype_label']
+TraQtion_EditSER_DetailsTAB_NewMenuItem_TypeofRequest_DD_List=//div[@id='mainForm:tabView:midt:0:rqsttype_panel']/div/ul
+TraQtion_EditSER_DetailsTAB_NewMenuItem_CoreNonCore_DD_Click=//label[@id='mainForm:tabView:midt:0:newmiCore_label']
+TraQtion_EditSER_DetailsTAB_NewMenuItem_CoreNonCore_DD_List=//div[@id='mainForm:tabView:midt:0:newmiCore_panel']/div/ul
+TraQtion_EditSER_DetailsTAB_NewMenuItem_LengthOfRequest_DD_Click=//label[@id='mainForm:tabView:midt:0:lenReq_label']
+TraQtion_EditSER_DetailsTAB_NewMenuItem_LengthOfRequest_DD_List=//div[@id='mainForm:tabView:midt:0:lenReq_panel']/div/ul
+
+
+
+TraQtion_EditSER_DetailsTAB_NewSupplier_CheckBox=//span[text()='New Supplier']
+TraQtion_EditSER_DetailsTAB_NewSupplier_Add_Bttn=//button[@id='mainForm:tabView:addSupplierBtn']
+TraQtion_EditSER_DetailsTAB_NewSupplier_Div=//div[@id='mainForm:tabView:supdt']
+TraQtion_EditSER_DetailsTAB_NewSupplier_NewSupplierName=(//input[contains(@id, 'mainForm:tabView:supdt:0:')])[1]
+TraQtion_EditSER_DetailsTAB_NewSupplier_PreviousSupplierforPJ_NO_RadioBttn=(//label[contains(@for, 'mainForm:tabView:supdt:0:') and text()='No'])[1]
+TraQtion_EditSER_DetailsTAB_NewSupplier_ReplacingACurrentSupplier_NO_RadioBttn=(//label[contains(@for, 'mainForm:tabView:supdt:0:') and text()='No'])[2]
+TraQtion_EditSER_DetailsTAB_NewSupplier_CurrentProduct_NO_RadioBttn=(//label[contains(@for, 'mainForm:tabView:supdt:0:') and text()='No'])[3]
+TraQtion_EditSER_DetailsTAB_NewSupplier_SupplierCity=//input[@id='mainForm:tabView:supdt:0:prevsupaddcity']
+TraQtion_EditSER_DetailsTAB_NewSupplier_SupplierCountry_DD_Click=//label[@id='mainForm:tabView:supdt:0:prevsupcountry_label']
+TraQtion_EditSER_DetailsTAB_NewSupplier_SupplierCountry_DD_List=//div[@id='mainForm:tabView:supdt:0:prevsupcountry_panel']/div/ul
+TraQtion_EditSER_DetailsTAB_NewSupplier_SupplierContactName=(//label[text()='Supplier Contact Name']/following::td/input[contains(@id, 'mainForm:tabView:supdt:0:')])[1]
+#TraQtion_EditSER_DetailsTAB_NewSupplier_SupplierContactName=//label[text()='Supplier Contact Name']/following::td[1]/input
+
+TraQtion_EditSER_RegionMarket_TAB=//a[@href='#mainForm:tabView:regiontab']
+TraQtion_EditSER_RegionMarketTAB_Add_Region_Bttn=//button[@id='mainForm:tabView:addRegionBtn']
+TraQtion_EditSER_RegionMarketTAB_AddRegion_Popup_Title=//span[@id='mainForm:tabView:addRgn_title']
+TraQtion_EditSER_RegionMarketTAB_AddRegion_Region_DD_Click=//label[@id='mainForm:tabView:regiondd_label']
+TraQtion_EditSER_RegionMarketTAB_AddRegion_Region_DD_List=//div[@id='mainForm:tabView:regiondd_panel']/div/ul
+TraQtion_EditSER_RegionMarketTAB_AddRegion_Market_LK_Bttn=//input[@id='mainForm:tabView:region']/following-sibling::button
+TraQtion_EditSER_RegionMarketTAB_AddRegion_Market_LK_Text=//input[@id='mainForm:newfdt:1:newcriInpNm']
+TraQtion_EditSER_RegionMarketTAB_AddRegion_Add_bttn=//button[@id='mainForm:tabView:saveRegionBtn']
+
+
+TraQtion_EditSER_Task_TAB=//a[@href='#mainForm:tabView:tskapptab']
+TraQtion_EditSER_Documents_TAB=//a[@href='#mainForm:tabView:dcmntsapptab']
+TraQtion_EditSER_Correspondence_TAB=//a[@href='#mainForm:tabView:crspndcapptab']
+TraQtion_EditSER_History_TAB=//a[@href='#mainForm:tabView:historytab']
+
+
+
+TraQtion_CreateComplaint_Ajax=//a[text()='Create Complaint']
+TraQtion_CreateComplaint_Complaint_NEXT_bttn=//button[@id='mainForm:creisswizard_next']
+TraQtion_CreateComplaint_Success_Message_Div=//span[@class='ui-messages-info-summary']
+
+TraQtion_CreateComplaint_Complaint_LocationName_LK_bttn=//button[@id='mainForm:SITE_LOV1']
+TraQtion_CreateComplaint_Complaint_LocationName_LK_Text=//input[@id='mainForm:newfdt:0:newcriInpNm']
+TraQtion_CreateComplaint_Complaint_ComplaintDate=//input[@id='mainForm:calissuedate_input']
+TraQtion_CreateComplaint_Complaint_HowReceived_DD_Click=//label[@id='mainForm:somhowrec_label']
+TraQtion_CreateComplaint_Complaint_HowReceived_DD_List=//div[@id='mainForm:somhowrec_panel']/div/ul
+TraQtion_CreateComplaint_Complaint_ComplaintType_DD_Click=//label[@id='mainForm:somissuetype_label']
+TraQtion_CreateComplaint_Complaint_ComplaintType_DD_List=//div[@id='mainForm:somissuetype_panel']/div/ul
+TraQtion_CreateComplaint_Complaint_ComplaintSubtype_DD_Click=//label[@id='mainForm:somissuesubtype_label']
+TraQtion_CreateComplaint_Complaint_ComplaintSubtype_DD_List=//div[@id='mainForm:somissuesubtype_panel']/div/ul
+TraQtion_CreateComplaint_Complaint_ProductCategory_LK_input=//input[@id='mainForm:itproductcatname_input']
+TraQtion_CreateComplaint_Complaint_ProductCategory_LK_bttn=//button[@id='mainForm:srodCatLookup']
+TraQtion_CreateComplaint_Complaint_Product_LK_input=//input[@id='mainForm:itproductname_input']
+TraQtion_CreateComplaint_Complaint_Product_LK_bttn=//button[@id='mainForm:traqSiteProdCatLookup']
+TraQtion_CreateComplaint_Complaint_Supplier_LK_input=//input[@id='mainForm:itsuppliername_input']
+TraQtion_CreateComplaint_Complaint_Supplier_LK_bttn=//button[@id='mainForm:traqProdSupplierLookup']
+
+
+TraQtion_CreateComplaint_ProductDetails_ProductLabelInformation=//textarea[@aria-disabled='false']
+TraQtion_CreateComplaint_ProductDetails_DeliveryDate=//input[@id='mainForm:dlvryDt_input']
+TraQtion_CreateComplaint_ProductDetails_NumberOfCasesAffected=//label[contains(text(), 'Number of Cases Affected')]/following::td[1]/input
+TraQtion_CreateComplaint_ProductDetails_NumberOfCasesDelivered=//label[contains(text(), 'Number of Cases Delivered')]/following::td[1]/input
+TraQtion_CreateComplaint_ProductDetails_AreYouRequestingCredit_YES_Radio_bttn=//label[@for='mainForm:creditradio:0']
+
+TraQtion_CreateComplaint_Documents_AddAttachment_bttn=//button[@id='mainForm:issDocCmdAddAttch']
+TraQtion_CreateComplaint_Documents_AddAttachment_Browse=//input[@id='mainForm:crIssFileUpld_input']
+TraQtion_CreateComplaint_Documents_AddAttachment_BrowseFile_Progress=//td[@class='ui-fileupload-preview']
+TraQtion_CreateComplaint_Documents_AddAttachment_TextArea=//textarea[@id='mainForm:crissFileDescr']
+TraQtion_CreateComplaint_Documents_AddAttachment_OK_bttn=//button[@id='mainForm:crneuplodbtn']
+TraQtion_CreateComplaint_Documents_DocumentDetails_Table=//tbody[@id='mainForm:crIssUpldTable_data']
+
+
+TraQtion_CreateComplaint_Confirmation_Submit_bttn=//button[@id='mainForm:issConLinkSub']
+TraQtion_CreateComplaint_Confirmation_ComplaintSubmitConfirmation_title=//div[@id='mainForm:cnfsubmitcomplaint']/div/span
+TraQtion_CreateComplaint_Confirmation_ComplaintSubmitConfirmation_Yes_bttn=//button[@id='mainForm:ycnfsubmitcomplaint']
+
+TraQtion_EditComplaint_Info_Tab=//a[@href='#mainForm:tabView:issInfoTab']
+TraQtion_EditComplaint_InfoTab_Justified_Yes_Radio_bttn=//label[contains(text(), 'Justified?')]/following::span[1]
+TraQtion_EditComplaint_InfoTab_JustifyUnjustifyReason=//label[contains(text(), 'Justify/Unjustify Reason')]/following::textarea[1]
+
+
+TraQtion_SearchComplaint_Ajax=//a[text()='Search Complaints']
+TraQtion_SearchComplaint_ComplaintID=//input[@id='mainForm:itcomplaintid']
+
+TraQtion_EditComplaint_Documents_Tab=//a[@href='#mainForm:tabView:issDocumentsTab']
+TraQtion_EditComplaint_AuditTrail_Tab=//a[@href='#mainForm:tabView:issAuditTrailTab']
+TraQtion_EditComplaint_Notifications_Tab=//a[@href='#mainForm:tabView:issNotificationsTab']
+TraQtion_EditComplaint_RequestResponse_Tab=//a[@href='#mainForm:tabView:issIssueRepsponseTab']
+TraQtion_EditComplaint_Snapshot_Tab=//a[@href='#mainForm:tabView:issSnapshotTab']
+
+TraQtion_ViewComplaint_EscalationID_link=//a[@id='mainForm:escMntLinkIssId']
+
+TraQtion_EditEscalation_RelatedComplaint_div=//div[@id='mainForm:tabView:linkedcomplaintsdt']
+TraQtion_EditEscalation_Description=(//label[contains(text(), 'Description')])[2]/following::textarea[1]
+TraQtion_EditEscalation_Liability_UnJustified_Radio_bttn=//label[text()='Unjustified']/preceding::span[1]
+TraQtion_EditEscalation_LiabilityReason=//label[contains(text(), 'Liability Reason')]/following::textarea[1]
+TraQtion_EditEscalation_Status_Confirmation_YES_bttn=//button[@id='mainForm:unjustifyEscBtn']
+
+#===================================
+
+
+#=====================================================
+TraQtion_Application=.//td[contains(@class,'ui-panelgrid-cell grayright')]/label[normalize-space(text())='TraQtion']
+TraQtion_Menu=//li/a[contains(text(),'Menu')]
+TraQtion_Menu_SearchTemplateProductLink=//li/a[contains(text(),'Search Product Templates')]
+TraQtion_SearchProductTemplates_Ajax=//a[text()='Search Product Templates']
+TraQtion_SearchSuppliers_Ajax=//a[text()='Search Suppliers']
+TraQtion_SearchSites_Ajax=//a[text()='Search Sites']
+TraQtion_SearchProducts_Ajax=//a[text()='Search Products']
+
+
+
+
+
+
+TraQtion_CreateButton=//*[@id\='mainForm\:crtPrdBtn'] 
+#//mainForm:crtprdtmptbtn
+TraQtion_Page_Header=//div[contains(@class,'ui-outputpanel ui-widget greenheading')]
+TraQtion_Product_Template_Name_Txt=//*[@id='mainForm:prodName']
+TraQtion_Product_Category_Lookup=//*[@id='mainForm:PROD_CATEGORY_TEMP_LOV']
+TraQtion_Food_Bread=//span[text()='Bread']
+TraQtion_Select_Return_Button=//*[@id='mainForm:lkpSltRecright']
+TraQtion_CreateButton_CPT=//*[@id='mainForm:crtprdtmptbtn']
+TraQtion_Create_Product_Template_Success=//div[@id='adminfaq:msgadminfaq_content']/div/div/ul/li/span[@class='ui-messages-info-summary']
+TraQtion_Attributs_TAB=//a[@href='#mainForm:tabView:attributestab']
+TraQtion_Information_TAB=//a[@href='#mainForm:tabView:infotab']
+TraQtion_Label_PT_Status=//label[@id='mainForm:tabView:statusMenu_label']
+TraQtion_ddXpathKey_PT_Status=//div[@id='mainForm:tabView:statusMenu_panel']/div/ul
+TraQtion_PT_Status_Reason=//input[@id='mainForm:tabView:statusChngRsnTxt']
+TraQtion_Lock_Button=//button[@id='mainForm:lockButton']
+#TraQtion_Lock_Product_Change_Desc_Area=//textarea[@class='ui-inputfield ui-inputtextarea ui-widget ui-state-default ui-corner-all width-400 height-50 ui-inputtextarea-resizable']
+TraQtion_Lock_Product_Change_Desc_Area=//label[text()='Product Change Description']/following::textarea
+TraQtion_Lock_Popup_Button=//button[@id='mainForm:lockDlgBtn']
+TraQtion_Locked_Template_Text=//label[@class='red-color bold-text']
+TraQtion_Menu_SearchSupplierLink=//li/a[contains(text(),'Search Suppliers')]
+TraQtion_CreateButton_Supplier=//button[@id='mainForm:crsupBtn']
+TraQtion_Supplier_NameTxt=//input[@id='mainForm:cnm']
+TraQtion_Supplier_Type_Label=//label[@id='mainForm:somsuppliertype_label']
+TraQtion_Supplier_Type=//div[@id='mainForm:somsuppliertype_panel']/div/ul
+TraQtion_Supplier_Address1=//input[@id='mainForm:itpad1']
+TraQtion_Supplier_CITY=//input[@id='mainForm:itpcity']
+TraQtion_Supplier_Country_Label=//label[@id='mainForm:itpcnty_label']
+TraQtion_Supplier_Country=//div[@id='mainForm:itpcnty_panel']/div/ul
+TraQtion_Supplier_FNAME=//input[@id='mainForm:itpfnm']
+TraQtion_Supplier_LNAME=//input[@id='mainForm:itplnm']
+TraQtion_Supplier_EMAIL=//input[@id='mainForm:itppemil']
+TraQtion_Supplier_PHONE=//input[@id='mainForm:phone']
+TraQtion_Supplier_Create_Button	=//button[@id='mainForm:createsupplierBtn']
+
+TraQtion_Menu_SearchSitesLink=//li/a[contains(text(),'Search Sites')]
+TraQtion_CreateButton_Sites=//button[@id='mainForm:searchcreatesitecmd']
+TraQtion_Sites_Type_Label=//label[@id='mainForm:somcustype_label']
+TraQtion_Sites_Type=//div[@id='mainForm:somcustype_panel']/div/ul
+TraQtion_Sites_Parent_Lookup_Button=//button[@id='mainForm:parentSupNoLkp']
+TraQtion_Sites_Search_Lookup_Button=//button[@id='mainForm:lkpfndDg']
+TraQtion_Sites_Searched_1ROW=//tbody[@id='mainForm:lookuptableid_data']/tr[1]/td/div
+TraQtion_Site_City=//label[contains(text(), 'City:')]/following::input[1]
+TraQtion_Site_PHONE=//input[@id='mainForm:itppprh']
+TraQtion_Site_Create=//button[@id='mainForm:createsitecmd']
+
+TraQtion_Menu_SearchProductLink=//li/a[contains(text(),'Search Products')]
+TraQtion_Product_Trade_NameTxt=//input[@id='mainForm:prodTradNmtxt']
+TraQtion_Product_Cat_lookup_Button=//button[@id='mainForm:PROD_CATEGORY_LOV']
+
+TraQtion_Product_Template_Label=//label[@id='mainForm:productTemplate_label']
+TraQtion_Product_Temp_Select=//div[@id='mainForm:productTemplate_panel']/div/ul
+TraQtion_Product_Product_Cat_Value=//input[@id='mainForm:newfdt:0:newcriInpNm']
+TraQtion_Product_Select_checkBox=//span[contains(@class, 'ui-radiobutton-icon ui-icon ui-icon-blank')]
+TraQtion_Product_Popup_YES=//button[@id='mainForm:crtprdcnfDlg']
+TraQtion_Attribute_Add_Button=//button[@id='mainForm:tabView:attrLook']
+TraQtion_Attribute_Select_Save_Button=//button[@id='mainForm:lkpSltRecright']
+
+TraQtion_Supplier_TAB=//a[@href='#mainForm:tabView:supplierstab']
+TraQtion_Supplier_Add_Button=//button[@id='mainForm:tabView:addSuppBtn']
+TraQtion_Direct_Supplier_Label=//label[@id='mainForm:tabView:dirSup_label']
+TraQtion_Direct_Supplier_YES=//div[@id='mainForm:tabView:dirSup_panel']/div/ul
+TraQtion_Supplier_Code_Lookup=//button[@id='mainForm:tabView:supLkp']
+TraQtion_Supplier_Code_Txt=//input[@id='mainForm:newfdt:0:newcriInpNm']
+TraQtion_Supplier_FacilityType_Label=//label[@id='mainForm:tabView:factype_label']
+TraQtion_Supplier_FacilityType_value=//div[@id='mainForm:tabView:factype_panel']/div/ul
+TraQtion_Supplier_IsPrimary=//label[contains(text(), 'Is Primary')]/following::div/div/following::div
+
+TraQtion_Supplier_Status=//label[@id='mainForm:tabView:status_label']
+TraQtion_Supplier_Status_Value=//div[@id='mainForm:tabView:status_panel']/div/ul
+TraQtion_Supplier_SaveNcloseButton=//button[@id='mainForm:tabView:supsavebtn']
+TraQtion_Supplier_Confirm_Popup_Yes=//button[@id='mainForm:tabView:addprimsupp']
+
+TraQtion_DC_TAB=//a[@href='#mainForm:tabView:dctab']
+TraQtion_DC_ADD_Button=//button[@id='mainForm:tabView:sitelkup']
+TraQtion_DC_First_Row_Check=//tbody[@id='mainForm:lookuptableid_data']/tr/td/div
+TraQtion_Product_CreateButton=//button[@id='mainForm:crtprdbtn']
+TraQtion_Created_Product_Code=//input[@id='mainForm:prodCode']
+TraQtion_Product_SearchButton=//button[@id='mainForm:find']
+TraQtion_Product_Searched_Row=//tbody[@id='mainForm:stdSearchC_data']/tr/td/a
+TraQtion_Evaluation_TAB=//a[@href='#mainForm:tabView:evaluationtab']
+TraQtion_Evaluation_Add_Button=//button[@id='mainForm:tabView:addEvaluationBtn']
+TraQtion_Evaluation_Category_Label=//label[@id='mainForm:tabView:auditCatgEvaluation_label']
+TraQtion_Evaluation_Category_Val=//div[@id='mainForm:tabView:auditCatgEvaluation_panel']/div/ul
+TraQtion_Evaluation_Site_LookupButton=//button[@id='mainForm:tabView:selectSiteAndSupplierBtn']
+TraQtion_Evaluation_Site_CheckBox=//tbody[@id='mainForm:tabView:siteDT_data']/tr/td/div[@class='ui-radiobutton ui-widget']
+TraQtion_Evaluation_Site_Continue_Button=//button[@id='mainForm:tabView:selectSiteSupplier']
+TraQtion_Evaluation_Sup_CheckBox=//tbody[@id='mainForm:tabView:supplierDT_data']/tr/td/div[@class='ui-radiobutton ui-widget']
+TraQtion_Evaluation_Type_Label=//label[@id='mainForm:tabView:auditTypeEvaluation1_label']
+TraQtion_Evaluation_Type_Val=//div[@id='mainForm:tabView:auditTypeEvaluation1_panel']/div/ul
+TraQtion_Evaluation_SaveNclose_Button=//button[@id='mainForm:tabView:saveEvaluationsDlg']
+TraQtion_Evaluation_Option_EditButton=//tbody[@id='mainForm:tabView:productsEvaluationsDT_data']/tr/td/button/span[@class='ui-button-text ui-c']
+TraQtion_Evaluation_Close_PopupButton=//div[@id='mainForm:tabView:evalEditScreenDlg']/div/a/span[@class='ui-icon ui-icon-closethick']
+TraQtion_Evaluation_ID_Link=//tbody[@id='mainForm:tabView:productsEvaluationsDT_data']/tr/td[2]/a
+
+
+TraQtion_CreateComplaint_ProductDetails_Invoice=//label[contains(text(), 'Invoice #')]/following::td[1]/input
+TraQtion_CreateComplaint_ProductDetails_AreYouRequestingCredit_NO_Radio_bttn=//label[@for='mainForm:creditradio:1']

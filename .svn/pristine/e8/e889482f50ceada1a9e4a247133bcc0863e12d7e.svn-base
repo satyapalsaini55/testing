@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sus_suite" >
+	 <test name=" [BS-01]  Sustainability_Single">
+		<parameter name="className" value="CreateWOforSustainabilitySingle"/> 
+		<classes>
+	        <class name="nsf.ecap.sustainability_Suite.CreateWOforSustainabilitySingle" ></class> 
+	    </classes>
+	</test> 
+	<test name=" [BS-02]  Sustainability_Campus">
+		<parameter name="classNameCampus" value="CreateWOforSustainabilityCampus"/>
+	    <classes>
+	        <class name="nsf.ecap.sustainability_Suite.CreateWOforSustainabilityCampus" ></class>
+	    </classes>
+	</test>
+</suite>
+

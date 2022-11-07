@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Dietary_Supplement_suite]">
+  <listeners>
+    <listener class-name="nsf.ecap.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="[BS-01]  ModBrack_Certified(failed)">
+    <classes>
+      <class name="nsf.ecap.Dietary_Supplement_suite.ModBrack_Certified">
+        <methods>
+          <include name="CLEANUP_WO_AUTOMATION_DATA"/>
+          <include name="AddingData__Tasks_Tab"/>
+          <include name="reportDataSetResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="AddingData__Products_Tab"/>
+          <include name="Verify_INPROCESS_to_COMPLETE_Automatically"/>
+          <include name="ModBrack_Revision_Execution_Quote"/>
+          <include name="Client_Quote_Task"/>
+          <include name="Completing_ClientDocRequestAI_And_Completing_ModBrackReview_Task"/>
+          <include name="reportTestResult"/>
+          <include name="Certification_Decision_Task"/>
+          <include name="cleanUp"/>
+          <include name="CreateWOFlow"/>
+          <include name="Mod_Brack_Review_Task"/>
+          <include name="checkTestSkip"/>
+          <include name="Testing_Task"/>
+          <include name="AddingData__Facility_Tab"/>
+          <include name="Verifying__DRAFT_INREVIEW_ModBrack"/>
+        </methods>
+      </class> <!-- nsf.ecap.Dietary_Supplement_suite.ModBrack_Certified -->
+    </classes>
+  </test> <!-- [BS-01]  ModBrack_Certified(failed) -->
+</suite> <!-- Failed suite [Dietary_Supplement_suite] -->

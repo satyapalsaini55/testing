@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Navigate_suite" >
+	 <test name=" [BS-01]  Navigate_matrix">
+		<parameter name="className" value="SearchClientForISR"/> 
+		<classes>
+	        <class name="nsf.ecap.navigation_Suite.SearchClientForISR" ></class> 
+	    </classes>
+	</test> 
+	<test name=" [BS-02]  SearchClientForFoodEquipment_Matrix">
+		<parameter name="FoodEquipmentClass" value="SearchClientForFoodEquipment"/>
+	    <classes>
+	        <class name="nsf.ecap.navigation_Suite.SearchClientForFoodEquipment" ></class>
+	    </classes>
+	</test>
+	<test name=" [BS-03]  NavigationMatrixForAlertTab_Matrix">
+		<parameter name="AlertTabClass" value="NavigationMatrixForAlertTab"/>
+	    <classes>
+	        <class name="nsf.ecap.navigation_Suite.NavigationMatrixForAlertTab" ></class>
+	    </classes>
+	</test>
+	
+	<test name=" [BS-03]  NavigationMatrixForTasksTab_Matrix">
+		<parameter name="TasksTabClass" value="NavigationMatrixForTasksTab"/>
+	    <classes>
+	        <class name="nsf.ecap.navigation_Suite.NavigationMatrixForTasksTab" ></class>
+	    </classes>
+	</test>
+</suite>
+

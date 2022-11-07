@@ -1,0 +1,355 @@
+
+
+<suite name = "NSF Connect Suite" >
+
+
+<test name = "[BS-01] Create View in Sites and Snapshot and Verify Records Count">
+
+<parameter name = "className" value = "BS_01_Site_Snpsht_RecordMatch"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_01_Site_Snpsht_RecordMatch"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-02] Create View in Sites_Audits and Snapshot and Verify Records Count">
+
+<parameter name = "className" value = "BS_02_Audit_Snpsht_RecordMatch"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_02_Audit_Snpsht_RecordMatch"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-03] Create View and CreateEditApprove CorrectiveActions in CheckList">
+
+<parameter name = "className" value = "BS_03_CheckList"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_03_CheckList"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-04] Create Edit Delete CA View, AdvanceSearch, Alerts and PieChart Records Count">
+
+<parameter name = "className" value = "BS_04_CA_Alert_AdvSrch_Snpshot"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_04_CA_Alert_AdvSrch_Snpshot"></class> 
+    </classes>
+   
+</test>
+<!-- 
+<test name = "[BS-05] NSF Connect Search Documents CO and CL">
+
+<parameter name = "className" value = "BS_05_Document_AdvSrch_SrchDoc"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_05_Document_AdvSrch_SrchDoc"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-06] NSF Connect Search Suppliers">
+
+<parameter name = "className" value = "BS_06_Suppliers_SearchSupplier"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_06_Suppliers_SearchSupplier"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-07] NSF Connect Search Audits and Standards CO and CL">
+
+<parameter name = "className" value = "BS_07_Audit_Standard_AdvSearch"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_07_Audit_Standard_AdvSearch"></class> 
+    </classes>
+   
+</test>
+ -->
+
+<test name = "[BS-08] Create CheckList and Approve it by Single User Login">
+
+<parameter name = "className" value = "BS_08_CheckList_SingleUsrLogin"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_08_CheckList_SingleUsrLogin"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-09] Invoice and Certificate">
+
+<parameter name = "className" value = "BS_09_Invoice_n_Certificate"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_09_Invoice_n_Certificate"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-10] BK Admin Test Case">
+
+<parameter name = "className" value = "BS_10_BkAdmin"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_10_BkAdmin"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-11] Create, Edit, Submit, Approve, Reject and Escalate Appeal">
+
+<parameter name = "className" value = "BS_11_Appeal_Create_To_Review"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_11_Appeal_Create_To_Review"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-12] BK Admin - Management Reports">
+
+<parameter name = "className" value = "BS_12_BkAdmin_Mgt_Reports"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_12_BkAdmin_Mgt_Reports"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-13] Create and Edit Issues">
+
+<parameter name = "className" value = "BS_13_IM_CreateIssue_AdvSearch"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_13_IM_CreateIssue_AdvSearch"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name = "[BS-14] NSF Connect Login Scenarios">
+
+<parameter name = "className" value = "BS_14_Login_Scenarios"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-15]  NSF Connect Account Setup Test Cases">
+
+<parameter name = "className" value = "BS_15_NSFOnlineAccountSetup"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_15_NSFOnlineAccountSetup"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-16]  Verify Alerts color Sorting">
+
+<parameter name = "className" value = "BS_16_Alerts_SortOder"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_16_Alerts_SortOder"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-17]  Verify Testing Reports">
+
+<parameter name = "className" value = "BS_17_Testing_Reports"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_17_Testing_Reports"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-18]  Verify Product Reports">
+
+<parameter name = "className" value = "BS_18_Product_Doc_Report"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_18_Product_Doc_Report"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-19]  Verify Client Resources Reports">
+
+<parameter name = "className" value = "BS_19_Client_Resource_Reports"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_19_Client_Resource_Reports"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-20]  Verify Listing">
+
+<parameter name = "className" value = "BS_20_Listings"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_20_Listings"></class> 
+    </classes>
+   
+</test>
+<!-- 
+<test name = "[BS-21]  Create and Submit Submission">
+
+<parameter name = "className" value = "BS_21_Submission_Create_Submit"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_21_Submission_Create_Submit"></class> 
+    </classes>
+   
+</test>
+ -->
+<test name = "[BS-22]  Verify ReQualification">
+
+<parameter name = "className" value = "BS_22_Requalification"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_22_Requalification"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-23]  Verify Questionnaire">
+
+<parameter name = "className" value = "BS_23_Questionnaire"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_23_Questionnaire"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-24]  Verify Users">
+
+<parameter name = "className" value = "BS_24_Users"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_24_Users"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-25]  Verify Audit Components">
+
+<parameter name = "className" value = "BS_25_Audit_Component"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_25_Audit_Component"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-26]  Verify Standard Members">
+
+<parameter name = "className" value = "BS_26_Standard_Members"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_26_Standard_Members"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-27]  Verify Standard Member Audits">
+
+<parameter name = "className" value = "BS_27_Standard_Member_Audits"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_27_Standard_Member_Audits"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-28]  Verify findings">
+
+<parameter name = "className" value = "BS_28_Findings"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_28_Findings"></class> 
+    </classes>
+   
+</test>
+
+
+<!-- <test name = "[BS-29]  Food Managers">
+
+<parameter name = "className" value = "BS_29_Food_Managers"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_29_Food_Managers"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-30]  Verify Applications">
+
+<parameter name = "className" value = "BS_30_Applications"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_30_Applications"></class> 
+    </classes>
+   
+</test> -->
+
+
+<test name = "[BS-31]  Product Review">
+
+<parameter name = "className" value = "BS_31_Product_Review"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_31_Product_Review"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-32]  Site Documents">
+
+<parameter name = "className" value = "BS_32_Site_Documents"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_32_Site_Documents"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-34]  Verify Audit CA">
+
+<parameter name = "className" value = "BS_34_Audit_CA"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_34_Audit_CA"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-35]  User Registration">
+
+<parameter name = "className" value = "BS_35_User_Registration"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_35_User_Registration"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-36]  Service Request">
+
+<parameter name = "className" value = "BS_36_Service_Request"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_36_Service_Request"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-37] Verify NSF Connect IM Integration Test">
+
+<parameter name = "className" value = "BS_37_IM_Integration_Test"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_37_IM_Integration_Test"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-38] Verify Advanced Search Export Functionality">
+
+<parameter name = "className" value = "BS_38_AdvSrch_ExportFunctional"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_38_AdvSrch_ExportFunctional"></class> 
+    </classes>
+   
+</test>
+<test name = "[BS-39] Subway - Verify Dashbord AuditCA and REV NC Report">
+
+<parameter name = "className" value = "BS_39_Subway_Dashbord_CA_Report"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.BS_39_Subway_Dashbord_CA_Report"></class> 
+    </classes>
+   
+</test>
+<test name = "Sanity Testing">
+
+<parameter name = "className" value = "Sanity_testing"/>
+	<classes>
+             <class name = "nsf.ecap.New_NSFOnline_Suite.Sanity_testing"></class> 
+    </classes>
+   
+</test>
+</suite>
+

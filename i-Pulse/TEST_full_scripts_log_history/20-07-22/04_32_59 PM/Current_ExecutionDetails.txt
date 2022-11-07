@@ -1,0 +1,15 @@
+******************Batch Started -->20-07-22  04:32:59 PM**********************************************
+Suite name ---->Client_Suite
+Test case name ---->CreateClient
+Test case code ---->Client_BS-01
+Browser name ---->chrome
+Start Time ---->04:33:30 PM
+End Time ---->04:37:38 PM
+This execution tooks 248492ms 
+0 hours, 4 minutes, 8 seconds.
+
+Result ---->PASS
+****************************************************************
+
+
+

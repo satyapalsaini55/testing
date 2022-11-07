@@ -1,0 +1,115 @@
+IPulse_Footer=//*[@id='footer']
+IPulse_ValidationMessage_Div=//div[@id='mainForm:message_content']/div/div/ul/li/span
+IPulse_AlertHeader_Div=//*[@id='mainForm:alertTab']
+VersionLogoImage=.//*[@id='headerForm:logImg']
+
+LookUp_First_CheckBox=(//*[@class='ui-chkbox ui-widget'])[1]
+LookUp_Second_CheckBox=(//*[@class='ui-chkbox ui-widget'])[2]
+LookUp_SelectAndReturn_Bttn=//*[@id='mainForm:lkpSltRecright']
+
+LookUp_First_Input_Field=//input[@id='mainForm:newfdt:0:newcriInpNm']
+
+BrowseFile_Progress=.//*[@class='ui-fileupload-progress']
+BrowseFile_ErrorMsg=.//*[@class='ui-messages-error-summary']
+
+################################################################# Calendar Common X-paths ######################################################################################
+Calendar_Next_Bttn=//a[@title='Next']
+Calendar_Previous_Bttn=//a[@title='Prev']
+Calendar_MonthYear_Title=//*[@class='ui-datepicker-title']
+Calendar_Month_DD=//*[@class='ui-datepicker-month']
+Calendar_Year_DD=//*[@class='ui-datepicker-year']
+
+################################################################# Ajax X-paths #################################################################################################
+Menu_Ajax_Link=//a[text()='Menu']
+CreateSubmission_Ajax_Link=//a[text()='Create Submission']
+SearchPart_Ajax_Link=//a[text()='Search Part']
+SearchSubmission_Ajax_Link=//a[text()='Search Submission']
+Enter_Make_Model_Ajax_Link=//a[text()='Enter Make/Model']
+SubmissionInvoice_Ajax_Link=//a[text()='Submission Invoice']
+
+
+
+#################################################################  Create Submission X-paths ######################################################################################
+CreateSubmission_FacilityName_LK_Bttn=//button[@id='mainForm:facCustNoLkp']
+
+CreateSubmission_SubmissionType_DD_Click=//*[@id='mainForm:submissionType']/div[3]/span
+CreateSubmission_SubmissionType_DD_Value=//*[@id='mainForm:submissionType_panel']/div/ul
+
+CreateSubmission_Protocol_DD_Click=//*[@id='mainForm:submissionSubType']/div[3]/span
+CreateSubmission_Protocol_DD_Value=//*[@id='mainForm:submissionSubType_panel']/div/ul
+
+CreateSubmission_ProgramOfficeRep_LK_Bttn=//button[@id='mainForm:assignedEmpLook1']
+
+CreateSubmission_Notes_TextArea=//*[@id='mainForm:caNotes']
+CreateSubmission_Create_Bttn=//button[@id='mainForm:createampbtn']
+
+
+
+#################################################################  Edit Submission X-paths ######################################################################################
+EditSubmission_Back_Bttn=//button[@id='mainForm:backButton']
+EditSubmission_Save_Bttn=//button[@id='mainForm:savebutton']
+
+
+EditSubmission_DetailsTab=//a[@href='#mainForm:tabView:infappedittab']
+EditSubmission_DetailsTab_SubmissionID=//span[@id='mainForm:TopApplDetails:requestId']
+EditSubmission_DetailsTab_CertDecisionMaker_LK_Bttn=//button[@id='mainForm:tabView:assignedEmpLook1']
+EditSubmission_DetailsTab_Status_DD_Click=//*[@id='mainForm:tabView:j_idt4831']/div[3]/span
+EditSubmission_DetailsTab_Status_DD_Value=//*[@id='mainForm:tabView:j_idt4831_panel']/div/ul
+EditSubmission_DetailsTab_CertificationStatus_DD_Click=//*[@id='mainForm:tabView:certStatus']/div[3]/span
+EditSubmission_DetailsTab_CertificationStatus_DD_Value=//*[@id='mainForm:tabView:certStatus_panel']/div/ul
+EditSubmission_DetailsTab_TechReviewer_DD_Click=//*[@id='mainForm:tabView:techReviewer']/div[3]/span
+EditSubmission_DetailsTab_TechReviewer_DD_Value=//*[@id='mainForm:tabView:techReviewer_panel']/div/ul
+EditSubmission_DetailsTab_ContactName_DD_Click=//*[@id='mainForm:tabView:contactName']/div[3]/span
+EditSubmission_DetailsTab_ContactName_DD_Value=//*[@id='mainForm:tabView:contactName_panel']/div/ul
+EditSubmission_DetailsTab_BillToContact_DD_Click=//*[@id='mainForm:tabView:billTocontact']/div[3]/span
+EditSubmission_DetailsTab_BillToContact_DD_Value=//*[@id='mainForm:tabView:billTocontact_panel']/div/ul
+EditSubmission_DetailsTab_StatusChangeReason=//*[@id='mainForm:tabView:statusChangeReason']
+EditSubmission_DetailsTab_DeviationNeeded_Yes_Bttn=//table[@id='mainForm:tabView:auDeviationDoesNotExist']/tbody/tr[1]/td[3]/div[1]/div[2]
+EditSubmission_DetailsTab_Deviation_Comments_Box=//textarea[@id='mainForm:tabView:deviationComments']
+EditSubmission_DetailsTab_ApproveDeviation_Bttn=//button[@id='mainForm:tabView:appDevbutton']
+
+EditSubmission_PartTab=//a[@href='#mainForm:tabView:fcltapptab']
+EditSubmission_PartTab_AttachExistingPart_Bttn=//button[@id='mainForm:tabView:partNoLkp']
+
+EditSubmission_PartTab_Description_DD_Click=//*[@id='mainForm:tabView:j_idt5296']/div[3]/span
+EditSubmission_PartTab_Description_DD_Value=//*[@id='mainForm:tabView:j_idt5296_panel']/div/ul
+
+EditSubmission_PartTab_Make_Model_Details_RecordDelete_Link=//a[@id='mainForm:tabView:makemodeltable:1:lnkmakemodeldel']
+EditSubmission_PartTab_Make_Model_Details_RecordDelete_YES_Bttn=//button[@id='mainForm:tabView:delmakemodelassocbtn']
+
+EditSubmission_PartTab_Make_Model_Details_Add_Link=//a[@id='mainForm:tabView:testing']
+
+EditSubmission_PartTab_Make_Model_Details_Make_DD_Click=//*[@id\='mainForm\:tabView\:makemodeltable\:1\:j_idt5619']
+EditSubmission_PartTab_Make_Model_Details_Make_DD_Value=//*[@id\='mainForm\:tabView\:makemodeltable\:1\:j_idt5619_panel']
+
+EditSubmission_PartTab_Make_Model_Details_YearStart_DD_Click=//*[@id\='mainForm\:tabView\:makemodeltable\:1\:j_idt5628']
+EditSubmission_PartTab_Make_Model_Details_YearStart_DD_Value=//*[@id\='mainForm\:tabView\:makemodeltable\:1\:j_idt5628_panel']
+
+EditSubmission_PartTab_Make_Model_Details_YearEnd_DD_Click=//*[@id\='mainForm\:tabView\:makemodeltable\:1\:j_idt5632']
+EditSubmission_PartTab_Make_Model_Details_YearEnd_DD_Value=//*[@id\='mainForm\:tabView\:makemodeltable\:1\:j_idt5632_panel']
+
+EditSubmission_PartTab_Make_Model_Details_Model_DD_Click=//*[@id='mainForm:tabView:makemodeltable:1:modeldropdown']
+EditSubmission_PartTab_Make_Model_Details_Model_DD_Value=//*[@id='mainForm:tabView:makemodeltable:1:modeldropdown_panel']
+
+
+
+
+EditSubmission_DocumentsTab=//a[@href='#mainForm:tabView:dcmntsapptab']
+EditSubmission_DocumentsTab_SubmissionSection_Add_Bttn=//button[@id='mainForm:tabView:addappdocbtn']
+EditSubmission_DocumentsTab_AddSubmissionDocument_Title=//span[@id='mainForm:tabView:addDocumentWorkOrder_title']
+EditSubmission_DocumentsTab_AddSubmissionDocument_BrowseFile_Bttn=//*[@id='mainForm:tabView:crAccFileUpl_input']
+EditSubmission_DocumentsTab_AddSubmissionDocument_Description=//*[@id='mainForm:tabView:descdocapptxt']
+EditSubmission_DocumentsTab_AddSubmissionDocument_Type_DD_Click=//*[@id='mainForm:tabView:doctypdocapp']/div/span
+EditSubmission_DocumentsTab_AddSubmissionDocument_Type_DD_value=//*[@id='mainForm:tabView:doctypdocapp_panel']/div/ul
+EditSubmission_DocumentsTab_AddSubmissionDocument_Access_DD_Click=//*[@id='mainForm:tabView:docacssdocapp']/div/span
+EditSubmission_DocumentsTab_AddSubmissionDocument_Access_DD_value=//*[@id='mainForm:tabView:docacssdocapp_panel']/div/ul
+EditSubmission_DocumentsTab_AddSubmissionDocument_SaveClose_Bttn=//button[@id='mainForm:tabView:saveclosewodoctab']
+EditSubmission_DocumentsTab_AddSubmissionDocument_RecordTable=//tbody[@id='mainForm:tabView:appDocsDt_data']
+
+
+EditSubmission_ReviewTab=//a[@href='#mainForm:tabView:prdctappwip']
+EditSubmission_ReviewTab_RecordTable_tbody=//div[@id='mainForm:tabView:submissionReviewWIP_content']/div/div/table/tbody
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Direct_NSFOnline_suite" >
+
+
+
+<test name="[BS-01] Direct_NSFOnline_Search_Docs">
+
+<parameter name="className" value="Direct_NSFOnline_Search_Docs"/>
+	<classes>
+             <class name="nsf.ecap.Direct_NSFOnline_suite.Direct_NSFOnline_Search_Docs"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-02] Direct_NSFO_Search_Suppliers">
+
+ <!-- <parameter name="className" value="Direct_NSFO_Search_Suppliers"/> --> 
+	<classes>
+             <class name="nsf.ecap.Direct_NSFOnline_suite.Direct_NSFO_Search_Suppliers"></class> 
+    </classes>
+   
+</test>
+
+<test name="[BS-03] Direct_NSFO_Search_Audits_Test">
+
+	<classes>
+             <class name="nsf.ecap.Direct_NSFOnline_suite.Direct_NSFO_Search_Audits_Test"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-04] Direct_NSFO_Verify_CARs_Audits">
+
+	<classes>
+             <class name="nsf.ecap.Direct_NSFOnline_suite.Direct_NSFO_Verify_CARs_Audits"></class> 
+    </classes>
+   
+</test>
+
+
+<test name="[BS-05] Direct_NSFO_SCA_IM_Validations">
+
+	<classes>
+             <class name="nsf.ecap.Direct_NSFOnline_suite.Direct_NSFO_SCA_IM_Validations"></class> 
+    </classes>
+   
+</test>
+
+
+</suite>
+

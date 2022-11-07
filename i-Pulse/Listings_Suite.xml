@@ -1,0 +1,35 @@
+
+
+<suite name = "Listings Suite" >
+
+
+<test name = "[BS-01] Verify Standards">
+
+<parameter name = "className" value = "BS_01_VerifyStandards"/>
+	<classes>
+             <class name = "nsf.ecap.Listings_Suite.BS_01_VerifyStandards"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-02] Create Program">
+
+<parameter name = "className" value = "BS_02_CreateProgram"/>
+	<classes>
+             <class name = "nsf.ecap.Listings_Suite.BS_02_CreateProgram"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-03] Verify Listings">
+
+<parameter name = "className" value = "BS_03_VerifyListings"/>
+	<classes>
+             <class name = "nsf.ecap.Listings_Suite.BS_03_VerifyListings"></class> 
+    </classes>
+   
+</test>
+
+</suite>
+

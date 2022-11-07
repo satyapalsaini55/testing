@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Proposals_suite]">
+  <listeners>
+    <listener class-name="nsf.ecap.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name=" [BS-01]  Proposal_Won(failed)">
+    <parameter name="className" value="Proposal_Won"/>
+    <classes>
+      <class name="nsf.ecap.Proposals_suite.Proposal_Won">
+        <methods>
+          <include name="reportTestResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="cleanUp"/>
+          <include name="Proposal_flow"/>
+          <include name="checkTestSkip"/>
+          <include name="closebrowser"/>
+          <include name="reportDataSetResult"/>
+        </methods>
+      </class> <!-- nsf.ecap.Proposals_suite.Proposal_Won -->
+    </classes>
+  </test> <!--  [BS-01]  Proposal_Won(failed) -->
+  <test thread-count="5" verbose="0" name=" [BS-02]  Proposal_Lost(failed)">
+    <classes>
+      <class name="nsf.ecap.Proposals_suite.Proposal_Lost">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="cleanUp"/>
+          <include name="reportTestResult"/>
+          <include name="checkTestSkip"/>
+          <include name="Proposal_flow"/>
+        </methods>
+      </class> <!-- nsf.ecap.Proposals_suite.Proposal_Lost -->
+    </classes>
+  </test> <!--  [BS-02]  Proposal_Lost(failed) -->
+  <test thread-count="5" verbose="0" name=" [BS-03]  Proposal_RequoteWon(failed)">
+    <classes>
+      <class name="nsf.ecap.Proposals_suite.Proposal_RequoteWon">
+        <methods>
+          <include name="Proposal_flow"/>
+          <include name="checkSuiteSkip"/>
+          <include name="cleanUp"/>
+          <include name="reportTestResult"/>
+          <include name="reportDataSetResult"/>
+          <include name="checkTestSkip"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- nsf.ecap.Proposals_suite.Proposal_RequoteWon -->
+    </classes>
+  </test> <!--  [BS-03]  Proposal_RequoteWon(failed) -->
+  <test thread-count="5" verbose="0" name=" [BS-04]  Proposal_Won_Acetic_Acid(failed)">
+    <classes>
+      <class name="nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="cleanUp"/>
+          <include name="checkTestSkip"/>
+          <include name="closebrowser"/>
+          <include name="Proposal_flow"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class> <!-- nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid -->
+    </classes>
+  </test> <!--  [BS-04]  Proposal_Won_Acetic_Acid(failed) -->
+  <test thread-count="5" verbose="0" name=" [BS-05]  Proposal_VerifyBillRate(failed)">
+    <classes>
+      <class name="nsf.ecap.Proposals_suite.Proposal_VerifyBillRate">
+        <methods>
+          <include name="reportTestResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="reportDataSetResult"/>
+          <include name="Proposal_flow"/>
+          <include name="cleanUp"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- nsf.ecap.Proposals_suite.Proposal_VerifyBillRate -->
+    </classes>
+  </test> <!--  [BS-05]  Proposal_VerifyBillRate(failed) -->
+  <test thread-count="5" verbose="0" name=" [BS-06]  Create_WO_from_Proposal(failed)">
+    <classes>
+      <class name="nsf.ecap.Proposals_suite.Create_WO_from_Proposal">
+        <methods>
+          <include name="reportDataSetResult"/>
+          <include name="checkSuiteSkip"/>
+          <include name="cleanUp"/>
+          <include name="Create_WO_from_Proposal_flow"/>
+          <include name="checkTestSkip"/>
+          <include name="closebrowser"/>
+          <include name="reportTestResult"/>
+        </methods>
+      </class> <!-- nsf.ecap.Proposals_suite.Create_WO_from_Proposal -->
+    </classes>
+  </test> <!--  [BS-06]  Create_WO_from_Proposal(failed) -->
+</suite> <!-- Failed suite [Proposals_suite] -->

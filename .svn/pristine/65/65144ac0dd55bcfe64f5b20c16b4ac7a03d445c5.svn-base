@@ -1,0 +1,41 @@
+1. Declare a variable in TestBase.jave -----excelSiteURL
+
+public static String excelSiteURL = null;
+
+
+
+2. Enter below code in checkSuiteSkip in TestSuiteBase.java in each TestSuiteBase
+
+excelSiteURL== TestUtil.getExcelSiteURL(suiteXls, currentSuiteName);
+
+
+3. Write a function in TestUtil to fetch url from excel
+
+getExcelSiteURL
+
+
+
+4. Insert a column 'URL' in suite.xlsx
+
+
+5. Insert below line in fnpLaunchBrowserAndLogin in TestSuiteBase.java
+
+		//	String siteUrl = CONFIG.getProperty("testSiteName");
+
+			String siteUrl = null;
+
+			if (excelSiteURL!=null) {
+				if (excelSiteURL.equalsIgnoreCase("")) {
+					siteUrl = CONFIG.getProperty("HSSiteName");
+				} else {
+					siteUrl=excelSiteURL;
+
+				}
+			} else {
+				siteUrl = CONFIG.getProperty("HSSiteName");
+			}
+			
+
+
+6. Add below line fnpLaunchBrowserAndLogin in each TestSuiteBase.java below driver.get(siteUrl);
+fnpMymsg("Navigating to url --->"+siteUrl);

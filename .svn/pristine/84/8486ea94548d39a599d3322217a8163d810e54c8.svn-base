@@ -1,0 +1,155 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Work_Order_suite" >
+
+
+
+
+<test name=" [BS-01]  NewNew_Draft_InReview_No_Fac">
+<parameter name="className" value="NewNew_Draft_InReview_No_Fac"/>
+    <classes>
+      <!--  <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InReview_No_Fac" ></class> --> 
+        <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InReview_No_Fac" ></class> 
+    </classes>
+</test>
+
+<test name="[BS-02]  NewNew_Draft_InReview_With_Fac">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InReview_With_Fac" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-03]  NewNew_Draft_InProcess_No_Fac">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InProcess_No_Fac" ></class> 
+    </classes>
+</test>
+
+
+<test name="[BS-04]  NewNew_Draft_InProcess_With_Fac">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InProcess_With_Fac" ></class> 
+    </classes>
+</test>
+
+
+<test name="[BS-05]  NewNew_InProc_Completed_No_Fac">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NewNew_InProc_Completed_No_Fac" ></class> 
+    </classes>
+</test>
+
+
+
+
+<test name="[BS-06]  NewNew_InProc_Completed_With_Fac">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NewNew_InProc_Complete_With_Fac" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-07] NN_Complete_With_Fac_N_BatchJob">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NN_Complete_With_Fac_N_BatchJob" ></class> 
+    </classes>
+</test>
+
+
+
+
+<test name="[BS-08] NN_Upto_Lit_PEval_Ready_No_Fac">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NN_Upto_Lit_PEval_Ready_No_Fac" ></class> 
+    </classes>
+</test>
+
+
+<test name="[BS-09]  NN_Upto_Fac_Created_after Lit_PhyEval_Completed">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.NN_Upto_Fac_Created" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-10]  WO_Annual">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.WO_Annual" ></class> 
+    </classes>
+</test>
+
+
+<test name="[BS-11]  WO_Custom">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.WO_Custom" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-12]  WO_Failure_Resolution">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.WO_Failure_Resolution" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+
+
+
+<test name="[BS-13]  BulkAssign_Unassign_To_Assign">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.BulkAssign_Unassign_To_Assign" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-14]  BulkAssign_ChangeAssignTo">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.BulkAssign_ChangeAssignTo" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+<test name="[BS-15]  Linking_Custom_Custom_WO">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.Linking_Custom_Custom_WO" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-16]  Modbrack_Not_Certified">
+
+    <classes>
+        <class name="nsf.ecap.Work_Order_suite.Modbrack_Not_Certified" ></class> 
+    </classes>
+</test>
+
+
+</suite>
+

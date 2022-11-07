@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "TraQtion_Suite" >
+
+
+
+<test name = "[BS-01] HOA Search Screens">
+
+<parameter name = "className" value = "Search_Screens_1"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.Search_Screens_1"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-02] SER Test">
+
+<parameter name = "className" value = "SER_Test_2"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.SER_Test_2"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-03] Complaint Management">
+
+<parameter name = "className" value = "Complaint_Management_3"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.Complaint_Management_3"></class> 
+    </classes>
+   
+</test>
+ <test name = "[BS-04] Assets Hooters Test">
+
+<parameter name = "className" value = "CreateAssetsForHooters_4"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.CreateAssetsForHooters_4"></class> 
+    </classes>
+   
+</test> 
+
+<test name = "[BS-05] Hooter Vendor Registration">
+
+<parameter name = "className" value = "Vendor_Registration_5"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.Vendor_Registration_5"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-06] Search All screens for no error test">
+
+<parameter name = "className" value = "All_Module_Screen_for_NoError_6"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.All_Module_Screen_for_NoError_6"></class> 
+    </classes>
+   
+</test><!-- 
+<test name = "[BS-07] TraQtion Costco Registration">
+
+<parameter name = "className" value = "TraQtion_Costco_Registration"/>
+	<classes>
+             <class name = "nsf.ecap.TraQtion_Suite.TraQtion_Costco_Registration"></class> 
+    </classes>
+   
+</test> -->
+</suite>
+

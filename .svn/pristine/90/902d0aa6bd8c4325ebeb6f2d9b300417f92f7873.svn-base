@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Agriculture_suite" >
+
+
+
+
+<test name=" [BS-01]  Create_Membership">
+<parameter name="className" value="Create_Membership"/>
+    <classes>
+        <class name="nsf.ecap.Agriculture_suite.Create_Membership" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-02]  Certification_Autotest">
+
+    <classes>
+        <class name="nsf.ecap.Agriculture_suite.Certification_Autotest" ></class> 
+    </classes>
+</test>
+
+<test name="[BS-03]  Create_Membership_With_Option2">
+
+    <classes>
+        <class name="nsf.ecap.Agriculture_suite.Create_Membership_With_Option2" ></class> 
+    </classes>
+</test>
+
+
+
+
+<test name="[BS-04]  GRASP_scheme">
+
+    <classes>
+        <class name="nsf.ecap.Agriculture_suite.GRASP_scheme" ></class> 
+    </classes>
+</test>
+
+
+
+
+<test name="[BS-05]  AH2_scheme">
+
+    <classes>
+        <class name="nsf.ecap.Agriculture_suite.AH2_scheme" ></class> 
+    </classes>
+</test>
+
+
+
+<test name="[BS-06]  Alerts_testing_App_Form_Option2">
+
+    <classes>
+        <class name="nsf.ecap.Agriculture_suite.Alerts_testing_App_Form_Option2" ></class> 
+    </classes>
+</test>
+
+
+
+</suite>

@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ISR_suite" >
+
+
+
+
+<test name=" [BS-01]  ISO9001_Single">
+<parameter name="className" value="ISO9001_Single"/>
+    <classes>
+        <class name="nsf.ecap.ISR_suite.ISO9001_Single" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-02]  ISO9001_Corporate">
+<parameter name="className" value="ISO9001_Corporate"/>
+    <classes>
+        <class name="nsf.ecap.ISR_suite.ISO9001_Corporate" ></class> 
+    </classes>
+</test>
+
+
+
+
+<test name=" [BS-03]  ISO9001_Campus">
+<parameter name="className" value="ISO9001_Campus"/>
+    <classes>
+        <class name="nsf.ecap.ISR_suite.ISO9001_Campus" ></class> 
+    </classes>
+</test>
+
+
+
+</suite>
+

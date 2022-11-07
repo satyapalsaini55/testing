@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Generic_suite" >
+
+
+
+
+<test name=" [BS-01]  Uploading_Downloading_Docs">
+<parameter name="className" value="Uploading_Downloading_Docs"/>
+    <classes>
+        <class name="nsf.ecap.Generic_suite.Uploading_Downloading_Docs" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-02]  Basic_Search_Functionality">
+<parameter name="className" value="Basic_Search_Functionality"/>
+    <classes>
+        <class name="nsf.ecap.Generic_suite.Basic_Search_Functionality" ></class> 
+    </classes>
+</test>
+
+
+
+
+</suite>

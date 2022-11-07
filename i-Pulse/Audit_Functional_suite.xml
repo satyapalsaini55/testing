@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Audit_Functional_suite" >
+
+
+
+<test name="[BS-01] Search_Audit ">
+
+<parameter name="className" value="Search_Audit"/>
+	<classes>
+             <class name="nsf.ecap.Audit_Functional_suite.Search_Audit"></class> 
+    </classes>
+   
+</test>
+
+
+<test name="[BS-02] View_Audit ">
+	<classes>
+             <class name="nsf.ecap.Audit_Functional_suite.View_Audit"></class> 
+    </classes>
+   
+</test>
+
+<test name="[BS-03] View_All_Tabs_In_View_Audit ">
+	<classes>
+             <class name="nsf.ecap.Audit_Functional_suite.View_All_Tabs_In_View_Audit"></class> 
+    </classes>
+   
+</test>
+
+
+
+</suite>
+

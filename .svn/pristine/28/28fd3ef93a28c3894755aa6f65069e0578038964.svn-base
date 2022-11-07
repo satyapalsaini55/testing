@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test_Plan_suite" >
+
+
+
+
+<test name=" [BS-01]  Create_Test_Plan">
+<parameter name="className" value="Create_Test_Plan"/>
+    <classes>
+        <class name="nsf.ecap.Test_Plan_suite.Create_Test_Plan" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+
+
+</suite>

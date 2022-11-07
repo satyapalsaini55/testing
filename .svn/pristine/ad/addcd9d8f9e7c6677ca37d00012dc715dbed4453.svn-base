@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Non_Food_Compounds_suite" >
+
+
+
+
+<test name="[BS-01]  NFC_ExistingNew_Draft_Complete">
+    <classes>
+        <class name="nsf.ecap.Non_Food_Compounds_suite.NFC_ExistingNew_Draft_Complete" ></class> 
+    </classes>
+</test>
+
+
+</suite>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Proposals_suite" >
+
+
+
+
+<test name=" [BS-01]  Proposal_Won">
+<parameter name="className" value="Proposal_Won"/>
+    <classes>
+      <!--  <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InReview_No_Fac" ></class> --> 
+        <class name="nsf.ecap.Proposals_suite.Proposal_Won" ></class> 
+    </classes>
+</test>
+
+
+<test name=" [BS-02]  Proposal_Lost">
+
+    <classes>
+       <class name="nsf.ecap.Proposals_suite.Proposal_Lost" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-03]  Proposal_RequoteWon">
+
+    <classes>
+       <class name="nsf.ecap.Proposals_suite.Proposal_RequoteWon" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-04]  Proposal_Won_Acetic_Acid">
+
+    <classes>
+       <class name="nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-05]  Proposal_VerifyBillRate">
+
+    <classes>
+       <class name="nsf.ecap.Proposals_suite.Proposal_VerifyBillRate" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-06]  Create_WO_from_Proposal">
+
+    <classes>
+       <class name="nsf.ecap.Proposals_suite.Create_WO_from_Proposal" ></class> 
+    </classes>
+</test>
+
+
+</suite>
+

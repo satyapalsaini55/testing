@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SCFS_suite" >
+
+
+
+
+<test name=" [BS-01]  Cert_Standards">
+<parameter name="className" value="Cert_Standards"/>
+    <classes>
+        <class name="nsf.ecap.SCFS_suite.Cert_Standards" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+<test name=" [BS-02]  Non_Cert_Standards">
+<parameter name="className" value="Non_Cert_Standards"/>
+    <classes>
+        <class name="nsf.ecap.SCFS_suite.Non_Cert_Standards" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+</suite>
+

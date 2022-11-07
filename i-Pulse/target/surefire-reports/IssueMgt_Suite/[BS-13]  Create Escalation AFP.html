@@ -1,0 +1,409 @@
+<html>
+<head>
+<title>TestNG:  [BS-13]  Create Escalation AFP</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>[BS-13]  Create Escalation AFP</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 25 13:48:44 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (8 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.checkTestSkip()'><b>checkTestSkip</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP</td>
+<td></td>
+<td>-1658737124</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.OracleQueryLaunch_ToClosed_OpenIssues_and_InActiveAlerts()'><b>OracleQueryLaunch_ToClosed_OpenIssues_and_InActiveAlerts</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method: OracleQueryLaunch_ToClosed_OpenIssues_and_InActiveAlerts_for ---  Client(Demo Customer)</td>
+<td></td>
+<td>-1658737124</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Test_success()'><b>Test_success</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP</td>
+<td></td>
+<td>-1658737124</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.reportTestResult()'><b>reportTestResult</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP</td>
+<td></td>
+<td>-1658737124</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_EditEscalation_ClickOn_AssignToMe_Button_andThen_Alerts_Verify()'><b>Escalation_EditEscalation_ClickOn_AssignToMe_Button_andThen_Alerts_Verify</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Edit the Escalation and click Save. Click -> Assign to Me button.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_ClickOn_AssignToMe_Button_andThen_Alerts_Verify()[pri:5, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985869725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985869725'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_ClickOn_AssignToMe_Button_andThen_Alerts_Verify()[pri:5, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Launch_Browser_and_Successfully_Login_into_the_Application()'><b>Launch_Browser_and_Successfully_Login_into_the_Application</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_EditEscalation_Change_status_AdditionalInfoRequired_to_InitialRecord_andThen_Alerts_Verify()'><b>Escalation_EditEscalation_Change_status_AdditionalInfoRequired_to_InitialRecord_andThen_Alerts_Verify</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Change the status from AdditionalInfoRequired_to_InitialRecord .mention new status response>Click save.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_Change_status_AdditionalInfoRequired_to_InitialRecord_andThen_Alerts_Verify()[pri:7, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1249337777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1249337777'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_Change_status_AdditionalInfoRequired_to_InitialRecord_andThen_Alerts_Verify()[pri:7, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_AFP_Verify_ColorBecome_RED_When_NoOfPeopleSick_3()'><b>Escalation_AFP_Verify_ColorBecome_RED_When_NoOfPeopleSick_3</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Go to Details tab and mention the 'No of people sick' as (3).Click on Save.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_Verify_ColorBecome_RED_When_NoOfPeopleSick_3()[pri:3, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1225970981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225970981'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_Verify_ColorBecome_RED_When_NoOfPeopleSick_3()[pri:3, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_EditEscalation_Change_status_InitialRecord_to_SatisfactoryClosure_andThen_Alerts_Verify()'><b>Escalation_EditEscalation_Change_status_InitialRecord_to_SatisfactoryClosure_andThen_Alerts_Verify</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Change the status from InitialRecord_to_SatisfactoryClosure. Mention new status response>Click save. Check -Assign to technologist]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_Change_status_InitialRecord_to_SatisfactoryClosure_andThen_Alerts_Verify()[pri:8, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1048903970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1048903970'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_Change_status_InitialRecord_to_SatisfactoryClosure_andThen_Alerts_Verify()[pri:8, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_AFP_FirstIssue_Black()'><b>Escalation_AFP_FirstIssue_Black</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Create Issue ID with Black Color]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_FirstIssue_Black()[pri:1, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace734971558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace734971558'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_FirstIssue_Black()[pri:1, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_EditEscalation_Change_status_InitialRecord_to_AdditionalInfoRequired_andThen_Alerts_Verify()'><b>Escalation_EditEscalation_Change_status_InitialRecord_to_AdditionalInfoRequired_andThen_Alerts_Verify</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Change the status from INITIAL RECORD > AdditionalInfoRequired mention new status response>Click save.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_Change_status_InitialRecord_to_AdditionalInfoRequired_andThen_Alerts_Verify()[pri:6, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace353580491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace353580491'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_EditEscalation_Change_status_InitialRecord_to_AdditionalInfoRequired_andThen_Alerts_Verify()[pri:6, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_AFP_Verify_Escalation_Generated_and_Alerts_VERIFY()'><b>Escalation_AFP_Verify_Escalation_Generated_and_Alerts_VERIFY</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [The color of the issue should become red and an escalation should get generated with issue.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_Verify_Escalation_Generated_and_Alerts_VERIFY()[pri:4, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737935282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737935282'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_Verify_Escalation_Generated_and_Alerts_VERIFY()[pri:4, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_Verify_IssueClosed_As_EscalationClosed()'><b>Escalation_Verify_IssueClosed_As_EscalationClosed</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Verify that all issues are closed which are related to Escalation as the escalation is closed.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_Verify_IssueClosed_As_EscalationClosed()[pri:9, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace670951536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace670951536'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_Verify_IssueClosed_As_EscalationClosed()[pri:9, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP.Escalation_AFP_Verify_ColorBecome_AMBER_When_NoOfPeopleSick_2()'><b>Escalation_AFP_Verify_ColorBecome_AMBER_When_NoOfPeopleSick_2</b><br>Test class: nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP<br>Test method:   [Go to Details tab and mention the 'No of people sick' as (2).Click on Save.]</td>
+<td><div><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_Verify_ColorBecome_AMBER_When_NoOfPeopleSick_2()[pri:2, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2007138812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2007138812'><pre>java.lang.Throwable: Method CreateEscalation_AFP.Escalation_AFP_Verify_ColorBecome_AMBER_When_NoOfPeopleSick_2()[pri:2, instance:nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CreateEscalation_AFP@7c7b252e</td></tr>
+</table><p>
+</body>
+</html>

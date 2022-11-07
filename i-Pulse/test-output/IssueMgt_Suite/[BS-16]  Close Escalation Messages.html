@@ -1,0 +1,431 @@
+<html>
+<head>
+<title>TestNG:  [BS-16]  Close Escalation Messages</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>[BS-16]  Close Escalation Messages</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/12</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 16 10:11:19 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (5 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.reportTestResult()'><b>reportTestResult</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages</td>
+<td></td>
+<td>-1655354479</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.checkTestSkip()'><b>checkTestSkip</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages</td>
+<td></td>
+<td>-1655354479</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.OracleQueryLaunch_ToClosed_OpenIssues_and_InActiveAlerts()'><b>OracleQueryLaunch_ToClosed_OpenIssues_and_InActiveAlerts</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method: OracleQueryLaunch_ToClosed_OpenIssues_and_InActiveAlerts_Whose --- productCode(501214), Issue_Type(PRQ) and Client(NSF-CMiRetailTestingClient</td>
+<td></td>
+<td>-1655354479</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.Test_success()'><b>Test_success</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages</td>
+<td></td>
+<td>-1655354479</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_Generated_With_3_Issues()'><b>CloseEscalationMsg_Generated_With_3_Issues</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Verify Escalations ID Generated with three issues.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_Generated_With_3_Issues()[pri:4, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace153443333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace153443333'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_Generated_With_3_Issues()[pri:4, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_Verify_ColorsOfAllIssues_and_EscalationExistsWithTwoIssues()'><b>CloseEscalationMsg_Verify_ColorsOfAllIssues_and_EscalationExistsWithTwoIssues</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Verify that the escalation status of the edited issue changes back to Green and that the original escalation still exists containing just the other two issues.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_Verify_ColorsOfAllIssues_and_EscalationExistsWithTwoIssues()[pri:10, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1247348185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1247348185'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_Verify_ColorsOfAllIssues_and_EscalationExistsWithTwoIssues()[pri:10, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_ReOpenThirdIssue_ByChangingStatus_and_Verify_UpdateMsg()'><b>CloseEscalationMsg_ReOpenThirdIssue_ByChangingStatus_and_Verify_UpdateMsg</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Re-open one of the issues from the escalation without changing any other details of the issue. Verify the 2nd message being generated here.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_ReOpenThirdIssue_ByChangingStatus_and_Verify_UpdateMsg()[pri:9, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1929476736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1929476736'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_ReOpenThirdIssue_ByChangingStatus_and_Verify_UpdateMsg()[pri:9, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_SecondIssue_Amber()'><b>CloseEscalationMsg_SecondIssue_Amber</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Create Issue ID with Amber color]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_SecondIssue_Amber()[pri:2, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace274426173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace274426173'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_SecondIssue_Amber()[pri:2, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_EditSecondIssue_ChangeIssueSubType_WithoutOpenIssue_and_Verify_UpdateMsg()'><b>CloseEscalationMsg_EditSecondIssue_ChangeIssueSubType_WithoutOpenIssue_and_Verify_UpdateMsg</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Edit one of the issues to change the sub-type, but do not re-open the issue. Verify the message being generated here.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_EditSecondIssue_ChangeIssueSubType_WithoutOpenIssue_and_Verify_UpdateMsg()[pri:8, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1788432625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788432625'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_EditSecondIssue_ChangeIssueSubType_WithoutOpenIssue_and_Verify_UpdateMsg()[pri:8, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_Verify_EscalationAuditTrail_Shows_Removal_of_ReOpenedIssue()'><b>CloseEscalationMsg_Verify_EscalationAuditTrail_Shows_Removal_of_ReOpenedIssue</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Confirm that the escalation's audit trail shows the removal of the re-opened issue.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_Verify_EscalationAuditTrail_Shows_Removal_of_ReOpenedIssue()[pri:11, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653859230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653859230'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_Verify_EscalationAuditTrail_Shows_Removal_of_ReOpenedIssue()[pri:11, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_FirstIssue_Green()'><b>CloseEscalationMsg_FirstIssue_Green</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Create Issue ID with Green Color]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_FirstIssue_Green()[pri:1, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233343686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233343686'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_FirstIssue_Green()[pri:1, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_EditFirstIssueAgain_ChangeIssueSubType_BacktoOriginal_Verify_NewEscalationId()'><b>CloseEscalationMsg_EditFirstIssueAgain_ChangeIssueSubType_BacktoOriginal_Verify_NewEscalationId</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Edit the same first issue again to re-open it and put the sub-type back to its original value to re-generate the escalation..]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_EditFirstIssueAgain_ChangeIssueSubType_BacktoOriginal_Verify_NewEscalationId()[pri:6, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2139266166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2139266166'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_EditFirstIssueAgain_ChangeIssueSubType_BacktoOriginal_Verify_NewEscalationId()[pri:6, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_CloseEscalation_and_Verify_AllIssues_Closed()'><b>CloseEscalationMsg_CloseEscalation_and_Verify_AllIssues_Closed</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Close the escalation. Confirm that this has closed all the related issues.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_CloseEscalation_and_Verify_AllIssues_Closed()[pri:7, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2084486251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2084486251'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_CloseEscalation_and_Verify_AllIssues_Closed()[pri:7, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.Launch_Browser_and_Successfully_Login_into_the_Application()'><b>Launch_Browser_and_Successfully_Login_into_the_Application</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_ThirdIssue_Red()'><b>CloseEscalationMsg_ThirdIssue_Red</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Create Issue ID with RED color]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_ThirdIssue_Red()[pri:3, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1242427797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1242427797'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_ThirdIssue_Red()[pri:3, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+<tr>
+<td title='nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages.CloseEscalationMsg_CloseFirstIssue_andthen_ChangeIssueSubType_Verify_Escalation_Dismantled_and_IssueColors()'><b>CloseEscalationMsg_CloseFirstIssue_andthen_ChangeIssueSubType_Verify_Escalation_Dismantled_and_IssueColors</b><br>Test class: nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages<br>Test method:   [Close the first issue and  then edit this issue to change the sub-type. Verify that the escalation is dismantled.]</td>
+<td><div><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_CloseFirstIssue_andthen_ChangeIssueSubType_Verify_Escalation_Dismantled_and_IssueColors()[pri:5, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2021854618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2021854618'><pre>java.lang.Throwable: Method CloseEscalation_Messages.CloseEscalationMsg_CloseFirstIssue_andthen_ChangeIssueSubType_Verify_Escalation_Dismantled_and_IssueColors()[pri:5, instance:nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>nsf.ecap.IssueMgt_Suite.CloseEscalation_Messages@6200f9cb</td></tr>
+</table><p>
+</body>
+</html>

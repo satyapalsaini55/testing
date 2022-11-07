@@ -1,0 +1,93 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NSFOnline_Suite" >
+
+
+
+<test name="[BS-01] NSFOnline Search Documents Test">
+
+<parameter name="className" value="NSFOnline_Search_Documents_Test"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_Search_Documents_Test"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-02] NSFOnline Search Suppliers Test">
+
+<parameter name="className" value="NSFOnline_Search_Suppliers_Test"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_Search_Suppliers_Test"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+
+
+
+<test name="[BS-03] NSFOnline Search Audits and Standards Test">
+
+<parameter name="className" value="NSFOnline_Search_Audits_Test"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_Search_Audits_Test"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+
+<test name="[BS-04] NSFOnline Verify CAR Summary and Audit Information Test">
+
+<parameter name="className" value="NSFOnline_Verify_CARs_audits"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_Verify_CARs_audits"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+<test name="[BS-05] NSFOnline SCA IM Validations">
+
+<parameter name="className" value="NSFOnline_CSA_IM"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_CSA_IM"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-06] NSFOnline Search Global Documents Test">
+
+<parameter name="className" value="NSFOnline_Search_GlobalDocument"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_Search_GlobalDocument"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+<!-- 
+
+<test name="[BS-06] NSFOnline Issue Count Comparisons">
+
+<parameter name="className" value="NSFOnline_IssueCount_Comparison"/>
+	<classes>
+             <class name="nsf.ecap.NSFOnline_Suite.NSFOnline_IssueCount_Comparison"></class> 
+    </classes>
+   
+</test>
+ -->
+
+</suite>
+

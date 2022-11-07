@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Quartz_Jobs_suite" >
+
+
+
+
+<test name=" [BS-01]  Quartz_Jobs">
+<parameter name="className" value="Quartz_Jobs"/>
+    <classes>
+      <!--  <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InReview_No_Fac" ></class> --> 
+        <class name="nsf.ecap.Quartz_Jobs_suite.Quartz_Jobs" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+</suite>
+

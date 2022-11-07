@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MonitorPlan_Suite">
+
+
+
+<test name="[BS-01] Create Active Monitor Plan">
+
+<parameter name="className" value="CreateActiveMonitorPlan"/>
+
+	<classes>
+          <class name="nsf.ecap.MonitorPlan_Suite.CreateActiveMonitorPlan"></class> 
+    </classes>
+   
+</test>
+
+
+
+<test name="[BS-02] Monitor Plan Different States">
+
+<parameter name="className" value="MonitorPlan_DifferentStates"/>
+
+	<classes>
+          <class name="nsf.ecap.MonitorPlan_Suite.MonitorPlan_DifferentStates"></class> 
+    </classes>
+   
+</test>
+
+
+<!-- 
+
+<test name="[BS-03] Bill Price Check W.R.T. DataBase Value">
+
+<parameter name="className" value="BillCodePriceCheck_PastYear"/>
+
+	<classes>
+          <class name="nsf.ecap.MonitorPlan_Suite.BillCodePriceCheck_PastYear"></class> 
+    </classes>
+   
+</test>
+
+
+ -->
+
+
+
+
+<!-- 
+
+
+<test name="[BS-04] Bill Price Check W.R.T. DataBase Value">
+
+<parameter name="className" value="TestOnly"/>
+
+	<classes>
+          <class name="nsf.ecap.MonitorPlan_Suite.TestOnly"></class> 
+    </classes>
+   
+</test> -->
+
+
+
+</suite>

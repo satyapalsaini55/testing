@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>TestNG:   [BS-03]  Proposal_RequoteWon</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'> [BS-03]  Proposal_RequoteWon</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 23 17:11:33 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (16 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984493</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.reportTestResult()'><b>reportTestResult</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984494</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984493</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.closebrowser()'><b>closebrowser</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984493</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.checkTestSkip()'><b>checkTestSkip</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984493</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984493</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon</td>
+<td></td>
+<td>-1655984493</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.Proposal_flow()'><b>Proposal_flow</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon<br>Parameters: {Rush_Fees=20, Product_Type=Valves - 14, Change_status=ReQuote,Won, S_No=1.0, Radio_Button_Rechoices=No,Yes, Results=SKIP, Discount_Percent=20, Empty_laterUse=, Scope=Test, DocTab_AddPropDoc_FileName=This is test pdf document.pdf, Type=QUOTE ACCEPTANCE, Status_Change_Reason=Automation Test using Selenium, Runmode=N, Re_Answers_To_All=5, Standard_Version=NSF/ANSI 2 - 2018: Food Equipment, Client=22490, Access=Internal access, Discount_Reason=Discount_Test_Reason, Billing_schedule=2015, Financial_Program=0025-Recreational Products, Annual_Cost=1000, Work_Order_Type=Existing Client-New Product or Facility-No Bracketing, TAT_time_days=30, Same_Answers_To_All=3, BU_Manager_Code=M7890224, Radio_Button_Choices=No,Yes}</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.Proposal_flow()'><b>Proposal_flow</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon<br>Parameters: {Rush_Fees=20, Product_Type=Valves - 14, Change_status=ReQuote,Won, S_No=4.0, Radio_Button_Rechoices=No,No, Results=FAIL, Discount_Percent=20, Empty_laterUse=, Scope=Test, DocTab_AddPropDoc_FileName=This is test pdf document.pdf, Type=QUOTE ACCEPTANCE, Status_Change_Reason=Automation Test using Selenium, Runmode=Y, Re_Answers_To_All=,,,8,8, , Standard_Version=NSF/ANSI 2 - 2018: Food Equipment, Client=22490, Access=Internal access, Discount_Reason=Discount_Test_Reason, Billing_schedule=2015, Financial_Program=0025-Recreational Products, Annual_Cost=1000, Work_Order_Type=Existing Client-New Product or Facility-No Bracketing, TAT_time_days=30, Same_Answers_To_All=3,4,5,6,7,8, BU_Manager_Code=M7890224, Radio_Button_Choices=No,No}</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.Proposal_flow()'><b>Proposal_flow</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon<br>Parameters: {Rush_Fees=20, Product_Type=Valves - 14, Change_status=ReQuote,Won, S_No=3.0, Radio_Button_Rechoices=No,No, Results=SKIP, Discount_Percent=20, Empty_laterUse=, Scope=Test, DocTab_AddPropDoc_FileName=This is test pdf document.pdf, Type=QUOTE ACCEPTANCE, Status_Change_Reason=Automation Test using Selenium, Runmode=N, Re_Answers_To_All=7, Standard_Version=NSF/ANSI 2 - 2018: Food Equipment, Client=22490, Access=Internal access, Discount_Reason=Discount_Test_Reason, Billing_schedule=2015, Financial_Program=0025-Recreational Products, Annual_Cost=1000, Work_Order_Type=Existing Client-New Product or Facility-No Bracketing, TAT_time_days=30, Same_Answers_To_All=3, BU_Manager_Code=M7890224, Radio_Button_Choices=No,No}</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+<tr>
+<td title='nsf.ecap.Proposals_suite.Proposal_RequoteWon.Proposal_flow()'><b>Proposal_flow</b><br>Test class: nsf.ecap.Proposals_suite.Proposal_RequoteWon<br>Parameters: {Rush_Fees=20, Product_Type=Valves - 14, Change_status=ReQuote,Won, S_No=2.0, Radio_Button_Rechoices=Yes, Results=SKIP, Discount_Percent=20, Empty_laterUse=, Scope=Test, DocTab_AddPropDoc_FileName=This is test pdf document.pdf, Type=QUOTE ACCEPTANCE, Status_Change_Reason=Automation Test using Selenium, Runmode=N, Re_Answers_To_All=6, Standard_Version=NSF/ANSI 2 - 2018: Food Equipment, Client=22490, Access=Internal access, Discount_Reason=Discount_Test_Reason, Billing_schedule=2015, Financial_Program=0025-Recreational Products, Annual_Cost=1000, Work_Order_Type=Existing Client-New Product or Facility-No Bracketing, TAT_time_days=30, Same_Answers_To_All=3, BU_Manager_Code=M7890224, Radio_Button_Choices=Yes}</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.Proposals_suite.Proposal_RequoteWon@5db250b4</td></tr>
+</table><p>
+</body>
+</html>

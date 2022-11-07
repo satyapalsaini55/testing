@@ -1,0 +1,22 @@
+IPulse_Footer=//*[@id='footer']
+IPulse_ValidationMessage_Div=//div[@id='mainForm:message_content']/div/div/ul/li/span
+Menu_Ajax_Link=//*[text()='Menu']
+IPulse_AlertHeader_Div=//*[@id='mainForm:alertTab']
+VersionLogoImage=.//*[@id='headerForm:logImg']
+
+
+SearchAudits_Ajax_Link=//*[text()='Search Audit']
+SearchAuditVists_AuditStatus_CREATED=//ul[@class='ui-selectlistbox-list']/li[text()='CREATED']
+SearchAuditVists_AuditStatus_SUBMITTED=//ul[@class='ui-selectlistbox-list']/li[text()='SUBMITTED']
+SearchAuditVists_Search_Bttn=//button[@id='mainForm:find']
+
+SearchAuditVists_StdSearch_Table_Main=//div[@id='mainForm:stdSearchC']
+SearchAuditVists_StdSearch_Table_Header=//thead[@id='mainForm:stdSearchC_head']
+SearchAuditVists_StdSearch_Table_Data=//tbody[@id='mainForm:stdSearchC_data']
+SearchAuditVists_StdSearch_Table_Data_FirstRow=//tbody[@id='mainForm:stdSearchC_data']/tr[1]
+SearchAuditVists_Clear_Link=//a[@id='mainForm:clrBt']
+
+
+ViewAudit_Snapshot_TAB=//a[@href='#mainForm:auditOasis:audiSnap']
+ViewAudit_Snapshot_TAB_Expanded=//li[@aria-expanded='true']/a[@href='#mainForm:auditOasis:audiSnap']
+ViewAudit_Back_Bttn=//button[@id='mainForm:backbtn']

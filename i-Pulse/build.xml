@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project [
+]>
+
+<project name="iPulseAutoTestScript" default="makexsltreports" basedir=".">  
+
+<!-- ========== Initialize Properties =================================== -->
+    <property environment="env"/>
+    
+    <property name="ws.home" value="${basedir}"/>
+	<property name="ws.jars" value="${ws.home}/lib"/>
+    <property name="test.dest" value="${ws.home}/build"/>
+    <property name="test.src" value="${ws.home}/src"/>
+	<property name="ng.result" value="${ws.home}/test-output"/>
+    
+
+
+    <target name="setClassPath" unless="test.classpath">
+        <path id="classpath_jars">
+            <fileset dir="${ws.jars}" includes="*.jar"/>
+        </path>
+        <pathconvert pathsep=":" 
+            property="test.classpath" 
+            refid="classpath_jars"/>
+    </target>
+
+    <target name="init" depends="setClassPath">
+
+        <condition property="ANT" 
+            value="${env.ANT_HOME}/bin/ant.bat" 
+            else="${env.ANT_HOME}/bin/ant">
+                    <os family="windows" />
+        </condition>
+        <taskdef name="testng" classpath="${test.classpath}"
+               classname="org.testng.TestNGAntTask" />
+    
+    </target>
+  
+    <!-- all -->
+    <target name="all">
+    </target>
+
+    <!-- clean -->
+    <target name="clean">
+        <delete dir="${test.dest}"/>   		
+    </target>
+
+    <!-- compile -->
+    <target name="compile" depends="init, clean" > 
+		<delete includeemptydirs="true" quiet="true">
+            <fileset dir="${test.dest}" includes="**/*"/>
+		</delete>
+        <echo message="making directory..."/>
+		<mkdir dir="${test.dest}"/>
+        <echo message="classpath------: ${test.classpath}"/>
+        <echo message="compiling..."/>
+        <javac 
+            debug="true" 
+            destdir="${test.dest}" 
+            srcdir="${test.src}" 
+            target="1.8" 
+            classpath="${test.classpath}"
+        >
+        </javac>
+      </target>
+
+    <!-- build -->
+    <target name="build" depends="init">
+    </target>
+
+	
+	
+	
+    <!-- run -->
+    <target name="run" depends="compile">
+        <testng classpath="${test.classpath}:${test.dest}" suitename="Ecap Complete suite">	
+            <xmlfileset dir="${ws.home}" includes="testng.xml"/>
+        </testng>
+     
+    </target>
+
+    <target name="usage" >
+        <echo>
+            ant run will execute the test
+        </echo>
+    </target>
+
+	<path id="liblocation">
+	        <fileset dir="${ws.jars}" includes="*.jar"/>
+	</path>
+	
+
+	 
+	 <target name="makexsltreports" depends="compile">
+	        <mkdir dir="${ws.home}/XSLT_Reports/output"/>
+
+	        <xslt in="${ng.result}/testng-results.xml" style="xslt/testng-results.xsl"
+	              out="${ws.home}/XSLT_Reports/output/index.html" classpathref="liblocation" processor="SaxonLiaison">
+	            <param name="testNgXslt.outputDir" expression="${ws.home}/XSLT_Reports/output/"/>
+	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
+	        </xslt>
+	 	
+
+	    <xmlproperty file="${ws.home}/StartExecution.xml" collapseAttributes="true" />
+	        <echo>TimeFromXMLDynamically : ${Information.StartTime}</echo>
+	 	
+		<tstamp>
+			<!--format property="TODAY_IND" pattern="dd-MM-yyyy hh_mm_ss  zzz" locale="en_IN"-->
+			<!--<format property="TODAY" pattern="dd-MM-yyyy"/> -->
+			<format property="TODAY" pattern="${Information.pattern}"/> 
+			<!--format property="TODAY_IND" pattern="dd-MM-yyyy hh_mm_ss a zzz" locale="${Information.locale}"-->
+			<format property="TODAY_IND" pattern="${Information.pattern} hh_mm_ss a zzz" />			
+		</tstamp>
+	 	
+	 	 <!--copy todir="${ws.home}/TEST_full_scripts_log_history/${Information.TodayDate}/${Information.StartTime}/Log"-->
+	 	 	 <copy todir="${ws.home}/${Information.logHistoryFolderNameTag}/${Information.TodayDate}/${Information.StartTime}/Log">
+	 	        <fileset dir="${ws.home}/Log">
+	 	            <include name="**/*.log"/>
+	 	        </fileset>
+	 	    </copy>
+
+	 	<!--zip destfile="${ws.home}/log_history/${TODAY}/${Information.StartTime}/output-${TODAY_IND}.zip" basedir="${ws.home}/XSLT_Reports/output" -->
+		<!--zip destfile="${ws.home}/log_history/${TODAY}/${Information.StartTime}/output-${Information.StartTime}.zip" basedir="${ws.home}/XSLT_Reports/output"-->
+	 	<!--zip destfile="${ws.home}/TEST_full_scripts_log_history/${Information.TodayDate}/${Information.StartTime}/output-${Information.StartTime}.zip" basedir="${ws.home}/XSLT_Reports/output" -->
+	 	
+	 	<zip destfile="${ws.home}/${Information.logHistoryFolderNameTag}/${Information.TodayDate}/${Information.StartTime}/output-${Information.StartTime}.zip" basedir="${ws.home}/XSLT_Reports/output" />
+    </target>
+
+    
+	
+
+	
+
+	
+	<!-- using javax.mail.jar and javax.activation.jar trying to send report as zip file -->
+
+	<!--target name="sendMail" depends="makexsltreports"-->
+	<target name="sendMail">
+
+	<!-- Compressing all the output file of XSLT report -->
+	<!--zip destfile="${ws.home}/XSLT_Reports/zip-result/output-${TODAY_IND}.zip" basedir="${ws.home}/XSLT_Reports/output" -->
+	<!--zip destfile="${ws.home}/XSLT_Reports/zip-result/SeleniumExecutionResult-${TODAY_IND}.zip" basedir="${ws.home}/log_history/${TODAY}/${Information.StartTime}" -->
+	<zip destfile="${ws.home}/XSLT_Reports/zip-result/SeleniumExecutionResult-${TODAY_IND}.zip" basedir="${ws.home}/${Information.logHistoryFolderNameTag}/${Information.TodayDate}/${Information.StartTime}" />
+	
+
+	<!--user="testscriptuser@nsf.org"-->
+	<!--password="welcome123123">-->
+		
+	<mail
+	tolist="${Information.email}"
+	from="testscriptuser@nsf.org"
+	subject="${Information.resultEmailSubjectFirstPartTag} Execution Result Report By ${Information.SystemUserName}'s machine [${Information.SystemIpAddress}] "
+	message="This is automatically generated mail after executing ${Information.resultEmailSubjectFirstPartTag} on ${Information.SystemUserName}'s machine. Please see attached files."
+	mailhost="client.nsf.org"
+	mailport="25"
+	user="${Information.fromEmail}"
+	password="${Information.fromEmailPassword}">
+	<attachments>
+	<fileset dir="${ws.home}/XSLT_Reports/zip-result">
+	<include name="**/*.zip"/>
+	</fileset>
+	</attachments>
+	</mail>
+	</target>
+	
+	
+ 
+</project>

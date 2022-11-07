@@ -1,0 +1,376 @@
+25/07/2022 13:48:19 PM devpinoyLogger BatchStartExecutionTime 's value is --25-07-22  01:48:19 PM
+25/07/2022 13:48:19 PM devpinoyLogger Current running IP address of machine is--INDEL-L-4B3JDM3/192.168.241.149
+25/07/2022 13:48:19 PM devpinoyLogger              
+25/07/2022 13:48:19 PM devpinoyLogger              
+25/07/2022 13:48:19 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:19 PM devpinoyLogger ####################Proposal Suite Start ############################################################
+25/07/2022 13:48:19 PM devpinoyLogger Checking Runmode of Proposal_suite
+25/07/2022 13:48:19 PM devpinoyLogger Skipped Proposals_suite as the runmode was set to NO
+25/07/2022 13:48:20 PM devpinoyLogger #################### Proposals_suite Suite End ############################################################
+25/07/2022 13:48:22 PM devpinoyLogger              
+25/07/2022 13:48:22 PM devpinoyLogger              
+25/07/2022 13:48:22 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:22 PM devpinoyLogger ####################Work Order Suite Start ############################################################
+25/07/2022 13:48:22 PM devpinoyLogger Checking Runmode of Work_Order_suite
+25/07/2022 13:48:22 PM devpinoyLogger Skipped Work_Order_suite as the runmode was set to NO
+25/07/2022 13:48:22 PM devpinoyLogger #################### Work_Order_suite Suite End ############################################################
+25/07/2022 13:48:23 PM devpinoyLogger              
+25/07/2022 13:48:23 PM devpinoyLogger              
+25/07/2022 13:48:23 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:23 PM devpinoyLogger ####################Non_Food_Compounds_suite Start ############################################################
+25/07/2022 13:48:23 PM devpinoyLogger Checking Runmode of Non_Food_Compounds_suite
+25/07/2022 13:48:23 PM devpinoyLogger Skipped Non_Food_Compounds_suite  as the runmode was set to NO
+25/07/2022 13:48:23 PM devpinoyLogger #################### Non_Food_Compounds_suite Suite End ############################################################
+25/07/2022 13:48:25 PM devpinoyLogger              
+25/07/2022 13:48:25 PM devpinoyLogger              
+25/07/2022 13:48:25 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:25 PM devpinoyLogger ####################Dietary_Supplement_suite Start ############################################################
+25/07/2022 13:48:25 PM devpinoyLogger Checking Runmode of Dietary_Supplement_suite
+25/07/2022 13:48:25 PM devpinoyLogger Skipped Dietary_Supplement_suite  as the runmode was set to NO
+25/07/2022 13:48:25 PM devpinoyLogger #################### Dietary_Supplement_suite Suite End ############################################################
+25/07/2022 13:48:27 PM devpinoyLogger              
+25/07/2022 13:48:27 PM devpinoyLogger              
+25/07/2022 13:48:27 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:27 PM devpinoyLogger ####################ISR_suite Start ############################################################
+25/07/2022 13:48:27 PM devpinoyLogger Checking Runmode of ISR_suite
+25/07/2022 13:48:27 PM devpinoyLogger Skipped ISR_suite  as the runmode was set to NO
+25/07/2022 13:48:27 PM devpinoyLogger #################### ISR_suite Suite End ############################################################
+25/07/2022 13:48:29 PM devpinoyLogger              
+25/07/2022 13:48:29 PM devpinoyLogger              
+25/07/2022 13:48:29 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:29 PM devpinoyLogger ####################SCFS_suite Start ############################################################
+25/07/2022 13:48:29 PM devpinoyLogger Checking Runmode of SCFS_suite
+25/07/2022 13:48:29 PM devpinoyLogger Skipped SCFS_suite  as the runmode was set to NO
+25/07/2022 13:48:30 PM devpinoyLogger #################### SCFS_suite Suite End ############################################################
+25/07/2022 13:48:32 PM devpinoyLogger              
+25/07/2022 13:48:32 PM devpinoyLogger              
+25/07/2022 13:48:32 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:32 PM devpinoyLogger #################### Health Science Suite Start ############################################################
+25/07/2022 13:48:32 PM devpinoyLogger Checking Runmode of Health_Science_suite
+25/07/2022 13:48:32 PM devpinoyLogger Skipped Health_Science_suite as the runmode was set to NO
+25/07/2022 13:48:32 PM devpinoyLogger #################### Health_Science_suite Suite End ############################################################
+25/07/2022 13:48:34 PM devpinoyLogger              
+25/07/2022 13:48:34 PM devpinoyLogger              
+25/07/2022 13:48:34 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:34 PM devpinoyLogger ####################Agriculture_suite Start ############################################################
+25/07/2022 13:48:34 PM devpinoyLogger Checking Runmode of Agriculture_suite
+25/07/2022 13:48:34 PM devpinoyLogger Skipped Agriculture_suite  as the runmode was set to NO
+25/07/2022 13:48:34 PM devpinoyLogger #################### Agriculture_suite Suite End ############################################################
+25/07/2022 13:48:36 PM devpinoyLogger              
+25/07/2022 13:48:36 PM devpinoyLogger              
+25/07/2022 13:48:36 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:36 PM devpinoyLogger ####################Audit_SAM_SPA_suite Start ############################################################
+25/07/2022 13:48:36 PM devpinoyLogger Checking Runmode of Audit_SAM_SPA_suite
+25/07/2022 13:48:36 PM devpinoyLogger Skipped Audit_SAM_SPA_suite  as the runmode was set to NO
+25/07/2022 13:48:36 PM devpinoyLogger #################### Audit_SAM_SPA_suite Suite End ############################################################
+25/07/2022 13:48:38 PM devpinoyLogger              
+25/07/2022 13:48:38 PM devpinoyLogger              
+25/07/2022 13:48:38 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:38 PM devpinoyLogger ####################Test_Plan_suite Start ############################################################
+25/07/2022 13:48:38 PM devpinoyLogger Checking Runmode of Test_Plan_suite
+25/07/2022 13:48:38 PM devpinoyLogger Skipped Test_Plan_suite  as the runmode was set to NO
+25/07/2022 13:48:38 PM devpinoyLogger #################### Test_Plan_suite Suite End ############################################################
+25/07/2022 13:48:40 PM devpinoyLogger              
+25/07/2022 13:48:40 PM devpinoyLogger              
+25/07/2022 13:48:40 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:40 PM devpinoyLogger ####################Generic_suite Start ############################################################
+25/07/2022 13:48:40 PM devpinoyLogger Checking Runmode of Generic_suite
+25/07/2022 13:48:40 PM devpinoyLogger Skipped Generic_suite  as the runmode was set to NO
+25/07/2022 13:48:40 PM devpinoyLogger #################### Generic_suite Suite End ############################################################
+25/07/2022 13:48:42 PM devpinoyLogger              
+25/07/2022 13:48:42 PM devpinoyLogger              
+25/07/2022 13:48:42 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:42 PM devpinoyLogger ####################Invoice_Function_suite Start ############################################################
+25/07/2022 13:48:42 PM devpinoyLogger Checking Runmode of Invoice_Function_suite
+25/07/2022 13:48:42 PM devpinoyLogger Skipped Invoice_Function_suite  as the runmode was set to NO
+25/07/2022 13:48:42 PM devpinoyLogger #################### Invoice_Function_suite Suite End ############################################################
+25/07/2022 13:48:44 PM devpinoyLogger              
+25/07/2022 13:48:44 PM devpinoyLogger              
+25/07/2022 13:48:44 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:44 PM devpinoyLogger ####################SUS_suite Start ############################################################
+25/07/2022 13:48:44 PM devpinoyLogger Checking Runmode of SUS_suite
+25/07/2022 13:48:44 PM devpinoyLogger Skipped SUS_suite  as the runmode was set to NO
+25/07/2022 13:48:44 PM devpinoyLogger ####################  SUS_suite  End ############################################################
+25/07/2022 13:48:44 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:44 PM devpinoyLogger Skipped 'IssueMgt_Suite' as the runmode was set to NO
+25/07/2022 13:48:44 PM devpinoyLogger 
+25/07/2022 13:48:44 PM devpinoyLogger ############################################################# IM Suite END ############################################################ 
+25/07/2022 13:48:44 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:44 PM devpinoyLogger 
+25/07/2022 13:48:51 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:48:51 PM devpinoyLogger ################################## [BS - 01]  CreateClient
+25/07/2022 13:48:53 PM devpinoyLogger Application credentials are URL[ https://stgapps.nsf.org/ecap ], UserName[ testscriptuser ].
+25/07/2022 13:49:04 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> //input[@name='loginfmt']
+25/07/2022 13:49:04 PM devpinoyLogger PASSED == Successfully Type Value<testscriptuser@nsf.org> on Element having Xpath  >> MicrosoftOnline_Signin_Input
+25/07/2022 13:49:04 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> //input[@type='submit']
+25/07/2022 13:49:04 PM devpinoyLogger PASSED == Click done on Element having Xpath >> //input[@type='submit']
+25/07/2022 13:49:14 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> UserNametext_Xpath
+25/07/2022 13:49:14 PM devpinoyLogger PASSED == Successfully Type Value<welcome123123> on Element having Xpath  >> passwordtext_Xpath
+25/07/2022 13:49:19 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> SignInBtn_xpath
+25/07/2022 13:49:19 PM devpinoyLogger Stay signed in Pop up is displayed.
+25/07/2022 13:49:55 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> StaySignedInYes_Btn
+25/07/2022 13:49:58 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:49:58 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Acknowledge_bttn
+25/07/2022 13:50:00 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> Acknowledge_bttn
+25/07/2022 13:50:06 PM devpinoyLogger *********  Pause/Wait is for < 4 > seconds.  *****  
+25/07/2022 13:50:06 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='footer']
+25/07/2022 13:50:08 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='headerForm:logImg']
+25/07/2022 13:50:10 PM devpinoyLogger PASSED == Click on Element done having Xpath >> Ipulse_Version_Dialog_Close_Bttn
+25/07/2022 13:50:11 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='footer']
+25/07/2022 13:50:13 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='headerForm:logImg']
+25/07/2022 13:50:15 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> Ipulse_Version_Dialog_Close_Bttn
+25/07/2022 13:50:16 PM devpinoyLogger Browser is launched and Successfully login into Application
+25/07/2022 13:50:16 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:50:16 PM devpinoyLogger ****************************************************************************************************************************************
+25/07/2022 13:50:16 PM devpinoyLogger ################################## Execution Logs of  Case#=1_a for Scenario [CreateClient_ORG_CO].
+25/07/2022 13:50:16 PM devpinoyLogger ###################################################### Test Case#=1_a for Scenario [CreateClient_ORG_CO]
+25/07/2022 13:50:16 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Menu_Ajax_Link
+25/07/2022 13:50:18 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_Ajax_Link
+25/07/2022 13:50:18 PM devpinoyLogger PASSED == Successfully Click on 'Create Client' Ajax Link.
+25/07/2022 13:50:32 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:50:32 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:50:32 PM devpinoyLogger PASSED == Click done on Element having Xpath >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:50:35 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> //li[text()='ORGU0020 - Water Treatment Devices']
+25/07/2022 13:50:35 PM devpinoyLogger PASSED == select value [ ORGU0020 - Water Treatment Devices ] from drop down done, having xpath >>  .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:50:41 PM devpinoyLogger *********  Progressing Loading image is displayed for < 4 > seconds.
+25/07/2022 13:50:41 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:50:42 PM devpinoyLogger PASSED == Successfully Type Value<Test Script CO> on Element having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:50:42 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:50:42 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Type_DD_Value
+25/07/2022 13:50:43 PM devpinoyLogger PASSED == Successfully select value [ CO ] from drop down, having xpath >>  CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:50:43 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest CO> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine1
+25/07/2022 13:50:43 PM devpinoyLogger PASSED == Successfully Type Value<D/T=25Jul22/13:50 IST> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine2
+25/07/2022 13:50:44 PM devpinoyLogger PASSED == Successfully Type Value<Ann Arbor> on Element having Xpath  >> CreateClient_ClientAddress_City
+25/07/2022 13:50:44 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:50:44 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_State_DD_Value
+25/07/2022 13:50:45 PM devpinoyLogger PASSED == Successfully select value [ Massachusetts ] from drop down, having xpath >>  CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:50:47 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:50:47 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:50:48 PM devpinoyLogger PASSED == Successfully Type Value<25072022> on Element having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:50:48 PM devpinoyLogger PASSED == Successfully Type Value<222-222-2222> on Element having Xpath  >> CreateClient_ClientAddress_Primary_Phone
+25/07/2022 13:50:48 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_ClientAddress_ContactEmail
+25/07/2022 13:50:48 PM devpinoyLogger PASSED == Successfully Type Value<COTestFName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_FirstName
+25/07/2022 13:50:49 PM devpinoyLogger PASSED == Successfully Type Value<COTestLName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_LastName
+25/07/2022 13:50:49 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Email
+25/07/2022 13:50:49 PM devpinoyLogger PASSED == Successfully Type Value<333-333-3333> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Phone
+25/07/2022 13:50:49 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:50:50 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Value
+25/07/2022 13:50:51 PM devpinoyLogger PASSED == Successfully select value [ NSFUSA ] from drop down, having xpath >>  CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:50:54 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:50:54 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_AccountManager_LookUp_Bttn
+25/07/2022 13:50:57 PM devpinoyLogger *********  Progressing Loading image is displayed for < 2 > seconds.
+25/07/2022 13:50:57 PM devpinoyLogger PASSED == Successfully Type Value<M7890000> on Element having Xpath  >> CreateClient_AccountManager_LookUp_Bttn_Text
+25/07/2022 13:50:59 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:51:06 PM devpinoyLogger *********  Progressing Loading image is displayed for < 5 > seconds.
+25/07/2022 13:51:08 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> lookup_select_radio_bttn
+25/07/2022 13:51:10 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:51:11 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:51:12 PM devpinoyLogger PASSED == Successfully Select Account Manager Lookup  Radio Button
+25/07/2022 13:51:14 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_Create_Bttn
+25/07/2022 13:51:45 PM devpinoyLogger *********  Progressing Loading image is displayed for < 3 > seconds.
+25/07/2022 13:51:47 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:51:48 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Updated_Message1
+25/07/2022 13:51:48 PM devpinoyLogger PASSED == Successfully Fetch the Text[Client created successfully.] on Element having xpath [ Updated_Message1 ].
+25/07/2022 13:51:49 PM devpinoyLogger PASSED == Successfully Fetch the Text[C0719823] on Element having xpath [ Client_ID ].
+25/07/2022 13:51:49 PM devpinoyLogger PASSED == Client Id Generated Successfully  ==  C0719823
+25/07/2022 13:51:49 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:51:49 PM devpinoyLogger ****************************************************************************************************************************************
+25/07/2022 13:51:49 PM devpinoyLogger ################################## Execution Logs of  Case#=1_b for Scenario [CreateClient_ORG_PL].
+25/07/2022 13:51:49 PM devpinoyLogger ###################################################### Test Case#=1_b for Scenario [CreateClient_ORG_PL]
+25/07/2022 13:51:49 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Menu_Ajax_Link
+25/07/2022 13:51:51 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_Ajax_Link
+25/07/2022 13:51:51 PM devpinoyLogger PASSED == Successfully Click on 'Create Client' Ajax Link.
+25/07/2022 13:52:01 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:01 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:52:01 PM devpinoyLogger PASSED == Click done on Element having Xpath >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:52:04 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> //li[text()='ORGU0020 - Water Treatment Devices']
+25/07/2022 13:52:04 PM devpinoyLogger PASSED == select value [ ORGU0020 - Water Treatment Devices ] from drop down done, having xpath >>  .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:52:08 PM devpinoyLogger *********  Progressing Loading image is displayed for < 2 > seconds.
+25/07/2022 13:52:08 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Successfully Type Value<Test Script PL> on Element having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Type_DD_Value
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Successfully select value [ PL ] from drop down, having xpath >>  CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest PL> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine1
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Successfully Type Value<D/T=25Jul22/13:52 IST> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine2
+25/07/2022 13:52:09 PM devpinoyLogger PASSED == Successfully Type Value<Ann Arbor> on Element having Xpath  >> CreateClient_ClientAddress_City
+25/07/2022 13:52:10 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:52:10 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_State_DD_Value
+25/07/2022 13:52:11 PM devpinoyLogger PASSED == Successfully select value [ Massachusetts ] from drop down, having xpath >>  CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:52:12 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:52:13 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:52:13 PM devpinoyLogger PASSED == Successfully Type Value<25072022> on Element having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:52:13 PM devpinoyLogger PASSED == Successfully Type Value<222-222-2222> on Element having Xpath  >> CreateClient_ClientAddress_Primary_Phone
+25/07/2022 13:52:13 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_ClientAddress_ContactEmail
+25/07/2022 13:52:13 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_PrimaryContactDetails_FirstName
+25/07/2022 13:52:15 PM devpinoyLogger PASSED == Successfully Type Value<PLTestFName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_FirstName
+25/07/2022 13:52:15 PM devpinoyLogger PASSED == Successfully Type Value<PLTestLName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_LastName
+25/07/2022 13:52:15 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Email
+25/07/2022 13:52:15 PM devpinoyLogger PASSED == Successfully Type Value<333-333-3333> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Phone
+25/07/2022 13:52:15 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:52:15 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Value
+25/07/2022 13:52:16 PM devpinoyLogger PASSED == Successfully select value [ NSFUSA ] from drop down, having xpath >>  CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:52:19 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:19 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_AccountManager_LookUp_Bttn
+25/07/2022 13:52:22 PM devpinoyLogger *********  Progressing Loading image is displayed for < 2 > seconds.
+25/07/2022 13:52:22 PM devpinoyLogger PASSED == Successfully Type Value<M7890000> on Element having Xpath  >> CreateClient_AccountManager_LookUp_Bttn_Text
+25/07/2022 13:52:25 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:30 PM devpinoyLogger *********  Progressing Loading image is displayed for < 4 > seconds.
+25/07/2022 13:52:31 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> lookup_select_radio_bttn
+25/07/2022 13:52:33 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:35 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:52:36 PM devpinoyLogger PASSED == Successfully Select Account Manager Lookup  Radio Button
+25/07/2022 13:52:37 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientInfo_CorpFacilityParent_LookUp_Bttn
+25/07/2022 13:52:43 PM devpinoyLogger *********  Progressing Loading image is displayed for < 4 > seconds.
+25/07/2022 13:52:43 PM devpinoyLogger PASSED == Successfully Type Value<C0719823> on Element having Xpath  >> CreateClient_ClientInfo_CorpFacilityParent_LookUp_SearchField_Client
+25/07/2022 13:52:46 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:52 PM devpinoyLogger *********  Progressing Loading image is displayed for < 5 > seconds.
+25/07/2022 13:52:53 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> lookup_select_radio_bttn
+25/07/2022 13:52:55 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:56 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:52:57 PM devpinoyLogger PASSED == Successfully Select Client Lookup  Radio Button
+25/07/2022 13:52:57 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_Create_Bttn
+25/07/2022 13:52:58 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_Create_Bttn
+25/07/2022 13:53:15 PM devpinoyLogger *********  Progressing Loading image is displayed for < 3 > seconds.
+25/07/2022 13:53:16 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Updated_Message1
+25/07/2022 13:53:17 PM devpinoyLogger PASSED == Successfully Fetch the Text[Client created successfully.] on Element having xpath [ Updated_Message1 ].
+25/07/2022 13:53:17 PM devpinoyLogger PASSED == Successfully Fetch the Text[C0719824] on Element having xpath [ Client_ID ].
+25/07/2022 13:53:17 PM devpinoyLogger PASSED == Client Id Generated Successfully  ==  C0719824
+25/07/2022 13:53:17 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:53:17 PM devpinoyLogger ****************************************************************************************************************************************
+25/07/2022 13:53:17 PM devpinoyLogger ################################## Execution Logs of  Case#=2_a for Scenario [CreateClient_ISR_CO].
+25/07/2022 13:53:17 PM devpinoyLogger ###################################################### Test Case#=2_a for Scenario [CreateClient_ISR_CO]
+25/07/2022 13:53:18 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Menu_Ajax_Link
+25/07/2022 13:53:19 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_Ajax_Link
+25/07/2022 13:53:19 PM devpinoyLogger PASSED == Successfully Click on 'Create Client' Ajax Link.
+25/07/2022 13:53:31 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:53:31 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:53:31 PM devpinoyLogger PASSED == Click done on Element having Xpath >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:53:33 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> //li[text()='ISRUK - ISR - United Kingdom']
+25/07/2022 13:53:33 PM devpinoyLogger PASSED == select value [ ISRUK - ISR - United Kingdom ] from drop down done, having xpath >>  .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:53:37 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:53:37 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:53:37 PM devpinoyLogger PASSED == Successfully Type Value<Test Script CO> on Element having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:53:37 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:53:38 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Type_DD_Value
+25/07/2022 13:53:38 PM devpinoyLogger PASSED == Successfully select value [ CO ] from drop down, having xpath >>  CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:53:38 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest CO> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine1
+25/07/2022 13:53:38 PM devpinoyLogger PASSED == Successfully Type Value<D/T=25Jul22/13:53 IST> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine2
+25/07/2022 13:53:38 PM devpinoyLogger PASSED == Successfully Type Value<Ann Arbor> on Element having Xpath  >> CreateClient_ClientAddress_City
+25/07/2022 13:53:39 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:53:39 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_State_DD_Value
+25/07/2022 13:53:39 PM devpinoyLogger PASSED == Successfully select value [ Massachusetts ] from drop down, having xpath >>  CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:53:41 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:53:41 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:53:42 PM devpinoyLogger PASSED == Successfully Type Value<25072022> on Element having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:53:42 PM devpinoyLogger PASSED == Successfully Type Value<222-222-2222> on Element having Xpath  >> CreateClient_ClientAddress_Primary_Phone
+25/07/2022 13:53:42 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_ClientAddress_ContactEmail
+25/07/2022 13:53:42 PM devpinoyLogger PASSED == Successfully Type Value<COTestFName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_FirstName
+25/07/2022 13:53:43 PM devpinoyLogger PASSED == Successfully Type Value<COTestLName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_LastName
+25/07/2022 13:53:43 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Email
+25/07/2022 13:53:43 PM devpinoyLogger PASSED == Successfully Type Value<333-333-3333> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Phone
+25/07/2022 13:53:43 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:53:43 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Value
+25/07/2022 13:53:44 PM devpinoyLogger PASSED == Successfully select value [ NSFUSA ] from drop down, having xpath >>  CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:53:47 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:53:47 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_AccountManager_LookUp_Bttn
+25/07/2022 13:53:50 PM devpinoyLogger *********  Progressing Loading image is displayed for < 2 > seconds.
+25/07/2022 13:53:50 PM devpinoyLogger PASSED == Successfully Type Value<M7890000> on Element having Xpath  >> CreateClient_AccountManager_LookUp_Bttn_Text
+25/07/2022 13:53:53 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:54:00 PM devpinoyLogger *********  Progressing Loading image is displayed for < 5 > seconds.
+25/07/2022 13:54:01 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> lookup_select_radio_bttn
+25/07/2022 13:54:03 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:54:05 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:54:05 PM devpinoyLogger PASSED == Successfully Select Account Manager Lookup  Radio Button
+25/07/2022 13:54:07 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_Create_Bttn
+25/07/2022 13:54:30 PM devpinoyLogger *********  Progressing Loading image is displayed for < 2 > seconds.
+25/07/2022 13:54:33 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:54:34 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Updated_Message1
+25/07/2022 13:54:34 PM devpinoyLogger PASSED == Successfully Fetch the Text[Client created successfully.] on Element having xpath [ Updated_Message1 ].
+25/07/2022 13:54:35 PM devpinoyLogger PASSED == Successfully Fetch the Text[C0719825] on Element having xpath [ Client_ID ].
+25/07/2022 13:54:35 PM devpinoyLogger PASSED == Client Id Generated Successfully  ==  C0719825
+25/07/2022 13:54:35 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:54:35 PM devpinoyLogger ****************************************************************************************************************************************
+25/07/2022 13:54:35 PM devpinoyLogger ################################## Execution Logs of  Case#=2_b for Scenario [CreateClient_ISR_PL].
+25/07/2022 13:54:35 PM devpinoyLogger ###################################################### Test Case#=2_b for Scenario [CreateClient_ISR_PL]
+25/07/2022 13:54:35 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Menu_Ajax_Link
+25/07/2022 13:54:37 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_Ajax_Link
+25/07/2022 13:54:37 PM devpinoyLogger PASSED == Successfully Click on 'Create Client' Ajax Link.
+25/07/2022 13:54:48 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:54:49 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:54:50 PM devpinoyLogger PASSED == Click done on Element having Xpath >> .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:54:52 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> //li[text()='ISRUK - ISR - United Kingdom']
+25/07/2022 13:54:52 PM devpinoyLogger PASSED == select value [ ISRUK - ISR - United Kingdom ] from drop down done, having xpath >>  .//*[@id='mainForm:prprogcode']/div[3]/span
+25/07/2022 13:54:57 PM devpinoyLogger *********  Progressing Loading image is displayed for < 3 > seconds.
+25/07/2022 13:54:58 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:54:58 PM devpinoyLogger PASSED == Successfully Type Value<Test Script PL> on Element having Xpath  >> CreateClient_ClientInfo_Name
+25/07/2022 13:54:58 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:54:58 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientInfo_Type_DD_Value
+25/07/2022 13:54:59 PM devpinoyLogger PASSED == Successfully select value [ PL ] from drop down, having xpath >>  CreateClient_ClientInfo_Type_DD_Click
+25/07/2022 13:54:59 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest PL> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine1
+25/07/2022 13:54:59 PM devpinoyLogger PASSED == Successfully Type Value<D/T=25Jul22/13:54 IST> on Element having Xpath  >> CreateClient_ClientAddress_AddressLine2
+25/07/2022 13:55:00 PM devpinoyLogger PASSED == Successfully Type Value<Ann Arbor> on Element having Xpath  >> CreateClient_ClientAddress_City
+25/07/2022 13:55:00 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:55:00 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_State_DD_Value
+25/07/2022 13:55:01 PM devpinoyLogger PASSED == Successfully select value [ Massachusetts ] from drop down, having xpath >>  CreateClient_ClientAddress_State_DD_Click
+25/07/2022 13:55:03 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:55:03 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:55:04 PM devpinoyLogger PASSED == Successfully Type Value<25072022> on Element having Xpath  >> CreateClient_ClientAddress_Postal
+25/07/2022 13:55:04 PM devpinoyLogger PASSED == Successfully Type Value<222-222-2222> on Element having Xpath  >> CreateClient_ClientAddress_Primary_Phone
+25/07/2022 13:55:04 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_ClientAddress_ContactEmail
+25/07/2022 13:55:04 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_PrimaryContactDetails_FirstName
+25/07/2022 13:55:06 PM devpinoyLogger PASSED == Successfully Type Value<PLTestFName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_FirstName
+25/07/2022 13:55:06 PM devpinoyLogger PASSED == Successfully Type Value<PLTestLName> on Element having Xpath  >> CreateClient_PrimaryContactDetails_LastName
+25/07/2022 13:55:06 PM devpinoyLogger PASSED == Successfully Type Value<AutomationTest@nsf.org> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Email
+25/07/2022 13:55:07 PM devpinoyLogger PASSED == Successfully Type Value<333-333-3333> on Element having Xpath  >> CreateClient_PrimaryContactDetails_Phone
+25/07/2022 13:55:07 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:55:07 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_PrimaryContactDetails_BillToOffice_Dd_Value
+25/07/2022 13:55:09 PM devpinoyLogger PASSED == Successfully select value [ NSFUSA ] from drop down, having xpath >>  CreateClient_PrimaryContactDetails_BillToOffice_Dd_Click
+25/07/2022 13:55:12 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:12 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_AccountManager_LookUp_Bttn
+25/07/2022 13:55:15 PM devpinoyLogger *********  Progressing Loading image is displayed for < 2 > seconds.
+25/07/2022 13:55:16 PM devpinoyLogger PASSED == Successfully Type Value<M7890000> on Element having Xpath  >> CreateClient_AccountManager_LookUp_Bttn_Text
+25/07/2022 13:55:18 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:25 PM devpinoyLogger *********  Progressing Loading image is displayed for < 5 > seconds.
+25/07/2022 13:55:26 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> lookup_select_radio_bttn
+25/07/2022 13:55:28 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:29 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:30 PM devpinoyLogger PASSED == Successfully Select Account Manager Lookup  Radio Button
+25/07/2022 13:55:31 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_ClientInfo_CorpFacilityParent_LookUp_Bttn
+25/07/2022 13:55:36 PM devpinoyLogger *********  Progressing Loading image is displayed for < 3 > seconds.
+25/07/2022 13:55:36 PM devpinoyLogger PASSED == Successfully Type Value<C0719825> on Element having Xpath  >> CreateClient_ClientInfo_CorpFacilityParent_LookUp_SearchField_Client
+25/07/2022 13:55:39 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:47 PM devpinoyLogger *********  Progressing Loading image is displayed for < 6 > seconds.
+25/07/2022 13:55:48 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> lookup_select_radio_bttn
+25/07/2022 13:55:50 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:52 PM devpinoyLogger *********  Pause/Wait is for < 1 > seconds.  *****  
+25/07/2022 13:55:53 PM devpinoyLogger PASSED == Successfully Select Client Lookup  Radio Button
+25/07/2022 13:55:53 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> CreateClient_Create_Bttn
+25/07/2022 13:55:54 PM devpinoyLogger PASSED == Successfully Click on Element having Xpath >> CreateClient_Create_Bttn
+25/07/2022 13:56:10 PM devpinoyLogger *********  Progressing Loading image is displayed for < 1 > seconds.
+25/07/2022 13:56:10 PM devpinoyLogger PASSED == Element is Visible having Xpath  >> Updated_Message1
+25/07/2022 13:56:11 PM devpinoyLogger PASSED == Successfully Fetch the Text[Client created successfully.] on Element having xpath [ Updated_Message1 ].
+25/07/2022 13:56:12 PM devpinoyLogger PASSED == Successfully Fetch the Text[C0719826] on Element having xpath [ Client_ID ].
+25/07/2022 13:56:12 PM devpinoyLogger PASSED == Client Id Generated Successfully  ==  C0719826
+25/07/2022 13:56:13 PM devpinoyLogger DEBUG: DIR '\STAGING_full_scripts_log_history\25-07-22\01_48_19 PM'  is already  created.
+25/07/2022 13:56:13 PM devpinoyLogger DEBUG:2
+25/07/2022 13:56:13 PM devpinoyLogger DEBUG:3
+25/07/2022 13:56:13 PM devpinoyLogger DEBUG:4
+25/07/2022 13:56:13 PM devpinoyLogger [Ljava.lang.StackTraceElement;@27a09971
+25/07/2022 13:56:13 PM devpinoyLogger  IMPORTANT==>Either 'ExecutionDetails.xlsx'  file got corrupted in log folder or may be some other issue and  error is this --Unparseable date: "15-06-22  05:42:51 PM"
+25/07/2022 13:56:13 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:56:13 PM devpinoyLogger Skipping Test Case SearchClient as runmode set to NO
+25/07/2022 13:56:13 PM devpinoyLogger 
+25/07/2022 13:56:13 PM devpinoyLogger ########################################################### Client Suite END ########################################################## 
+25/07/2022 13:56:13 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:56:13 PM devpinoyLogger 
+25/07/2022 13:56:13 PM devpinoyLogger Skipped 'NSF_Connect_Suite' as the runmode was set to NO
+25/07/2022 13:56:13 PM devpinoyLogger 
+25/07/2022 13:56:13 PM devpinoyLogger ######################################################## New_NSFOnline Suite END ######################################################## 
+25/07/2022 13:56:13 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:56:13 PM devpinoyLogger 
+25/07/2022 13:56:13 PM devpinoyLogger Skipped 'MonitorPlan_suite' as the runmode was set to NO
+25/07/2022 13:56:13 PM devpinoyLogger 
+25/07/2022 13:56:13 PM devpinoyLogger ######################################################## MonitorPlan Suite END ######################################################## 
+25/07/2022 13:56:13 PM devpinoyLogger =========================================================================================================================================
+25/07/2022 13:56:13 PM devpinoyLogger 

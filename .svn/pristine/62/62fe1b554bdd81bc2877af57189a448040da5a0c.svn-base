@@ -1,0 +1,310 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>nsf.ecap</groupId>
+  <artifactId>i-Pulse</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <repositories>
+	<!--other repositories if any-->
+		<repository>
+		<id>nsf.ecap.i-Pulse</id>
+		<url>file://${basedir}/src/main/resources/localrepo</url>
+		</repository>
+  </repositories>
+  
+<dependencies>
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-server</artifactId>
+		    <version>3.7.1</version>
+		</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+		    <groupId>io.github.bonigarcia</groupId>
+		    <artifactId>webdrivermanager</artifactId>
+		    <version>5.0.1</version>
+		</dependency>
+
+
+	<!-- 	<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>   
+			<version>3.141.0</version>  	
+		</dependency>
+		
+		
+		<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-support</artifactId>
+        <version>3.141.0</version>
+</dependency>  -->
+		
+		<!-- https://mvnrepository.com/artifact/net.sf.saxon/Saxon-HE -->
+		<dependency>
+		    <groupId>net.sf.saxon</groupId>
+		    <artifactId>Saxon-HE</artifactId>
+		    <version>9.8.0-1</version>
+		</dependency>
+				
+				
+		<!-- https://mvnrepository.com/artifact/net.sf.saxon/saxon -->
+		<dependency>
+		    <groupId>net.sf.saxon</groupId>
+		    <artifactId>saxon</artifactId>
+		    <version>8.5.1</version>
+		</dependency>
+
+
+	
+		
+		
+			<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<!-- <version>21.0</version> -->
+			<version>23.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+		
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		    <version>4.1</version>
+		</dependency>
+		
+
+
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<!-- <version>3.5-beta5</version> -->
+			<version>3.6</version>
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.0.7</version>
+		</dependency>
+		
+		
+		<dependency>
+		    <groupId>net.java.dev.msv</groupId>
+		    <artifactId>msv-testharness</artifactId>
+		    <version>2013.2.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+
+
+
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+		    <groupId>com.relevantcodes</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>2.40.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>5.0.4</version>
+		</dependency>
+		
+
+
+		<!-- https://mvnrepository.com/artifact/net.sf.saxon/Saxon-HE -->
+		<dependency>
+			<groupId>net.sf.saxon</groupId>
+			<artifactId>Saxon-HE</artifactId>
+			<version>9.8.0-1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.5.6</version>
+		</dependency>
+		
+		
+ 		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>14.0.0</version>
+		</dependency>
+		
+
+		<!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
+		<dependency>
+		    <groupId>ru.yandex.qatools.ashot</groupId>
+		    <artifactId>ashot</artifactId>
+		    <version>1.5.4</version>
+		</dependency>
+		
+
+		<!-- <dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+			<version>1.5.6</version> </dependency> -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.47</version>
+		</dependency>
+
+
+
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-simple</artifactId>
+		  <version>1.7.25</version>
+		  <scope>test</scope>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-api</artifactId>
+		  <version>1.7.25</version>
+		</dependency>
+
+	<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+	<dependency>
+	    <groupId>commons-validator</groupId>
+	    <artifactId>commons-validator</artifactId>
+	    <version>1.4.1</version>
+	</dependency>
+	
+
+	
+		<!-- <dependency>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-surefire-plugin</artifactId>
+		  <version>3.0.0-M7</version>
+		  <type>maven-plugin</type>
+		</dependency> -->
+		
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+		    <groupId>com.relevantcodes</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>2.41.2</version>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.10</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		    <version>4.1</version>
+		</dependency>
+		
+
+
+		
+
+</dependencies>  
+  
+  
+  
+   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  
+  <build>
+  <plugins>
+  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      
+		
+ </plugins> 
+ 
+ </build>
+     
+</project>
+
+
+

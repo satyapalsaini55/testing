@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Invoice_Function_suite" >
+
+
+
+
+
+
+
+<test name=" [BS-01]  Create_Invoice">
+<parameter name="className" value="Create_Invoice"/>
+    <classes>
+        <class name="nsf.ecap.Invoice_Function_suite.Create_Invoice" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-02]  Exp_Allocation">
+<parameter name="className" value="Exp_Allocation"/>
+    <classes>
+        <class name="nsf.ecap.Invoice_Function_suite.Exp_Allocation" ></class> 
+    </classes>
+</test>
+
+
+
+</suite>

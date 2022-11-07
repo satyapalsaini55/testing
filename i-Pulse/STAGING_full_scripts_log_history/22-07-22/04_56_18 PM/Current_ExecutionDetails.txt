@@ -1,0 +1,15 @@
+******************Batch Started -->22-07-22  04:56:18 PM**********************************************
+Suite name ---->Invoice_Function_suite
+Test case name ---->Exp_Allocation
+Test case code ---->Exp_Allocation-BS02
+Browser name ---->chrome
+Start Time ---->04:56:44 PM
+End Time ---->05:01:31 PM
+This execution tooks 287627ms 
+0 hours, 4 minutes, 47 seconds.
+
+Result ---->PASS
+****************************************************************
+
+
+

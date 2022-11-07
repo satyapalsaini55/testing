@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Non_Food_Compounds_suite]">
+  <listeners>
+    <listener class-name="nsf.ecap.listener.TestsListenerAdapter"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="[BS-01]  NFC_ExistingNew_Draft_Complete(failed)">
+    <classes>
+      <class name="nsf.ecap.Non_Food_Compounds_suite.NFC_ExistingNew_Draft_Complete">
+        <methods>
+          <include name="Verify_INPROCESS_to_COMPLETE_Automatically"/>
+          <include name="AddingData__Products_Tab"/>
+          <include name="Scope_Validation_Task"/>
+          <include name="checkSuiteSkip"/>
+          <include name="CLEANUP_WO_AUTOMATION_DATA"/>
+          <include name="Lit_Eval"/>
+          <include name="Verifying__DRAFT_INREVIEW"/>
+          <include name="AddingData__Tasks_Tab"/>
+          <include name="reportDataSetResult"/>
+          <include name="SampleSelectionTask"/>
+          <include name="CreateWOFlow"/>
+          <include name="Risk_Assessment_AI_N_Task"/>
+          <include name="Completing_ClientDocRequestAI"/>
+          <include name="cleanUp"/>
+          <include name="checkTestSkip"/>
+          <include name="AddingData__Facility_Tab"/>
+          <include name="reportTestResult"/>
+          <include name="Certification_Decision_Task"/>
+          <include name="Verify_InvoiceInFinancialTab"/>
+        </methods>
+      </class> <!-- nsf.ecap.Non_Food_Compounds_suite.NFC_ExistingNew_Draft_Complete -->
+    </classes>
+  </test> <!-- [BS-01]  NFC_ExistingNew_Draft_Complete(failed) -->
+</suite> <!-- Failed suite [Non_Food_Compounds_suite] -->

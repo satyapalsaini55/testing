@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EPSF_suite" >
+
+
+
+
+<test name=" [BS-01]  EPSF_Draft_Req_Recvd">
+<parameter name="className" value="EPSF_Draft_Req_Recvd"/>
+    <classes>
+      <!--  <class name="nsf.ecap.Work_Order_suite.NewNew_Draft_InReview_No_Fac" ></class> --> 
+        <class name="nsf.ecap.EPSF_suite.EPSF_Draft_Req_Recvd" ></class> 
+    </classes>
+</test>
+
+
+<test name=" [BS-02]  Draft_tossed_returned">
+    <classes>
+        <class name="nsf.ecap.EPSF_suite.Draft_tossed_returned" ></class> 
+    </classes>
+</test>
+
+<test name=" [BS-03]  Draft_Hold_LoggedIn">
+    <classes>
+        <class name="nsf.ecap.EPSF_suite.Draft_Hold_LoggedIn" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+<test name=" [BS-04]  EPSF_Draft_Req_Void">
+    <classes>
+        <class name="nsf.ecap.EPSF_suite.EPSF_Draft_Req_Void" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-05]  EPSF_Draft_Req_Expired">
+    <classes>
+        <class name="nsf.ecap.EPSF_suite.EPSF_Draft_Req_Expired" ></class> 
+    </classes>
+</test>
+
+
+<test name=" [BS-06]  EPSF_Draft_Req_Admin_Login">
+    <classes>
+        <class name="nsf.ecap.EPSF_suite.EPSF_Draft_Req_Admin_Login" ></class> 
+    </classes>
+</test>
+
+
+
+<test name=" [BS-07]  EPSF_Complete_Flow">
+    <classes>
+        <class name="nsf.ecap.EPSF_suite.EPSF_Complete_Flow" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+
+
+</suite>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Client_Suite">
+
+
+
+<test name="[BS-01] Create Client">
+
+<parameter name="className" value="CreateClient"/>
+
+	<classes>
+          <class name="nsf.ecap.Client_Suite.CreateClient"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+<test name="[BS-02] Search Client">
+
+<parameter name="className" value="SearchClient"/>
+
+	<classes>
+          <class name="nsf.ecap.Client_Suite.SearchClient"></class> 
+    </classes>
+   
+</test>
+
+
+
+
+
+<!-- 
+<test name="OnlyforTesting">
+
+<parameter name="className" value="OnlyforTesting"/>
+
+	<classes>
+          <class name="nsf.ecap.Client_Suite.OnlyforTesting"></class> 
+    </classes>
+   
+</test> -->
+
+
+
+
+
+
+</suite>

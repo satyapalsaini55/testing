@@ -1,0 +1,52 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Client_Suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="CreateClient.Create_Client_(java.lang.String,java.lang.String)[pri:1, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">Create_Client_</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="CreateClient.Create_Client_(java.lang.String,java.lang.String)[pri:1, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">Create_Client_</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="CreateClient.Create_Client_(java.lang.String,java.lang.String)[pri:1, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">Create_Client_</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="CreateClient.Create_Client_(java.lang.String,java.lang.String)[pri:1, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">Create_Client_</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>119</td> <td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SearchClient.DeleteQuery_for_Correspondence_TAB()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;DeleteQuery_for_Correspondence_TAB</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="94f96a">  <td>22/06/16 10:13:53</td>   <td>128</td> <td title="&lt;&lt;TestSuiteBase_CLNT.Finishing_IM_Suite_Script()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;Finishing_IM_Suite_Script</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:11:25</td>   <td>-147269</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="CreateClient.Launch_Browser_and_Successfully_Login_into_the_Application()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">Launch_Browser_and_Successfully_Login_into_the_Application</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>65</td> <td>&nbsp;</td><td title="&lt;&lt;CreateClient.QuitBrowser()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;QuitBrowser</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>118</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SearchClient.QuitBrowser()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;QuitBrowser</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>118</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SearchClient.QuitBrowser()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;QuitBrowser</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>118</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="SearchClient.Search_Edit_and_Update_Client_For_(java.lang.String,java.lang.String)[pri:1, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">Search_Edit_and_Update_Client_For_</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>118</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="SearchClient.Search_Edit_and_Update_Client_For_(java.lang.String,java.lang.String)[pri:1, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">Search_Edit_and_Update_Client_For_</td> 
+  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="94f96a">  <td>22/06/16 10:11:20</td>   <td>-153073</td> <td title="&gt;&gt;TestSuiteBase_CLNT.checkSuiteSkip()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&gt;&gt;checkSuiteSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:11:25</td>   <td>-147271</td> <td>&nbsp;</td><td title="&gt;&gt;CreateClient.checkTestSkip(java.lang.String)[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>114</td> <td>&nbsp;</td><td title="&gt;&gt;SearchClient.checkTestSkip(java.lang.String)[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>4</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;CreateClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>4</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;CreateClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>4</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;CreateClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>4</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;CreateClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>4</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;CreateClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td>main@1866875501</td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>118</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SearchClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>118</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;SearchClient.reportDataSetResult()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="b3fda1">  <td>22/06/16 10:13:53</td>   <td>92</td> <td>&nbsp;</td><td title="&lt;&lt;CreateClient.reportTestResult()[pri:0, instance:nsf.ecap.Client_Suite.CreateClient@561b6512]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="7277dc">  <td>22/06/16 10:13:53</td>   <td>119</td> <td>&nbsp;</td><td title="&lt;&lt;SearchClient.reportTestResult()[pri:0, instance:nsf.ecap.Client_Suite.SearchClient@e4487af]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+</table>

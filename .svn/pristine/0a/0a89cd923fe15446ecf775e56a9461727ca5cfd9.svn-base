@@ -1,0 +1,118 @@
+<h2>Methods run, sorted chronologically</h2><h3>&gt;&gt; means before, &lt;&lt; means after</h3><p/><br/><em>Proposals_suite</em><p/><small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table border="1">
+<tr><th>Time</th><th>Delta (ms)</th><th>Suite<br>configuration</th><th>Test<br>configuration</th><th>Class<br>configuration</th><th>Groups<br>configuration</th><th>Method<br>configuration</th><th>Test<br>method</th><th>Thread</th><th>Instances</th></tr>
+<tr bgcolor="80ba90">  <td>22/07/25 13:48:20</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Create_WO_from_Proposal.Create_WO_from_Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">Create_WO_from_Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="a095a0">  <td>22/07/25 13:48:19</td>   <td>-105</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Won.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won@400cff1a]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="8bf671">  <td>22/07/25 13:48:19</td>   <td>-71</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Lost.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Lost@14a2f921]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-51</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_RequoteWon.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-51</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_RequoteWon.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-51</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_RequoteWon.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-51</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_RequoteWon.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Won_Acetic_Acid.Proposal_flow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Won_Acetic_Acid.Proposal_flow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Won_Acetic_Acid.Proposal_flow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Won_Acetic_Acid.Proposal_flow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_Won_Acetic_Acid.Proposal_flow(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="Proposal_VerifyBillRate.Proposal_flow(java.util.Hashtable)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">Proposal_flow</td> 
+  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="627e6c">  <td>22/07/25 13:48:15</td>   <td>-4535</td> <td title="&gt;&gt;TestSuiteBase_Proposal.checkSuiteSkip()[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">&gt;&gt;checkSuiteSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="a095a0">  <td>22/07/25 13:48:19</td>   <td>-175</td> <td>&nbsp;</td><td title="&gt;&gt;Proposal_Won.checkTestSkip(java.lang.String)[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won@400cff1a]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="8bf671">  <td>22/07/25 13:48:19</td>   <td>-74</td> <td>&nbsp;</td><td title="&gt;&gt;Proposal_Lost.checkTestSkip()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Lost@14a2f921]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-59</td> <td>&nbsp;</td><td title="&gt;&gt;Proposal_RequoteWon.checkTestSkip()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:19</td>   <td>-42</td> <td>&nbsp;</td><td title="&gt;&gt;Proposal_Won_Acetic_Acid.checkTestSkip()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-24</td> <td>&nbsp;</td><td title="&gt;&gt;Proposal_VerifyBillRate.checkTestSkip()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="80ba90">  <td>22/07/25 13:48:20</td>   <td>-2</td> <td>&nbsp;</td><td title="&gt;&gt;Create_WO_from_Proposal.checkTestSkip()[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">&gt;&gt;checkTestSkip</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="627e6c">  <td>22/07/25 13:48:20</td>   <td>12</td> <td title="&lt;&lt;TestSuiteBase_Proposal.cleanUp()[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">&lt;&lt;cleanUp</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td>main@2082351774</td>   <td></td> </tr>
+<tr bgcolor="a095a0">  <td>22/07/25 13:48:19</td>   <td>-94</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_Won.closebrowser()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won@400cff1a]">&lt;&lt;closebrowser</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="8bf671">  <td>22/07/25 13:48:19</td>   <td>-68</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_Lost.closebrowser()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Lost@14a2f921]">&lt;&lt;closebrowser</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-49</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_RequoteWon.closebrowser()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&lt;&lt;closebrowser</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-32</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.closebrowser()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;closebrowser</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="80ba90">  <td>22/07/25 13:48:20</td>   <td>0</td> <td>&nbsp;</td><td title="&lt;&lt;Create_WO_from_Proposal.closebrowser()[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">&lt;&lt;closebrowser</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="a095a0">  <td>22/07/25 13:48:19</td>   <td>-96</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Won.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won@400cff1a]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="8bf671">  <td>22/07/25 13:48:19</td>   <td>-69</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Lost.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Lost@14a2f921]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-50</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_RequoteWon.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-50</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_RequoteWon.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-50</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_RequoteWon.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-50</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_RequoteWon.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-33</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-11</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="80ba90">  <td>22/07/25 13:48:20</td>   <td>0</td> <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td title="&lt;&lt;Create_WO_from_Proposal.reportDataSetResult()[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">&lt;&lt;reportDataSetResult</td> 
+<td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="a095a0">  <td>22/07/25 13:48:19</td>   <td>-94</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_Won.reportTestResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won@400cff1a]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="8bf671">  <td>22/07/25 13:48:19</td>   <td>-67</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_Lost.reportTestResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Lost@14a2f921]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="62806e">  <td>22/07/25 13:48:19</td>   <td>-49</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_RequoteWon.reportTestResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_RequoteWon@17c386de]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="aa6a6a">  <td>22/07/25 13:48:20</td>   <td>-32</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_Won_Acetic_Acid.reportTestResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_Won_Acetic_Acid@e50a6f6]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="e0fea4">  <td>22/07/25 13:48:20</td>   <td>-10</td> <td>&nbsp;</td><td title="&lt;&lt;Proposal_VerifyBillRate.reportTestResult()[pri:0, instance:nsf.ecap.Proposals_suite.Proposal_VerifyBillRate@48524010]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+<tr bgcolor="80ba90">  <td>22/07/25 13:48:20</td>   <td>0</td> <td>&nbsp;</td><td title="&lt;&lt;Create_WO_from_Proposal.reportTestResult()[pri:0, instance:nsf.ecap.Proposals_suite.Create_WO_from_Proposal@6b419da]">&lt;&lt;reportTestResult</td> 
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  <td></td>   <td></td> </tr>
+</table>

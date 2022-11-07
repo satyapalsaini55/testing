@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Grip_Suite" >
+
+
+<test name = "[BS-01] Search Applicant">
+
+<parameter name = "className" value = "SearchApplicant"/>
+	<classes>
+             <class name = "nsf.ecap.Grip_Suite.SearchApplicant"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-02] Search Resource">
+
+<parameter name = "className" value = "SearchResource"/>
+	<classes>
+             <class name = "nsf.ecap.Grip_Suite.SearchResource"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-03]  Create Applicant-Already have Signed Contract - YES">
+
+<parameter name = "className" value = "CreateApplicant_ContractYES"/>
+	<classes>
+             <class name = "nsf.ecap.Grip_Suite.CreateApplicant_ContractYES"></class> 
+    </classes>
+   
+</test>
+
+
+<test name = "[BS-04]  Resource Master Data Setup">
+
+<parameter name = "className" value = "Resource_Master_Data_Setup"/>
+	<classes>
+             <class name = "nsf.ecap.Grip_Suite.Resource_Master_Data_Setup"></class> 
+    </classes>
+   
+</test>
+
+<test name = "[BS-05] Search Resource - Verify Standards">
+
+<parameter name = "className" value = "SearchResource_VerifyStandards"/>
+	<classes>
+             <class name = "nsf.ecap.Grip_Suite.SearchResource_VerifyStandards"></class> 
+    </classes>
+   
+</test>
+
+</suite>
+

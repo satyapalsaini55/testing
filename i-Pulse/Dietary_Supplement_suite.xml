@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Dietary_Supplement_suite" >
+
+
+
+
+<test name="[BS-01]  ModBrack_Certified">
+<!-- <parameter name="className" value="ModBrack_Certified"/> -->
+    <classes>
+        <class name="nsf.ecap.Dietary_Supplement_suite.ModBrack_Certified" ></class> 
+    </classes>
+</test>
+
+
+</suite>
+

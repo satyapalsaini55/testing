@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Alerts_iPulse_Suite">
+
+
+<test name="[BS-01] Verify all alerts loading time and count">
+
+<parameter name="className" value="Alerts_WithOut_ORG_1"/>
+
+	<classes>
+          <class name="nsf.ecap.Alerts_iPulse_Suite.Alerts_WithOut_ORG_1"></class> 
+    </classes>
+   
+</test>
+
+<test name="[BS-02] Verify all alerts loading time and count by ORG Units">
+
+<parameter name="className" value="Alerts_With_ORG_2"/>
+
+	<classes>
+          <class name="nsf.ecap.Alerts_iPulse_Suite.Alerts_With_ORG_2"></class> 
+    </classes>
+   
+</test>
+
+<test name="[BS-03] Verify all Alerts First Record links Navigation">
+
+<parameter name="className" value="Alerts_Navigation_3"/>
+
+	<classes>
+          <class name="nsf.ecap.Alerts_iPulse_Suite.Alerts_Navigation_3"></class> 
+    </classes>
+   
+</test>
+
+<test name="[BS-04] Verify navigation of client in Ipulse">
+
+	<parameter name="className" value="ClientNavigation_4"/>
+	<classes>
+          <class name="nsf.ecap.Alerts_iPulse_Suite.ClientNavigation_4"></class> 
+    </classes>
+   
+</test>
+
+
+</suite>

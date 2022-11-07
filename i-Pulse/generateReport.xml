@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE project [
+]>
+
+<project name="iPulseAutoTestScriptReport" default="makexsltreports" basedir=".">  
+
+<!-- ========== Initialize Properties =================================== -->
+    <property environment="env"/>
+    
+    <property name="ws.home" value="${basedir}"/>
+	<property name="ws.jars" value="${ws.home}/lib"/>
+    <property name="test.dest" value="${ws.home}/build"/>
+    <property name="test.src" value="${ws.home}/src"/>
+	<property name="ng.result" value="${ws.home}/test-output"/>
+    
+
+
+    
+
+	<path id="liblocation">
+	        <fileset dir="${ws.jars}" includes="*.jar"/>
+	</path>
+	
+	
+	 
+	 <target name="makexsltreports">
+	        <mkdir dir="${ws.home}/XSLT_Reports/output"/>
+
+	        <xslt in="${ng.result}/testng-results.xml" style="xslt/testng-results.xsl"
+	              out="${ws.home}/XSLT_Reports/output/index.html" classpathref="liblocation" processor="SaxonLiaison">
+	            <param name="testNgXslt.outputDir" expression="${ws.home}/XSLT_Reports/output/"/>
+	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
+	        </xslt>
+    </target>
+
+    
+ 
+</project>

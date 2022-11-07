@@ -1,0 +1,262 @@
+<html>
+<head>
+<title>TestNG:  [BS-14] NSF Connect Login Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>[BS-14] NSF Connect Login Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/11</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 16 10:13:53 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (9 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportTestResult()'><b>reportTestResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.checkTestSkip()'><b>checkTestSkip</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.reportDataSetResult()'><b>reportDataSetResult</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.QuitBrowser()'><b>QuitBrowser</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios</td>
+<td></td>
+<td>-1655354633</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#4=FacilityUser_MoreThan5, iPulse_MentionedUser_Link, soldham : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#11=Special_Signin, NSFO_Special_Signin, NA : NA, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#6=JumpFrom_SuperAdmin_Link_Case_A, iPulse_SuperAdminLogin_Button, 6N670admin : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#7=JumpFrom_MentionedUser_Link_Case_B, iPulse_MentionedUser_Link, 6N670admin : Welcome123, NSF International Strategic Registrations, Ltd. - 6N670 (6N670)</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#8=JumpFrom_ServiceRequests_Alert_Case_C, iPulse_ServiceRequests_Alert, willsmith : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#9=JumpFrom_SuperAdminLogin_Button_Case_D, iPulse_SuperAdminLogin_Button, 6N670admin : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#1=CorporateUser_SingleAccount, Nsf_Connect, gktestuser : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#2=CorporateUser_MultiAccount, iPulse_MentionedUser_Link, willsmith : Welcome123, UK Retail - C0036244 (C0036244)</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#5=FacilityUser_Inbetween_1_5, iPulse_MentionedUser_Link, lcarr : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#3=FacilityUser_SingleFacility, Nsf_Connect, greeneking5237 : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+<tr>
+<td title='nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios.Verify_LoginSuccess_and_LandingScreen_for_following_Data__()'><b>Verify_LoginSuccess_and_LandingScreen_for_following_Data__</b><br>Test class: nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios<br>Parameters: Scenario#10=JumpFrom_NsfOnlineAccountSetup_Button, iPulse_NsfOnlineAccountSetup_Button, 6N670admin : Welcome123, No</td>
+<td></td>
+<td>0</td>
+<td>nsf.ecap.New_NSFOnline_Suite.BS_14_Login_Scenarios@2f54a33d</td></tr>
+</table><p>
+</body>
+</html>

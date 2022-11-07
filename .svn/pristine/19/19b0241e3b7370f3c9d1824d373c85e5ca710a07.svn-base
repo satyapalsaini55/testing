@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Health_Science_suite" >
+
+
+
+
+<test name=" [BS-01]  HS lead proposal project cycle">
+<parameter name="className" value="HS_lead_proposal_project_cycle"/>
+    <classes>
+        <class name="nsf.ecap.Health_Science_suite.HS_lead_proposal_project_cycle" ></class> 
+    </classes>
+</test>
+
+
+
+
+
+
+
+
+
+
+</suite>
+

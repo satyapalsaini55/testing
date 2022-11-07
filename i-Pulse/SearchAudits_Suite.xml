@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "SearchAudits_Suite" >
+
+
+<test name = "[BS-01] Search Audits and Vists">
+
+<parameter name = "className" value = "Search_Audits_and_Vists"/>
+	<classes>
+             <class name = "nsf.ecap.SearchAudits_Suite.Search_Audits_and_Vists"></class> 
+    </classes>
+   
+</test>
+
+
+
+</suite>
+

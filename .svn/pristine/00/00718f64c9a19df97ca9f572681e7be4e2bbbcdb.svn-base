@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Automotive_Suite" >
+
+
+<test name = "[BS-01] Create Submission">
+
+<parameter name = "className" value = "Create_Submission"/>
+	<classes>
+             <class name = "nsf.ecap.Automotive_Suite.Create_Submission"></class> 
+    </classes>
+   
+</test>
+
+
+
+</suite>
+

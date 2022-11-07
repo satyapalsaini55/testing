@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <Information>
+            <SystemUserName>antyagi</SystemUserName>
+            <SystemIpAddress>192.168.241.149</SystemIpAddress>
+            <resultEmailSubjectFirstPartTag>STAGING_full_scripts</resultEmailSubjectFirstPartTag>
+            <TodayDate>25-07-22</TodayDate>
+            <StartTime>01_48_19 PM</StartTime>
+			<locale>en_GB</locale>
+			<email>antyagi@nsf.org</email>
+			<fromEmail>testscriptuser@nsf.org</fromEmail>
+			<fromEmailPassword>welcome123123</fromEmailPassword>
+			<pattern></pattern>
+			<logHistoryFolderNameTag>STAGING_full_scripts_log_history</logHistoryFolderNameTag>
+    </Information>

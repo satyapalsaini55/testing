@@ -1,0 +1,175 @@
+
+#Environment=Test,Staging
+
+Environment=Staging
+
+#########ClientName_Masking=true in Test and false in stage##############
+ClientName_Masking=false
+######################################################
+
+
+#ShowinglogMessagesinPopupFrameFlag=true
+ShowinglogMessagesinPopupFrameFlag=false
+
+
+iPulse_SecureLogin_Flag=true
+# -----Test Site URL-------------------
+testSiteName=https://testapps.nsf.org/trunkecap
+New_NSFOnline_SiteName=https://mystg.nsf.org/nsfonline/#/signin
+
+
+
+TEST_Jobs_site_url=https://testapps.nsf.org/jobsecap/
+TEST_Jobs_Secure_site_url=https://testapps.nsf.org/jobsecap/jsp/login/securelogin.xhtml
+
+STAGE_Jobs_site_url=https://stgapps.nsf.org/jobsecap/
+STAGE_Jobs_Secure_site_url=https://stgapps.nsf.org/jobsecap//jsp/login/securelogin.xhtml
+
+
+TraQtionSurveyTestsiteName=http://testapps.nsf.org/cusweb/faces/asp_survey_login.jspx?CUSTOMERNO=SwL8KzOyZxgz05bRKlY%2BkA%3D%3D
+TraQtionPortalTestsiteName=http://testapps.aspirago.com/aspiragoportal/aspiragologin.jsp
+TraQtionPortalUserName=PAPA.JOHNS@PAPAJOHNS.COM
+TraQtionPortalPassword=welcome123
+TraQtionPortal_iPulse_UserName=SYSADMIN.USER@PJ.COM
+TraQtionPortal_iPulse_Password=asp123
+insightTestsiteName=https://testapps.nsf.org/insight/faces/login.jspx
+
+TraQtionCostcoTestsiteName=https://testapps.aspirago.com/aspiragoportal/qhportal.jsp
+TraQtionCostcoUserName=Support@aspirago.com
+TraQtionCostcoPassword=test123
+
+#insightTestsiteName=https://testapps.nsf.org/insight/faces/login.jspx
+#insightTestsiteName=https://webapps.nsf.org/insight/faces/home/alert.jspx?_afPfm=-681177ff
+
+# -----Test Site URL-------------------
+
+# Possible values for browser are "IE","firefox"
+#browserType=IE
+#browserType=firefox
+
+
+
+
+#ChromeDriverPath=C\:\\Softwares\\selenium_drivers\\chrome\\chromedriver_win32--83\\chromedriver.exe
+ChromeDriverPath=C\:\\Drivers\\chromedriver_win32\\chromedriver.exe
+
+# When too slow increase this LoadingIconMaxWaitTime
+LoadingIconMaxWait=2
+#LoadingIconMaxWait=4
+#LoadingIconMaxWait=0
+
+#implicitWaitTime=20
+implicitWaitTime=60
+#implicitWaitTime=6000
+
+#pageLoadTime=12000
+pageLoadTime=360
+
+ElementWaitTime=60
+#ElementWaitTime=6000
+
+#below only used by Satya
+Element_MAX_WaitTime=600
+#LoadingIconMaxWait=1
+#LoadingIconMaxWait=0
+
+#genMax_waitTime=30
+genMax_waitTime=180
+#genMax_waitTime=60000
+
+
+#if loading comes even after below time, then failed the script
+#loadingIcon_Max_waitTime=120
+loadingIcon_Max_waitTime=240
+#loadingIcon_Max_waitTime=600
+
+
+
+
+###############################################
+
+
+
+
+
+adminUsername=testscriptuser
+#adminUsername=LMASON
+adminPassword=welcome123123
+
+
+
+
+#This is under the root of the project 
+#screenshots_path=//screenshots
+screenshots_path=//screenshots
+
+
+
+#Integer.parseInt(CONFIG.getProperty("genMax_waitTime"))   ----gen for General
+
+
+
+
+#HSSiteName=https://testapps.nsf.org/ecap/jsp/login/securelogin.xhtml
+HSSiteName=http://oraapp10.nsf.org:8070/trunkecap/jsp/login/securelogin.xhtml
+#HSLoginAsName=DGARRETT
+HSLoginAsName=JCUNNINGHAM
+HSUsername=testscriptuser
+HSPassword=welcome123123
+
+#Using in EPSF
+BranchSecureLoginURL=http\://oraapp10.nsf.org\:8070/ecap/jsp/login/securelogin.xhtml
+
+
+
+#*******************************************************************************************************************************
+Default=testscriptuser:TestScriptUser TestScriptUser:M7890000
+
+
+
+#MainUserForSSO_withCompleteEmailID=psingh@nsf.org
+MainUserForSSO_withCompleteEmailID=testscriptuser@nsf.org
+
+#WorkOrderscenarios=kwheelock\:Kathryn Wheelock\:111201
+WorkOrderscenarios=testscriptuser:TestScriptUser TestScriptUser:M7890000
+
+QuoteGeneratorScenarios=testscriptuser:TestScriptUser TestScriptUser:M7890000
+
+HealthScienceScenarios=mwalters:NotRequire
+
+iAGscenarios=iAg_test_int:NotRequire:NotRequire
+
+TestPlanscenarios=EVALENTINE:Elissa Valentine:4802
+
+#SCFSScenarios=rhelwig:Rachel Helwig:120129
+#ISRscenarios=cshields:Christine Shields:0865
+ISRscenarios=testscriptuser:TestScriptUser TestScriptUser:M7890000
+
+#NFCscenarios=kkishon:Kimberly Kishon:114890
+NFCscenarios=testscriptuser:TestScriptUser TestScriptUser:M7890000
+
+#DietarySupplementscenarios=kFillinger:Katherine Fillinger:101099
+DietarySupplementscenarios=testscriptuser:TestScriptUser TestScriptUser:M7890000
+
+#*******************************************************************************************************************************
+
+
+
+
+
+Sustainability=memerritt
+
+
+
+
+
+
+
+
+IM_LoginAs=testscriptuser
+Client_LoginAs=testscriptuser
+MP_LoginAs=beach
+Grip_LoginAs=calston
+LoginAs_JHUGHES=JHUGHES
+#end
+
