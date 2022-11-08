@@ -1,41 +1,51 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-trigger:
-- main
-- main
-
-strategy:
-  matrix:
-    jdk10_linux:
-      imageName: "ubuntu-latest"
-      jdkVersion: "1.10"
-    jdk11_windows:
-      imageName: "windows-latest"
-      jdkVersion: "1.11"
-  maxParallel: 2
-
-pool:
-  vmImage: $(imageName)
-
-steps:
-- task: Maven@4
-  inputs:
-    mavenPomFile: "pom.xml"
-    mavenOptions: "-Xmx3072m"
-    javaHomeOption: "JDKVersion"
-    jdkVersionOption: $(jdkVersion)
-    jdkArchitectureOption: "x64"
-    publishJUnitResults: true
-    testResultsFiles: "**/TEST-*.xml"
-    goals: "package"
+variables:
+- name: BuildParameters.mavenPOMFile
+  value: i-Pulse/pom.xml
+name: $(date:yyyyMMdd)$(rev:.r)
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/master
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: windows-latest
+  steps:
+  - checkout: self
+    fetchDepth: 1
+  - task: PowerShell@2
+    displayName: 'PowerShell: Install Chrome'
+    enabled: False
+    inputs:
+      targetType: inline
+      script: "# Write your PowerShell commands here.\n\nWrite-Host \"Hello World\"\n\n$LocalTempDir = $env:TEMP; \n$ChromeInstaller = \"ChromeInstaller.exe\"; (new-object    System.Net.WebClient).DownloadFile('http://dl.google.com/chrome/install/375.126/chrome_installer.exe', \"$LocalTempDir\\$ChromeInstaller\"); & \"$LocalTempDir\\$ChromeInstaller\" /silent /install; $Process2Monitor =  \"ChromeInstaller\"; Do { $ProcessesFound = Get-Process | ?{$Process2Monitor -contains $_.Name} | Select-Object -ExpandProperty Name; If ($ProcessesFound) { \"Still running: $($ProcessesFound -join ', ')\" | Write-Host; Start-Sleep -Seconds 2 } else { rm \"$LocalTempDir\\$ChromeInstaller\" -ErrorAction SilentlyContinue -Verbose } } Until (!$ProcessesFound)\n\n\n"
+  - task: PowerShell@2
+    displayName: 'PowerShell: Install Jdk 8'
+    inputs:
+      targetType: inline
+      script: >2-
 
 
-- task: PublishCodeCoverageResults@1
-  inputs:
-    codeCoverageTool: "JaCoCo"
-    summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
-    reportDirectory: "$(System.DefaultWorkingDirectory)/**/site/jacoco"
-    failIfCoverageEmpty: true
+        choco install openjdk8
+
+        java -version
+  - task: Maven@3
+    displayName: Maven i-Pulse/pom.xml
+    inputs:
+      mavenPOMFile: $(BuildParameters.mavenPOMFile)
+      goals: clean test
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+    condition: succeededOrFailed()
+    inputs:
+      SourceFolder: $(system.defaultworkingdirectory)
+      Contents: '**/*.jar'
+      TargetFolder: $(build.artifactstagingdirectory)
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+    condition: succeededOrFailed()
+    inputs:
+      PathtoPublish: $(build.artifactstagingdirectory)
+...
